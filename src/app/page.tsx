@@ -4,6 +4,7 @@ import Link from 'next/link';
 import { cities, places } from '@/data/places';
 import Head from 'next/head';
 import { generateWebSiteSchema } from '@/lib/schema';
+import { HeartButton } from '@/components/HeartButton';
 
 export default function HomePage() {
   const topAttractions = places.filter(p => p.category !== 'Restaurants' && p.category !== 'Tours').slice(0, 8);
@@ -322,9 +323,19 @@ export default function HomePage() {
                         {place.category}
                       </span>
                     </div>
+                    {/* Heart Button */}
+                    <HeartButton 
+                      item={{
+                        id: place.id,
+                        name: place.name,
+                        image: place.image,
+                        category: place.category,
+                        rating: place.rating
+                      }} 
+                    />
                     {/* UNESCO Badge */}
                     {place.tags.includes("UNESCO") && (
-                      <div className="absolute top-3 right-3">
+                      <div className="absolute top-3 right-12">
                         <span className="inline-flex items-center gap-1.5 bg-gradient-to-r from-yellow-400 to-yellow-500 text-white px-3 py-1.5 rounded-full text-xs font-bold shadow-sm">
                           <svg className="w-3 h-3" fill="currentColor" viewBox="0 0 20 20">
                             <path fillRule="evenodd" d="M5 2a1 1 0 011 1v1h1a1 1 0 010 2H6v1a1 1 0 01-2 0V6H3a1 1 0 010-2h1V3a1 1 0 011-1zm0 10a1 1 0 011 1v1h1a1 1 0 110 2H6v1a1 1 0 11-2 0v-1H3a1 1 0 110-2h1v-1a1 1 0 011-1zM12 2a1 1 0 01.967.744L14.146 7.2 17.5 9.134a1 1 0 010 1.732l-3.354 1.935-1.18 4.455a1 1 0 01-1.933 0L9.854 12.8 6.5 10.866a1 1 0 010-1.732l3.354-1.935 1.18-4.455A1 1 0 0112 2z" clipRule="evenodd" />
@@ -414,8 +425,18 @@ export default function HomePage() {
                       alt={place.name}
                       className="w-full h-full object-cover group-hover:scale-110 transition-all duration-500 ease-out"
                     />
+                    {/* Heart Button */}
+                    <HeartButton 
+                      item={{
+                        id: place.id,
+                        name: place.name,
+                        image: place.image,
+                        category: place.category,
+                        rating: place.rating
+                      }} 
+                    />
                     {/* Price Level Badge */}
-                    <div className="absolute top-3 right-3">
+                    <div className="absolute top-3 right-12">
                       <span className="inline-flex items-center gap-1.5 bg-white/95 backdrop-blur-sm px-3 py-1.5 rounded-full text-xs font-bold text-primary shadow-sm">
                         {place.priceLevel}
                       </span>

@@ -1,6 +1,7 @@
 import Link from 'next/link';
 import Header from '@/components/layout/Header';
 import Footer from '@/components/layout/Footer';
+import { HeartButton } from '@/components/HeartButton';
 
 const cities = [
   {
@@ -110,8 +111,18 @@ export default function CitiesPage() {
                 <Link
                   key={city.id}
                   href={`/cities/${city.slug}`}
-                  className="bg-white rounded-xl overflow-hidden shadow-lg hover:shadow-xl transition group"
+                  className="bg-white rounded-xl overflow-hidden shadow-lg hover:shadow-xl transition group relative"
                 >
+                  <HeartButton 
+                    item={{
+                      id: city.slug,
+                      name: city.name,
+                      type: 'city',
+                      category: 'City',
+                      image: `/images/cities/${city.slug}.jpg`
+                    }}
+                    className="absolute top-2 right-2 z-10"
+                  />
                   <div className={`h-40 bg-gradient-to-br ${
                     city.tagColor === 'blue' ? 'from-blue-400 to-blue-600' :
                     city.tagColor === 'purple' ? 'from-purple-400 to-purple-600' :

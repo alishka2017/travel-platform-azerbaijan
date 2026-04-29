@@ -2,6 +2,7 @@ import Header from '@/components/layout/Header';
 import Footer from '@/components/layout/Footer';
 import Link from 'next/link';
 import { places, cities } from '@/data/places';
+import { HeartButton } from '@/components/HeartButton';
 
 export default function RestaurantsPage() {
   const restaurants = places.filter(p => p.category === 'Restaurants');
@@ -34,8 +35,19 @@ export default function RestaurantsPage() {
             <Link 
               href={`/restaurants/${restaurant.id}`} 
               key={restaurant.id}
-              className="group bg-white rounded-lg shadow-sm hover:shadow-md transition overflow-hidden"
+              className="group bg-white rounded-lg shadow-sm hover:shadow-md transition overflow-hidden relative"
             >
+              <HeartButton 
+                item={{
+                  id: restaurant.id,
+                  name: restaurant.name,
+                  type: 'restaurant',
+                  category: restaurant.category,
+                  image: restaurant.image,
+                  rating: restaurant.rating,
+                }}
+                className="absolute top-2 right-2 z-10"
+              />
               <div className="relative h-48">
                 <img 
                   src={restaurant.image} 
@@ -43,7 +55,7 @@ export default function RestaurantsPage() {
                   className="w-full h-full object-cover group-hover:scale-105 transition duration-300"
                 />
                 {restaurant.priceLevel && (
-                  <div className="absolute top-2 right-2 bg-white/90 px-2 py-1 rounded text-xs font-medium">
+                  <div className="absolute top-2 left-2 bg-white/90 px-2 py-1 rounded text-xs font-medium">
                     {restaurant.priceLevel}
                   </div>
                 )}

@@ -1,6 +1,7 @@
 import Header from '@/components/layout/Header';
 import Footer from '@/components/layout/Footer';
 import Link from 'next/link';
+import { HeartButton } from '@/components/HeartButton';
 
 // Complete data about attractions in Azerbaijan
 const attractions = [
@@ -212,8 +213,19 @@ export default function AttractionsPage() {
                 <Link
                   key={attraction.id}
                   href={`/attractions/${attraction.id}`}
-                  className="block bg-white rounded-lg shadow-sm overflow-hidden hover:shadow-md transition cursor-pointer"
+                  className="block bg-white rounded-lg shadow-sm overflow-hidden hover:shadow-md transition cursor-pointer relative"
                 >
+                  <HeartButton 
+                    item={{
+                      id: String(attraction.id),
+                      name: attraction.name,
+                      type: 'attraction',
+                      category: attraction.type,
+                      image: attraction.image,
+                      rating: attraction.rating,
+                    }}
+                    className="absolute top-3 right-3 z-10"
+                  />
                   <div className="flex">
                     <div className="w-40 h-40 bg-gradient-to-br from-blue-100 to-blue-200 flex items-center justify-center flex-shrink-0">
                       <span className="text-4xl">🏛️</span>

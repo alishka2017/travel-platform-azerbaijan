@@ -8,6 +8,7 @@ import { places, getPlacesByCity } from '@/data/places';
 import { useState } from 'react';
 import Lightbox from '@/components/Lightbox';
 import { generatePlaceSchema, generateBreadcrumbSchema } from '@/lib/schema';
+import { HeartButton } from '@/components/HeartButton';
 
 export default function AttractionContent({ params }: { params: { id: string } }) {
   const place = places.find(p => p.id === params.id);
@@ -68,6 +69,17 @@ export default function AttractionContent({ params }: { params: { id: string } }
                 <div className="absolute top-4 left-4 bg-white/90 px-3 py-1 rounded-full text-sm font-medium">
                   {place.category}
                 </div>
+                <HeartButton 
+                  item={{
+                    id: place.id,
+                    name: place.name,
+                    type: 'attraction',
+                    category: place.category,
+                    image: place.image,
+                    rating: place.rating,
+                  }}
+                  className="absolute top-4 right-4"
+                />
                 <div className="absolute inset-0 bg-black/0 group-hover:bg-black/20 transition flex items-center justify-center">
                   <span className="opacity-0 group-hover:opacity-100 text-white text-sm bg-black/50 px-3 py-1 rounded-full">
                     View Gallery

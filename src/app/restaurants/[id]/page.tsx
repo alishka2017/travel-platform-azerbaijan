@@ -6,6 +6,7 @@ import { notFound } from 'next/navigation';
 import { generateRestaurantMetadata } from '@/lib/metadata';
 import { generatePlaceSchema, generateBreadcrumbSchema } from '@/lib/schema';
 import { Metadata } from 'next';
+import { HeartButton } from '@/components/HeartButton';
 
 export function generateMetadata({ params }: { params: { id: string } }): Metadata {
   return generateRestaurantMetadata(params.id);
@@ -65,6 +66,17 @@ export default function RestaurantDetailPage({ params }: { params: { id: string 
               <div className="absolute top-4 right-4 bg-white px-3 py-1 rounded-full text-sm font-medium text-[#00AA6C]">
                 {restaurant.priceLevel}
               </div>
+              <HeartButton 
+                item={{
+                  id: restaurant.id,
+                  name: restaurant.name,
+                  type: 'restaurant',
+                  category: restaurant.category,
+                  image: restaurant.image,
+                  rating: restaurant.rating,
+                }}
+                className="absolute bottom-4 right-4"
+              />
             </div>
 
             {/* Title & Rating */}

@@ -10,7 +10,7 @@ import { Metadata } from 'next';
 
 const InteractiveMap = dynamic(() => import('@/components/InteractiveMap'), {
   ssr: false,
-  loading: () => <p className="h-[300px] bg-gray-200 rounded-lg animate-pulse"></p>
+  loading: () => <p className="h-[400px] bg-gray-200 rounded-lg animate-pulse"></p>
 });
 
 export async function generateStaticParams() {
@@ -44,7 +44,7 @@ export default async function CityPage({ params }: { params: { slug: string } })
   const coords = cityCoordinates[city.slug] || { lat: 40.4093, lon: 49.8671 };
   const markers = attractions
     .filter(p => p.lat && p.lon)
-    .map(p => ({ lat: p.lat!, lon: p.lon!, popup: p.name }));
+    .map(p => ({ lat: p.lat!, lon: p.lon!, popup: p.name, category: p.category, id: p.id }));
 
   const schema = generateCitySchema(city, attractions);
   const breadcrumbSchema = generateBreadcrumbSchema([

@@ -2,6 +2,7 @@ import Header from '@/components/layout/Header';
 import Footer from '@/components/layout/Footer';
 import Link from 'next/link';
 import { places } from '@/data/places';
+import { HeartButton } from '@/components/HeartButton';
 
 export default function ToursPage() {
   const tours = places.filter(p => p.category === 'Tours');
@@ -39,8 +40,19 @@ export default function ToursPage() {
               <Link 
                 href={`/tours/${tour.id}`} 
                 key={tour.id}
-                className="group bg-white rounded-xl overflow-hidden shadow-lg hover:shadow-xl transition transform hover:-translate-y-1"
+                className="group bg-white rounded-xl overflow-hidden shadow-lg hover:shadow-xl transition transform hover:-translate-y-1 relative"
               >
+                <HeartButton 
+                  item={{
+                    id: tour.id,
+                    name: tour.name,
+                    type: 'tour',
+                    category: tour.category,
+                    image: tour.image,
+                    rating: tour.rating,
+                  }}
+                  className="absolute top-4 right-4 z-10"
+                />
                 <div className="relative h-56">
                   <img 
                     src={tour.image} 

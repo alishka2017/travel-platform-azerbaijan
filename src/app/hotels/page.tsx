@@ -1,8 +1,7 @@
-'use client';
-
 import Header from '@/components/layout/Header';
 import Footer from '@/components/layout/Footer';
 import Link from 'next/link';
+import { HeartButton } from '@/components/HeartButton';
 
 // Complete data about hotels in Azerbaijan
 const hotels = [
@@ -167,14 +166,25 @@ export default function HotelsPage() {
                 <Link
                   key={hotel.id}
                   href={`/hotels/${hotel.id}`}
-                  className="group bg-white rounded-lg shadow-sm overflow-hidden hover:shadow-md transition cursor-pointer"
+                  className="group bg-white rounded-lg shadow-sm overflow-hidden hover:shadow-md transition cursor-pointer relative"
                 >
+                  <HeartButton 
+                    item={{
+                      id: String(hotel.id),
+                      name: hotel.name,
+                      type: 'attraction',
+                      category: hotel.type,
+                      image: hotel.image,
+                      rating: hotel.rating,
+                    }}
+                    className="absolute top-3 right-3 z-10"
+                  />
                   <div className="relative h-48 bg-gray-200">
                      {/* Placeholder for image */}
                      <div className="w-full h-full bg-gradient-to-br from-blue-100 to-blue-200 flex items-center justify-center">
                         <span className="text-4xl">🏨</span>
                      </div>
-                     <div className="absolute top-3 right-3 bg-white px-2 py-1 rounded-md text-sm font-medium text-[#00AA6C]">
+                     <div className="absolute top-3 left-3 bg-white px-2 py-1 rounded-md text-sm font-medium text-[#00AA6C]">
                        {hotel.price}
                      </div>
                   </div>
