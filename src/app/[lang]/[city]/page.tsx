@@ -2,26 +2,50 @@ import Header from '@/components/layout/Header';
 import Footer from '@/components/layout/Footer';
 import Link from 'next/link';
 
-// Mock data for Baku
-const cityData = {
-  name: 'Баку',
-  description: 'Баку — столица Азербайджана, крупнейший город на Кавказе, расположенный на западном берегу Каспийского моря. Это современный мегаполис, где сочетаются историческая архитектура и ультрасовременные небоскребы.',
-  attractions: [
-    { name: 'Старый город (Ичери Шехер)', rating: 4.8 },
-    { name: 'Башня Maiden', rating: 4.7 },
-    { name: 'Улица Низами', rating: 4.6 },
-  ],
-  restaurants: [
-    { name: 'Mugam Club', rating: 4.8 },
-    { name: 'Şirvanşah', rating: 4.7 },
-  ],
-  hotels: [
-    { name: 'Four Seasons Baku', rating: 4.9 },
-    { name: 'JW Marriott Absheron', rating: 4.8 },
-  ],
+// Mock data for cities
+const citiesData = {
+  baku: {
+    name: 'Баку',
+    description: 'Баку — столица Азербайджана, крупнейший город на Кавказе, расположенный на западном берегу Каспийского моря. Это современный мегаполис, где сочетаются историческая архитектура и ультрасовременные небоскребы.',
+    attractions: [
+      { name: 'Старый город (Ичери Шехер)', rating: 4.8 },
+      { name: 'Башня Maiden', rating: 4.7 },
+      { name: 'Улица Низами', rating: 4.6 },
+    ],
+    restaurants: [
+      { name: 'Mugam Club', rating: 4.8 },
+      { name: 'Şirvanşah', rating: 4.7 },
+    ],
+    hotels: [
+      { name: 'Four Seasons Baku', rating: 4.9 },
+      { name: 'JW Marriott Absheron', rating: 4.8 },
+    ],
+  },
+  gabala: {
+    name: 'Габала',
+    description: 'Габала — город в Азербайджане, известный своими горнолыжными курортами и природой.',
+    attractions: [
+      { name: 'Горнолыжный курорт Туфан', rating: 4.7 },
+      { name: 'Водопады Габала', rating: 4.6 },
+    ],
+    restaurants: [
+      { name: 'Nargiz', rating: 4.6 },
+    ],
+    hotels: [
+      { name: 'Rixos Gabala', rating: 4.8 },
+    ],
+  },
 };
 
-export default function CityPage({ params }: { params: { slug: string } }) {
+export function generateStaticParams() {
+  return [
+    { lang: 'ru', city: 'baku' },
+    { lang: 'ru', city: 'gabala' },
+  ];
+}
+
+export default function CityPage({ params }: { params: { lang: string; city: string } }) {
+  const cityData = citiesData[params.city as keyof typeof citiesData] || citiesData.baku;
   return (
     <div className="min-h-screen flex flex-col">
       <Header />
@@ -85,7 +109,7 @@ export default function CityPage({ params }: { params: { slug: string } }) {
                 </li>
               ))}
             </ul>
-            <Link href={`/city/${params.slug}/hotels`} className="block text-center text-blue-600 mt-4 hover:underline">
+            <Link href={`/${params.lang}/${params.city}/hotels`} className="block text-center text-blue-600 mt-4 hover:underline">
               Все отели
             </Link>
           </div>

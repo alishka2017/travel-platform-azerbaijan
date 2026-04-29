@@ -15,9 +15,8 @@ export default function Footer() {
           <div>
             <h3 className="text-sm font-semibold text-gray-400 tracking-wider uppercase">Города</h3>
             <ul className="mt-4 space-y-4">
-              <li><Link href="/city/baku" className="text-base text-gray-300 hover:text-white">Баку</Link></li>
-              <li><Link href="/city/gabala" className="text-base text-gray-300 hover:text-white">Габала</Link></li>
-              <li><Link href="/city/sheki" className="text-base text-gray-300 hover:text-white">Шеки</Link></li>
+              <li><Link href="/ru/baku" className="text-base text-gray-300 hover:text-white">Баку</Link></li>
+              <li><Link href="/ru/gabala" className="text-base text-gray-300 hover:text-white">Габала</Link></li>
             </ul>
           </div>
           <div>
