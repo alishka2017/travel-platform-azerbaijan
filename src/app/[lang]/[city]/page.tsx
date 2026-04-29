@@ -109,7 +109,7 @@ export default function CityPage({ params }: { params: { lang: string; city: str
                 </li>
               ))}
             </ul>
-            <Link href={`/${params.lang}/${params.city}/hotels`} className="block text-center text-blue-600 mt-4 hover:underline">
+            <Link href="/hotels" className="block text-center text-blue-600 mt-4 hover:underline">
               Все отели
             </Link>
           </div>
