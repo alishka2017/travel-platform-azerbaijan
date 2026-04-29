@@ -10,9 +10,10 @@ interface HeartButtonProps {
     image?: string;
     category?: string;
     rating?: number;
-    type?: 'attraction' | 'restaurant' | 'tour' | 'city';
+    type?: 'attraction' | 'restaurant' | 'tour' | 'city' | 'hotel';
   };
   className?: string;
+  size?: 'sm' | 'md';
 }
 
 export const HeartButton: React.FC<HeartButtonProps> = ({ item, className = '' }) => {

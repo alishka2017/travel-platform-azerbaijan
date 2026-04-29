@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://azerbaijan-travel-platform.vercel.app/sitemap.xml

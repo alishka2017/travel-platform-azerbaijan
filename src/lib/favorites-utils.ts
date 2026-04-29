@@ -1,7 +1,7 @@
 export interface FavoriteItem {
   id: string;
   name: string;
-  type: 'attraction' | 'restaurant' | 'tour' | 'city';
+  type: 'attraction' | 'restaurant' | 'tour' | 'city' | 'hotel';
   category?: string;
   image?: string;
   rating?: number;

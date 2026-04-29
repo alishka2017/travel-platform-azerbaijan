@@ -23,13 +23,13 @@ export function generateMetadata({ params }: { params: { slug: string } }): Meta
 
 const cityCoordinates: Record<string, { lat: number; lon: number }> = {
   baku: { lat: 40.4093, lon: 49.8671 },
-  gandja: { lat: 40.6828, lon: 46.3606 },
+  ganja: { lat: 40.6828, lon: 46.3606 },
   sheki: { lat: 41.1919, lon: 47.1706 },
-  lenkoran: { lat: 38.7535, lon: 48.8511 },
+  lankaran: { lat: 38.7535, lon: 48.8511 },
   gabala: { lat: 40.9825, lon: 47.8094 },
   shamakhi: { lat: 40.6316, lon: 48.6413 },
-  quba: { lat: 41.3603, lon: 48.5129 },
-  naftalan: { lat: 40.4783, lon: 46.8223 },
+  guba: { lat: 41.3603, lon: 48.5129 },
+  qusar: { lat: 41.4345, lon: 48.5161 },
 };
 
 export default async function CityPage({ params }: { params: { slug: string } }) {
@@ -149,6 +149,92 @@ export default async function CityPage({ params }: { params: { slug: string } })
                     </div>
                   </div>
                 </Link>
+              ))}
+            </div>
+          </section>
+
+          {/* Things to Do Section */}
+          <section className="mb-12">
+            <h2 className="text-2xl font-bold text-gray-800 mb-6">Things to Do in {city.name}</h2>
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+              {[
+                { icon: "🎭", title: "Cultural Experiences", desc: "Visit museums, galleries, and historic sites" },
+                { icon: "🍽️", title: "Local Cuisine", desc: "Taste authentic Azerbaijani dishes" },
+                { icon: "🏔️", title: "Nature & Adventure", desc: "Hiking, skiing, or relaxing in nature" },
+                { icon: "🛍️", title: "Shopping & Crafts", desc: "Local markets and traditional crafts" },
+              ].map((item, index) => (
+                <div key={index} className="flex items-start gap-4 bg-white p-4 rounded-lg shadow-sm">
+                  <span className="text-2xl">{item.icon}</span>
+                  <div>
+                    <h3 className="font-semibold text-gray-800">{item.title}</h3>
+                    <p className="text-sm text-gray-600">{item.desc}</p>
+                  </div>
+                </div>
+              ))}
+            </div>
+          </section>
+
+          {/* Tips Section */}
+          <section className="mb-12">
+            <h2 className="text-2xl font-bold text-gray-800 mb-6">Travel Tips for {city.name}</h2>
+            <div className="bg-gradient-to-r from-[#00AA6C] to-[#00885C] text-white p-6 rounded-xl">
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+                <div>
+                  <h3 className="font-semibold mb-3 flex items-center gap-2">
+                    <span>💡</span> Pro Tips
+                  </h3>
+                  <ul className="space-y-2 text-sm text-white/90">
+                    <li className="flex items-start gap-2">
+                      <span className="text-white">•</span>
+                      <span>Best time to visit is {city.bestTime}</span>
+                    </li>
+                    <li className="flex items-start gap-2">
+                      <span className="text-white">•</span>
+                      <span>From Baku: {city.distanceFromBaku} ({city.transport})</span>
+                    </li>
+                    <li className="flex items-start gap-2">
+                      <span className="text-white">•</span>
+                      <span>Local language: Azerbaijani (Russian widely spoken)</span>
+                    </li>
+                  </ul>
+                </div>
+                <div>
+                  <h3 className="font-semibold mb-3 flex items-center gap-2">
+                    <span>📍</span> Getting Around
+                  </h3>
+                  <ul className="space-y-2 text-sm text-white/90">
+                    <li className="flex items-start gap-2">
+                      <span className="text-white">•</span>
+                      <span>Local buses and minibuses available</span>
+                    </li>
+                    <li className="flex items-start gap-2">
+                      <span className="text-white">•</span>
+                      <span>Taxis are affordable (negotiate price)</span>
+                    </li>
+                    <li className="flex items-start gap-2">
+                      <span className="text-white">•</span>
+                      <span>Renting a car gives flexibility</span>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </section>
+
+          {/* Hidden Gems Section */}
+          <section className="mb-12">
+            <h2 className="text-2xl font-bold text-gray-800 mb-6">Hidden Gems in {city.name}</h2>
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+              {[
+                { title: "Local Tea Houses", desc: "Experience traditional tea culture", icon: "🫖" },
+                { title: "Village Markets", desc: "Authentic local atmosphere", icon: "🏪" },
+                { title: "Scenic Viewpoints", desc: "Best photo spots", icon: "📸" },
+              ].map((item, index) => (
+                <div key={index} className="bg-white p-5 rounded-lg shadow-sm border-l-4 border-[#00AA6C]">
+                  <div className="text-2xl mb-2">{item.icon}</div>
+                  <h3 className="font-semibold text-gray-800 mb-1">{item.title}</h3>
+                  <p className="text-sm text-gray-600">{item.desc}</p>
+                </div>
               ))}
             </div>
           </section>

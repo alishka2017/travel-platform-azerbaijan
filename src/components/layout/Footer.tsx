@@ -89,6 +89,11 @@ export default function Footer() {
                 { href: '/restaurants', label: 'Restaurants' },
                 { href: '/things-to-do', label: 'Things to Do' },
                 { href: '/itineraries', label: 'Itineraries' },
+                { href: '/visa', label: 'Visa Info' },
+                { href: '/insurance', label: 'Insurance' },
+                { href: '/transfers', label: 'Transfers' },
+                { href: '/excursions', label: 'Excursions' },
+                { href: '/rental', label: 'Car Rental' },
                 { href: '/hidden-gems', label: 'Hidden Gems' },
               ].map((item) => (
                 <li key={item.href}>

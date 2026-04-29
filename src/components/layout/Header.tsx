@@ -28,6 +28,8 @@ export default function Header() {
               { href: '/things-to-do', label: 'Things to Do', icon: '🎭' },
               { href: '/restaurants', label: 'Dining', icon: '🍽️' },
               { href: '/tours', label: 'Tours', icon: '🚌' },
+              { href: '/blog', label: 'Blog', icon: '📖' },
+              { href: '/visa', label: 'Visa', icon: '📋' },
               { href: '/itineraries', label: 'Itineraries', icon: '🗺️' },
             ].map((item) => (
               <Link

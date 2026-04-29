@@ -5,6 +5,27 @@ import Footer from '@/components/layout/Footer';
 const itineraries = [
   {
     id: 1,
+    name: '1-Day Baku Discovery',
+    tag: 'City Break',
+    difficulty: 'Easy',
+    description: 'A perfect day in Baku covering the Old City, modern landmarks, and local cuisine.',
+    days: [
+      {
+        day: 'Day 1',
+        title: 'Baku in One Day',
+        activities: [
+          'Morning: Start at Icherisheher (Old City) - Visit Maiden Tower',
+          'Explore the Palace of Shirvanshahs (UNESCO World Heritage Site)',
+          'Lunch at a traditional restaurant in the Old City',
+          'Afternoon: Walk along Baku Boulevard and visit the Carpet Museum',
+          'Evening: Sunset from Highland Park with panoramic city views',
+          'Dinner at a local restaurant in Fountain Square'
+        ]
+      }
+    ]
+  },
+  {
+    id: 2,
     name: '3-Day Azerbaijan',
     tag: 'Short Trip',
     difficulty: 'Easy',
@@ -46,7 +67,7 @@ const itineraries = [
     ]
   },
   {
-    id: 2,
+    id: 3,
     name: '5-Day Azerbaijan',
     tag: 'Classic Trip',
     difficulty: 'Medium',
@@ -80,7 +101,7 @@ const itineraries = [
     ]
   },
   {
-    id: 3,
+    id: 4,
     name: '7-Day Azerbaijan',
     tag: 'Complete Experience',
     difficulty: 'Medium',
@@ -88,43 +109,79 @@ const itineraries = [
     days: [
       {
         day: 'Day 1',
-        title: 'Baku Arrival',
-        activities: ['City orientation', 'Old City walk', 'Evening at Flame Towers']
+        title: 'Baku Arrival & Old City',
+        activities: [
+          'Arrive in Baku and transfer to hotel',
+          'Afternoon: Explore Icherisheher (Old City)',
+          'Visit Maiden Tower and Shirvanshahs Palace',
+          'Evening: Dinner at traditional restaurant in Old City'
+        ]
       },
       {
         day: 'Day 2',
         title: 'Gobustan & Mud Volcanoes',
-        activities: ['Rock art exploration', 'Mud volcano experience', 'Caspian coast']
+        activities: [
+          'Morning: Drive to Gobustan National Park (60km)',
+          'Explore 40,000-year-old rock carvings with expert guide',
+          'Afternoon: Visit unique mud volcanoes field',
+          'Stop at Ateshgah Fire Temple on return',
+          'Evening: Return to Baku, dinner at seaside restaurant'
+        ]
       },
       {
         day: 'Day 3',
         title: 'Gabala Mountains',
-        activities: ['Mountain drive', 'Cable car ride', 'Lake Nohur visit']
+        activities: [
+          'Morning: Scenic drive to Gabala (220km)',
+          'Afternoon: Take cable car at Tufandag Mountain Resort',
+          'Hike around crystal-clear Nohur Lake',
+          'Evening: Overnight in Gabala mountain resort'
+        ]
       },
       {
         day: 'Day 4',
         title: 'Sheki Historic City',
-        activities: ['Khan Palace tour', 'Caravanserai stay option', 'Local crafts']
+        activities: [
+          'Morning: Continue to Sheki (100km from Gabala)',
+          'Afternoon: Tour magnificent Sheki Khan Palace (UNESCO)',
+          'Explore ancient Caravanserai and Silk Museum',
+          'Evening: Stay overnight in restored caravanserai hotel'
+        ]
       },
       {
         day: 'Day 5',
-        title: 'Lankaran Coast',
-        activities: ['Drive to Caspian coast', 'Hirkan Forest walk', 'Beach relaxation']
+        title: 'Lankaran & Caspian Coast',
+        activities: [
+          'Morning: Drive to Lankaran (250km from Sheki)',
+          'Afternoon: Walk through Hirkan National Forest (UNESCO)',
+          'Visit tea plantations and enjoy coastal views',
+          'Evening: Seafood dinner on Caspian coast'
+        ]
       },
       {
         day: 'Day 6',
         title: 'Ganja Cultural City',
-        activities: ['Nizami Mausoleum', 'City parks', 'Local cuisine']
+        activities: [
+          'Morning: Drive to Ganja (200km from Lankaran)',
+          'Afternoon: Visit Nizami Mausoleum and Juma Mosque',
+          'Explore beautiful parks and city center',
+          'Evening: Traditional Ganja cuisine dinner'
+        ]
       },
       {
         day: 'Day 7',
         title: 'Return to Baku & Departure',
-        activities: ['Morning shopping', 'Last sightseeing', 'Airport transfer']
+        activities: [
+          'Morning: Shopping at Taza Bazaar in Baku',
+          'Visit Heydar Aliyev Center (architecture marvel)',
+          'Afternoon: Last-minute sightseeing or relaxation',
+          'Evening: Airport transfer and departure'
+        ]
       }
     ]
   },
   {
-    id: 4,
+    id: 5,
     name: '10-Day Azerbaijan',
     tag: 'Extended Experience',
     difficulty: 'Easy',

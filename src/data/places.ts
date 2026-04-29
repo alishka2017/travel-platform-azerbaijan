@@ -56,7 +56,7 @@ export const cities: City[] = [
   {
     id: "ganja",
     name: "Ganja",
-    slug: "gandja",
+    slug: "ganja",
     country: "Azerbaijan",
     region: "Ganja-Dashkasan",
     population: "330,000",
@@ -92,7 +92,7 @@ export const cities: City[] = [
     country: "Azerbaijan",
     region: "Shaki-Zaqatala",
     population: "65,000",
-    description: "Sheki, nestled in the foothills of the Greater Caucasus Mountains, is one of Azerbaijan's most beautiful and historic cities. A UNESCO World Heritage Site, the stunning Sheki Khan Palace showcases exquisite stained glass work and Persian-influenced architecture. The city is renowned for its traditional silk production, local crafts, and the famous Sheki halva. The charming Old Town with its historic caravanserais and artisan workshops offers a glimpse into Silk Road history.",
+    description: "Sheki, nestled in the foothills of the Greater Caucasus Mountains, is one of Azerbaijan\'s most beautiful and historic cities. A UNESCO World Heritage Site, the stunning Sheki Khan Palace showcases exquisite stained glass work and Persian-influenced architecture. The city is renowned for its traditional silk production, local crafts, and the famous Sheki halva. The charming Old Town with its historic caravanserais and artisan workshops offers a glimpse into Silk Road history. Sheki is also known for its mineral water springs and mild climate.",
     heroImage: "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d8/Sheki_Khan_Palace.jpg/1280px-Sheki_Khan_Palace.jpg",
     bestTime: "May-September",
     distanceFromBaku: "300 km",
@@ -108,7 +108,7 @@ export const cities: City[] = [
     country: "Azerbaijan",
     region: "Gabala District",
     population: "15,000",
-    description: "Gabala is Azerbaijan's premier mountain resort destination, offering year-round activities in a stunning natural setting. The magnificent Tufandag Mountain Resort features modern cable cars, ski slopes, and hiking trails with panoramic views of the Caucasus Mountains. The peaceful Nohur Lake and surrounding forests provide opportunities for outdoor adventures, while the ancient Chukhur Gabala archaeological site reveals the region's 2,500-year history.",
+    description: "Gabala is Azerbaijan's premier mountain resort destination, offering year-round activities in a stunning natural setting. The magnificent Tufandag Mountain Resort features modern cable cars, ski slopes, and hiking trails with panoramic views of the Caucasus Mountains. The peaceful Nohur Lake and surrounding forests provide opportunities for outdoor adventures, while the ancient Chukhur Gabala archaeological site reveals the region's 2,500-year history. Gabala is also famous for its entertainment park \"Gabaland\" and the city's philharmonic orchestra.",
     heroImage: "https://images.unsplash.com/photo-1519681393784-d120267933ba?q=80&w=1280&auto=format&fit=crop",
     bestTime: "December-March (skiing), June-August (hiking)",
     distanceFromBaku: "220 km",
@@ -132,7 +132,24 @@ export const cities: City[] = [
     topAttractions: ["Hirkan National Forest", "Lankaran Fortress", "Girdiman River", "Tea Plantations"],
     topRestaurants: ["Lankaran Tea House", "Caspian Fish Restaurant", "Lankaran Bazaar"],
     topHotels: ["Lankaran Resort & Spa", "Romantic Hotel Lankaran"]
-  }
+  },
+  {
+    id: "guba",
+    name: "Guba",
+    slug: "guba",
+    country: "Azerbaijan",
+    region: "Guba-Khachmaz",
+    population: "40,000",
+    description: "Guba, located in the foothills of the Greater Caucasus Mountains, is a gateway to Azerbaijan's most stunning natural landscapes and ancient mountain villages. The region is famous for the breathtaking Khinalig village, one of the highest permanently inhabited settlements in Europe, and the magnificent Guba Waterfall. Visitors can explore traditional carpet weaving workshops, taste authentic mountain cuisine, and experience the unique culture of the Lezgin and other ethnic communities that have preserved their traditions for centuries.",
+    heroImage: "https://upload.wikimedia.org/wikipedia/commons/thumb/0/08/Khinalig_village_Guba_Azerbaijan.jpg/1280px-Khinalig_village_Guba_Azerbaijan.jpg",
+    bestTime: "May-September",
+    distanceFromBaku: "170 km",
+    transport: "Bus, car",
+    topAttractions: ["Khinalig Village", "Guba Waterfall", "Afurdzhi Waterfall", "Quba Mosque"],
+    topRestaurants: ["Mountain View Restaurant", "Guba Bazaar", "Khinalig Guesthouse"],
+    topHotels: ["Guba Hotel", "Khinalig Guesthouse", "Quba Resort"]
+  },
+
 ];
 
 export const places: Place[] = [
@@ -188,7 +205,7 @@ export const places: Place[] = [
     lat: 40.3777,
     lon: 49.8312
   },
-  {
+{
     id: "highland-park",
     name: "Highland Park",
     city: "Baku",
@@ -212,7 +229,7 @@ export const places: Place[] = [
     lat: 40.3500,
     lon: 49.8300
   },
-  {
+{
     id: "baku-city-tour",
     name: "Baku City Tour (Full Day)",
     city: "Baku",
@@ -236,7 +253,7 @@ export const places: Place[] = [
     lat: 40.3777,
     lon: 49.8312
   },
-  {
+{
     id: "gobustan-mud-volcanoes-tour",
     name: "Gobustan & Mud Volcanoes Day Trip",
     city: "Baku",
@@ -260,7 +277,7 @@ export const places: Place[] = [
     lat: 40.3833,
     lon: 50.0167
   },
-  {
+{
     id: "sheki-historical-tour",
     name: "Sheki Historical Tour (2 Days)",
     city: "Sheki",
@@ -284,7 +301,7 @@ export const places: Place[] = [
     lat: 41.1919,
     lon: 47.1706
   },
-  {
+{
     id: "gabala-mountain-adventure",
     name: "Gabala Mountain Adventure",
     city: "Gabala",
@@ -308,7 +325,7 @@ export const places: Place[] = [
     lat: 40.9825,
     lon: 47.8094
   },
-  {
+{
     id: "baku-food-tour",
     name: "Food & Culture Tour Baku",
     city: "Baku",
@@ -332,7 +349,7 @@ export const places: Place[] = [
     lat: 40.3653,
     lon: 49.8335
   },
-  {
+{
     id: "malacannes-145",
     name: "Malacannes 145",
     city: "Baku",
@@ -356,7 +373,7 @@ export const places: Place[] = [
     lat: 40.3733,
     lon: 49.8511
   },
-  {
+{
     id: "dolma-restaurant",
     name: "Dolma Restaurant",
     city: "Baku",
@@ -380,7 +397,7 @@ export const places: Place[] = [
     lat: 40.3733,
     lon: 49.8533
   },
-  {
+{
     id: "firuze-restaurant",
     name: "Firuze Restaurant",
     city: "Baku",
@@ -404,7 +421,7 @@ export const places: Place[] = [
     lat: 40.3700,
     lon: 49.8300
   },
-  {
+{
     id: "passage-145",
     name: "Passage 145",
     city: "Baku",
@@ -428,7 +445,7 @@ export const places: Place[] = [
     lat: 40.3710,
     lon: 49.8500
   },
-  {
+{
     id: "nergiz-restaurant",
     name: "Nergiz Restaurant",
     city: "Baku",
@@ -452,7 +469,7 @@ export const places: Place[] = [
     lat: 40.3720,
     lon: 49.8520
   },
-  {
+{
     id: "araz-terrace",
     name: "Araz Terrace",
     city: "Baku",
@@ -476,7 +493,7 @@ export const places: Place[] = [
     lat: 40.3700,
     lon: 49.8400
   },
-  {
+{
     id: "sirvansah-musey",
     name: "Sirvansah Musey",
     city: "Baku",
@@ -500,7 +517,7 @@ export const places: Place[] = [
     lat: 40.3760,
     lon: 49.8560
   },
-  {
+{
     id: "ateshgah-fire-temple",
     name: "Ateshgah Fire Temple",
     city: "Baku",
@@ -524,7 +541,7 @@ export const places: Place[] = [
     lat: 40.4116,
     lon: 50.0094
   },
-  {
+{
     id: "fountain-square",
     name: "Fountain Square",
     city: "Baku",
@@ -548,7 +565,7 @@ export const places: Place[] = [
     lat: 40.3733,
     lon: 49.8511
   },
-  {
+{
     id: "nizami-street",
     name: "Nizami Street",
     city: "Baku",
@@ -572,7 +589,7 @@ export const places: Place[] = [
     lat: 40.3733,
     lon: 49.8511
   },
-  {
+{
     id: "palace-of-shirvanshahs",
     name: "Palace of Shirvanshahs",
     city: "Baku",
@@ -596,7 +613,7 @@ export const places: Place[] = [
     lat: 40.3653,
     lon: 49.8335
   },
-  {
+{
     id: "baku-city-highlights-tour",
     name: "Baku City Highlights Tour",
     city: "Baku",
@@ -620,7 +637,7 @@ export const places: Place[] = [
     lat: 40.4093,
     lon: 49.8671
   },
-  {
+{
     id: "gobustan-mud-volcanoes-day-trip",
     name: "Gobustan & Mud Volcanoes Day Trip",
     city: "Baku",
@@ -639,7 +656,7 @@ export const places: Place[] = [
     lat: 40.1146,
     lon: 49.3562
   },
-  {
+{
     id: "sheki-historical-2-day-tour",
     name: "Sheki Historical 2-Day Tour",
     city: "Sheki",
@@ -658,26 +675,7 @@ export const places: Place[] = [
     lat: 41.1919,
     lon: 47.1706
   },
-  {
-    id: "gabala-mountain-adventure",
-    name: "Gabala Mountain Adventure",
-    city: "Gabala",
-    citySlug: "gabala",
-    category: "Tours",
-    rating: 4.7,
-    reviewsCount: 298,
-    description: "Escape to the mountains! Take the scenic cable car at Tufandag resort, hike to crystal-clear Nohur Lake, and visit hidden waterfalls in the Caucasus foothills.",
-    address: "Gabala Region",
-    image: "https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?w=800&q=80",
-    gallery: [],
-    openingHours: "1 day",
-    tips: ["Tufandag Cable Car", "Nohur Lake", "Gabala Waterfalls"],
-    tags: ["Adventure", "1 day", "Cable Car"],
-    priceLevel: "From 50 AZN",
-    lat: 40.9678,
-    lon: 47.8128
-  },
-  {
+{
     id: "baku-food-culture-tour",
     name: "Baku Food & Culture Tour",
     city: "Baku",
@@ -696,7 +694,7 @@ export const places: Place[] = [
     lat: 40.4093,
     lon: 49.8671
   },
-  {
+{
     id: "lankaran-nature-tea-tour",
     name: "Lankaran Nature & Tea Tour",
     city: "Lankaran",
@@ -714,6 +712,125 @@ export const places: Place[] = [
     priceLevel: "From 45 AZN",
     lat: 38.7538,
     lon: 48.8511
+  },
+{
+    id: "khinalig-village",
+    name: "Khinalig Village",
+    city: "Guba",
+    citySlug: "guba",
+    category: "Historic Sites",
+    rating: 4.8,
+    reviewsCount: 342,
+    description: "Khinalig is one of the highest permanently inhabited villages in Europe, sitting at an altitude of 2,350 meters. This ancient mountain village is home to the Khinalig people, who have preserved their unique language, culture, and traditions for centuries. The village offers breathtaking views of the Caucasus Mountains and features traditional stone houses built into the mountainside.",
+    address: "Khinalig, Guba District",
+    image: "https://upload.wikimedia.org/wikipedia/commons/thumb/0/08/Khinalig_village_Guba_Azerbaijan.jpg/1280px-Khinalig_village_Guba_Azerbaijan.jpg",
+    gallery: [
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/0/08/Khinalig_village_Guba_Azerbaijan.jpg/1280px-Khinalig_village_Guba_Azerbaijan.jpg"
+    ],
+    openingHours: "Always open",
+    tips: [
+      "Wear comfortable shoes for mountain terrain",
+      "Bring warm clothes even in summer",
+      "Try local dairy products",
+      "Respect local customs and traditions"
+    ],
+    tags: ["village", "mountains", "UNESCO", "traditional", "Guba"],
+    priceLevel: null,
+    lat: 41.1747,
+    lon: 48.1319
+  },
+{
+    id: "guba-waterfall",
+    name: "Guba Waterfall",
+    city: "Guba",
+    citySlug: "guba",
+    category: "Nature",
+    rating: 4.7,
+    reviewsCount: 256,
+    description: "The magnificent Guba Waterfall is a stunning natural attraction located in the foothills of the Caucasus Mountains. The waterfall cascades down from a height of 30 meters into a crystal-clear pool, surrounded by lush green forests and rocky cliffs. It's a popular spot for hiking, picnicking, and photography.",
+    address: "Guba District",
+    image: "https://images.unsplash.com/photo-1500534314209-a25ddb2bd429?w=800&q=80",
+    gallery: [],
+    openingHours: "Daylight hours",
+    tips: [
+      "Best visited in spring when water flow is strongest",
+      "Wear waterproof shoes",
+      "Bring a camera for scenic shots"
+    ],
+    tags: ["waterfall", "nature", "hiking", "Guba"],
+    priceLevel: null,
+    lat: 41.3603,
+    lon: 48.5129
+  },
+{
+    id: "quba-mosque",
+    name: "Quba Mosque",
+    city: "Guba",
+    citySlug: "guba",
+    category: "Historic Sites",
+    rating: 4.5,
+    reviewsCount: 189,
+    description: "The historic Quba Mosque is one of the oldest mosques in Azerbaijan, dating back to the 19th century. The mosque features traditional Islamic architecture with a beautiful dome and minaret. It's an important cultural and religious site for the local community.",
+    address: "Guba City Center",
+    image: "https://images.unsplash.com/photo-1585409677983-0f6c41ca9c3b?w=800&q=80",
+    gallery: [],
+    openingHours: "Daily 9:00-18:00",
+    tips: [
+      "Dress modestly when visiting",
+      "Non-Muslims welcome outside prayer times",
+      "Photography allowed in exterior areas"
+    ],
+    tags: ["mosque", "historic", "architecture", "Guba"],
+    priceLevel: null,
+    lat: 41.3603,
+    lon: 48.5129
+  },
+{
+    id: "guba-carpet-workshop",
+    name: "Guba Carpet Workshop",
+    city: "Guba",
+    citySlug: "guba",
+    category: "Shopping",
+    rating: 4.6,
+    reviewsCount: 124,
+    description: "Visit traditional carpet weaving workshops in Guba to see artisans creating beautiful handmade carpets using ancient techniques passed down through generations. You can watch the weaving process, learn about different patterns and symbols, and purchase authentic Azerbaijani carpets.",
+    address: "Guba City",
+    image: "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=800&q=80",
+    gallery: [],
+    openingHours: "Daily 10:00-18:00",
+    tips: [
+      "Ask about the meaning of different patterns",
+      "Prices vary based on size and complexity",
+      "Can arrange custom orders"
+    ],
+    tags: ["carpets", "shopping", "crafts", "workshop", "Guba"],
+    priceLevel: "$$",
+    lat: 41.3603,
+    lon: 48.5129
+  },
+{
+    id: "afurdzhi-waterfall",
+    name: "Afurdzhi Waterfall",
+    city: "Guba",
+    citySlug: "guba",
+    category: "Nature",
+    rating: 4.8,
+    reviewsCount: 98,
+    description: "Afurdzhi Waterfall is a hidden gem in the Guba region, located in a pristine mountain valley. The waterfall drops from a height of 75 meters, making it one of the highest waterfalls in Azerbaijan. The surrounding area is perfect for hiking and nature photography.",
+    address: "Afurdzhi Village, Guba District",
+    image: "https://images.unsplash.com/photo-1439853949127-fa647821eba0?w=800&q=80",
+    gallery: [],
+    openingHours: "Daylight hours",
+    tips: [
+      "Best visited after rainfall",
+      "Wear hiking boots",
+      "Bring water and snacks",
+      "Trail is moderately difficult"
+    ],
+    tags: ["waterfall", "hiking", "nature", "Guba"],
+    priceLevel: null,
+    lat: 41.4500,
+    lon: 48.6000
   }
 ];
 
