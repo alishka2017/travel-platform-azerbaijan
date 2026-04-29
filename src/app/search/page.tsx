@@ -1,102 +1,130 @@
-import Link from 'next/link';
 import Header from '@/components/layout/Header';
 import Footer from '@/components/layout/Footer';
+import Link from 'next/link';
+import { searchPlaces, places } from '@/data/places';
+import { useState } from 'react';
 
-const searchCategories = [
-  { name: 'Cities', icon: '🏙️', items: ['Baku', 'Ganja', 'Sheki', 'Lankaran', 'Gabala', 'Shamakhi', 'Quba', 'Naftalan'] },
-  { name: 'Attractions', icon: '📍', items: ['Old City', 'Flame Towers', 'Sheki Palace', 'Gobustan', 'Hirkan Forest', 'Tufandag Resort'] },
-  { name: 'Things to Do', icon: '🎯', items: ['Cultural Tours', 'Nature Hikes', 'Food Experiences', 'Nightlife', 'Shopping', 'Spa & Wellness'] },
-  { name: 'Accommodation', icon: '🏨', items: ['Hotels', 'Resorts', 'Boutique Stays', 'Mountain Lodges', 'Beachfront'] }
-];
+export default function SearchPage({ searchParams }: { searchParams: { q?: string } }) {
+  const query = searchParams.q || '';
+  const results = query ? searchPlaces(query) : places.slice(0, 12);
+  const [filter, setFilter] = useState('all');
 
-export default function SearchPage() {
+  const filteredResults = filter === 'all' ? results : results.filter(r => r.category === filter);
+
   return (
-    <div className="min-h-screen flex flex-col bg-gray-50">
+    <div className="min-h-screen bg-gray-50">
       <Header />
-      
-      <main className="flex-1">
-        {/* Hero */}
-        <section className="bg-gray-900 text-white py-16">
-          <div className="container mx-auto px-4">
-            <div className="max-w-3xl mx-auto text-center">
-              <h1 className="text-4xl md:text-5xl font-bold mb-6">Search</h1>
+
+      <div className="max-w-6xl mx-auto px-4 py-8">
+        {/* Search Header */}
+        <div className="mb-8">
+          <h1 className="text-3xl font-bold text-gray-800 mb-4">Search Results</h1>
+          {query && (
+            <p className="text-gray-600">
+              Found {results.length} results for <span className="font-semibold">"{query}"</span>
+            </p>
+          )}
+        </div>
+
+        <div className="flex gap-8">
+          {/* Filters Sidebar */}
+          <div className="w-64 flex-shrink-0">
+            <div className="bg-white p-4 rounded-lg shadow-sm">
+              <h3 className="font-bold text-gray-800 mb-4">Filters</h3>
               
-              {/* Search Box */}
-              <div className="relative">
-                <input
-                  type="text"
-                  placeholder="Search for cities, attractions, or activities..."
-                  className="w-full px-6 py-4 rounded-full text-gray-800 text-lg shadow-lg focus:outline-none focus:ring-4 focus:ring-blue-300"
-                />
-                <button className="absolute right-2 top-1/2 transform -translate-y-1/2 bg-blue-600 text-white px-6 py-2 rounded-full font-medium hover:bg-blue-700 transition">
-                  Search
-                </button>
+              <div className="mb-6">
+                <h4 className="text-sm font-medium text-gray-600 mb-2">Category</h4>
+                <div className="space-y-2">
+                  {['all', 'Historic Sites', 'Museums', 'Parks & Nature', 'Restaurants', 'Architectural Buildings'].map((cat) => (
+                    <label key={cat} className="flex items-center gap-2 cursor-pointer">
+                      <input 
+                        type="radio" 
+                        name="category" 
+                        checked={filter === cat}
+                        onChange={() => setFilter(cat)}
+                        className="text-[#00AA6C] focus:ring-[#00AA6C]"
+                      />
+                      <span className="text-sm text-gray-700">{cat === 'all' ? 'All Categories' : cat}</span>
+                    </label>
+                  ))}
+                </div>
+              </div>
+
+              <div className="mb-6">
+                <h4 className="text-sm font-medium text-gray-600 mb-2">Rating</h4>
+                <div className="space-y-2">
+                  {[4, 3, 2, 1].map((rating) => (
+                    <label key={rating} className="flex items-center gap-2 cursor-pointer">
+                      <input 
+                        type="checkbox" 
+                        className="text-[#00AA6C] focus:ring-[#00AA6C]"
+                      />
+                      <span className="text-sm text-gray-700">
+                        {'★'.repeat(rating)}{'☆'.repeat(5-rating)} & up
+                      </span>
+                    </label>
+                  ))}
+                </div>
               </div>
             </div>
           </div>
-        </section>
 
-        {/* Search Categories */}
-        <section className="py-12">
-          <div className="container mx-auto px-4">
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
-              {searchCategories.map((category, index) => (
-                <div key={index} className="bg-white rounded-xl shadow-sm overflow-hidden">
-                  <div className="bg-gray-100 p-4 flex items-center gap-3">
-                    <span className="text-2xl">{category.icon}</span>
-                    <h3 className="font-semibold text-gray-800">{category.name}</h3>
-                  </div>
-                  <div className="p-4">
-                    <ul className="space-y-2">
-                      {category.items.map((item, i) => (
-                        <li key={i}>
-                          <Link 
-                            href={`/search?q=${encodeURIComponent(item)}`}
-                            className="text-gray-600 hover:text-blue-600 hover:bg-blue-50 px-2 py-1 rounded transition block"
-                          >
-                            {item}
-                          </Link>
-                        </li>
-                      ))}
-                    </ul>
-                  </div>
-                </div>
-              ))}
-            </div>
+          {/* Results List */}
+          <div className="flex-1">
+            {filteredResults.length > 0 ? (
+              <div className="space-y-4">
+                {filteredResults.map((place) => (
+                  <Link 
+                    href={`/attractions/${place.id}`} 
+                    key={place.id}
+                    className="block bg-white rounded-lg shadow-sm hover:shadow-md transition p-4 flex gap-4"
+                  >
+                    <div className="w-48 h-32 flex-shrink-0 rounded overflow-hidden">
+                      <img 
+                        src={place.image} 
+                        alt={place.name}
+                        className="w-full h-full object-cover"
+                      />
+                    </div>
+                    <div className="flex-1">
+                      <div className="flex items-start justify-between">
+                        <div>
+                          <span className="text-xs bg-gray-100 text-gray-600 px-2 py-1 rounded">
+                            {place.category}
+                          </span>
+                          <h3 className="font-bold text-gray-800 mt-1">{place.name}</h3>
+                        </div>
+                        <div className="text-right">
+                          <div className="flex items-center gap-1">
+                            <span className="bg-[#00AA6C] text-white text-xs px-1.5 py-0.5 rounded font-bold">
+                              {place.rating}
+                            </span>
+                            <div className="flex text-yellow-400 text-sm">
+                              {'★'.repeat(Math.floor(place.rating))}
+                            </div>
+                          </div>
+                          <p className="text-xs text-gray-500 mt-1">{place.reviewsCount.toLocaleString()} reviews</p>
+                        </div>
+                      </div>
+                      <p className="text-sm text-gray-600 mt-2 line-clamp-2">{place.description}</p>
+                      <div className="flex items-center gap-4 mt-2 text-xs text-gray-500">
+                        <span>📍 {place.city}</span>
+                        {place.priceLevel && <span>{place.priceLevel}</span>}
+                      </div>
+                    </div>
+                  </Link>
+                ))}
+              </div>
+            ) : (
+              <div className="bg-white p-12 rounded-lg text-center">
+                <div className="text-4xl mb-4">🔍</div>
+                <h3 className="text-xl font-bold text-gray-800 mb-2">No results found</h3>
+                <p className="text-gray-600">Try adjusting your search terms or filters.</p>
+              </div>
+            )}
           </div>
-        </section>
-
-        {/* Popular Searches */}
-        <section className="py-12 bg-gray-100">
-          <div className="container mx-auto px-4 text-center">
-            <h2 className="text-xl font-semibold mb-6 text-gray-700">Popular Searches</h2>
-            <div className="flex flex-wrap justify-center gap-3">
-              {['Baku Old City', 'Sheki Tours', 'Gobustan Park', 'Gabala Skiing', 'Lankaran Beach', 'Azerbaijani Food', 'Baku Nightlife', 'Mountain Villages'].map((search, index) => (
-                <Link 
-                  key={index}
-                  href={`/search?q=${encodeURIComponent(search)}`}
-                  className="bg-white px-4 py-2 rounded-full text-gray-600 hover:bg-blue-100 hover:text-blue-600 transition text-sm"
-                >
-                  {search}
-                </Link>
-              ))}
-            </div>
-          </div>
-        </section>
-
-        {/* Search Tips */}
-        <section className="py-12">
-          <div className="container mx-auto px-4">
-            <div className="max-w-2xl mx-auto text-center">
-              <h2 className="text-xl font-semibold mb-4">Search Tips</h2>
-              <p className="text-gray-600">
-                Try searching for specific cities, attractions, or types of activities. 
-                For example: "restaurants in Baku", "hiking in Gabala", or "beaches in Lankaran".
-              </p>
-            </div>
-          </div>
-        </section>
-      </main>
+        </div>
+      </div>
 
       <Footer />
     </div>
