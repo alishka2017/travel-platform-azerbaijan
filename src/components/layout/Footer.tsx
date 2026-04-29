@@ -5,49 +5,64 @@ export default function Footer() {
     <footer className="bg-gray-900 text-gray-300">
       <div className="container mx-auto px-4 py-12">
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
-          {/* About */}
+          {/* Brand */}
           <div>
-            <h3 className="text-white font-semibold mb-4">AzerbaijanTravel</h3>
+            <div className="flex items-center gap-2 mb-4">
+              <div className="w-8 h-8 bg-blue-600 rounded flex items-center justify-center">
+                <span className="text-white font-bold">A</span>
+              </div>
+              <span className="font-bold text-xl text-white">AzerbaijanTravel</span>
+            </div>
             <p className="text-sm text-gray-400">
-              Ваш гид по лучшим местам Азербайджана. Откройте для себя рестораны, отели и развлечения.
+              Your complete guide to Azerbaijan. Discover hidden gems, local tips, and authentic experiences.
             </p>
           </div>
 
           {/* Cities */}
           <div>
-            <h3 className="text-white font-semibold mb-4">Города</h3>
-            <ul className="space-y-2 text-sm">
-              <li><Link href="/ru/baku" className="hover:text-white transition">Баку</Link></li>
-              <li><Link href="/ru/gabala" className="hover:text-white transition">Габала</Link></li>
-              <li><Link href="/ru/sheki" className="hover:text-white transition">Шеки</Link></li>
-              <li><Link href="/ru/gandja" className="hover:text-white transition">Гянджа</Link></li>
+            <h3 className="font-semibold text-white mb-4">Cities</h3>
+            <ul className="space-y-2">
+              <li><Link href="/cities/baku" className="hover:text-white transition">Baku</Link></li>
+              <li><Link href="/cities/gandja" className="hover:text-white transition">Ganja</Link></li>
+              <li><Link href="/cities/sheki" className="hover:text-white transition">Sheki</Link></li>
+              <li><Link href="/cities/lenkoran" className="hover:text-white transition">Lankaran</Link></li>
+              <li><Link href="/cities/gabala" className="hover:text-white transition">Gabala</Link></li>
             </ul>
           </div>
 
-          {/* Categories */}
+          {/* Explore */}
           <div>
-            <h3 className="text-white font-semibold mb-4">Категории</h3>
-            <ul className="space-y-2 text-sm">
-              <li><Link href="/restaurants" className="hover:text-white transition">Рестораны</Link></li>
-              <li><Link href="/hotels" className="hover:text-white transition">Отели</Link></li>
-              <li><Link href="/attractions" className="hover:text-white transition">Достопримечательности</Link></li>
-              <li><Link href="/tours" className="hover:text-white transition">Туры</Link></li>
+            <h3 className="font-semibold text-white mb-4">Explore</h3>
+            <ul className="space-y-2">
+              <li><Link href="/attractions" className="hover:text-white transition">Attractions</Link></li>
+              <li><Link href="/things-to-do" className="hover:text-white transition">Things to Do</Link></li>
+              <li><Link href="/itineraries" className="hover:text-white transition">Itineraries</Link></li>
+              <li><Link href="/hidden-gems" className="hover:text-white transition">Hidden Gems</Link></li>
             </ul>
           </div>
 
-          {/* Contact */}
+          {/* Guide */}
           <div>
-            <h3 className="text-white font-semibold mb-4">Контакты</h3>
-            <ul className="space-y-2 text-sm">
-              <li>Email: info@azerbaijantravel.az</li>
-              <li>Телефон: +994 50 123 45 67</li>
-              <li>Баку, Азербайджан</li>
+            <h3 className="font-semibold text-white mb-4">Travel Guide</h3>
+            <ul className="space-y-2">
+              <li><Link href="/guide/best-time" className="hover:text-white transition">Best Time to Visit</Link></li>
+              <li><Link href="/guide/visa" className="hover:text-white transition">Visa Info</Link></li>
+              <li><Link href="/guide/currency" className="hover:text-white transition">Currency</Link></li>
+              <li><Link href="/guide/safety" className="hover:text-white transition">Safety</Link></li>
+              <li><Link href="/guide/budget" className="hover:text-white transition">Budget Guide</Link></li>
             </ul>
           </div>
         </div>
 
-        <div className="border-t border-gray-800 mt-8 pt-8 text-center text-sm text-gray-500">
-          <p>© 2024 AzerbaijanTravel. Все права защищены.</p>
+        <div className="border-t border-gray-800 mt-10 pt-8 flex flex-col md:flex-row justify-between items-center">
+          <p className="text-sm text-gray-500">
+            © 2024 AzerbaijanTravel. All rights reserved.
+          </p>
+          <div className="flex items-center gap-6 mt-4 md:mt-0">
+            <Link href="/about" className="text-sm hover:text-white transition">About</Link>
+            <Link href="/contact" className="text-sm hover:text-white transition">Contact</Link>
+            <Link href="/privacy" className="text-sm hover:text-white transition">Privacy</Link>
+          </div>
         </div>
       </div>
     </footer>

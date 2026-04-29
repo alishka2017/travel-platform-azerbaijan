@@ -16,22 +16,19 @@ export default function Header() {
           {/* Navigation */}
           <nav className="hidden md:flex items-center gap-6">
             <Link href="/cities" className="text-gray-600 hover:text-blue-600 transition font-medium">
-              Города
-            </Link>
-            <Link href="/restaurants" className="text-gray-600 hover:text-blue-600 transition font-medium">
-              Рестораны
-            </Link>
-            <Link href="/hotels" className="text-gray-600 hover:text-blue-600 transition font-medium">
-              Отели
+              Cities
             </Link>
             <Link href="/attractions" className="text-gray-600 hover:text-blue-600 transition font-medium">
-              Достопримечательности
+              Attractions
             </Link>
-            <Link href="/tours" className="text-gray-600 hover:text-blue-600 transition font-medium">
-              Туры
+            <Link href="/things-to-do" className="text-gray-600 hover:text-blue-600 transition font-medium">
+              Things to Do
             </Link>
-            <Link href="/blog" className="text-gray-600 hover:text-blue-600 transition font-medium">
-              Блог
+            <Link href="/itineraries" className="text-gray-600 hover:text-blue-600 transition font-medium">
+              Itineraries
+            </Link>
+            <Link href="/guide" className="text-gray-600 hover:text-blue-600 transition font-medium">
+              Travel Guide
             </Link>
           </nav>
 
@@ -42,18 +39,10 @@ export default function Header() {
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
               </svg>
             </Link>
-            <Link href="/contact" className="bg-blue-600 text-white px-4 py-2 rounded-md hover:bg-blue-700 transition">
-              Связаться
+            <Link href="/plan-trip" className="bg-blue-600 text-white px-4 py-2 rounded-full font-medium hover:bg-blue-700 transition">
+              Plan Trip
             </Link>
           </div>
-        </div>
-
-        {/* Sub Navigation */}
-        <div className="hidden md:flex items-center gap-6 pb-3 text-sm text-gray-500">
-          <Link href="/visas" className="hover:text-blue-600 transition">Визы</Link>
-          <Link href="/guides" className="hover:text-blue-600 transition">Гиды</Link>
-          <Link href="/transfers" className="hover:text-blue-600 transition">Трансферы</Link>
-          <Link href="/forum" className="hover:text-blue-600 transition">Форум</Link>
         </div>
       </div>
     </header>

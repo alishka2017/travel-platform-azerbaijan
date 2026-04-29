@@ -2,258 +2,258 @@ import Header from '@/components/layout/Header';
 import Footer from '@/components/layout/Footer';
 import Link from 'next/link';
 
-// Реальные данные о городах Азербайджана
+// TOP CITIES
 const cities = [
   {
     id: 1,
-    name: 'Баку',
+    name: 'Baku',
     slug: 'baku',
-    description: 'Столица Азербайджана, расположенная на западном берегу Каспийского моря. Современный мегаполис с богатой историей, где сочетаются древние памятники архитектуры и ультрасовременные небоскребы.',
-    facts: ['Население: 2.3 млн', 'Основан: I век до н.э.', 'Расположение: Каспийское побережье'],
-    image: '/images/baku.jpg'
+    description: 'Capital city on the Caspian Sea with ancient walled city and modern skyscrapers. Perfect blend of history and future.',
+    tag: 'modern',
+    tagColor: 'blue'
   },
   {
     id: 2,
-    name: 'Габала',
-    slug: 'gabala',
-    description: 'Город в предгорьях Кавказа, известный как крупнейший горнолыжный курорт Азербайджана. Окружен величественными горами и хвойными лесами.',
-    facts: ['Население: 13 тыс.', 'Высота: 700-1500 м', 'Курортный сезон: декабрь-март'],
-    image: '/images/gabala.jpg'
+    name: 'Ganja',
+    slug: 'gandja',
+    description: 'Second-largest city with beautiful parks and rich cultural heritage. Known for its flower gardens and historic mosques.',
+    tag: 'culture',
+    tagColor: 'purple'
   },
   {
     id: 3,
-    name: 'Шеки',
+    name: 'Sheki',
     slug: 'sheki',
-    description: 'Древний город на Великом Шелковом пути с 2700-летней историей. Известен своими историческими зданиями, включая Дворец Шеки Ханов — памятник Всемирного наследия ЮНЕСКО.',
-    facts: ['Население: 63 тыс.', 'Основан: I тысячелетие до н.э.', 'ЮНЕСКО: с 2019 года'],
-    image: '/images/sheki.jpg'
+    description: 'Historic mountain town with stunning architecture and silk road heritage. UNESCO World Heritage site.',
+    tag: 'history',
+    tagColor: 'amber'
   },
   {
     id: 4,
-    name: 'Гянджа',
-    slug: 'gandja',
-    description: 'Второй по величине город Азербайджана, один из древнейших городов Кавказа. Исторический центр с богатым культурным наследием.',
-    facts: ['Население: 330 тыс.', 'Основан: IV-V века', 'История: 2500 лет'],
-    image: '/images/gandja.jpg'
+    name: 'Lankaran',
+    slug: 'lenkoran',
+    description: 'Coastal resort on Caspian Sea with beaches and national park. Famous for tea plantations and mild climate.',
+    tag: 'nature',
+    tagColor: 'green'
   },
   {
     id: 5,
-    name: 'Ленкорань',
-    slug: 'lenkoran',
-    description: 'Курортный город на юге Азербайджана у Каспийского моря. Известен своими пляжами, термальными источниками и уникальной природой.',
-    facts: ['Население: 51 тыс.', 'Курортный сезон: май-сентябрь', 'Температура летом: +25-30°C'],
-    image: '/images/lenkoran.jpg'
-  },
-  {
-    id: 6,
-    name: 'Шахдаг',
-    slug: 'shahdag',
-    description: 'Современный горнолыжный курорт в Кавказских горах. Один из крупнейших горнолыжных центров региона с круглогодичным отдыхом.',
-    facts: ['Высота: до 3000 м', 'Сезон: декабрь-апрель', 'Протяженность трасс: 40 км'],
-    image: '/images/shahdag.jpg'
+    name: 'Gabala',
+    slug: 'gabala',
+    description: 'Mountain resort area with ski slopes and natural beauty. Perfect for outdoor activities and family vacations.',
+    tag: 'nature',
+    tagColor: 'green'
   }
 ];
 
-// Лучшие рестораны
-const topRestaurants = [
+// TOP ATTRACTIONS (25 items)
+const attractions = [
+  { id: 1, name: 'Old City (Icherisheher)', city: 'Baku', type: 'history', description: 'Ancient fortress with medieval walls and historic buildings.' },
+  { id: 2, name: 'Maiden Tower', city: 'Baku', type: 'history', description: '12th-century tower with panoramic city views.' },
+  { id: 3, name: 'Flame Towers', city: 'Baku', type: 'modern', description: 'Iconic skyscrapers lighting up the skyline.' },
+  { id: 4, name: 'Baku Boulevard', city: 'Baku', type: 'nature', description: 'Scenic promenade along the Caspian Sea.' },
+  { id: 5, name: 'Gobustan National Park', city: 'Baku', type: 'nature', description: 'Ancient rock carvings and mud volcanoes.' },
+  { id: 6, name: 'Heydar Aliyev Center', city: 'Baku', type: 'modern', description: 'Stunning modern architecture by Zaha Hadid.' },
+  { id: 7, name: 'Shirvanshah Palace', city: 'Baku', type: 'history', description: 'Medieval palace complex in Old City.' },
+  { id: 8, name: 'Ateshgah Fire Temple', city: 'Baku', type: 'history', description: 'Ancient Zoroastrian fire temple.' },
+  { id: 9, name: 'Martyrs Lane', city: 'Baku', type: 'history', description: 'Memorial with city views and history.' },
+  { id: 10, name: 'Yanar Dag', city: 'Baku', type: 'nature', description: 'Eternal natural gas fire on mountain.' },
+  { id: 11, name: 'Sheki Khan Palace', city: 'Sheki', type: 'history', description: '18th-century palace with stained glass.' },
+  { id: 12, name: 'Caravanserai Sheki', city: 'Sheki', type: 'history', description: 'Ancient Silk Road inn restored.' },
+  { id: 13, name: 'Khanega Mosque', city: 'Sheki', type: 'history', description: 'Historic mosque with beautiful minaret.' },
+  { id: 14, name: 'Ganja Gate', city: 'Ganja', type: 'history', description: 'Ancient city gate from medieval times.' },
+  { id: 15, name: 'Nizami Mausoleum', city: 'Ganja', type: 'history', description: 'Tomb of famous Persian poet.' },
+  { id: 16, name: 'Lake Goyazan', city: 'Ganja', type: 'nature', description: 'Scenic mountain lake perfect for hiking.' },
+  { id: 17, name: 'Lankaran Fortress', city: 'Lankaran', type: 'history', description: '18th-century fortress by the sea.' },
+  { id: 18, name: 'Hirkan National Park', city: 'Lankaran', type: 'nature', description: 'Ancient forest with unique wildlife.' },
+  { id: 19, name: 'Talysh Mountains', city: 'Lankaran', type: 'nature', description: 'Beautiful mountain range for trekking.' },
+  { id: 20, name: 'Gabala Cable Car', city: 'Gabala', type: 'nature', description: 'Scenic ride with mountain views.' },
+  { id: 21, name: 'Tufandag Resort', city: 'Gabala', type: 'nature', description: 'Popular ski and summer resort.' },
+  { id: 22, name: 'Nohur Lake', city: 'Gabala', type: 'nature', description: 'Peaceful lake surrounded by mountains.' },
+  { id: 23, name: 'Baku Eye', city: 'Baku', type: 'modern', description: 'Ferris wheel with sea views.' },
+  { id: 24, name: 'Upland Park', city: 'Baku', type: 'nature', description: 'Green park with city panorama.' },
+  { id: 25, name: ' Carpet Museum', city: 'Baku', type: 'culture', description: 'Museum shaped like rolled carpet.' }
+];
+
+// THINGS TO DO
+const thingsToDo = {
+  cultural: [
+    { name: 'Visit Old City', description: 'Walk through medieval streets and historic sites.' },
+    { name: 'Sheki Palace Tour', description: 'Explore stunning 18th-century architecture.' },
+    { name: 'Carpet Weaving', description: 'Watch traditional carpet making process.' },
+    { name: 'Mugham Music', description: 'Listen to traditional Azerbaijani music.' }
+  ],
+  nature: [
+    { name: 'Gobustan Exploration', description: 'See ancient rock carvings and volcanoes.' },
+    { name: 'Hirkan Forest Hike', description: 'Trek through ancient Caspian forest.' },
+    { name: 'Mountain Skiing', description: 'Ski slopes in Gabala and Shahdag.' },
+    { name: 'Caspian Beaches', description: 'Relax on coastal beaches in Lankaran.' }
+  ],
+  food: [
+    { name: 'Plov Tasting', description: 'Try national dish with saffron rice.' },
+    { name: 'Dolma Experience', description: 'Taste stuffed vegetables and grape leaves.' },
+    { name: 'Tea Ceremony', description: 'Traditional tea with local sweets.' },
+    { name: 'Kebab Tour', description: 'Sample grilled meats at local spots.' }
+  ],
+  nightlife: [
+    { name: 'Baku Bars', description: 'Trendy bars in Fountain Square area.' },
+    { name: 'Jazz Clubs', description: 'Live music in historic venues.' },
+    { name: 'Rooftop Lounges', description: 'Drinks with city skyline views.' },
+    { name: 'Beach Clubs', description: 'Summer parties by the Caspian Sea.' }
+  ]
+};
+
+// TRAVEL GUIDE
+const travelGuide = {
+  bestTime: {
+    title: 'Best Time to Visit',
+    content: 'April to June and September to October offer pleasant weather for sightseeing and outdoor activities.'
+  },
+  visa: {
+    title: 'Visa Info',
+    content: 'Many countries enjoy visa-free entry for up to 30 days. E-visa available for other nationalities.'
+  },
+  currency: {
+    title: 'Currency',
+    content: 'Azerbaijani Manat (AZN). Credit cards widely accepted in cities.'
+  },
+  safety: {
+    title: 'Safety Overview',
+    content: 'Azerbaijan is generally safe for tourists. Standard precautions recommended in crowded areas.'
+  },
+  budget: {
+    title: 'Budget Range',
+    content: 'Budget: $30-50/day, Mid-range: $70-120/day, Luxury: $200+/day.'
+  }
+};
+
+// ITINERARIES
+const itineraries = [
   {
     id: 1,
-    name: 'Mugam Club',
-    city: 'Баку',
-    rating: 4.8,
-    reviews: '2,341',
-    cuisine: 'Азербайджанская',
-    description: 'Элегантный ресторан с живой музыкой и традиционной азербайджанской кухней. Идеальное место для ужина в центре Баку с видом на Старый город.',
-    features: ['Живая музыка', 'Терраса', 'Винная карта', 'VIP-зал']
+    name: '3-Day Azerbaijan',
+    days: [
+      { day: 'Day 1', places: ['Old City Baku', 'Flame Towers', 'Baku Boulevard'] },
+      { day: 'Day 2', places: ['Gobustan National Park', 'Mud Volcanoes', 'Ateshgah Temple'] },
+      { day: 'Day 3', places: ['Highland Park', 'Carpet Museum', 'Fountain Square'] }
+    ]
   },
   {
     id: 2,
-    name: 'Şirvanşah',
-    city: 'Баку',
-    rating: 4.7,
-    reviews: '1,876',
-    cuisine: 'Национальная',
-    description: 'Традиционный ресторан с аутентичной азербайджанской кухней и уютной атмосферой. Популярен среди туристов и местных жителей.',
-    features: ['Национальная кухня', 'Дегустация пловов', 'Сувенирный магазин']
+    name: '5-Day Azerbaijan',
+    days: [
+      { day: 'Day 1', places: ['Old City Baku', 'Flame Towers', 'Baku Boulevard'] },
+      { day: 'Day 2', places: ['Gobustan', 'Mud Volcanoes', 'Yanar Dag'] },
+      { day: 'Day 3', places: ['Sheki City', 'Khan Palace', 'Caravanserai'] },
+      { day: 'Day 4', places: ['Sheki Surroundings', 'Local Crafts', 'Mountain Villages'] },
+      { day: 'Day 5', places: ['Return to Baku', 'Shopping', 'Evening Entertainment'] }
+    ]
   },
   {
     id: 3,
-    name: 'Nargiz',
-    city: 'Габала',
-    rating: 4.6,
-    reviews: '987',
-    cuisine: 'Европейская',
-    description: 'Современный ресторан европейской кухни с панорамным видом на горы Кавказа. Идеальное место для романтического ужина.',
-    features: ['Вид на горы', 'Крафтовое пиво', 'Десертная карта']
+    name: '7-Day Azerbaijan',
+    days: [
+      { day: 'Day 1', places: ['Old City Baku', 'Flame Towers', 'Baku Boulevard'] },
+      { day: 'Day 2', places: ['Gobustan', 'Mud Volcanoes', 'Yanar Dag'] },
+      { day: 'Day 3', places: ['Gabala Mountains', 'Cable Car', 'Lake Nohur'] },
+      { day: 'Day 4', places: ['Sheki City', 'Khan Palace', 'Local Wine'] },
+      { day: 'Day 5', places: ['Lankaran Coast', 'Hirkan Forest', 'Beach Time'] },
+      { day: 'Day 6', places: ['Ganja City', 'Nizami Mausoleum', 'Parks'] },
+      { day: 'Day 7', places: ['Return to Baku', 'Last Shopping', 'Departure'] }
+    ]
   }
 ];
 
-// Лучшие отели
-const topHotels = [
-  {
-    id: 1,
-    name: 'Four Seasons Baku',
-    city: 'Баку',
-    rating: 4.9,
-    reviews: '1,543',
-    type: 'Люкс',
-    description: 'Роскошный отель в историческом центре Баку с видом на море и премиальным сервисом. Расположен в здании бывшего особняка начала XX века.',
-    features: ['Спа-центр', 'Бассейн', 'Рестораны', 'Конференц-зал']
-  },
-  {
-    id: 2,
-    name: 'JW Marriott Absheron',
-    city: 'Баку',
-    rating: 4.8,
-    reviews: '2,123',
-    type: 'Премиум',
-    description: 'Современный отель в деловом центре Баку с отличными условиями для бизнеса и отдыха. 5 звезд и высочайший уровень сервиса.',
-    features: ['Спа', 'Фитнес-центр', 'Рестораны', 'Бар на крыше']
-  },
-  {
-    id: 3,
-    name: 'Rixos Gabala',
-    city: 'Габала',
-    rating: 4.7,
-    reviews: '1,234',
-    type: 'Курорт',
-    description: 'Роскошный курорт у подножия Кавказских гор с собственным спа-центром и бассейнами. Идеальное место для семейного отдыха.',
-    features: ['Горнолыжный курорт', 'Спа', 'Бассейны', 'Детский клуб']
-  }
+// HIDDEN GEMS
+const hiddenGems = [
+  { name: 'Lahij Village', description: 'Ancient mountain village with copper crafts.' },
+  { name: 'Khinalig', description: 'Highest village in Azerbaijan, ancient culture.' },
+  { name: 'Girdiman Valley', description: 'Hidden valley with waterfalls and hiking.' },
+  { name: 'Goygol Lake', description: 'Beautiful mountain lake with crystal water.' },
+  { name: 'Local Tea Houses', description: 'Traditional tea experience in villages.' }
 ];
 
-// Лучшие достопримечательности
-const topAttractions = [
-  {
-    id: 1,
-    name: 'Старый город (Ичери Шехер)',
-    city: 'Баку',
-    rating: 4.8,
-    reviews: '3,456',
-    type: 'Исторический',
-    description: 'Древняя крепость с узкими улочками, мечетями и историческими зданиями. Всемирное наследие ЮНЕСКО с 2000 года.',
-    features: ['ЮНЕСКО', 'Экскурсии', 'Сувениры', 'Музеи']
-  },
-  {
-    id: 2,
-    name: 'Гобустан',
-    city: 'Баку',
-    rating: 4.7,
-    reviews: '2,123',
-    type: 'Природа',
-    description: 'Национальный парк с древними наскальными рисунками возрастом до 40 тысяч лет и уникальными грязевыми вулканами.',
-    features: ['Наскальные рисунки', 'Вулканы', 'Экскурсии', 'Музей']
-  },
-  {
-    id: 3,
-    name: 'Дворец Шеки Ханов',
-    city: 'Шеки',
-    rating: 4.9,
-    reviews: '1,876',
-    type: 'Архитектура',
-    description: 'Исторический дворец 18 века с уникальной архитектурой и фресками. Памятник Всемирного наследия ЮНЕСКО.',
-    features: ['ЮНЕСКО', 'Экскурсии', 'Музей', 'Фото']
-  }
-];
-
-// Категории
-const categories = [
-  { name: 'Рестораны', slug: 'restaurants', icon: '🍽️', count: '5,432' },
-  { name: 'Отели', slug: 'hotels', icon: '🏨', count: '3,210' },
-  { name: 'Развлечения', slug: 'attractions', icon: '🎭', count: '2,876' },
-  { name: 'Туры', slug: 'tours', icon: '🚌', count: '1,234' },
-];
-
-// Готовые маршруты
-const routes = [
-  { name: 'Баку за 1 день', slug: 'baku-1-day', description: 'Обзорная экскурсия по столице' },
-  { name: 'Баку за 3 дня', slug: 'baku-3-days', description: 'Полное погружение в столицу' },
-  { name: 'Азербайджан за 7 дней', slug: 'azerbaijan-7-days', description: 'Полный тур по стране' },
-  { name: 'Weekend in Baku', slug: 'weekend-baku', description: 'Короткий отдых в столице' },
-];
-
-export default function Home() {
+export default function HomePage() {
   return (
     <div className="min-h-screen flex flex-col bg-gray-50">
       <Header />
       
-      {/* Hero Section */}
-      <section className="bg-gradient-to-br from-blue-900 via-blue-800 to-blue-900 text-white py-16 md:py-24">
-        <div className="container mx-auto px-4">
-          <div className="max-w-4xl mx-auto text-center">
-            <h1 className="text-4xl md:text-6xl font-bold mb-6 leading-tight">
-              Азербайджан
+      {/* HERO SECTION */}
+      <section className="relative bg-gradient-to-br from-blue-900 via-blue-800 to-blue-900 text-white min-h-[70vh] flex items-center">
+        <div className="absolute inset-0 bg-black opacity-30"></div>
+        <div className="container mx-auto px-4 relative z-10">
+          <div className="max-w-4xl">
+            <div className="flex items-center gap-2 mb-4">
+              <span className="bg-red-500 text-white text-xs px-2 py-1 rounded">🔥 POPULAR DESTINATION</span>
+              <span className="text-blue-200 text-sm">2024 Travel Guide</span>
+            </div>
+            <h1 className="text-5xl md:text-7xl font-bold mb-6 leading-tight">
+              Azerbaijan
             </h1>
-            <p className="text-xl md:text-2xl text-blue-200 mb-8">
-              Откройте для себя лучшие места для отдыха, рестораны и развлечения в стране огней
+            <p className="text-xl md:text-2xl text-blue-100 mb-8 max-w-2xl leading-relaxed">
+              Discover the Land of Fire where ancient Silk Road heritage meets modern architecture. 
+              From Caspian beaches to mountain resorts, experience the unique blend of East and West.
             </p>
-            
-            {/* Search Box */}
-            <div className="bg-white rounded-lg shadow-xl p-4 max-w-3xl mx-auto">
-              <div className="flex flex-col md:flex-row gap-4">
-                <div className="flex-1">
-                  <input
-                    type="text"
-                    placeholder="Куда вы хотите отправиться?"
-                    className="w-full px-4 py-4 border border-gray-300 rounded-md text-gray-800 text-lg focus:outline-none focus:ring-2 focus:ring-blue-500"
-                  />
-                </div>
-                <button className="bg-blue-600 text-white px-8 py-4 rounded-md font-semibold hover:bg-blue-700 transition text-lg">
-                  Поиск
-                </button>
+            <div className="flex flex-wrap gap-4">
+              <Link 
+                href="/explore" 
+                className="bg-white text-blue-900 px-8 py-4 rounded-full font-semibold hover:bg-blue-100 transition text-lg shadow-lg"
+              >
+                Explore Azerbaijan
+              </Link>
+              <Link 
+                href="/plan-trip" 
+                className="border-2 border-white px-8 py-4 rounded-full font-semibold hover:bg-white hover:text-blue-900 transition text-lg"
+              >
+                Plan Your Trip
+              </Link>
+            </div>
+            <div className="flex items-center gap-6 mt-10 text-blue-200">
+              <div className="flex items-center gap-2">
+                <span>⭐ 4.8</span>
+                <span className="text-sm">Travelers Rating</span>
+              </div>
+              <div className="flex items-center gap-2">
+                <span>💬 50K+</span>
+                <span className="text-sm">Reviews</span>
               </div>
             </div>
           </div>
         </div>
       </section>
 
-      {/* Categories */}
-      <section className="py-6 bg-white border-b shadow-sm">
+      {/* TOP CITIES */}
+      <section className="py-16 bg-white">
         <div className="container mx-auto px-4">
-          <div className="flex flex-wrap justify-center gap-8">
-            {categories.map((category) => (
-              <Link
-                key={category.slug}
-                href={`/${category.slug}`}
-                className="flex items-center gap-3 text-gray-700 hover:text-blue-600 transition group"
-              >
-                <span className="text-3xl group-hover:scale-110 transition">{category.icon}</span>
-                <div className="text-left">
-                  <div className="font-semibold">{category.name}</div>
-                  <div className="text-xs text-gray-500">{category.count} объектов</div>
-                </div>
-              </Link>
-            ))}
-          </div>
-        </div>
-      </section>
-
-      {/* Popular Cities */}
-      <section className="py-12">
-        <div className="container mx-auto px-4">
-          <div className="flex justify-between items-center mb-8">
+          <div className="flex justify-between items-center mb-10">
             <div>
-              <h2 className="text-2xl font-bold text-gray-800">Города Азербайджана</h2>
-              <p className="text-gray-500 text-sm">Выберите город для исследования</p>
+              <h2 className="text-3xl font-bold text-gray-800">Top Cities</h2>
+              <p className="text-gray-500 mt-2">Discover the best places to visit in Azerbaijan</p>
             </div>
-            <Link href="/cities" className="text-blue-600 hover:text-blue-800 font-medium flex items-center gap-1">
-              Все города <span>→</span>
+            <Link href="/cities" className="text-blue-600 hover:text-blue-800 font-medium">
+              View All Cities →
             </Link>
           </div>
-          <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-4">
+          <div className="grid grid-cols-1 md:grid-cols-5 gap-6">
             {cities.map((city) => (
               <Link
-                key={city.slug}
-                href={`/ru/${city.slug}`}
-                className="group bg-white rounded-lg shadow-sm overflow-hidden hover:shadow-lg transition transform hover:-translate-y-1"
+                key={city.id}
+                href={`/cities/${city.slug}`}
+                className="group relative rounded-xl overflow-hidden aspect-[3/4] shadow-lg hover:shadow-xl transition"
               >
-                <div className="aspect-square bg-gradient-to-br from-blue-100 to-blue-200 flex items-center justify-center relative">
-                  <span className="text-4xl">🏰</span>
-                  <div className="absolute inset-0 bg-black opacity-0 group-hover:opacity-10 transition"></div>
-                </div>
-                <div className="p-4">
-                  <h3 className="font-semibold text-gray-800 group-hover:text-blue-600">{city.name}</h3>
-                  <p className="text-xs text-gray-500 mt-1 line-clamp-2">{city.description}</p>
+                <div className={`absolute inset-0 bg-gradient-to-br ${
+                  city.tagColor === 'blue' ? 'from-blue-400 to-blue-600' :
+                  city.tagColor === 'purple' ? 'from-purple-400 to-purple-600' :
+                  city.tagColor === 'amber' ? 'from-amber-400 to-amber-600' :
+                  'from-green-400 to-green-600'
+                }`}></div>
+                <div className="absolute inset-0 bg-black opacity-20 group-hover:opacity-30 transition"></div>
+                <div className="absolute bottom-0 left-0 right-0 p-5 text-white">
+                  <span className={`text-xs px-2 py-1 rounded-full bg-white/20 backdrop-blur-sm mb-2 inline-block`}>
+                    {city.tag}
+                  </span>
+                  <h3 className="text-xl font-bold mb-2">{city.name}</h3>
+                  <p className="text-sm text-white/80 line-clamp-2">{city.description}</p>
                 </div>
               </Link>
             ))}
@@ -261,203 +261,209 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Top Restaurants */}
-      <section className="py-12 bg-white">
+      {/* TOP ATTRACTIONS */}
+      <section className="py-16 bg-gray-50">
         <div className="container mx-auto px-4">
-          <div className="flex justify-between items-center mb-8">
+          <div className="flex justify-between items-center mb-10">
             <div>
-              <h2 className="text-2xl font-bold text-gray-800">Лучшие рестораны</h2>
-              <p className="text-gray-500 text-sm">Изысканная кухня на любой вкус</p>
+              <h2 className="text-3xl font-bold text-gray-800">Top Attractions</h2>
+              <p className="text-gray-500 mt-2">25 must-visit places in Azerbaijan</p>
             </div>
-            <Link href="/restaurants" className="text-blue-600 hover:text-blue-800 font-medium flex items-center gap-1">
-              Все рестораны <span>→</span>
+            <Link href="/attractions" className="text-blue-600 hover:text-blue-800 font-medium">
+              View All Attractions →
             </Link>
           </div>
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-            {topRestaurants.map((restaurant, index) => (
-              <div key={restaurant.id} className="bg-gray-50 rounded-lg p-5 flex gap-4 hover:bg-gray-100 transition cursor-pointer group">
-                <div className="text-3xl font-bold text-gray-300 w-8 pt-1">{index + 1}</div>
-                <div className="flex-1">
-                  <h3 className="font-semibold text-gray-800 group-hover:text-blue-600">{restaurant.name}</h3>
-                  <p className="text-sm text-gray-500">{restaurant.city} • {restaurant.cuisine}</p>
-                  <div className="flex items-center gap-2 mt-2">
-                    <span className="bg-green-600 text-white px-2 py-0.5 rounded text-sm font-medium">
-                      ★ {restaurant.rating}
-                    </span>
-                    <span className="text-sm text-gray-500">{restaurant.reviews} отзывов</span>
-                  </div>
-                  <p className="text-sm text-gray-600 mt-2 line-clamp-2">{restaurant.description}</p>
-                  <div className="flex flex-wrap gap-1 mt-2">
-                    {restaurant.features.slice(0, 3).map((feature, i) => (
-                      <span key={i} className="text-xs bg-gray-200 text-gray-600 px-2 py-0.5 rounded">
-                        {feature}
-                      </span>
-                    ))}
-                  </div>
-                </div>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
-
-      {/* Top Hotels */}
-      <section className="py-12">
-        <div className="container mx-auto px-4">
-          <div className="flex justify-between items-center mb-8">
-            <div>
-              <h2 className="text-2xl font-bold text-gray-800">Лучшие отели</h2>
-              <p className="text-gray-500 text-sm">Комфортное проживание в любом городе</p>
-            </div>
-            <Link href="/hotels" className="text-blue-600 hover:text-blue-800 font-medium flex items-center gap-1">
-              Все отели <span>→</span>
-            </Link>
-          </div>
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-            {topHotels.map((hotel) => (
-              <div key={hotel.id} className="bg-white rounded-lg shadow-sm overflow-hidden hover:shadow-md transition cursor-pointer group">
-                <div className="aspect-video bg-gradient-to-br from-gray-200 to-gray-300 flex items-center justify-center relative">
-                  <span className="text-4xl">🏨</span>
-                  <div className="absolute top-2 right-2 bg-blue-600 text-white px-2 py-1 rounded text-sm font-medium">
-                    ★ {hotel.rating}
-                  </div>
-                </div>
-                <div className="p-4">
-                  <h3 className="font-semibold text-gray-800 group-hover:text-blue-600">{hotel.name}</h3>
-                  <p className="text-sm text-gray-500">{hotel.city} • {hotel.type}</p>
-                  <div className="flex items-center gap-2 mt-2">
-                    <span className="text-sm text-gray-500">{hotel.reviews} отзывов</span>
-                  </div>
-                  <p className="text-sm text-gray-600 mt-2 line-clamp-2">{hotel.description}</p>
-                  <div className="flex flex-wrap gap-1 mt-2">
-                    {hotel.features.slice(0, 3).map((feature, i) => (
-                      <span key={i} className="text-xs bg-gray-100 text-gray-600 px-2 py-0.5 rounded">
-                        {feature}
-                      </span>
-                    ))}
-                  </div>
-                </div>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
-
-      {/* Top Attractions */}
-      <section className="py-12 bg-white">
-        <div className="container mx-auto px-4">
-          <div className="flex justify-between items-center mb-8">
-            <div>
-              <h2 className="text-2xl font-bold text-gray-800">Популярные достопримечательности</h2>
-              <p className="text-gray-500 text-sm">Исторические и культурные объекты</p>
-            </div>
-            <Link href="/attractions" className="text-blue-600 hover:text-blue-800 font-medium flex items-center gap-1">
-              Все достопримечательности <span>→</span>
-            </Link>
-          </div>
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-            {topAttractions.map((attraction, index) => (
-              <div key={attraction.id} className="flex gap-4 p-5 bg-gray-50 rounded-lg hover:bg-gray-100 transition cursor-pointer group">
-                <div className="text-3xl font-bold text-gray-300 w-8 pt-1">{index + 1}</div>
-                <div className="flex-1">
-                  <h3 className="font-semibold text-gray-800 group-hover:text-blue-600">{attraction.name}</h3>
-                  <p className="text-sm text-gray-500">{attraction.city} • {attraction.type}</p>
-                  <div className="flex items-center gap-2 mt-2">
-                    <span className="bg-yellow-500 text-white px-2 py-0.5 rounded text-sm font-medium">
-                      ★ {attraction.rating}
-                    </span>
-                    <span className="text-sm text-gray-500">{attraction.reviews} отзывов</span>
-                  </div>
-                  <p className="text-sm text-gray-600 mt-2 line-clamp-2">{attraction.description}</p>
-                  <div className="flex flex-wrap gap-1 mt-2">
-                    {attraction.features.slice(0, 3).map((feature, i) => (
-                      <span key={i} className="text-xs bg-gray-200 text-gray-600 px-2 py-0.5 rounded">
-                        {feature}
-                      </span>
-                    ))}
-                  </div>
-                </div>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
-
-      {/* Ready Routes */}
-      <section className="py-12">
-        <div className="container mx-auto px-4">
-          <div className="flex justify-between items-center mb-8">
-            <div>
-              <h2 className="text-2xl font-bold text-gray-800">Готовые маршруты</h2>
-              <p className="text-gray-500 text-sm">Идеальные планы поездок</p>
-            </div>
-            <Link href="/routes" className="text-blue-600 hover:text-blue-800 font-medium flex items-center gap-1">
-              Все маршруты <span>→</span>
-            </Link>
-          </div>
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
-            {routes.map((route) => (
+          <div className="grid grid-cols-2 md:grid-cols-5 gap-4">
+            {attractions.map((attraction) => (
               <Link
-                key={route.slug}
-                href={`/routes/${route.slug}`}
-                className="bg-gradient-to-br from-blue-600 to-blue-700 text-white p-5 rounded-lg hover:from-blue-700 hover:to-blue-800 transition group"
+                key={attraction.id}
+                href={`/attractions/${attraction.id}`}
+                className="bg-white rounded-lg p-4 shadow-sm hover:shadow-md transition group"
               >
-                <h3 className="font-semibold group-hover:text-blue-200">{route.name}</h3>
-                <p className="text-sm text-blue-200 mt-1">{route.description}</p>
+                <div className="aspect-square bg-gray-200 rounded mb-3 overflow-hidden">
+                  <div className="w-full h-full bg-gradient-to-br from-gray-200 to-gray-300 flex items-center justify-center">
+                    <span className="text-2xl">📍</span>
+                  </div>
+                </div>
+                <div className="flex items-center gap-1 mb-1">
+                  <span className="text-yellow-500 text-sm">★ 4.7</span>
+                </div>
+                <h3 className="font-semibold text-gray-800 group-hover:text-blue-600 text-sm">
+                  {attraction.name}
+                </h3>
+                <p className="text-xs text-gray-500 mt-1">{attraction.city}</p>
+                <p className="text-xs text-gray-600 mt-2 line-clamp-2">{attraction.description}</p>
+                <span className={`text-xs px-2 py-0.5 rounded-full mt-2 inline-block ${
+                  attraction.type === 'history' ? 'bg-amber-100 text-amber-700' :
+                  attraction.type === 'nature' ? 'bg-green-100 text-green-700' :
+                  attraction.type === 'culture' ? 'bg-purple-100 text-purple-700' :
+                  'bg-blue-100 text-blue-700'
+                }`}>
+                  {attraction.type}
+                </span>
               </Link>
             ))}
           </div>
         </div>
       </section>
 
-      {/* CTA Section */}
-      <section className="py-16 bg-blue-900 text-white">
-        <div className="container mx-auto px-4 text-center">
-          <h2 className="text-3xl font-bold mb-4">Планируете поездку в Азербайджан?</h2>
-          <p className="text-blue-200 mb-8 max-w-2xl mx-auto">
-            Найдите лучшие отели, рестораны и развлечения для вашего идеального отдыха в стране огней
-          </p>
-          <div className="flex flex-wrap justify-center gap-4">
-            <Link href="/tours" className="bg-white text-blue-900 px-6 py-3 rounded-full font-semibold hover:bg-blue-100 transition">
-              Туры
-            </Link>
-            <Link href="/guides" className="border-2 border-white px-6 py-3 rounded-full font-semibold hover:bg-white hover:text-blue-900 transition">
-              Гиды
-            </Link>
-            <Link href="/transfers" className="border-2 border-white px-6 py-3 rounded-full font-semibold hover:bg-white hover:text-blue-900 transition">
-              Трансферы
-            </Link>
-            <Link href="/visas" className="border-2 border-white px-6 py-3 rounded-full font-semibold hover:bg-white hover:text-blue-900 transition">
-              Визы
-            </Link>
+      {/* THINGS TO DO */}
+      <section className="py-16 bg-white">
+        <div className="container mx-auto px-4">
+          <h2 className="text-3xl font-bold text-gray-800 mb-10 text-center">Things to Do</h2>
+          <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
+            {/* Cultural */}
+            <div className="bg-amber-50 rounded-xl p-6">
+              <div className="flex items-center gap-3 mb-4">
+                <span className="text-2xl">🎭</span>
+                <h3 className="font-bold text-gray-800">Cultural Experiences</h3>
+              </div>
+              <ul className="space-y-3">
+                {thingsToDo.cultural.map((item, index) => (
+                  <li key={index} className="text-sm text-gray-600">
+                    <span className="font-medium text-gray-800">{item.name}:</span> {item.description}
+                  </li>
+                ))}
+              </ul>
+            </div>
+
+            {/* Nature */}
+            <div className="bg-green-50 rounded-xl p-6">
+              <div className="flex items-center gap-3 mb-4">
+                <span className="text-2xl">🏔️</span>
+                <h3 className="font-bold text-gray-800">Nature Trips</h3>
+              </div>
+              <ul className="space-y-3">
+                {thingsToDo.nature.map((item, index) => (
+                  <li key={index} className="text-sm text-gray-600">
+                    <span className="font-medium text-gray-800">{item.name}:</span> {item.description}
+                  </li>
+                ))}
+              </ul>
+            </div>
+
+            {/* Food */}
+            <div className="bg-red-50 rounded-xl p-6">
+              <div className="flex items-center gap-3 mb-4">
+                <span className="text-2xl">🍽️</span>
+                <h3 className="font-bold text-gray-800">Food Experiences</h3>
+              </div>
+              <ul className="space-y-3">
+                {thingsToDo.food.map((item, index) => (
+                  <li key={index} className="text-sm text-gray-600">
+                    <span className="font-medium text-gray-800">{item.name}:</span> {item.description}
+                  </li>
+                ))}
+              </ul>
+            </div>
+
+            {/* Nightlife */}
+            <div className="bg-purple-50 rounded-xl p-6">
+              <div className="flex items-center gap-3 mb-4">
+                <span className="text-2xl">🌙</span>
+                <h3 className="font-bold text-gray-800">Nightlife</h3>
+              </div>
+              <ul className="space-y-3">
+                {thingsToDo.nightlife.map((item, index) => (
+                  <li key={index} className="text-sm text-gray-600">
+                    <span className="font-medium text-gray-800">{item.name}:</span> {item.description}
+                  </li>
+                ))}
+              </ul>
+            </div>
           </div>
         </div>
       </section>
 
-      {/* Blog/Articles Preview */}
-      <section className="py-12 bg-white">
+      {/* TRAVEL GUIDE */}
+      <section className="py-16 bg-blue-900 text-white">
         <div className="container mx-auto px-4">
-          <div className="flex justify-between items-center mb-8">
-            <div>
-              <h2 className="text-2xl font-bold text-gray-800">Полезные статьи</h2>
-              <p className="text-gray-500 text-sm">Советы и рекомендации для путешественников</p>
-            </div>
-            <Link href="/blog" className="text-blue-600 hover:text-blue-800 font-medium flex items-center gap-1">
-              Все статьи <span>→</span>
-            </Link>
-          </div>
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-            {[
-              { title: 'Лучшее время для посещения Азербайджана', excerpt: 'Узнайте, когда лучше всего планировать поездку в зависимости от сезона и интересов.', category: 'Сезонные поездки' },
-              { title: 'Что попробовать в Азербайджане: топ-10 блюд', excerpt: 'Обязательные к пробу азербайджанские блюда и где их найти.', category: 'Еда и напитки' },
-              { title: 'Как добраться из аэропорта Баку в центр города', excerpt: 'Все способы трансфера: такси, автобусы, метро.', category: 'Транспорт' }
-            ].map((article, index) => (
-              <div key={index} className="bg-gray-50 rounded-lg p-5 hover:bg-gray-100 transition cursor-pointer group">
-                <span className="text-xs text-blue-600 font-medium">{article.category}</span>
-                <h3 className="font-semibold text-gray-800 mt-2 group-hover:text-blue-600">{article.title}</h3>
-                <p className="text-sm text-gray-600 mt-2">{article.excerpt}</p>
+          <h2 className="text-3xl font-bold mb-10 text-center">Travel Guide</h2>
+          <div className="grid grid-cols-1 md:grid-cols-5 gap-6">
+            {Object.values(travelGuide).map((guide, index) => (
+              <div key={index} className="bg-white/10 backdrop-blur-sm rounded-xl p-6">
+                <h3 className="font-bold mb-3 text-blue-200">{guide.title}</h3>
+                <p className="text-sm text-blue-100">{guide.content}</p>
               </div>
             ))}
+          </div>
+        </div>
+      </section>
+
+      {/* ITINERARIES */}
+      <section className="py-16 bg-gray-50">
+        <div className="container mx-auto px-4">
+          <h2 className="text-3xl font-bold text-gray-800 mb-10 text-center">Suggested Itineraries</h2>
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+            {itineraries.map((itinerary) => (
+              <div key={itinerary.id} className="bg-white rounded-xl shadow-lg overflow-hidden">
+                <div className="bg-blue-600 text-white p-4">
+                  <h3 className="font-bold text-lg">{itinerary.name}</h3>
+                  <p className="text-sm text-blue-200">Perfect for first-time visitors</p>
+                </div>
+                <div className="p-6">
+                  <ul className="space-y-4">
+                    {itinerary.days.map((day, index) => (
+                      <li key={index} className="border-l-2 border-blue-200 pl-4">
+                        <div className="font-semibold text-gray-800">{day.day}</div>
+                        <div className="text-sm text-gray-600 mt-1">
+                          {day.places.join(' → ')}
+                        </div>
+                      </li>
+                    ))}
+                  </ul>
+                </div>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* HIDDEN GEMS */}
+      <section className="py-16 bg-white">
+        <div className="container mx-auto px-4">
+          <div className="flex items-center gap-3 mb-10">
+            <span className="text-2xl">💎</span>
+            <h2 className="text-3xl font-bold text-gray-800">Hidden Gems & Local Tips</h2>
+          </div>
+          <div className="grid grid-cols-1 md:grid-cols-5 gap-6">
+            {hiddenGems.map((gem, index) => (
+              <div key={index} className="bg-gradient-to-br from-amber-50 to-orange-50 rounded-xl p-5 hover:shadow-md transition">
+                <div className="flex items-center gap-2 mb-2">
+                  <span className="text-amber-500">⭐</span>
+                  <span className="text-xs text-amber-600 font-medium">LOCAL FAVORITE</span>
+                </div>
+                <h3 className="font-bold text-gray-800 mb-2">{gem.name}</h3>
+                <p className="text-sm text-gray-600">{gem.description}</p>
+              </div>
+            ))}
+          </div>
+          <div className="mt-8 p-6 bg-blue-50 rounded-xl">
+            <h3 className="font-bold text-gray-800 mb-3">💡 Local Tip</h3>
+            <p className="text-gray-600">
+              The best way to experience Azerbaijan is to venture beyond Baku. 
+              Visit mountain villages, try local homestays, and ask locals for recommendations 
+              - they often know the best spots not in guidebooks.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      {/* CTA */}
+      <section className="py-16 bg-blue-600 text-white text-center">
+        <div className="container mx-auto px-4">
+          <h2 className="text-3xl font-bold mb-4">Ready to Explore Azerbaijan?</h2>
+          <p className="text-blue-100 mb-8 max-w-2xl mx-auto">
+            Start planning your trip today and discover why Azerbaijan is becoming one of 
+            the most exciting destinations in the world.
+          </p>
+          <div className="flex justify-center gap-4">
+            <Link href="/plan-trip" className="bg-white text-blue-600 px-8 py-3 rounded-full font-semibold hover:bg-blue-100 transition">
+              Plan Your Trip
+            </Link>
+            <Link href="/contact" className="border-2 border-white px-8 py-3 rounded-full font-semibold hover:bg-white hover:text-blue-600 transition">
+              Get Help
+            </Link>
           </div>
         </div>
       </section>
