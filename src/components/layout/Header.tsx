@@ -2,46 +2,76 @@ import Link from 'next/link';
 
 export default function Header() {
   return (
-    <header className="bg-white shadow-sm sticky top-0 z-50">
+    <header className="sticky top-0 z-50 bg-white/95 backdrop-blur-md shadow-sm border-b border-gray-100">
       <div className="container mx-auto px-4">
-        <div className="flex items-center justify-between h-16">
+        <div className="flex items-center justify-between h-18">
           {/* Logo */}
-          <Link href="/" className="flex items-center gap-2">
-            <div className="w-8 h-8 bg-blue-600 rounded flex items-center justify-center">
-              <span className="text-white font-bold">A</span>
+          <Link href="/" className="flex items-center gap-3 group">
+            <div className="w-10 h-10 bg-gradient-to-br from-primary to-primary-dark rounded-xl flex items-center justify-center shadow-md group-hover:shadow-lg transition-all duration-300 group-hover:scale-105">
+              <svg className="w-6 h-6 text-white" fill="currentColor" viewBox="0 0 24 24">
+                <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/>
+              </svg>
             </div>
-            <span className="font-bold text-xl text-gray-800">AzerbaijanTravel</span>
+            <div className="flex flex-col">
+              <span className="font-display font-bold text-xl text-gray-900 leading-tight">
+                AzerbaijanTravel
+              </span>
+              <span className="text-xs text-primary font-medium">Discover • Explore • Experience</span>
+            </div>
           </Link>
 
           {/* Navigation */}
-          <nav className="hidden md:flex items-center gap-6">
-            <Link href="/cities" className="text-gray-600 hover:text-blue-600 transition font-medium">
-              Cities
-            </Link>
-            <Link href="/attractions" className="text-gray-600 hover:text-blue-600 transition font-medium">
-              Attractions
-            </Link>
-            <Link href="/things-to-do" className="text-gray-600 hover:text-blue-600 transition font-medium">
-              Things to Do
-            </Link>
-            <Link href="/itineraries" className="text-gray-600 hover:text-blue-600 transition font-medium">
-              Itineraries
-            </Link>
-            <Link href="/guide" className="text-gray-600 hover:text-blue-600 transition font-medium">
-              Travel Guide
-            </Link>
+          <nav className="hidden xl:flex items-center gap-8">
+            {[
+              { href: '/cities', label: 'Cities', icon: '🏙️' },
+              { href: '/attractions', label: 'Attractions', icon: '🏛️' },
+              { href: '/things-to-do', label: 'Things to Do', icon: '🎭' },
+              { href: '/restaurants', label: 'Dining', icon: '🍽️' },
+              { href: '/tours', label: 'Tours', icon: '🚌' },
+              { href: '/itineraries', label: 'Itineraries', icon: '🗺️' },
+            ].map((item) => (
+              <Link
+                key={item.href}
+                href={item.href}
+                className="group flex items-center gap-2 text-gray-600 hover:text-primary transition-all duration-200 font-medium"
+              >
+                <span className="group-hover:scale-110 transition-transform duration-200">{item.icon}</span>
+                <span>{item.label}</span>
+                <div className="h-0.5 w-0 group-hover:w-full bg-primary transition-all duration-300"></div>
+              </Link>
+            ))}
           </nav>
 
           {/* Actions */}
-          <div className="flex items-center gap-4">
-            <Link href="/search" className="text-gray-600 hover:text-blue-600 transition">
-              <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <div className="flex items-center gap-3">
+            {/* Search Button */}
+            <Link 
+              href="/search" 
+              className="hidden sm:flex items-center gap-2 text-gray-500 hover:text-primary hover:bg-primary-50 px-4 py-2 rounded-full transition-all duration-200"
+            >
+              <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
               </svg>
+              <span className="text-sm font-medium">Search</span>
             </Link>
-            <Link href="/plan-trip" className="bg-blue-600 text-white px-4 py-2 rounded-full font-medium hover:bg-blue-700 transition">
+
+            {/* Plan Trip Button */}
+            <Link 
+              href="/plan-trip" 
+              className="bg-primary text-white px-5 py-2.5 rounded-full font-medium hover:bg-primary-dark hover:shadow-lg hover:shadow-primary/30 transition-all duration-300 active:scale-95 text-sm flex items-center gap-2"
+            >
+              <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z" />
+              </svg>
               Plan Trip
             </Link>
+
+            {/* Mobile Menu Button */}
+            <button className="xl:hidden p-2 text-gray-500 hover:text-primary transition-colors">
+              <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 6h16M4 12h16M4 18h16" />
+              </svg>
+            </button>
           </div>
         </div>
       </div>

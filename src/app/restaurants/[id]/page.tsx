@@ -1,10 +1,15 @@
-'use client';
-
 import Header from '@/components/layout/Header';
 import Footer from '@/components/layout/Footer';
 import Link from 'next/link';
 import { places } from '@/data/places';
 import { notFound } from 'next/navigation';
+import { generateRestaurantMetadata } from '@/lib/metadata';
+import { generatePlaceSchema, generateBreadcrumbSchema } from '@/lib/schema';
+import { Metadata } from 'next';
+
+export function generateMetadata({ params }: { params: { id: string } }): Metadata {
+  return generateRestaurantMetadata(params.id);
+}
 
 export default function RestaurantDetailPage({ params }: { params: { id: string } }) {
   const restaurant = places.find(p => p.id === params.id && p.category === 'Restaurants');
@@ -13,19 +18,35 @@ export default function RestaurantDetailPage({ params }: { params: { id: string 
     notFound();
   }
 
-  return (
-    <div className="min-h-screen bg-gray-50">
-      <Header />
+  const schema = generatePlaceSchema(restaurant);
+  const breadcrumbSchema = generateBreadcrumbSchema([
+    { name: "Home", url: "https://azerbaijantravel.com" },
+    { name: "Restaurants", url: "https://azerbaijantravel.com/restaurants" },
+    { name: restaurant.name }
+  ]);
 
-      <div className="max-w-6xl mx-auto px-4 py-8">
-        {/* Breadcrumb */}
-        <nav className="flex items-center gap-2 text-sm text-gray-500 mb-6">
-          <Link href="/" className="hover:text-[#00AA6C]">Home</Link>
-          <span>/</span>
-          <Link href="/restaurants" className="hover:text-[#00AA6C]">Restaurants</Link>
-          <span>/</span>
-          <span className="text-gray-800">{restaurant.name}</span>
-        </nav>
+  return (
+    <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }}
+      />
+      <div className="min-h-screen bg-gray-50">
+        <Header />
+
+        <div className="max-w-6xl mx-auto px-4 py-8">
+          {/* Breadcrumb */}
+          <nav className="flex items-center gap-2 text-sm text-gray-500 mb-6">
+            <Link href="/" className="hover:text-[#00AA6C]">Home</Link>
+            <span>/</span>
+            <Link href="/restaurants" className="hover:text-[#00AA6C]">Restaurants</Link>
+            <span>/</span>
+            <span className="text-gray-800">{restaurant.name}</span>
+          </nav>
 
         {/* Main Content */}
         <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
@@ -125,8 +146,8 @@ export default function RestaurantDetailPage({ params }: { params: { id: string 
           </div>
         </div>
       </div>
-
+      </div>
       <Footer />
-    </div>
+    </>
   );
 }

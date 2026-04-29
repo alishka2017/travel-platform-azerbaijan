@@ -1,77 +1,116 @@
-'use client';
-
 import Header from '@/components/layout/Header';
 import Footer from '@/components/layout/Footer';
 import Link from 'next/link';
-import { places, cities } from '@/data/places';
+import { places } from '@/data/places';
 
 export default function ToursPage() {
   const tours = places.filter(p => p.category === 'Tours');
 
   return (
-    <div className="min-h-screen bg-gray-50">
-      <Header />
-
-      <div className="max-w-6xl mx-auto px-4 py-8">
-        <h1 className="text-3xl font-bold text-gray-800 mb-8">Tours in Azerbaijan</h1>
-        
-        {/* Filter by City */}
-        <div className="flex flex-wrap gap-2 mb-8">
-          <Link href="/tours" className="px-4 py-2 bg-[#00AA6C] text-white rounded-full text-sm">
-            All
-          </Link>
-          {cities.map(city => (
-            <Link 
-              key={city.id} 
-              href={`/tours?city=${city.slug}`} 
-              className="px-4 py-2 bg-white text-gray-600 rounded-full text-sm hover:bg-[#00AA6C] hover:text-white transition"
-            >
-              {city.name}
-            </Link>
-          ))}
-        </div>
-
-        {/* Tours Grid */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-          {tours.map(tour => (
-            <Link 
-              key={tour.id} 
-              href={`/tours/${tour.id}`}
-              className="bg-white rounded-xl shadow-sm overflow-hidden hover:shadow-md transition group"
-            >
-              <div className="relative h-48 bg-gray-200">
-                <img 
-                  src={tour.image} 
-                  alt={tour.name}
-                  className="w-full h-full object-cover group-hover:scale-105 transition duration-300"
-                  onError={(e) => {
-                    e.currentTarget.src = '/placeholder.jpg';
-                  }}
-                />
-                <div className="absolute top-3 right-3 bg-white px-2 py-1 rounded-md text-sm font-medium text-[#00AA6C]">
-                  {tour.priceLevel}
-                </div>
-              </div>
-              <div className="p-4">
-                <h3 className="font-semibold text-gray-800 mb-1">{tour.name}</h3>
-                <p className="text-sm text-gray-500 line-clamp-2">{tour.description}</p>
-                <div className="mt-3 flex items-center justify-between text-sm text-gray-400">
-                  <span>{tour.city}</span>
-                  <span>⭐ {tour.rating} ({tour.reviewsCount})</span>
-                </div>
-              </div>
-            </Link>
-          ))}
-        </div>
-
-        {tours.length === 0 && (
-          <div className="text-center py-12 text-gray-500">
-            No tours found.
+    <>
+      <div className="min-h-screen bg-gray-50">
+        <Header />
+        <div className="container mx-auto px-4 py-12">
+          {/* Header Section */}
+          <div className="text-center mb-16">
+            <h1 className="text-4xl md:text-5xl font-bold text-gray-800 mb-4">
+              Tours & Experiences in Azerbaijan
+            </h1>
+            <p className="text-xl text-gray-600 max-w-2xl mx-auto">
+              Handpicked tours led by expert local guides. Discover the best of Azerbaijan with curated itineraries.
+            </p>
           </div>
-        )}
-      </div>
 
-      <Footer />
-    </div>
+          {/* Filter Bar */}
+          <div className="flex flex-wrap justify-center gap-4 mb-12">
+            {['All', 'City Tours', 'Day Trips', 'Multi-day', 'Food', 'Adventure', 'Nature'].map((filter) => (
+              <button 
+                key={filter}
+                className="px-6 py-2 rounded-full border border-gray-300 hover:border-[#00AA6C] hover:text-[#00AA6C] transition"
+              >
+                {filter}
+              </button>
+            ))}
+          </div>
+
+          {/* Tours Grid */}
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            {tours.map((tour) => (
+              <Link 
+                href={`/tours/${tour.id}`} 
+                key={tour.id}
+                className="group bg-white rounded-xl overflow-hidden shadow-lg hover:shadow-xl transition transform hover:-translate-y-1"
+              >
+                <div className="relative h-56">
+                  <img 
+                    src={tour.image} 
+                    alt={tour.name}
+                    className="w-full h-full object-cover group-hover:scale-105 transition duration-500"
+                  />
+                  <div className="absolute top-4 left-4 bg-black/60 text-white px-3 py-1 rounded text-sm font-medium">
+                    {tour.tags[0]}
+                  </div>
+                  <div className="absolute bottom-4 right-4 bg-[#00AA6C] text-white px-3 py-1 rounded-full text-sm font-bold shadow-lg">
+                    {tour.priceLevel}
+                  </div>
+                </div>
+                <div className="p-6">
+                  <div className="flex items-center gap-2 mb-2 text-sm text-gray-500">
+                    <span>{tour.tags.join(' • ')}</span>
+                    <span>•</span>
+                    <span>{tour.openingHours}</span>
+                  </div>
+                  <h3 className="font-bold text-xl text-gray-800 mb-2 group-hover:text-[#00AA6C] transition">
+                    {tour.name}
+                  </h3>
+                  <p className="text-gray-600 text-sm mb-4 line-clamp-2">
+                    {tour.description}
+                  </p>
+                  
+                  <div className="flex items-center justify-between pt-4 border-t border-gray-100">
+                    <div className="flex items-center gap-1">
+                      <div className="flex text-yellow-400">
+                        {'★'.repeat(Math.floor(tour.rating))}
+                      </div>
+                      <span className="text-sm text-gray-600 ml-1">{tour.rating}</span>
+                      <span className="text-sm text-gray-400">({tour.reviewsCount})</span>
+                    </div>
+                    <button className="bg-[#00AA6C] text-white px-4 py-2 rounded-lg text-sm font-medium hover:bg-[#008855] transition">
+                      View Details
+                    </button>
+                  </div>
+                </div>
+              </Link>
+            ))}
+          </div>
+
+          {/* Why Book Section */}
+          <section className="mt-20 py-12 bg-white rounded-2xl shadow-sm">
+            <div className="max-w-4xl mx-auto px-4 text-center">
+              <h2 className="text-2xl font-bold text-gray-800 mb-8">Why Book With Us?</h2>
+              <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
+                <div>
+                  <div className="text-3xl mb-2">👥</div>
+                  <h3 className="font-medium">Local Guides</h3>
+                </div>
+                <div>
+                  <div className="text-3xl mb-2">💰</div>
+                  <h3 className="font-medium">Best Price</h3>
+                </div>
+                <div>
+                  <div className="text-3xl mb-2">🎒</div>
+                  <h3 className="font-medium">Small Groups</h3>
+                </div>
+                <div>
+                  <div className="text-3xl mb-2">🔄</div>
+                  <h3 className="font-medium">Flexible Cancel</h3>
+                </div>
+              </div>
+            </div>
+          </section>
+        </div>
+        <Footer />
+      </div>
+    </>
   );
 }
