@@ -4,6 +4,12 @@ import Link from 'next/link';
 import { notFound } from 'next/navigation';
 import { places, getPlacesByCity } from '@/data/places';
 
+export async function generateStaticParams() {
+  return places.map((place) => ({
+    id: place.id,
+  }));
+}
+
 export default async function AttractionPage({ params }: { params: { id: string } }) {
   const place = places.find(p => p.id === params.id);
   

@@ -2,7 +2,13 @@ import Header from '@/components/layout/Header';
 import Footer from '@/components/layout/Footer';
 import Link from 'next/link';
 import { notFound } from 'next/navigation';
-import { getCityBySlug, getPlacesByCity } from '@/data/places';
+import { getCityBySlug, getPlacesByCity, cities } from '@/data/places';
+
+export async function generateStaticParams() {
+  return cities.map((city) => ({
+    slug: city.slug,
+  }));
+}
 
 export default async function CityPage({ params }: { params: { slug: string } }) {
   const city = getCityBySlug(params.slug);

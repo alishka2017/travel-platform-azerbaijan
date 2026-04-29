@@ -13,7 +13,7 @@ export interface Place {
   openingHours?: string;
   tips: string[];
   tags: string[];
-  priceLevel?: string;
+  priceLevel?: string | null;
 }
 
 export interface City {
@@ -64,7 +64,7 @@ export const cities: City[] = [
     transport: "Train, bus, car",
     topAttractions: ["Nizami Mausoleum", "Bottle House", "Javad Khan Street", "Ganja Gate"],
     topRestaurants: ["Mugam Club", "Ganja Restaurant", "Shah Palace"],
-    topHotels: ["Ganja Hotel", "Park Inn", "Qafqaz"
+    topHotels: ["Ganja Hotel", "Park Inn", "Qafqaz"]
   },
   {
     id: "sheki",
