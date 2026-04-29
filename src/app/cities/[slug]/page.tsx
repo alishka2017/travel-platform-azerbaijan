@@ -3,12 +3,31 @@ import Footer from '@/components/layout/Footer';
 import Link from 'next/link';
 import { notFound } from 'next/navigation';
 import { getCityBySlug, getPlacesByCity, cities } from '@/data/places';
+import dynamic from 'next/dynamic';
+
+// Dynamically import the map component to avoid SSR issues with Leaflet
+const InteractiveMap = dynamic(() => import('@/components/InteractiveMap'), {
+  ssr: false,
+  loading: () => <p className="h-[300px] bg-gray-200 rounded-lg animate-pulse"></p>
+});
 
 export async function generateStaticParams() {
   return cities.map((city) => ({
     slug: city.slug,
   }));
 }
+
+// Helper to get coordinates for cities (hardcoded for demo, ideally should be in data)
+const cityCoordinates: Record<string, { lat: number; lon: number }> = {
+  baku: { lat: 40.4093, lon: 49.8671 },
+  gandja: { lat: 40.6828, lon: 46.3606 },
+  sheki: { lat: 41.1919, lon: 47.1706 },
+  lenkoran: { lat: 38.7535, lon: 48.8511 },
+  gabala: { lat: 40.9825, lon: 47.8094 },
+  shamakhi: { lat: 40.6316, lon: 48.6413 },
+  quba: { lat: 41.3603, lon: 48.5129 },
+  naftalan: { lat: 40.4783, lon: 46.8223 },
+};
 
 export default async function CityPage({ params }: { params: { slug: string } }) {
   const city = getCityBySlug(params.slug);
@@ -19,6 +38,14 @@ export default async function CityPage({ params }: { params: { slug: string } })
 
   const attractions = getPlacesByCity(city.slug).filter(p => p.category !== 'Restaurants');
   const restaurants = getPlacesByCity(city.slug).filter(p => p.category === 'Restaurants');
+  
+  // Get coordinates for map
+  const coords = cityCoordinates[city.slug] || { lat: 40.4093, lon: 49.8671 };
+  
+  // Prepare markers for attractions with coordinates
+  const markers = attractions
+    .filter(p => p.lat && p.lon)
+    .map(p => ({ lat: p.lat!, lon: p.lon!, popup: p.name }));
 
   return (
     <div className="min-h-screen bg-gray-50">
@@ -48,6 +75,14 @@ export default async function CityPage({ params }: { params: { slug: string } })
       </section>
 
       <div className="max-w-6xl mx-auto px-4 py-12">
+        {/* Map Section */}
+        <section className="mb-12">
+          <h2 className="text-2xl font-bold text-gray-800 mb-4">Map of {city.name}</h2>
+          <div className="bg-white p-4 rounded-lg shadow-sm">
+            <InteractiveMap lat={coords.lat} lon={coords.lon} markers={markers} />
+          </div>
+        </section>
+
         {/* Quick Info */}
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-12">
           <div className="bg-white p-6 rounded-lg shadow-sm">
