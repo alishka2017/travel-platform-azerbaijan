@@ -247,7 +247,6 @@ export default function HotelsPage() {
                         <Link
                           href={`tel:${hotel.phone}`}
                           className="text-blue-600 hover:text-blue-800 text-sm font-medium"
-                          onClick={(e) => e.stopPropagation()}
                         >
                           Позвонить
                         </Link>
