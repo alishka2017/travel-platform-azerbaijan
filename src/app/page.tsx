@@ -21,20 +21,20 @@ export default function HomePage() {
         <Header />
 
         {/* Hero Section */}
-        <section className="relative h-[600px] bg-cover bg-center" style={{ backgroundImage: 'url(https://upload.wikimedia.org/wikipedia/commons/thumb/5/5e/Baku_modern_skyline.jpg/1280px-Baku_modern_skyline.jpg)' }}>
+        <section className="relative h-[600px] bg-cover bg-center" style={{ backgroundImage: 'url(https://images.unsplash.com/photo-1601042879364-b6b5e3e7e1a7?w=1920&q=80)' }}>
           <div className="absolute inset-0 bg-black/40"></div>
           <div className="relative z-10 h-full flex flex-col justify-center items-center text-white px-4">
             <h1 className="text-4xl md:text-6xl font-bold mb-4 text-center">Discover Azerbaijan</h1>
             <p className="text-lg md:text-2xl mb-8 text-center max-w-2xl">Explore ancient history, modern architecture, and natural wonders in the Land of Fire</p>
             
             {/* Search Box */}
-            <div className="w-full max-w-3xl bg-white rounded-lg shadow-lg p-2 md:flex hidden">
+            <div className="w-full max-w-3xl bg-white rounded-lg shadow-lg p-2 flex">
               <input 
                 type="text" 
                 placeholder="Search destinations, attractions, restaurants..." 
                 className="flex-1 px-4 py-3 text-gray-700 outline-none"
               />
-              <Link href="/search" className="bg-[#00AA6C] text-white px-6 py-3 rounded font-semibold hover:bg-[#008855] transition text-center">
+              <Link href="/search" className="bg-[#00AA6C] text-white px-6 py-3 rounded font-semibold hover:bg-[#008855] transition text-center whitespace-nowrap">
                 Search
               </Link>
             </div>
