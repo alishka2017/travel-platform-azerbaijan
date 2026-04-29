@@ -42,7 +42,7 @@ export const cities: City[] = [
     region: "Absheron Peninsula",
     population: "2.3 million",
     description: "Capital city on the Caspian Sea, blending ancient walled city with modern skyscrapers. The Flame Towers light up the skyline at night, while the Old City whispers stories of the Silk Road.",
-    heroImage: "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5e/Baku_modern_skyline.jpg/1280px-Baku_modern_skyline.jpg",
+    heroImage: "https://images.unsplash.com/photo-1574505338056-7718c71c2c35?q=80&w=1280&auto=format&fit=crop",
     bestTime: "April-June, September-October",
     distanceFromBaku: "0 km",
     transport: "Metro, bus, taxi",
@@ -175,10 +175,10 @@ export const places: Place[] = [
     reviewsCount: 4472,
     description: "Medieval walled city, UNESCO World Heritage site. Contains the Shirvanshah Palace and Maiden Tower. A maze of narrow streets, ancient mosques, caravanserais, and baths.",
     address: "Icherisheher, Baku",
-    image: "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/06/b5/6c/29/old-city-baku.jpg",
+    image: "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8c/Icherisheher_Baku_2016.jpg/1280px-Icherisheher_Baku_2016.jpg",
     gallery: [
-      "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/06/b5/6c/29/old-city-baku.jpg",
-      "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8c/Icherisheher_Baku_2016.jpg/1280px-Icherisheher_Baku_2016.jpg"
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8c/Icherisheher_Baku_2016.jpg/1280px-Icherisheher_Baku_2016.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7b/Walls_of_Icheri_Sheher.jpg/1280px-Walls_of_Icheri_Sheher.jpg"
     ],
     openingHours: "Always open",
     tips: [
@@ -199,9 +199,9 @@ export const places: Place[] = [
     reviewsCount: 1757,
     description: "Three skyscrapers 190m high, the symbol of modern Baku. At night, they light up with animations of fire, making the skyline unforgettable.",
     address: "Mehdi Hüseyn 1, Baku",
-    image: "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/07/9b/b1/54/flame-towers.jpg",
+    image: "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3c/Baku_Flame_Towers.jpg/1280px-Baku_Flame_Towers.jpg",
     gallery: [
-      "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/07/9b/b1/54/flame-towers.jpg"
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3c/Baku_Flame_Towers.jpg/1280px-Baku_Flame_Towers.jpg"
     ],
     openingHours: "Always visible",
     tips: [
@@ -222,9 +222,10 @@ export const places: Place[] = [
     reviewsCount: 2556,
     description: "Masterpiece by Zaha Hadid. Wave-like building without a single straight line. One of the best examples of modern architecture in the world.",
     address: "Heydar Aliyev Ave, Baku",
-    image: "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/16/83/1a/58/heydar-aliyev-center.jpg",
+    image: "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2f/Heydar_Aliyev_Center.jpg/1280px-Heydar_Aliyev_Center.jpg",
     gallery: [
-      "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/16/83/1a/58/heydar-aliyev-center.jpg"
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2f/Heydar_Aliyev_Center.jpg/1280px-Heydar_Aliyev_Center.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/5/57/Heydar_Aliyev_Center_Atrium.jpg/1280px-Heydar_Aliyev_Center_Atrium.jpg"
     ],
     openingHours: "11:00 - 18:00",
     tips: [
@@ -245,9 +246,9 @@ export const places: Place[] = [
     reviewsCount: 2361,
     description: "Scenic promenade along the Caspian Sea. Perfect for walking, cycling, and enjoying sea views. Includes parks, fountains, and cafes.",
     address: "Baku Boulevard, Baku",
-    image: "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/28/ba/98/8c/baku-boulevard.jpg",
+    image: "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3b/Baku_Boulevard_night.jpg/1280px-Baku_Boulevard_night.jpg",
     gallery: [
-      "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/28/ba/98/8c/baku-boulevard.jpg"
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3b/Baku_Boulevard_night.jpg/1280px-Baku_Boulevard_night.jpg"
     ],
     openingHours: "Always open",
     tips: [
@@ -268,9 +269,9 @@ export const places: Place[] = [
     reviewsCount: 1874,
     description: "12th-century tower, one of the most iconic symbols of Baku. Offers panoramic views of the Old City and the Caspian Sea.",
     address: "Icherisheher, Baku",
-    image: "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/06/9f/bf/37/maiden-s-tower.jpg",
+    image: "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c2/Maidens_Tower_Baku_2016.jpg/1280px-Maidens_Tower_Baku_2016.jpg",
     gallery: [
-      "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/06/9f/bf/37/maiden-s-tower.jpg"
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c2/Maidens_Tower_Baku_2016.jpg/1280px-Maidens_Tower_Baku_2016.jpg"
     ],
     openingHours: "10:00 - 18:00",
     tips: [
@@ -291,9 +292,9 @@ export const places: Place[] = [
     reviewsCount: 1217,
     description: "UNESCO World Heritage site with over 6,000 rock carvings dating back 12,000 years. Shows prehistoric life in the Caucasus.",
     address: "Gobustan, Baku",
-    image: "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/0b/58/28/e6/caption.jpg",
+    image: "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8b/Gobustan_Rock_Art_Cultural_Landscape_03.jpg/1280px-Gobustan_Rock_Art_Cultural_Landscape_03.jpg",
     gallery: [
-      "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/0b/58/28/e6/caption.jpg"
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8b/Gobustan_Rock_Art_Cultural_Landscape_03.jpg/1280px-Gobustan_Rock_Art_Cultural_Landscape_03.jpg"
     ],
     openingHours: "09:00 - 18:00",
     tips: [
@@ -314,9 +315,9 @@ export const places: Place[] = [
     reviewsCount: 258,
     description: "Unique natural phenomenon near Gobustan. Bubbling mud pools and small volcanic cones. Safe to walk on and touch.",
     address: "Gobustan, Baku",
-    image: "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/09/48/06/7d/mud-volcanoes.jpg",
+    image: "https://upload.wikimedia.org/wikipedia/commons/thumb/9/98/Mud_volcano_in_Azerbaijan.jpg/1280px-Mud_volcano_in_Azerbaijan.jpg",
     gallery: [
-      "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/09/48/06/7d/mud-volcanoes.jpg"
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/9/98/Mud_volcano_in_Azerbaijan.jpg/1280px-Mud_volcano_in_Azerbaijan.jpg"
     ],
     openingHours: "Always accessible",
     tips: [
@@ -339,12 +340,13 @@ export const places: Place[] = [
     address: "Sheki Old City",
     image: "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d8/Sheki_Khan_Palace.jpg/1280px-Sheki_Khan_Palace.jpg",
     gallery: [
-      "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d8/Sheki_Khan_Palace.jpg/1280px-Sheki_Khan_Palace.jpg"
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d8/Sheki_Khan_Palace.jpg/1280px-Sheki_Khan_Palace.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4e/Sheki_Khan_Palace_2.jpg/1280px-Sheki_Khan_Palace_2.jpg"
     ],
     openingHours: "10:00 - 18:00",
     tips: [
       "Take a guided tour to understand the symbolism",
-      "No photography inside (check rules)",
+      "Check current rules for photography inside",
       "Visit the garden for best photos"
     ],
     tags: ["history", "architecture", "un", "culture"],
@@ -406,9 +408,9 @@ export const places: Place[] = [
     reviewsCount: 1867,
     description: "Charming tea garden serving traditional Azerbaijani tea and sweets. Relaxed atmosphere with outdoor seating.",
     address: "28 May Street, Baku",
-    image: "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/10/45/67/35/tea-garden.jpg",
+    image: "https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?q=80&w=1280&auto=format&fit=crop",
     gallery: [
-      "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/10/45/67/35/tea-garden.jpg"
+      "https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?q=80&w=1280&auto=format&fit=crop"
     ],
     openingHours: "10:00 - 23:00",
     tips: [
