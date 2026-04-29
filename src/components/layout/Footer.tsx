@@ -25,8 +25,9 @@ export default function Footer() {
               <li><Link href="/cities/baku" className="hover:text-white transition">Baku</Link></li>
               <li><Link href="/cities/gandja" className="hover:text-white transition">Ganja</Link></li>
               <li><Link href="/cities/sheki" className="hover:text-white transition">Sheki</Link></li>
-              <li><Link href="/cities/lenkoran" className="hover:text-white transition">Lankaran</Link></li>
+              <li><Link href="/cities/lankaran" className="hover:text-white transition">Lankaran</Link></li>
               <li><Link href="/cities/gabala" className="hover:text-white transition">Gabala</Link></li>
+              <li><Link href="/cities/qusar" className="hover:text-white transition">Qusar</Link></li>
             </ul>
           </div>
 
@@ -35,6 +36,8 @@ export default function Footer() {
             <h3 className="font-semibold text-white mb-4">Explore</h3>
             <ul className="space-y-2">
               <li><Link href="/attractions" className="hover:text-white transition">Attractions</Link></li>
+              <li><Link href="/tours" className="hover:text-white transition">Tours</Link></li>
+              <li><Link href="/restaurants" className="hover:text-white transition">Restaurants</Link></li>
               <li><Link href="/things-to-do" className="hover:text-white transition">Things to Do</Link></li>
               <li><Link href="/itineraries" className="hover:text-white transition">Itineraries</Link></li>
               <li><Link href="/hidden-gems" className="hover:text-white transition">Hidden Gems</Link></li>
