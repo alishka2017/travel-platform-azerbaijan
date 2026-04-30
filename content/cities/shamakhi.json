@@ -2,70 +2,16 @@
   "id": "shamakhi",
   "name": "Shamakhi",
   "slug": "shamakhi",
-  "region": "Shirvan",
+  "country": "Azerbaijan",
+  "region": "Shamakhi",
   "population": "100,000",
-  "description": "Shamakhi is one of Azerbaijan's most ancient cities, serving as the capital of the Shirvanshahs for centuries. It's a city of poets, astronomers, and architects. The Juma Mosque (8th century) is one of the oldest in the Caucasus, and the Shamakhi Astrophysical Observatory is a world-class scientific facility.",
-  "heroImage": "https://images.unsplash.com/photo-1519677100203-a0e668c92439?q=80&w=1280&auto=format&fit=crop",
-  "bestTime": "May-June, September-October",
+  "bestTime": "May-June",
   "distanceFromBaku": "120 km",
-  "transport": "Bus, marshrutka, private car",
-  "topAttractions": [
-    "Juma Mosque",
-    "Shamakhi Astrophysical Observatory",
-    "Diri Baba Mausoleum",
-    "Yeddi Gumbaz Mausoleums"
-  ],
-  "topRestaurants": [
-    "Shamakhi Saray Restaurant",
-    "Goychay Plov House",
-    "Local tea houses"
-  ],
-  "topHotels": [
-    "Shamakhi Hotel",
-    "Dubendi Palace Hotel (nearby)",
-    "Guesthouses in Old City"
-  ],
-  "content": {
-    "intro": "Shamakhi whispers tales of ancient kings and star-gazing scientists. As one of the oldest cities in the Caucasus, it offers a profound journey through history, from the 8th-century Juma Mosque to the modern astrophysical observatory that peers into the universe.",
-    "attractions": [
-      {
-        "name": "Juma Mosque",
-        "description": "Built in 743 AD, this is one of the oldest mosques in the Caucasus. Its 13th-century restoration added the unique domed ceiling with 144 windows."
-      },
-      {
-        "name": "Shamakhi Astrophysical Observatory",
-        "description": "Founded in 1960, this observatory is one of the largest in the region, with telescopes studying solar activity and stellar objects."
-      },
-      {
-        "name": "Diri Baba Mausoleum",
-        "description": "A mysterious 15th-century mausoleum built into a cliff face, combining architectural styles of the Shirvanshah period."
-      }
-    ],
-    "whereToEat": [
-      {
-        "name": "Shamakhi Saray Restaurant",
-        "description": "Located in the historic caravanserai, serving authentic Shirvan cuisine."
-      },
-      {
-        "name": "Goychay Plov House",
-        "description": "Specializes in regional plov variations."
-      }
-    ],
-    "tips": [
-      "Visit the observatory at night for stargazing sessions (check schedule).",
-      "Wear comfortable shoes for exploring the uneven historic sites.",
-      "Try the local 'Shamakhi plov'—distinct from Baku style."
-    ],
-    "touristMistakes": [
-      "Rushing through the Juma Mosque without noticing the ancient inscriptions.",
-      "Skipping the mausoleums outside the city center.",
-      "Missing the poet Nizami's connection to Shamakhi."
-    ],
-    "hiddenGems": [
-      "The old silk road caravanserai ruins.",
-      "Local carpet weaving workshops.",
-      "The quiet cemeteries with ancient tombstones."
-    ],
-    "howToGetThere": "From Baku: 120 km via the Shamakhi highway (M4). Regular buses from Baku International Bus Terminal."
+  "transport": "Bus (2 hours)",
+  "description": "Shamakhi is one of the ancient capitals of Azerbaijan, famous for the Juma Mosque (one of the oldest in the Caucasus), historic observatory, and winemaking traditions.",
+  "heroImage": "https://images.unsplash.com/photo-1579033068971-36b71c8e35f7?q=80&w=1280&auto=format&fit=crop",
+  "coordinates": {
+    "lat": 40.6316,
+    "lon": 48.6413
   }
 }

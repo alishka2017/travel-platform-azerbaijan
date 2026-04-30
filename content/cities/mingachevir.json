@@ -2,70 +2,16 @@
   "id": "mingachevir",
   "name": "Mingachevir",
   "slug": "mingachevir",
-  "region": "Aran",
+  "country": "Azerbaijan",
+  "region": "Mingachevir",
   "population": "100,000",
-  "description": "Mingachevir, known as the 'City of Lights', is Azerbaijan's fourth-largest city, built around the massive Mingachevir Reservoir. The city has a rich archaeological history dating back to the Kura-Araxes culture (3000 BC) and is a hub for hydroelectric power.",
-  "heroImage": "https://images.unsplash.com/photo-1506905925346-21bda4d32df4?q=80&w=1280&auto=format&fit=crop",
-  "bestTime": "May-September",
+  "bestTime": "June-August",
   "distanceFromBaku": "280 km",
-  "transport": "Train, bus, car",
-  "topAttractions": [
-    "Mingachevir Reservoir",
-    "Archaeological Museum",
-    "City Beach",
-    "Kura-Araxes Settlement"
-  ],
-  "topRestaurants": [
-    "Khan Restaurant",
-    "Seaside Cafe",
-    "Local plov houses"
-  ],
-  "topHotels": [
-    "Mingachevir Hotel",
-    "City Hotel Mingachevir",
-    "Guesthouses"
-  ],
-  "content": {
-    "intro": "Mingachevir is a city of contrasts—ancient archaeological sites sit beside modern hydroelectric infrastructure, and a massive inland sea (reservoir) provides beaches in the middle of the steppe. It's a vital industrial center with a surprising amount of green space.",
-    "attractions": [
-      {
-        "name": "Mingachevir Reservoir",
-        "description": "The largest body of water in Azerbaijan, offering boating, fishing, and beach activities."
-      },
-      {
-        "name": "Archaeological Museum",
-        "description": "Showcases artifacts from the Kura-Araxes culture (3000-2000 BC) found in the region."
-      },
-      {
-        "name": "Kura-Araxes Settlement",
-        "description": "Ancient settlement ruins dating back to the Bronze Age, located near the city."
-      }
-    ],
-    "whereToEat": [
-      {
-        "name": "Khan Restaurant",
-        "description": "Traditional Azerbaijani cuisine with a focus on plov."
-      },
-      {
-        "name": "Seaside Cafe",
-        "description": "Casual dining with lake views."
-      }
-    ],
-    "tips": [
-      "Visit the reservoir for water sports in summer.",
-      "Explore the archaeological sites with a guide.",
-      "Try the local fish from the reservoir."
-    ],
-    "touristMistakes": [
-      "Ignoring the industrial aspects (it's a working city).",
-      "Missing the museum's collection of Bronze Age artifacts.",
-      "Swimming in unauthorized reservoir areas."
-    ],
-    "hiddenGems": [
-      "The old Soviet-era architecture.",
-      "Local markets selling fresh fish.",
-      "The quiet parks along the reservoir shore."
-    ],
-    "howToGetThere": "From Baku: 280 km via the M5 highway. Regular trains and buses available."
+  "transport": "Bus (3.5 hours)",
+  "description": "Mingachevir is known as the 'City of Lights' due to its massive hydroelectric power station. The Mingachevir Reservoir offers water sports and beaches.",
+  "heroImage": "https://images.unsplash.com/photo-1470071459604-3b5ec3a7fe05?q=80&w=1280&auto=format&fit=crop",
+  "coordinates": {
+    "lat": 40.77,
+    "lon": 47.05
   }
 }

@@ -1,93 +1,77 @@
-# Content Management Guide
+# Контент-система Smartholiday.az
 
-This guide explains how to edit content on Smartholiday.az **without touching code**.
+Этот сайт использует JSON-файлы для управления контентом. Вы можете редактировать текст, изображения и данные без изменения кода.
 
-## Content Structure
+## Структура папок
 
-All editable content is located in `/content/` directory:
+```
+/content/
+  cities/          # Данные городов (JSON)
+  blog/            # Статьи блога (JSON)
+  tours/           # Данные туров (JSON)
+  attractions/     # Данные достопримечательностей (JSON)
+  restaurants/     # Данные ресторанов (JSON)
+  transfers/       # Данные трансферов (JSON)
+```
 
-- `/content/cities/` – City guides (Baku, Sheki, Gabala, etc.)
-- `/content/blog/` – Blog articles (markdown format)
-- `/content/tours/` – Tour descriptions (coming soon)
-- `/content/restaurants/` – Restaurant info (coming soon)
-- `/content/attractions/` – Attraction details (coming soon)
+## Как изменить текст на главной странице
 
-## How to Edit a City Guide
+1. Откройте файл `/content/homepage.json`.
+2. Найдите поле `"title"` или `"description"`.
+3. Измените текст и сохраните файл.
+4. Сайт обновится автоматически при следующей сборке.
 
-1. Open `/content/cities/baku.json`
-2. Edit any field:
-   - `name`: City name
-   - `description`: Main description (appears on city page)
-   - `heroImage`: URL for the header background
-   - `population`, `bestTime`, `distanceFromBaku`: Quick facts
-   - `highlights`, `hiddenGems`, `tips`: Arrays of strings
+## Как добавить новый город
 
-Example:
+1. Создайте новый файл в `/content/cities/`, например `shamakhi.json`.
+2. Используйте следующую структуру:
+
 ```json
 {
-  "name": "Baku",
-  "description": "Baku, the vibrant capital...",
-  "heroImage": "https://example.com/baku.jpg"
+  "id": "shamakhi",
+  "name": "Shamakhi",
+  "slug": "shamakhi",
+  "country": "Azerbaijan",
+  "region": "Shamakhi",
+  "population": "100,000",
+  "bestTime": "May-June",
+  "distanceFromBaku": "120 km",
+  "transport": "Bus (2 hours)",
+  "description": "Shamakhi is one of the ancient cities of Azerbaijan...",
+  "heroImage": "https://example.com/image.jpg",
+  "coordinates": {"lat": 40.6316, "lon": 48.6413}
 }
 ```
 
-3. Save the file. The site will automatically update on next deployment.
+3. Сохраните файл. Город появится в списке городов автоматически.
 
-## How to Add a Blog Article
+## Как добавить статью в блог
 
-1. Create a new file in `/content/blog/`: `your-article-slug.md`
-2. Use this template:
+1. Создайте новый файл в `/content/blog/`, например `hidden-gems-baku.json`.
+2. Используйте структуру:
 
-```markdown
----
-title: "Your Article Title"
-author: "Author Name"
-date: "2024-04-30"
-excerpt: "Brief summary for preview"
-category: "Travel Tips"
-coverImage: "https://example.com/image.jpg"
----
-
-# Article Title
-
-Your content here...
-
-## Section
-
-More content...
+```json
+{
+  "id": "hidden-gems-baku",
+  "title": "Hidden Gems of Baku",
+  "slug": "hidden-gems-baku",
+  "author": "Local Expert",
+  "date": "2025-04-30",
+  "category": "Guides",
+  "image": "https://example.com/image.jpg",
+  "excerpt": "Discover secret spots in Baku...",
+  "content": "Full article content here..."
+}
 ```
 
-3. Save. The article will appear at `/blog/your-article-slug`
+## Как обновить фото
 
-## How to Change Images
+Просто замените URL в поле `"image"` или `"heroImage"` на новый URL изображения.
+Рекомендуется использовать Unsplash или собственные хостинги изображений.
 
-Public images are in `/public/images/`:
+## Примечания
 
-- `/public/images/cities/` – City photos
-- `/public/images/tours/` – Tour photos
-- `/public/images/attractions/` – Attraction photos
-- `/public/images/blog/` – Blog cover images
-
-To update:
-1. Upload new image to appropriate folder
-2. Reference it in JSON or markdown:
-   - JSON: `"heroImage": "/images/cities/baku-new.jpg"`
-   - Markdown: `![Alt text](/images/blog/my-article.jpg)`
-
-## Important Notes
-
-- **Never delete** `page.tsx` or other React components
-- Keep JSON valid (use a validator if unsure)
-- Image URLs must be absolute (https://...) or start with `/`
-- Blog posts support Markdown formatting
-- After editing, commit changes to GitHub for deployment
-
-## Need Help?
-
-Contact development team for:
-- Adding new content types
-- Changing page layouts
-- SEO optimization
-- Performance issues
-
-Last updated: April 2024
+- Все поля обязательны.
+- `slug` должен быть уникальным.
+- Изображения должны быть оптимизированы (WebP, 1280px ширина).
+- Обновления применяются после деплоя на сервер.

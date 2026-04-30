@@ -2,70 +2,16 @@
   "id": "astara",
   "name": "Astara",
   "slug": "astara",
+  "country": "Azerbaijan",
   "region": "Astara",
-  "population": "25,000",
-  "description": "Astara is a border city on the Iran-Azerbaijan frontier, known for its subtropical climate, tea plantations, and the Astarachay River that divides the two nations. The city is a gateway to both Azerbaijani and Iranian cultures.",
-  "heroImage": "https://images.unsplash.com/photo-1470071459604-3b5ec3a7fe05?q=80&w=1280&auto=format&fit=crop",
-  "bestTime": "April-October",
-  "distanceFromBaku": "320 km",
-  "transport": "Bus, car",
-  "topAttractions": [
-    "Astara Border Market",
-    "Tea Plantations",
-    "Astarachay River",
-    "Historic Mosques"
-  ],
-  "topRestaurants": [
-    "Astara Restaurant",
-    "Border Cafe",
-    "Tea House"
-  ],
-  "topHotels": [
-    "Astara Hotel",
-    "Lankaran hotels (nearby)",
-    "Guesthouses"
-  ],
-  "content": {
-    "intro": "Astara is a city where two worlds meet. On one side of the Astarachay River lies Azerbaijan, on the other Iran. The subtropical climate creates lush tea plantations and rice paddies, making it a unique destination for cultural and nature tourism.",
-    "attractions": [
-      {
-        "name": "Astara Border Market",
-        "description": "A bustling market where Azerbaijani and Iranian traders meet, selling spices, textiles, and local produce."
-      },
-      {
-        "name": "Tea Plantations",
-        "description": "Visit the tea estates to see how local tea is grown and processed."
-      },
-      {
-        "name": "Astarachay River",
-        "description": "The river forms the natural border between Azerbaijan and Iran, with bridges connecting the two sides."
-      }
-    ],
-    "whereToEat": [
-      {
-        "name": "Astara Restaurant",
-        "description": "Serves local specialties like 'Astara plov' and fresh fish."
-      },
-      {
-        "name": "Border Cafe",
-        "description": "Casual dining with views of the border crossing."
-      }
-    ],
-    "tips": [
-      "Bring your passport if you plan to cross into Iran.",
-      "Try the local tea—it's some of the best in Azerbaijan.",
-      "Visit the market early for the best selection."
-    ],
-    "touristMistakes": [
-      "Attempting to cross the border without proper documents.",
-      "Ignoring the cultural differences between the two sides.",
-      "Missing the subtropical flora unique to this region."
-    ],
-    "hiddenGems": [
-      "The quiet rice paddies along the river.",
-      "Local mosques with unique architectural blends.",
-      "The hiking trails in the nearby Talysh Mountains."
-    ],
-    "howToGetThere": "From Baku: 320 km via the M4 highway. Regular buses available."
+  "population": "100,000",
+  "bestTime": "May-October",
+  "distanceFromBaku": "250 km",
+  "transport": "Bus (3.5 hours)",
+  "description": "Astara is a subtropical region on the Caspian coast, bordering Iran. It's known for its tea plantations, citrus groves, and the stunning Hirkan National Park.",
+  "heroImage": "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?q=80&w=1280&auto=format&fit=crop",
+  "coordinates": {
+    "lat": 38.45,
+    "lon": 48.87
   }
 }

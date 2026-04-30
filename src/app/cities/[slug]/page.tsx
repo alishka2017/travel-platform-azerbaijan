@@ -37,7 +37,10 @@ const cityCoordinates: Record<string, { lat: number; lon: number }> = {
 export default async function CityPage({ params }: { params: { slug: string } }) {
   const city = getCityBySlug(params.slug);
   
+  // Debug: Check if city exists
   if (!city) {
+    console.error(`City not found for slug: ${params.slug}`);
+    console.error(`Available slugs: ${cities.map(c => c.slug).join(', ')}`);
     notFound();
   }
 

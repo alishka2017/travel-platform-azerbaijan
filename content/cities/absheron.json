@@ -2,70 +2,16 @@
   "id": "absheron",
   "name": "Absheron",
   "slug": "absheron",
+  "country": "Azerbaijan",
   "region": "Absheron Peninsula",
-  "population": "500,000+",
-  "description": "The Absheron Peninsula, extending into the Caspian Sea, is the historical heart of Azerbaijan's oil industry and home to Baku's suburbs. Beyond the capital's edge lie unique natural phenomena like the constantly burning Yanar Dag (Fire Mountain) and the ancient Ateshgah Fire Temple, reflecting the region's Zoroastrian heritage. The peninsula also boasts charming coastal villages and beaches like Turkan and Pirallahı.",
-  "heroImage": "https://images.unsplash.com/photo-1534430480872-3498386e7856?q=80&w=1280&auto=format&fit=crop",
+  "population": "500,000",
   "bestTime": "April-June, September-October",
   "distanceFromBaku": "30 km",
-  "transport": "Bus, taxi, commuter train",
-  "topAttractions": [
-    "Yanar Dag (Burning Mountain)",
-    "Ateshgah Fire Temple",
-    "Gobustan Rock Art (nearby)",
-    "Pirallahı Island"
-  ],
-  "topRestaurants": [
-    "Deniz Restaurant (Puta)",
-    "Buta Garden",
-    "Sea Breeze Restaurant"
-  ],
-  "topHotels": [
-    "Fairmont Baku (Flame Towers)",
-    "Four Seasons Baku",
-    "JW Marriott Absheron"
-  ],
-  "content": {
-    "intro": "The Absheron Peninsula is where Azerbaijan's relationship with fire and oil began. Just a short drive from Baku, this region offers a fascinating blend of industrial history, ancient Zoroastrian sites, and Caspian coastal relaxation.",
-    "attractions": [
-      {
-        "name": "Yanar Dag",
-        "description": "A mesmerizing natural gas fire that blazes continuously on a hillside near the Caspian Sea. The fire has been burning for decades, fueled by gas seeping through the porous sandstone."
-      },
-      {
-        "name": "Ateshgah Fire Temple",
-        "description": "A medieval castle-like structure built around a natural gas vent that once burned continuously. It was a major site of Zoroastrian worship and later a Hindu pilgrimage site."
-      },
-      {
-        "name": "Gobustan National Park",
-        "description": "While technically just south of the peninsula, this UNESCO site is easily accessible and features over 6,000 rock carvings dating back 40,000 years."
-      }
-    ],
-    "whereToEat": [
-      {
-        "name": "Deniz Restaurant",
-        "description": "Fresh seafood restaurant on Pirallahı Island with panoramic Caspian views."
-      },
-      {
-        "name": "Buta Garden",
-        "description": "Traditional Azerbaijani cuisine in a garden setting near the Ateshgah temple."
-      }
-    ],
-    "tips": [
-      "Visit Yanar Dag at sunset for the most dramatic views.",
-      "Combine a trip to Ateshgah with Gobustan for a full day of history.",
-      "The coastal road offers excellent driving and picnic spots."
-    ],
-    "touristMistakes": [
-      "Trying to walk to Yanar Dag from Baku (too far).",
-      "Missing the small museum at Ateshgah.",
-      "Ignoring the wind on the peninsula's exposed coast."
-    ],
-    "hiddenGems": [
-      "The mud volcanoes near Gobustan (accessible via 4x4).",
-      "Local tea houses in Puta village.",
-      "The abandoned oil derricks near the Caspian shore."
-    ],
-    "howToGetThere": "From Baku: 30 km via M29 highway. Bus 125 goes to Ateshgah, or take a taxi for Yanar Dag."
+  "transport": "Bus, Taxi (30 min)",
+  "description": "The Absheron Peninsula is home to Baku's most famous landmarks, including the Ateshgah Fire Temple and Yanar Dag. It's a must-visit for history and nature lovers.",
+  "heroImage": "https://images.unsplash.com/photo-1592878904946-b3cd8ae243d7?q=80&w=1280&auto=format&fit=crop",
+  "coordinates": {
+    "lat": 40.45,
+    "lon": 50.0
   }
 }

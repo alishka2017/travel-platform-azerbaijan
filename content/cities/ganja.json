@@ -2,101 +2,16 @@
   "id": "ganja",
   "name": "Ganja",
   "slug": "ganja",
-  "region": "Ganja‑Dashkasan",
+  "country": "Azerbaijan",
+  "region": "Ganja-Dashkash",
   "population": "330,000",
-  "description": "Ganja, Azerbaijan's second‑largest city, is affectionately known as the 'City of Poems' for its literary heritage. This historic city is home to the stunning Nizami Mausoleum, dedicated to the great poet Nizami Ganjavi, and offers a more relaxed pace than bustling Baku. Visitors can explore the beautiful Nizami Park, visit the historic Juma Mosque, and discover the city's role as a vital stop on the ancient Silk Road.",
-  "heroImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/28/Ganja_2016.jpg/1280px-Ganja_2016.jpg",
-  "bestTime": "May‑September",
+  "bestTime": "May-June, September-October",
   "distanceFromBaku": "360 km",
-  "transport": "Train, bus, car",
-  "topAttractions": [
-    "Nizami Mausoleum",
-    "Juma Mosque",
-    "Nizami Park",
-    "Heydar Aliyev Avenue"
-  ],
-  "topRestaurants": [
-    "Mugam Club",
-    "Ganja Restaurant"
-  ],
-  "topHotels": [
-    "Ganja Hotel",
-    "Park Chalet Ganja"
-  ],
-  "content": {
-    "intro": "Ganja, Azerbaijan's second‑largest city, is affectionately known as the 'City of Poems' for its literary heritage. This historic city is home to the stunning Nizami Mausoleum, dedicated to the great poet Nizami Ganjavi, and offers a more relaxed pace than bustling Baku. Visitors can explore the beautiful Nizami Park, visit the historic Juma Mosque, and discover the city's role as a vital stop on the ancient Silk Road.",
-    "attractions": [
-      {
-        "name": "Old City (Icherisheher)",
-        "description": "One of the top attractions in Baku."
-      },
-      {
-        "name": "Flame Towers",
-        "description": "One of the top attractions in Baku."
-      },
-      {
-        "name": "Heydar Aliyev Center",
-        "description": "One of the top attractions in Baku."
-      },
-      {
-        "name": "Baku Boulevard",
-        "description": "One of the top attractions in Baku."
-      },
-      {
-        "name": "Nizami Mausoleum",
-        "description": "One of the top attractions in Ganja."
-      },
-      {
-        "name": "Juma Mosque",
-        "description": "One of the top attractions in Ganja."
-      },
-      {
-        "name": "Nizami Park",
-        "description": "One of the top attractions in Ganja."
-      },
-      {
-        "name": "Heydar Aliyev Avenue",
-        "description": "One of the top attractions in Ganja."
-      }
-    ],
-    "whereToEat": [
-      {
-        "name": "Cay Bagi 145",
-        "description": "Popular restaurant in Baku."
-      },
-      {
-        "name": "Dolma Restaurant",
-        "description": "Popular restaurant in Baku."
-      },
-      {
-        "name": "Malacannes 145",
-        "description": "Popular restaurant in Baku."
-      },
-      {
-        "name": "Mugam Club",
-        "description": "Popular restaurant in Ganja."
-      },
-      {
-        "name": "Ganja Restaurant",
-        "description": "Popular restaurant in Ganja."
-      }
-    ],
-    "tips": [
-      "Visit during May‑September for the best weather.",
-      "Transport: Train, bus, car",
-      "Carry local currency (AZN) as some places may not accept cards.",
-      "Respect local customs and dress modestly when visiting religious sites."
-    ],
-    "touristMistakes": [
-      "Not allocating enough time to explore the surrounding region.",
-      "Overlooking local cuisine and sticking to familiar foods.",
-      "Assuming all attractions are within walking distance – plan transportation."
-    ],
-    "hiddenGems": [
-      "Local markets for authentic souvenirs.",
-      "Scenic viewpoints outside the main tourist areas.",
-      "Traditional workshops where you can see crafts being made."
-    ],
-    "howToGetThere": "From Baku: 360 km via Train. The journey takes approximately 7 hours by road."
+  "transport": "Train (4 hours), Bus (4.5 hours)",
+  "description": "Ganja is the second-largest city in Azerbaijan, located 360 km west of Baku. It is one of the ancient cities of Azerbaijan, known for its rich history, beautiful architecture, and cultural heritage. The city is famous for its medieval Nizami Mausoleum, beautiful parks, and the modern Heydar Aliyev Avenue.",
+  "heroImage": "https://images.unsplash.com/photo-1593697826045-5d85b3f31f5d?q=80&w=1280&auto=format&fit=crop",
+  "coordinates": {
+    "lat": 40.6828,
+    "lon": 46.3606
   }
 }
