@@ -1,0 +1,161 @@
+{
+  "slug": "1-day",
+  "title": "1-Day Baku Highlights",
+  "subtitle": "Perfect introduction to Azerbaijan's capital covering Old City, modern landmarks, and local cuisine",
+  "duration": "1 day",
+  "difficulty": "Easy",
+  "bestFor": "Short layovers, weekend trips, first-time visitors",
+  "bestSeasons": ["April", "May", "June", "September", "October"],
+  "estimatedCost": {
+    "budget": "50-80 AZN per person",
+    "midrange": "80-150 AZN per person",
+    "luxury": "150+ AZN per person"
+  },
+  "overview": "Experience the perfect day in Baku, combining ancient history with modern architecture. This itinerary covers the UNESCO-listed Old City, panoramic views from Highland Park, cultural landmarks, and authentic Azerbaijani cuisine.",
+  "transportationTips": [
+    "Use BakuCard for metro and buses (cost: 2 AZN card + 0.3 AZN per ride)",
+    "Taxis via Bolt app are affordable (3-7 AZN per trip within city center)",
+    "Walking is the best way to explore the Old City (Icherisheher)",
+    "Consider a hop-on-hop-off bus for sightseeing (25 AZN for 24-hour ticket)"
+  ],
+  "diningSuggestions": [
+    {
+      "meal": "Breakfast",
+      "name": "Firuze Restaurant",
+      "location": "Old City",
+      "cuisine": "Traditional Azerbaijani",
+      "priceRange": "10-20 AZN",
+      "highlights": "Fresh breakfast platters with cheese, honey, bread, and tea"
+    },
+    {
+      "meal": "Lunch",
+      "name": "Şirvanşah Restaurant",
+      "location": "Old City",
+      "cuisine": "Azerbaijani",
+      "priceRange": "15-30 AZN",
+      "highlights": "Authentic dolma, plov, and kebabs in historic setting"
+    },
+    {
+      "meal": "Dinner",
+      "name": "Sehrli Təndir",
+      "location": "Fountain Square",
+      "cuisine": "Azerbaijani with tandoor",
+      "priceRange": "20-40 AZN",
+      "highlights": "Tandoor-baked bread and meats, cozy atmosphere"
+    }
+  ],
+  "hourlySchedule": [
+    {
+      "time": "09:00",
+      "activity": "Start at Icherisheher (Old City) Main Gate",
+      "description": "Enter through the Double Gates and get oriented with the medieval fortress walls.",
+      "transportation": "Taxi or metro to 'İçərişəhər' station",
+      "duration": "30 minutes",
+      "cost": "Free"
+    },
+    {
+      "time": "09:30",
+      "activity": "Maiden Tower (Qız Qalası)",
+      "description": "Climb the 12th-century tower for panoramic views of Baku and the Caspian Sea. Visit the museum inside to learn about its history.",
+      "transportation": "2-minute walk from main gate",
+      "duration": "1 hour",
+      "cost": "5 AZN (adult ticket)"
+    },
+    {
+      "time": "10:30",
+      "activity": "Palace of the Shirvanshahs",
+      "description": "Explore this 15th-century palace complex, a UNESCO World Heritage site. Includes the Divankhana, burial vaults, and mosque.",
+      "transportation": "5-minute walk from Maiden Tower",
+      "duration": "1.5 hours",
+      "cost": "5 AZN (adult ticket)"
+    },
+    {
+      "time": "12:00",
+      "activity": "Walk through Old City Streets",
+      "description": "Stroll through narrow cobblestone streets, visit carpet shops, art galleries, and see historic mosques like Mohammed Mosque.",
+      "transportation": "Walking",
+      "duration": "1 hour",
+      "cost": "Free (shopping optional)"
+    },
+    {
+      "time": "13:00",
+      "activity": "Lunch at Traditional Restaurant",
+      "description": "Enjoy authentic Azerbaijani cuisine at Şirvanşah Restaurant or similar in the Old City.",
+      "transportation": "Walking",
+      "duration": "1 hour",
+      "cost": "15-30 AZN"
+    },
+    {
+      "time": "14:00",
+      "activity": "Baku Boulevard & Carpet Museum",
+      "description": "Walk along the scenic seaside boulevard. Visit the Azerbaijan Carpet Museum (shaped like a rolled carpet) to see traditional carpet weaving.",
+      "transportation": "15-minute walk from Old City or short taxi ride",
+      "duration": "1.5 hours",
+      "cost": "Carpet Museum: 7 AZN"
+    },
+    {
+      "time": "15:30",
+      "activity": "Little Venice & Ferris Wheel",
+      "description": "Take a gondola ride through Little Venice canals (seasonal) or enjoy the Ferris wheel for elevated views.",
+      "transportation": "Within Baku Boulevard",
+      "duration": "45 minutes",
+      "cost": "Gondola: 5 AZN, Ferris wheel: 3 AZN"
+    },
+    {
+      "time": "16:15",
+      "activity": "Heydar Aliyev Center",
+      "description": "Taxi to the iconic architectural masterpiece designed by Zaha Hadid. Explore the exterior and interior exhibitions (if time allows).",
+      "transportation": "Taxi (15 minutes, ~5 AZN)",
+      "duration": "1.5 hours",
+      "cost": "Exterior free, exhibitions: 15 AZN"
+    },
+    {
+      "time": "17:45",
+      "activity": "Highland Park & Flame Towers View",
+      "description": "Take a taxi to Highland Park for the best panoramic view of Baku, especially the Flame Towers. Visit Martyrs' Lane memorial.",
+      "transportation": "Taxi (10 minutes, ~3 AZN)",
+      "duration": "1 hour",
+      "cost": "Free"
+    },
+    {
+      "time": "18:45",
+      "activity": "Sunset at Flame Towers",
+      "description": "Watch the sunset and see the Flame Towers light up with LED displays (after dark).",
+      "transportation": "Stay at Highland Park",
+      "duration": "45 minutes",
+      "cost": "Free"
+    },
+    {
+      "time": "19:30",
+      "activity": "Dinner at Fountain Square",
+      "description": "Head to Fountain Square area for dinner at Sehrli Təndir or other local restaurants. Enjoy the lively atmosphere.",
+      "transportation": "Taxi (10 minutes, ~4 AZN) or funicular down",
+      "duration": "1.5 hours",
+      "cost": "20-40 AZN"
+    },
+    {
+      "time": "21:00",
+      "activity": "Evening Stroll at Fountain Square",
+      "description": "Walk around the illuminated fountains, enjoy street performances, and maybe try local ice cream.",
+      "transportation": "Walking",
+      "duration": "1 hour",
+      "cost": "Optional shopping"
+    }
+  ],
+  "additionalTips": [
+    "Wear comfortable walking shoes as you'll cover 8-10 km on foot.",
+    "Carry a hat and sunscreen in summer; the Old City has limited shade.",
+    "Book tickets online for Maiden Tower and Shirvanshahs Palace to skip lines.",
+    "Bargain politely at souvenir shops in the Old City (start at 50% of asking price).",
+    "Have some local currency (AZN) as some small vendors don't accept cards.",
+    "Download offline maps (Google Maps or Maps.me) as Old City streets can be confusing."
+  ],
+  "whatToPack": [
+    "Comfortable walking shoes",
+    "Light jacket (evenings can be breezy)",
+    "Camera",
+    "Water bottle",
+    "Power bank for phone",
+    "Small backpack"
+  ]
+}

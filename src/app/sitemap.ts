@@ -2,7 +2,7 @@ import { MetadataRoute } from 'next'
 import { cities, places } from '@/data/places'
 
 export default function sitemap(): MetadataRoute.Sitemap {
-  const baseUrl = 'https://azerbaijan-travel-platform.vercel.app'
+  const baseUrl = 'https://travel-platform-azerbaijan.vercel.app'
   const now = new Date().toISOString()
 
   const routes = [
@@ -64,5 +64,13 @@ export default function sitemap(): MetadataRoute.Sitemap {
       priority: 0.6,
     }))
 
-  return [...routes, ...cityPages, ...attractionPages, ...restaurantPages, ...tourPages]
+  // Add itinerary detail pages
+  const itineraryPages = ['1-day', '3-days', '7-days'].map(slug => ({
+    url: `${baseUrl}/itineraries/${slug}`,
+    lastModified: now,
+    changeFrequency: 'monthly' as const,
+    priority: 0.7,
+  }))
+
+  return [...routes, ...cityPages, ...attractionPages, ...restaurantPages, ...tourPages, ...itineraryPages]
 }
