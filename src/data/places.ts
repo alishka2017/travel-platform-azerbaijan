@@ -848,6 +848,23 @@ export function searchPlaces(query: string): Place[] {
     place.name.toLowerCase().includes(lowerQuery) ||
     place.city.toLowerCase().includes(lowerQuery) ||
     place.category.toLowerCase().includes(lowerQuery) ||
-    place.tags.some(tag => tag.includes(lowerQuery))
+    place.tags.some(tag => tag.includes(lowerQuery)) ||
+    place.description.toLowerCase().includes(lowerQuery) ||
+    place.address.toLowerCase().includes(lowerQuery)
   );
+}
+
+export function searchAutocomplete(query: string): Place[] {
+  const lowerQuery = query.toLowerCase();
+  if (lowerQuery.length < 2) return [];
+  
+  // Prioritize matches in name, then city, then category
+  return places
+    .filter(place => 
+      place.name.toLowerCase().includes(lowerQuery) ||
+      place.city.toLowerCase().includes(lowerQuery) ||
+      place.category.toLowerCase().includes(lowerQuery) ||
+      place.tags.some(tag => tag.includes(lowerQuery))
+    )
+    .slice(0, 8); // Limit to 8 suggestions
 }

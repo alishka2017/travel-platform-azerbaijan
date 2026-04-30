@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
+import WhatsAppButton from "@/components/ui/WhatsAppButton";
 
 const inter = Inter({
   variable: "--font-inter",
@@ -8,19 +9,19 @@ const inter = Inter({
 });
 
 export const metadata: Metadata = {
-  title: "Azerbaijan Travel Guide | Discover Cities, Attractions, Tours & Restaurants",
-  description: "Your complete travel guide to Azerbaijan. Explore Baku, Sheki, Gabala, and more. Discover UNESCO sites, tours, restaurants, hotels, and hidden gems in the Land of Fire.",
-  keywords: ["Azerbaijan travel", "Baku guide", "Azerbaijan tours", "Things to do in Azerbaijan", "Azerbaijan attractions", "Sheki city", "Gabala resort", "Caucasus travel"],
-  authors: [{ name: "Azerbaijan Travel Platform" }],
-  metadataBase: new URL("https://azerbaijantravel.com"),
+  title: "Smartholiday.az | Smart Holiday Travel - Azerbaijan Guide",
+  description: "Your complete travel guide to Azerbaijan with Smartholiday.az. Explore Baku, Sheki, Gabala, and more. Discover tours, restaurants, hotels, and hidden gems.",
+  keywords: ["Smartholiday.az", "Azerbaijan travel", "Baku guide", "Azerbaijan tours", "Smart Holiday Travel", "Azerbaijan attractions"],
+  authors: [{ name: "Smartholiday.az" }],
+  metadataBase: new URL("https://smartholiday.az"),
   alternates: {
     canonical: "/",
   },
   openGraph: {
-    title: "Azerbaijan Travel Guide | Discover the Land of Fire",
-    description: "Explore ancient history, modern architecture, and natural wonders in Azerbaijan. Plan your perfect trip with our comprehensive guides.",
-    url: "https://azerbaijantravel.com",
-    siteName: "Azerbaijan Travel Platform",
+    title: "Smartholiday.az | Smart Holiday Travel",
+    description: "Explore ancient history, modern architecture, and natural wonders in Azerbaijan with Smartholiday.az.",
+    url: "https://smartholiday.az",
+    siteName: "Smartholiday.az",
     locale: "en_US",
     type: "website",
     images: [
@@ -34,8 +35,8 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Azerbaijan Travel Guide | Discover the Land of Fire",
-    description: "Your complete guide to exploring Azerbaijan's cities, attractions, tours, and restaurants.",
+    title: "Smartholiday.az | Smart Holiday Travel",
+    description: "Your complete guide to exploring Azerbaijan's cities, attractions, tours, and restaurants with Smartholiday.az.",
     images: ["https://upload.wikimedia.org/wikipedia/commons/thumb/5/5e/Baku_modern_skyline.jpg/1280px-Baku_modern_skyline.jpg"],
   },
   robots: {
@@ -63,6 +64,7 @@ export default function RootLayout({
     >
       <body className="min-h-full flex flex-col">
         {children}
+        <WhatsAppButton />
       </body>
     </html>
   );

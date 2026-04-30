@@ -1,0 +1,14 @@
+{
+  "cities": [
+    {
+      "id": "baku",
+      "name": "Baku",
+      "slug": "baku",
+      "description": "Baku, the vibrant capital of Azerbaijan, sits on the edge of the Caspian Sea.",
+      "image": "/images/cities/baku.jpg",
+      "attractions": ["old-city", "flame-towers"],
+      "restaurants": ["cafe-1", "cafe-2"],
+      "hidden_gems": ["local-tea-houses"]
+    }
+  ]
+}

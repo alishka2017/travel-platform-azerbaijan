@@ -1,0 +1,110 @@
+{
+  "id": "gabala",
+  "name": "Gabala",
+  "title": "Gabala, Azerbaijan: Mountain Resort & Nature Escape",
+  "metaDescription": "Full guide to Gabala – Tufandag Mountain Resort, Nohur Lake, hiking trails, cultural sights, and family‑friendly activities.",
+  "description": "Gabala is Azerbaijan's premier mountain resort destination, offering year‑round activities in a stunning natural setting. The magnificent Tufandag Mountain Resort features modern cable cars, ski slopes, and hiking trails with panoramic views of the Caucasus Mountains. The peaceful Nohur Lake and surrounding forests provide opportunities for outdoor adventures, while the ancient Chukhur Gabala archaeological site reveals the region's 2,500‑year history. Gabala is also famous for its entertainment park “Gabaland” and the city's philharmonic orchestra.",
+  "region": "Gabala District",
+  "population": "13,000",
+  "bestTimeToVisit": "December‑March for skiing, June‑September for hiking and lake activities",
+  "currency": "Azerbaijan Manat (AZN)",
+  "language": "Azerbaijani, Russian, English in resorts",
+  "emergencyNumber": "112",
+  
+  "sections": [
+    {
+      "title": "Top Attractions",
+      "items": [
+        {
+          "name": "Tufandag Mountain Resort",
+          "description": "Modern year‑round resort with cable cars, skiing, snowboarding, hiking trails, and breathtaking mountain views."
+        },
+        {
+          "name": "Nohur Lake",
+          "description": "Serene mountain lake surrounded by forest; ideal for walking, picnics, paddle‑boating, and photography."
+        },
+        {
+          "name": "Gabaland Entertainment Park",
+          "description": "Family‑friendly amusement park with rides, games, and attractions set against a scenic mountain backdrop."
+        },
+        {
+          "name": "Chukhur Gabala Archaeological Site",
+          "description": "Ruins of the ancient city of Gabala (former capital of Caucasian Albania) with traces of temples, walls, and pottery."
+        },
+        {
+          "name": "Gabala Shooting Club",
+          "description": "World‑class shooting range offering clay‑pigeon and rifle shooting for beginners and professionals."
+        },
+        {
+          "name": "Yeddi Gozel Waterfall",
+          "description": "A beautiful seven‑step waterfall in the nearby forest; accessible via a moderate hiking trail."
+        }
+      ]
+    },
+    {
+      "title": "Where to Eat",
+      "items": [
+        {
+          "name": "Meyvə Bağı (Orchard Restaurant)",
+          "cuisine": "Azerbaijani, local produce",
+          "description": "Rustic restaurant in an apple orchard, serving fresh trout, grilled vegetables, and homemade fruit juices."
+        },
+        {
+          "name": "Tufandag Restaurant",
+          "cuisine": "International, Caucasian",
+          "description": "At the top of the cable car station, offering spectacular views alongside hearty mountain dishes."
+        },
+        {
+          "name": "Gabala Steakhouse",
+          "cuisine": "Steak, European",
+          "description": "Upscale grill restaurant in the city center, known for its quality steaks and wine selection."
+        },
+        {
+          "name": "Karvansaray Gabala",
+          "cuisine": "Traditional",
+          "description": "Restaurant styled like a historic caravanserai, serving kebabs, piti, and plov in an atmospheric setting."
+        }
+      ]
+    },
+    {
+      "title": "Hidden Gems",
+      "items": [
+        {
+          "name": "Jalilabad Waterfalls",
+          "description": "A series of smaller waterfalls near the village of Jalilabad, less crowded and great for summer cooling."
+        },
+        {
+          "name": "Gabala Historical Ethnography Museum",
+          "description": "Small museum showcasing traditional costumes, tools, and artifacts from Gabala’s history."
+        },
+        {
+          "name": "Gabala Wine House",
+          "description": "Local winery offering tours and tastings of regional wines made from mountain grapes."
+        },
+        {
+          "name": "Forest Zipline",
+          "description": "Adventure park with ziplines through the forest canopy, suitable for adults and older children."
+        }
+      ]
+    },
+    {
+      "title": "Tourist Mistakes to Avoid",
+      "items": [
+        "Not checking cable‑car operating hours – they vary by season and weather.",
+        "Coming without warm layers – mountain weather can change rapidly, even in summer.",
+        "Skipping the archaeological site – it’s a quiet, atmospheric place with significant history.",
+        "Driving without snow chains in winter – roads to Tufandag can be icy and require preparation.",
+        "Not booking resort accommodation ahead in peak ski season – sells out quickly."
+      ]
+    },
+    {
+      "title": "How to Get Here",
+      "items": [
+        "🚗 **Car**: 225 km from Baku (approx. 3‑4 hours) via the M4 highway.",
+        "🚌 **Bus**: Regular buses from Baku Central Bus Terminal; journey 3.5‑4 hours.",
+        "✈️ **Plane**: No airport in Gabala; nearest is Baku (GYD) or Gabala International Airport (GBB) for charters.",
+        "🚕 **Local transport**: Taxis are available; many resorts offer shuttle services."
+      ]
+    }
+  ]
+}

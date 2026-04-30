@@ -1,4 +1,5 @@
 import Link from 'next/link';
+import SearchBar from '@/components/ui/SearchBar';
 
 export default function Header() {
   return (
@@ -14,7 +15,7 @@ export default function Header() {
             </div>
             <div className="flex flex-col">
               <span className="font-display font-bold text-xl text-gray-900 leading-tight">
-                AzerbaijanTravel
+                Smartholiday.az
               </span>
               <span className="text-xs text-primary font-medium">Discover • Explore • Experience</span>
             </div>
@@ -46,16 +47,10 @@ export default function Header() {
 
           {/* Actions */}
           <div className="flex items-center gap-3">
-            {/* Search Button */}
-            <Link 
-              href="/search" 
-              className="hidden sm:flex items-center gap-2 text-gray-500 hover:text-primary hover:bg-primary-50 px-4 py-2 rounded-full transition-all duration-200"
-            >
-              <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
-              </svg>
-              <span className="text-sm font-medium">Search</span>
-            </Link>
+            {/* Search Bar */}
+            <div className="hidden sm:block">
+              <SearchBar variant="header" placeholder="Search cities, attractions..." />
+            </div>
 
             {/* Favorites Button */}
             <Link 

@@ -5,6 +5,7 @@ import Link from 'next/link';
 import { cities, places } from '@/data/places';
 import { HeartButton } from '@/components/HeartButton';
 import { CityCard } from '@/components/ui/CityCard';
+import SearchBar from '@/components/ui/SearchBar';
 
 export default function HomePage() {
   const topAttractions = places.filter(p => p.category !== 'Restaurants' && p.category !== 'Tours').slice(0, 8);
@@ -45,31 +46,7 @@ export default function HomePage() {
 
             {/* Search Box */}
             <div className="w-full max-w-4xl animate-slide-up animate-delay-200">
-              <div className="bg-white/95 backdrop-blur-xl rounded-2xl shadow-2xl p-3 flex flex-col md:flex-row items-center gap-3">
-                <div className="flex-1 w-full md:w-auto flex items-center gap-3 px-4 py-3 border-r border-gray-200 md:border-r-0">
-                  <div className="w-10 h-10 bg-primary-100 rounded-full flex items-center justify-center flex-shrink-0">
-                    <svg className="w-5 h-5 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
-                    </svg>
-                  </div>
-                  <div className="flex-1">
-                    <label className="text-xs text-gray-500 font-medium">Where to?</label>
-                    <input 
-                      type="text" 
-                      placeholder="City, attraction, or restaurant..." 
-                      className="w-full bg-transparent text-gray-800 placeholder-gray-400 outline-none text-base"
-                    />
-                  </div>
-                </div>
-                
-                <Link href="/search" className="bg-gradient-to-r from-primary to-primary-dark text-white px-8 py-4 rounded-xl font-semibold hover:shadow-lg hover:shadow-primary/40 transition-all duration-300 active:scale-95 flex items-center gap-2 min-w-[160px] justify-center">
-                  <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
-                  </svg>
-                  Search
-                </Link>
-              </div>
+              <SearchBar variant="hero" />
             </div>
 
             {/* Quick Links */}

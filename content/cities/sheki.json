@@ -1,0 +1,110 @@
+{
+  "id": "sheki",
+  "name": "Sheki",
+  "title": "Sheki, Azerbaijan: UNESCO Heritage & Silk‑Road Charm",
+  "metaDescription": "Complete tourist guide to Sheki – historic Khan Palace, silk workshops, local cuisine, and day‑trip recommendations.",
+  "description": "Sheki, nestled in the foothills of the Greater Caucasus Mountains, is one of Azerbaijan's most beautiful and historic cities. A UNESCO World Heritage Site, the stunning Sheki Khan Palace showcases exquisite stained‑glass work and Persian‑influenced architecture. The city is renowned for its traditional silk production, local crafts, and the famous Sheki halva. The charming Old Town with its historic caravanserais and artisan workshops offers a glimpse into Silk Road history. Sheki is also known for its mineral‑water springs and mild climate.",
+  "region": "Shaki‑Zaqatala",
+  "population": "68,000",
+  "bestTimeToVisit": "May‑October (spring/summer for greenery, autumn for harvest festivals)",
+  "currency": "Azerbaijan Manat (AZN)",
+  "language": "Azerbaijani, Russian, limited English",
+  "emergencyNumber": "112",
+  
+  "sections": [
+    {
+      "title": "Top Attractions",
+      "items": [
+        {
+          "name": "Sheki Khan Palace",
+          "description": "18th‑century royal residence with stunning frescoes, stained‑glass shebeke windows, and intricate woodwork."
+        },
+        {
+          "name": "Sheki Fortress",
+          "description": "Historic citadel surrounding the palace; walk the ancient walls for panoramic views of the city."
+        },
+        {
+          "name": "Karvansaray (Caravanserai)",
+          "description": "Two restored Silk‑Road caravanserais where travellers can stay and experience medieval merchant life."
+        },
+        {
+          "name": "Sheki History Museum",
+          "description": "Located within the fortress, exhibits artifacts from Sheki’s Silk Road era and local ethnographic items."
+        },
+        {
+          "name": "Sheki Silk Factory",
+          "description": "Traditional silk‑production workshop where you can watch the entire process from cocoon to fabric."
+        },
+        {
+          "name": "Gelersen‑Görersen Fortress",
+          "description": "Ruins of a 15th‑century mountain fortress with dramatic views over the surrounding valleys."
+        }
+      ]
+    },
+    {
+      "title": "Where to Eat",
+      "items": [
+        {
+          "name": "Sheki Saray Restaurant",
+          "cuisine": "Azerbaijani, traditional",
+          "description": "Atmospheric restaurant inside a historic building serving Sheki specialties like piti, halva, and kebabs."
+        },
+        {
+          "name": "Karavan Restoran",
+          "cuisine": "Azerbaijani, Turkish",
+          "description": "Located near the caravanserai, known for its fresh lavash bread and grilled meats."
+        },
+        {
+          "name": "Sheki Halvasi",
+          "cuisine": "Local sweets",
+          "description": "Small family‑run spot selling authentic Sheki halva, a rich dessert made with rice flour, nuts, and spices."
+        },
+        {
+          "name": "Chay Xana (Teahouse) near Kish",
+          "cuisine": "Tea and snacks",
+          "description": "Traditional teahouse with mountain views; perfect for sipping tea and tasting local pastries."
+        }
+      ]
+    },
+    {
+      "title": "Hidden Gems",
+      "items": [
+        {
+          "name": "Kish Albanian Church",
+          "description": "Ancient Caucasian Albanian church (12th century) in the nearby village of Kish; one of the oldest in the region."
+        },
+        {
+          "name": "Sheki Bazaar",
+          "description": "Vibrant local market where you can buy spices, nuts, fresh produce, and handmade crafts."
+        },
+        {
+          "name": "Shebeke Workshop",
+          "description": "Small studio where artisans create the intricate wooden‑stained‑glass windows (shebeke) seen in the palace."
+        },
+        {
+          "name": "Sheki Waterfall",
+          "description": "Picturesque waterfall a short drive from the city center, surrounded by forested hills."
+        }
+      ]
+    },
+    {
+      "title": "Tourist Mistakes to Avoid",
+      "items": [
+        "Visiting on Monday – the Khan Palace and many museums are closed.",
+        "Not trying piti – Sheki’s signature slow‑cooked lamb stew served in a clay pot.",
+        "Missing the chance to buy real silk scarves – ensure they’re hand‑made at the silk factory.",
+        "Underestimating travel time – Sheki is about 4 hours by road from Baku; plan an overnight stay.",
+        "Skipping the shebeke demonstration – the craft is unique to Sheki and fascinating to watch."
+      ]
+    },
+    {
+      "title": "How to Get Here",
+      "items": [
+        "🚗 **Car**: Most convenient; 300 km from Baku via the M1 highway (approx. 4‑5 hours).",
+        "🚌 **Bus**: Daily coaches from Baku Central Bus Terminal (Avtovagzal); journey 4‑5 hours.",
+        "🚆 **Train**: No direct train to Sheki; nearest train station is in Ganja (then 2‑hour taxi).",
+        "🚕 **Local transport**: Taxis are inexpensive; walking is the best way to explore the compact Old Town."
+      ]
+    }
+  ]
+}
