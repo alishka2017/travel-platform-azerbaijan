@@ -76,3 +76,72 @@ export function generateBreadcrumbSchema(items: Array<{ name: string, url: strin
     }))
   };
 }
+
+export function generatePlaceSchema(place: {
+  name: string;
+  description: string;
+  image?: string;
+  category?: string;
+  type?: 'TouristAttraction' | 'Restaurant' | 'Tour';
+  address?: string;
+  telephone?: string;
+  priceRange?: string;
+  openingHours?: string;
+  rating?: number;
+  reviewCount?: number;
+}): object {
+  // Determine schema type from category or explicit type
+  let schemaType: 'TouristAttraction' | 'Restaurant' | 'Tour' = 'TouristAttraction';
+  if (place.type) {
+    schemaType = place.type;
+  } else if (place.category) {
+    const cat = place.category.toLowerCase();
+    if (cat.includes('restaurant') || cat === 'restaurants') {
+      schemaType = 'Restaurant';
+    } else if (cat.includes('tour') || cat === 'tours') {
+      schemaType = 'Tour';
+    } else {
+      schemaType = 'TouristAttraction';
+    }
+  }
+  
+  const baseSchema: any = {
+    "@context": "https://schema.org",
+    "@type": schemaType,
+    "name": place.name,
+    "description": place.description,
+  };
+  
+  if (place.image) {
+    baseSchema.image = place.image;
+  }
+  
+  if (place.address) {
+    baseSchema.address = {
+      "@type": "PostalAddress",
+      "streetAddress": place.address
+    };
+  }
+  
+  if (place.telephone) {
+    baseSchema.telephone = place.telephone;
+  }
+  
+  if (place.priceRange) {
+    baseSchema.priceRange = place.priceRange;
+  }
+  
+  if (place.openingHours) {
+    baseSchema.openingHours = place.openingHours;
+  }
+  
+  if (place.rating !== undefined && place.reviewCount !== undefined) {
+    baseSchema.aggregateRating = {
+      "@type": "AggregateRating",
+      "ratingValue": place.rating,
+      "reviewCount": place.reviewCount
+    };
+  }
+  
+  return baseSchema;
+}

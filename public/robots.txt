@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://travel-platform-azerbaijan.vercel.app/sitemap.xml
+Sitemap: https://smartholiday.az/sitemap.xml

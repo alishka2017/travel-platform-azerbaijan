@@ -26,7 +26,7 @@ export function generatePlaceMetadata(placeId: string): Metadata {
       "Smartholiday.az",
       ...place.tags,
     ],
-    metadataBase: new URL("https://travel-platform-azerbaijan.vercel.app"),
+    metadataBase: new URL("https://smartholiday.az"),
     alternates: {
       canonical: `/${place.category.toLowerCase()}/${place.id}`,
     },
@@ -80,7 +80,7 @@ export function generateTourMetadata(tourId: string): Metadata {
       "Smartholiday.az",
       ...tour.tags,
     ],
-    metadataBase: new URL("https://travel-platform-azerbaijan.vercel.app"),
+    metadataBase: new URL("https://smartholiday.az"),
     alternates: {
       canonical: `/tours/${tour.id}`,
     },
@@ -134,7 +134,7 @@ export function generateRestaurantMetadata(restaurantId: string): Metadata {
       "Smartholiday.az",
       ...restaurant.tags,
     ],
-    metadataBase: new URL("https://travel-platform-azerbaijan.vercel.app"),
+    metadataBase: new URL("https://smartholiday.az"),
     alternates: {
       canonical: `/restaurants/${restaurant.id}`,
     },
@@ -187,7 +187,7 @@ export function generateAttractionMetadata(attractionId: string): Metadata {
       "Smartholiday.az",
       ...attraction.tags,
     ],
-    metadataBase: new URL("https://travel-platform-azerbaijan.vercel.app"),
+    metadataBase: new URL("https://smartholiday.az"),
     alternates: {
       canonical: `/attractions/${attraction.id}`,
     },
@@ -233,7 +233,7 @@ export function generateCityMetadata(citySlug: string): Metadata {
     title,
     description,
     keywords: [city.name, city.country, "travel guide", "tourism", "Azerbaijan", "Smartholiday.az"],
-    metadataBase: new URL("https://travel-platform-azerbaijan.vercel.app"),
+    metadataBase: new URL("https://smartholiday.az"),
     alternates: {
       canonical: `/cities/${city.slug}`,
     },

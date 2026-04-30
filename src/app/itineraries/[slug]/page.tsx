@@ -31,7 +31,7 @@ const itineraries: Record<string, Itinerary> = {
   '1-day': {
     title: 'Baku Highlights in One Day',
     duration: '1 day',
-    description: 'Perfect for layovers or short visits. Experience Baku's iconic landmarks, Old City charm, and modern architecture in a single packed day.',
+    description: "Perfect for layovers or short visits. Experience Baku's iconic landmarks, Old City charm, and modern architecture in a single packed day.",
     highlights: [
       'Explore UNESCO‑listed Icheri Sheher (Old City)',
       'Visit the Palace of the Shirvanshahs',
@@ -64,7 +64,7 @@ const itineraries: Record<string, Itinerary> = {
   '3-days': {
     title: 'Baku & Beyond: 3‑Day Exploration',
     duration: '3 days',
-    description: 'Discover Baku's highlights plus day trips to Absheron Peninsula's natural wonders and the ancient fire worship sites.',
+    description: "Discover Baku's highlights plus day trips to Absheron Peninsula's natural wonders and the ancient fire worship sites.",
     highlights: [
       'Full day in Baku Old City and museums',
       'Visit Ateshgah Fire Temple and Yanar Dag',

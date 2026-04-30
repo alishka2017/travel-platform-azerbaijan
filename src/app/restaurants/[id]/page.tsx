@@ -23,7 +23,7 @@ export default function RestaurantDetailPage({ params }: { params: { id: string 
   const breadcrumbSchema = generateBreadcrumbSchema([
     { name: "Home", url: "https://smartholiday.az" },
     { name: "Restaurants", url: "https://smartholiday.az/restaurants" },
-    { name: restaurant.name }
+    { name: restaurant.name, url: `https://smartholiday.az/restaurants/${restaurant.id}` }
   ]);
 
   return (

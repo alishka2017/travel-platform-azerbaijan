@@ -2,7 +2,7 @@ import { MetadataRoute } from 'next'
 import { cities, places } from '@/data/places'
 
 export default function sitemap(): MetadataRoute.Sitemap {
-  const baseUrl = 'https://travel-platform-azerbaijan.vercel.app'
+  const baseUrl = 'https://smartholiday.az'
   const now = new Date().toISOString()
 
   const routes = [

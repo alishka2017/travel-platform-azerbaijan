@@ -23,7 +23,7 @@ export default function AttractionContent({ params }: { params: { id: string } }
     { name: "Home", url: "https://smartholiday.az" },
     { name: "Attractions", url: "https://smartholiday.az/attractions" },
     { name: place.city, url: `https://smartholiday.az/cities/${place.citySlug}` },
-    { name: place.name }
+    { name: place.name, url: `https://smartholiday.az/attractions/${place.id}` }
   ]);
 
   const [lightboxOpen, setLightboxOpen] = useState(false);

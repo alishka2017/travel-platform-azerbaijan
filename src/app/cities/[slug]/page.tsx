@@ -46,11 +46,11 @@ export default async function CityPage({ params }: { params: { slug: string } })
     .filter(p => p.lat && p.lon)
     .map(p => ({ lat: p.lat!, lon: p.lon!, popup: p.name, category: p.category, id: p.id }));
 
-  const schema = generateCitySchema(city, attractions);
+  const schema = generateCitySchema(city.name, city.description, attractions.map(a => a.name));
   const breadcrumbSchema = generateBreadcrumbSchema([
     { name: "Home", url: "https://smartholiday.az" },
     { name: "Cities", url: "https://smartholiday.az/cities" },
-    { name: city.name }
+    { name: city.name, url: `https://smartholiday.az/cities/${city.slug}` }
   ]);
   const webSiteSchema = generateWebSiteSchema();
 

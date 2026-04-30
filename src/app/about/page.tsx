@@ -11,7 +11,7 @@ export default function AboutPage() {
         {/* Hero */}
         <section className="bg-gradient-to-br from-blue-800 to-blue-900 text-white py-16">
           <div className="container mx-auto px-4 text-center">
-            <h1 className="text-4xl md:text-5xl font-bold mb-4">About AzerbaijanTravel</h1>
+            <h1 className="text-4xl md:text-5xl font-bold mb-4">About Smartholiday.az</h1>
             <p className="text-blue-200 text-lg max-w-2xl mx-auto">
               Your complete guide to discovering the beauty and culture of Azerbaijan.
             </p>
@@ -24,7 +24,7 @@ export default function AboutPage() {
             <div className="max-w-3xl mx-auto text-center">
               <h2 className="text-2xl font-bold mb-6">Our Mission</h2>
               <p className="text-gray-600 mb-4">
-                AzerbaijanTravel was created with a simple goal: to help travelers discover 
+                Smartholiday.az was created with a simple goal: to help travelers discover 
                 the incredible beauty and culture of Azerbaijan. We believe this fascinating 
                 country at the crossroads of Europe and Asia deserves to be explored and appreciated.
               </p>
