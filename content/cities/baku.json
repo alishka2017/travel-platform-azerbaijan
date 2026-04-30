@@ -1,110 +1,80 @@
 {
   "id": "baku",
   "name": "Baku",
-  "title": "Baku, Azerbaijan: The Ultimate City Guide",
-  "metaDescription": "Comprehensive guide to Baku – historical Old City, modern architecture, top attractions, local restaurants, and essential travel tips for tourists.",
-  "description": "Baku, the vibrant capital of Azerbaijan, sits on the edge of the Caspian Sea. This stunning city masterfully blends ancient history with futuristic architecture, from the UNESCO-listed Old City (Icherisheher) with its medieval walls and Maiden Tower to the iconic Flame Towers that illuminate the skyline. Explore the bustling Baku Boulevard, admire the Heydar Aliyev Center’s flowing design, and experience the city’s rich cultural heritage that reflects its position at the crossroads of Europe and Asia.",
+  "slug": "baku",
   "region": "Absheron Peninsula",
-  "population": "2.2 million",
-  "bestTimeToVisit": "April-June and September‑October for mild weather",
-  "currency": "Azerbaijan Manat (AZN)",
-  "language": "Azerbaijani (official), Russian, English widely spoken in tourist areas",
-  "emergencyNumber": "112",
-  
-  "sections": [
-    {
-      "title": "Top Attractions",
-      "items": [
-        {
-          "name": "Old City (Icherisheher)",
-          "description": "UNESCO World Heritage Site with medieval walls, Maiden Tower, Shirvanshahs' Palace, and charming cobblestone streets."
-        },
-        {
-          "name": "Flame Towers",
-          "description": "Iconic trio of skyscrapers that light up at night with LED displays, offering panoramic views from the observation deck."
-        },
-        {
-          "name": "Heydar Aliyev Center",
-          "description": "Zaha Hadid’s architectural masterpiece with undulating white curves housing galleries, exhibits, and cultural events."
-        },
-        {
-          "name": "Baku Boulevard",
-          "description": "Lively seafront promenade stretching along the Caspian, featuring parks, cafes, the Ferris Wheel, and Little Venice."
-        },
-        {
-          "name": "Martyrs' Alley",
-          "description": "Hilltop memorial park honoring those who died in the Black January events; offers sweeping city views."
-        },
-        {
-          "name": "Azerbaijan Carpet Museum",
-          "description": "Unique building shaped like a rolled‑up carpet, showcasing Azerbaijan’s rich textile tradition."
-        }
-      ]
-    },
-    {
-      "title": "Where to Eat",
-      "items": [
-        {
-          "name": "Şirvanşah Restaurant",
-          "cuisine": "Azerbaijani, traditional",
-          "description": "Upscale setting inside the Old City walls, known for lamb dishes, plov, and live music."
-        },
-        {
-          "name": "Mangal Steakhouse",
-          "cuisine": "Steak, international",
-          "description": "Premium steakhouse with a view of the Flame Towers; perfect for a special night out."
-        },
-        {
-          "name": "Cezve Coffee",
-          "cuisine": "Café, breakfast",
-          "description": "Cozy spot in the Old City serving excellent Turkish coffee, pastries, and local breakfasts."
-        },
-        {
-          "name": "Sehrli Tendir",
-          "cuisine": "Traditional bakery",
-          "description": "Famous for freshly baked tandir bread, gozleme, and traditional Azeri pastries."
-        }
-      ]
-    },
-    {
-      "title": "Hidden Gems",
-      "items": [
-        {
-          "name": "Bibi‑Heybat Mosque",
-          "description": "Beautiful reconstructed mosque on the outskirts, considered one of Azerbaijan’s most important religious sites."
-        },
-        {
-          "name": "Ateshgah Fire Temple",
-          "description": "Ancient Zoroastrian fire‑worship site in Surakhany, where natural gas vents create eternal flames."
-        },
-        {
-          "name": "Yanardag (Burning Mountain)",
-          "description": "A hillside where natural gas has been burning for centuries, especially dramatic at sunset."
-        },
-        {
-          "name": "Fountain Square (Nizami Street)",
-          "description": "Lively pedestrian zone with shops, street performers, and historic buildings; perfect for an evening stroll."
-        }
-      ]
-    },
-    {
-      "title": "Tourist Mistakes to Avoid",
-      "items": [
-        "Not carrying cash – many small shops and taxis still prefer AZN in cash.",
-        "Visiting in July‑August without sun protection – temperatures can exceed 35°C.",
-        "Missing the Old City at night – it’s beautifully illuminated and less crowded.",
-        "Overlooking the local metro – it’s efficient, cheap, and many stations are architectural gems.",
-        "Skipping a guided walking tour – the Old City’s history is best explained by a local guide."
-      ]
-    },
-    {
-      "title": "How to Get Here",
-      "items": [
-        "✈️ **Air**: Heydar Aliyev International Airport (GYD) is 25 km from the city center; taxi costs about 25‑30 AZN.",
-        "🚆 **Train**: Baku Central Railway Station connects to Tbilisi, Moscow, and other cities.",
-        "🚌 **Bus**: The main bus terminal (Avtovagzal) has services across Azerbaijan and to Georgia, Turkey.",
-        "🚇 **Local transport**: Metro (single ride 0.3 AZN), buses (0.3 AZN), taxis (Bolt/Uber work well)."
-      ]
-    }
-  ]
+  "population": "2.3 million",
+  "description": "Baku, the vibrant capital of Azerbaijan, sits on the edge of the Caspian Sea. This stunning city masterfully blends ancient history with futuristic architecture, from the UNESCO‑listed Old City (Icherisheher) with its medieval walls and Maiden Tower to the iconic Flame Towers that illuminate the skyline. Explore the bustling Baku Boulevard, admire the Heydar Aliyev Center's flowing design, and experience the city's rich cultural heritage that reflects its position at the crossroads of Europe and Asia.",
+  "heroImage": "https://images.unsplash.com/photo-1574505338056-7718c71c2c35?q=80&w=1280&auto=format&fit=crop",
+  "bestTime": "April‑June, September‑October",
+  "distanceFromBaku": "0 km",
+  "transport": "Metro, bus, taxi, BakuCard",
+  "topAttractions": [
+    "Old City (Icherisheher)",
+    "Flame Towers",
+    "Heydar Aliyev Center",
+    "Baku Boulevard"
+  ],
+  "topRestaurants": [
+    "Cay Bagi 145",
+    "Dolma Restaurant",
+    "Malacannes 145"
+  ],
+  "topHotels": [
+    "Four Seasons Baku",
+    "JW Marriott Absheron Baku",
+    "Fairmont Baku"
+  ],
+  "content": {
+    "intro": "Baku, the vibrant capital of Azerbaijan, sits on the edge of the Caspian Sea. This stunning city masterfully blends ancient history with futuristic architecture, from the UNESCO‑listed Old City (Icherisheher) with its medieval walls and Maiden Tower to the iconic Flame Towers that illuminate the skyline. Explore the bustling Baku Boulevard, admire the Heydar Aliyev Center's flowing design, and experience the city's rich cultural heritage that reflects its position at the crossroads of Europe and Asia.",
+    "attractions": [
+      {
+        "name": "Old City (Icherisheher)",
+        "description": "One of the top attractions in Baku."
+      },
+      {
+        "name": "Flame Towers",
+        "description": "One of the top attractions in Baku."
+      },
+      {
+        "name": "Heydar Aliyev Center",
+        "description": "One of the top attractions in Baku."
+      },
+      {
+        "name": "Baku Boulevard",
+        "description": "One of the top attractions in Baku."
+      }
+    ],
+    "whereToEat": [
+      {
+        "name": "Cay Bagi 145",
+        "description": "Popular restaurant in Baku."
+      },
+      {
+        "name": "Dolma Restaurant",
+        "description": "Popular restaurant in Baku."
+      },
+      {
+        "name": "Malacannes 145",
+        "description": "Popular restaurant in Baku."
+      }
+    ],
+    "tips": [
+      "Visit during April‑June, September‑October for the best weather.",
+      "Transport: Metro, bus, taxi, BakuCard",
+      "Carry local currency (AZN) as some places may not accept cards.",
+      "Respect local customs and dress modestly when visiting religious sites."
+    ],
+    "touristMistakes": [
+      "Not allocating enough time to explore the surrounding region.",
+      "Overlooking local cuisine and sticking to familiar foods.",
+      "Assuming all attractions are within walking distance – plan transportation."
+    ],
+    "hiddenGems": [
+      "Local markets for authentic souvenirs.",
+      "Scenic viewpoints outside the main tourist areas.",
+      "Traditional workshops where you can see crafts being made."
+    ],
+    "howToGetThere": "From Baku: 0 km via Metro. The journey takes approximately 1 hours by road."
+  }
 }

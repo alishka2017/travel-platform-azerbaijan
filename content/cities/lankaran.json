@@ -1,30 +1,30 @@
 {
-  "id": "gabala",
-  "name": "Gabala",
-  "slug": "gabala",
-  "region": "Gabala District",
-  "population": "12,000",
-  "description": "Gabala is Azerbaijan's premier mountain resort destination, offering year‑round activities in a stunning natural setting. The magnificent Tufandag Mountain Resort features modern cable cars, ski slopes, and hiking trails with panoramic views of the Caucasus Mountains. The peaceful Nohur Lake and surrounding forests provide opportunities for outdoor adventures, while the ancient Chukhur Gabala archaeological site reveals the region's 2,500‑year history.",
-  "heroImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/82/Tufandag_Resort_%28cropped%29.jpg/1280px-Tufandag_Resort_%28cropped%29.jpg",
-  "bestTime": "December‑March (skiing), June‑September (hiking)",
-  "distanceFromBaku": "220 km",
-  "transport": "Car, bus",
+  "id": "lankaran",
+  "name": "Lankaran",
+  "slug": "lankaran",
+  "region": "Lankaran District",
+  "population": "85,000",
+  "description": "Lankaran, located on the shores of the Caspian Sea in Azerbaijan's subtropical south, offers a unique blend of beach relaxation and lush natural beauty. This coastal city is famous for its tropical climate, tea plantations, and the pristine Hirkan National Forest, a UNESCO World Heritage Site. Visitors can enjoy fresh Caspian seafood, explore the historic Lankaran Fortress, and experience the distinct culture of Azerbaijan's southern region.",
+  "heroImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3d/Lankaran_center.jpg/1280px-Lankaran_center.jpg",
+  "bestTime": "May‑October",
+  "distanceFromBaku": "250 km",
+  "transport": "Train, bus, car",
   "topAttractions": [
-    "Tufandag Mountain Resort",
-    "Nohur Lake",
-    "Gabaland",
-    "Chukhur Gabala"
+    "Hirkan National Forest",
+    "Lankaran Fortress",
+    "Khan's House",
+    "Lankaran Beach"
   ],
   "topRestaurants": [
-    "Gabala Restaurant",
-    "Tufandag Restaurant"
+    "Lankaran Balig Restoran",
+    "Shahin Restaurant"
   ],
   "topHotels": [
-    "Qafqaz Resort",
-    "Gabala Hotel"
+    "Lankaran Hotel",
+    "Xazar Hotel"
   ],
   "content": {
-    "intro": "Gabala is Azerbaijan's premier mountain resort destination, offering year‑round activities in a stunning natural setting. The magnificent Tufandag Mountain Resort features modern cable cars, ski slopes, and hiking trails with panoramic views of the Caucasus Mountains. The peaceful Nohur Lake and surrounding forests provide opportunities for outdoor adventures, while the ancient Chukhur Gabala archaeological site reveals the region's 2,500‑year history.",
+    "intro": "Lankaran, located on the shores of the Caspian Sea in Azerbaijan's subtropical south, offers a unique blend of beach relaxation and lush natural beauty. This coastal city is famous for its tropical climate, tea plantations, and the pristine Hirkan National Forest, a UNESCO World Heritage Site. Visitors can enjoy fresh Caspian seafood, explore the historic Lankaran Fortress, and experience the distinct culture of Azerbaijan's southern region.",
     "attractions": [
       {
         "name": "Old City (Icherisheher)",
@@ -105,6 +105,22 @@
       {
         "name": "Chukhur Gabala",
         "description": "One of the top attractions in Gabala."
+      },
+      {
+        "name": "Hirkan National Forest",
+        "description": "One of the top attractions in Lankaran."
+      },
+      {
+        "name": "Lankaran Fortress",
+        "description": "One of the top attractions in Lankaran."
+      },
+      {
+        "name": "Khan's House",
+        "description": "One of the top attractions in Lankaran."
+      },
+      {
+        "name": "Lankaran Beach",
+        "description": "One of the top attractions in Lankaran."
       }
     ],
     "whereToEat": [
@@ -151,11 +167,19 @@
       {
         "name": "Tufandag Restaurant",
         "description": "Popular restaurant in Gabala."
+      },
+      {
+        "name": "Lankaran Balig Restoran",
+        "description": "Popular restaurant in Lankaran."
+      },
+      {
+        "name": "Shahin Restaurant",
+        "description": "Popular restaurant in Lankaran."
       }
     ],
     "tips": [
-      "Visit during December‑March (skiing), June‑September (hiking) for the best weather.",
-      "Transport: Car, bus",
+      "Visit during May‑October for the best weather.",
+      "Transport: Train, bus, car",
       "Carry local currency (AZN) as some places may not accept cards.",
       "Respect local customs and dress modestly when visiting religious sites."
     ],
@@ -169,6 +193,6 @@
       "Scenic viewpoints outside the main tourist areas.",
       "Traditional workshops where you can see crafts being made."
     ],
-    "howToGetThere": "From Baku: 220 km via Car. The journey takes approximately 4 hours by road."
+    "howToGetThere": "From Baku: 250 km via Train. The journey takes approximately 5 hours by road."
   }
 }

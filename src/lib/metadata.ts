@@ -6,12 +6,12 @@ export function generatePlaceMetadata(placeId: string): Metadata {
   
   if (!place) {
     return {
-      title: "Page Not Found | Azerbaijan Travel",
+      title: "Page Not Found | Smartholiday.az",
       description: "The page you're looking for doesn't exist.",
     };
   }
 
-  const title = `${place.name} | ${place.city} | Azerbaijan Travel Guide`;
+  const title = `${place.name} | ${place.city} | Smartholiday.az Travel Guide`;
   const description = place.description;
 
   return {
@@ -23,17 +23,18 @@ export function generatePlaceMetadata(placeId: string): Metadata {
       place.category,
       "Azerbaijan",
       "travel guide",
+      "Smartholiday.az",
       ...place.tags,
     ],
-    metadataBase: new URL("https://azerbaijantravel.com"),
+    metadataBase: new URL("https://smartholiday.az"),
     alternates: {
       canonical: `/${place.category.toLowerCase()}/${place.id}`,
     },
     openGraph: {
-      title: `${place.name} | ${place.city} | Azerbaijan Travel`,
+      title: `${place.name} | ${place.city} | Smartholiday.az Travel`,
       description,
-      url: `https://azerbaijantravel.com/${place.category.toLowerCase()}/${place.id}`,
-      siteName: "Azerbaijan Travel Platform",
+      url: `https://smartholiday.az/${place.category.toLowerCase()}/${place.id}`,
+      siteName: "Smartholiday.az",
       locale: "en_US",
       type: "website",
       images: [
@@ -59,12 +60,12 @@ export function generateTourMetadata(tourId: string): Metadata {
   
   if (!tour) {
     return {
-      title: "Tour Not Found | Azerbaijan Travel",
+      title: "Tour Not Found | Smartholiday.az",
       description: "The tour you're looking for doesn't exist.",
     };
   }
 
-  const title = `${tour.name} | Book Now | Azerbaijan Travel`;
+  const title = `${tour.name} | Book Now | Smartholiday.az`;
   const description = `${tour.description} Book this tour at ${tour.priceLevel}.`;
 
   return {
@@ -76,17 +77,18 @@ export function generateTourMetadata(tourId: string): Metadata {
       "experience",
       "Azerbaijan",
       tour.city,
+      "Smartholiday.az",
       ...tour.tags,
     ],
-    metadataBase: new URL("https://azerbaijantravel.com"),
+    metadataBase: new URL("https://smartholiday.az"),
     alternates: {
       canonical: `/tours/${tour.id}`,
     },
     openGraph: {
       title,
       description,
-      url: `https://azerbaijantravel.com/tours/${tour.id}`,
-      siteName: "Azerbaijan Travel Platform",
+      url: `https://smartholiday.az/tours/${tour.id}`,
+      siteName: "Smartholiday.az",
       locale: "en_US",
       type: "website",
       images: [
@@ -112,12 +114,12 @@ export function generateRestaurantMetadata(restaurantId: string): Metadata {
   
   if (!restaurant) {
     return {
-      title: "Restaurant Not Found | Azerbaijan Travel",
+      title: "Restaurant Not Found | Smartholiday.az",
       description: "The restaurant you're looking for doesn't exist.",
     };
   }
 
-  const title = `${restaurant.name} | ${restaurant.city} | Azerbaijan Restaurants`;
+  const title = `${restaurant.name} | ${restaurant.city} | Smartholiday.az Restaurants`;
   const description = `${restaurant.description} ${restaurant.priceLevel ? `Price range: ${restaurant.priceLevel}.` : ""}`;
 
   return {
@@ -129,17 +131,18 @@ export function generateRestaurantMetadata(restaurantId: string): Metadata {
       restaurant.city,
       "Azerbaijan cuisine",
       "food",
+      "Smartholiday.az",
       ...restaurant.tags,
     ],
-    metadataBase: new URL("https://azerbaijantravel.com"),
+    metadataBase: new URL("https://smartholiday.az"),
     alternates: {
       canonical: `/restaurants/${restaurant.id}`,
     },
     openGraph: {
       title,
       description,
-      url: `https://azerbaijantravel.com/restaurants/${restaurant.id}`,
-      siteName: "Azerbaijan Travel Platform",
+      url: `https://smartholiday.az/restaurants/${restaurant.id}`,
+      siteName: "Smartholiday.az",
       locale: "en_US",
       type: "website",
       images: [
@@ -165,12 +168,12 @@ export function generateAttractionMetadata(attractionId: string): Metadata {
   
   if (!attraction) {
     return {
-      title: "Attraction Not Found | Azerbaijan Travel",
+      title: "Attraction Not Found | Smartholiday.az",
       description: "The attraction you're looking for doesn't exist.",
     };
   }
 
-  const title = `${attraction.name} | ${attraction.city} | Azerbaijan Attractions`;
+  const title = `${attraction.name} | ${attraction.city} | Smartholiday.az Attractions`;
   const description = attraction.description;
 
   return {
@@ -181,17 +184,18 @@ export function generateAttractionMetadata(attractionId: string): Metadata {
       "attraction",
       attraction.city,
       "Azerbaijan",
+      "Smartholiday.az",
       ...attraction.tags,
     ],
-    metadataBase: new URL("https://azerbaijantravel.com"),
+    metadataBase: new URL("https://smartholiday.az"),
     alternates: {
       canonical: `/attractions/${attraction.id}`,
     },
     openGraph: {
       title,
       description,
-      url: `https://azerbaijantravel.com/attractions/${attraction.id}`,
-      siteName: "Azerbaijan Travel Platform",
+      url: `https://smartholiday.az/attractions/${attraction.id}`,
+      siteName: "Smartholiday.az",
       locale: "en_US",
       type: "website",
       images: [
@@ -217,27 +221,27 @@ export function generateCityMetadata(citySlug: string): Metadata {
   
   if (!city) {
     return {
-      title: "City Not Found | Azerbaijan Travel",
+      title: "City Not Found | Smartholiday.az",
       description: "The city you're looking for doesn't exist.",
     };
   }
 
-  const title = `${city.name} | Azerbaijan Travel Guide | Places to Visit & Stay`;
+  const title = `${city.name} | Smartholiday.az Travel Guide | Places to Visit & Stay`;
   const description = city.description;
 
   return {
     title,
     description,
-    keywords: [city.name, city.country, "travel guide", "tourism", "Azerbaijan"],
-    metadataBase: new URL("https://azerbaijantravel.com"),
+    keywords: [city.name, city.country, "travel guide", "tourism", "Azerbaijan", "Smartholiday.az"],
+    metadataBase: new URL("https://smartholiday.az"),
     alternates: {
       canonical: `/cities/${city.slug}`,
     },
     openGraph: {
       title,
       description,
-      url: `https://azerbaijantravel.com/cities/${city.slug}`,
-      siteName: "Azerbaijan Travel Platform",
+      url: `https://smartholiday.az/cities/${city.slug}`,
+      siteName: "Smartholiday.az",
       locale: "en_US",
       type: "website",
       images: [

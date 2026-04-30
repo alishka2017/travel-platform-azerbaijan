@@ -48,8 +48,8 @@ export default async function CityPage({ params }: { params: { slug: string } })
 
   const schema = generateCitySchema(city, attractions);
   const breadcrumbSchema = generateBreadcrumbSchema([
-    { name: "Home", url: "https://azerbaijantravel.com" },
-    { name: "Cities", url: "https://azerbaijantravel.com/cities" },
+    { name: "Home", url: "https://smartholiday.az" },
+    { name: "Cities", url: "https://smartholiday.az/cities" },
     { name: city.name }
   ]);
   const webSiteSchema = generateWebSiteSchema();

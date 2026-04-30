@@ -1,30 +1,30 @@
 {
-  "id": "gabala",
-  "name": "Gabala",
-  "slug": "gabala",
-  "region": "Gabala District",
-  "population": "12,000",
-  "description": "Gabala is Azerbaijan's premier mountain resort destination, offering year‑round activities in a stunning natural setting. The magnificent Tufandag Mountain Resort features modern cable cars, ski slopes, and hiking trails with panoramic views of the Caucasus Mountains. The peaceful Nohur Lake and surrounding forests provide opportunities for outdoor adventures, while the ancient Chukhur Gabala archaeological site reveals the region's 2,500‑year history.",
-  "heroImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/82/Tufandag_Resort_%28cropped%29.jpg/1280px-Tufandag_Resort_%28cropped%29.jpg",
-  "bestTime": "December‑March (skiing), June‑September (hiking)",
-  "distanceFromBaku": "220 km",
+  "id": "guba",
+  "name": "Guba",
+  "slug": "guba",
+  "region": "Guba‑Khachmaz",
+  "population": "40,000",
+  "description": "Guba, located in the foothills of the Greater Caucasus Mountains, is a gateway to Azerbaijan's most stunning natural landscapes and ancient mountain villages. The region is famous for the breathtaking Khinalig village, one of the highest permanently inhabited settlements in Europe, and the magnificent Guba Waterfall. Visitors can explore traditional carpet weaving workshops, taste authentic mountain cuisine, and experience the unique culture of the Lezgin and other ethnic communities.",
+  "heroImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5a/Khinalig_village.jpg/1280px-Khinalig_village.jpg",
+  "bestTime": "May‑October",
+  "distanceFromBaku": "170 km",
   "transport": "Car, bus",
   "topAttractions": [
-    "Tufandag Mountain Resort",
-    "Nohur Lake",
-    "Gabaland",
-    "Chukhur Gabala"
+    "Khinalig Village",
+    "Guba Waterfall",
+    "Guba Carpet Weaving Center",
+    "Qechresh Forest"
   ],
   "topRestaurants": [
-    "Gabala Restaurant",
-    "Tufandag Restaurant"
+    "Guba Restaurant",
+    "Khinalig Village Guesthouse"
   ],
   "topHotels": [
-    "Qafqaz Resort",
-    "Gabala Hotel"
+    "Guba Hotel",
+    "Quba Palace"
   ],
   "content": {
-    "intro": "Gabala is Azerbaijan's premier mountain resort destination, offering year‑round activities in a stunning natural setting. The magnificent Tufandag Mountain Resort features modern cable cars, ski slopes, and hiking trails with panoramic views of the Caucasus Mountains. The peaceful Nohur Lake and surrounding forests provide opportunities for outdoor adventures, while the ancient Chukhur Gabala archaeological site reveals the region's 2,500‑year history.",
+    "intro": "Guba, located in the foothills of the Greater Caucasus Mountains, is a gateway to Azerbaijan's most stunning natural landscapes and ancient mountain villages. The region is famous for the breathtaking Khinalig village, one of the highest permanently inhabited settlements in Europe, and the magnificent Guba Waterfall. Visitors can explore traditional carpet weaving workshops, taste authentic mountain cuisine, and experience the unique culture of the Lezgin and other ethnic communities.",
     "attractions": [
       {
         "name": "Old City (Icherisheher)",
@@ -105,6 +105,38 @@
       {
         "name": "Chukhur Gabala",
         "description": "One of the top attractions in Gabala."
+      },
+      {
+        "name": "Hirkan National Forest",
+        "description": "One of the top attractions in Lankaran."
+      },
+      {
+        "name": "Lankaran Fortress",
+        "description": "One of the top attractions in Lankaran."
+      },
+      {
+        "name": "Khan's House",
+        "description": "One of the top attractions in Lankaran."
+      },
+      {
+        "name": "Lankaran Beach",
+        "description": "One of the top attractions in Lankaran."
+      },
+      {
+        "name": "Khinalig Village",
+        "description": "One of the top attractions in Guba."
+      },
+      {
+        "name": "Guba Waterfall",
+        "description": "One of the top attractions in Guba."
+      },
+      {
+        "name": "Guba Carpet Weaving Center",
+        "description": "One of the top attractions in Guba."
+      },
+      {
+        "name": "Qechresh Forest",
+        "description": "One of the top attractions in Guba."
       }
     ],
     "whereToEat": [
@@ -151,10 +183,26 @@
       {
         "name": "Tufandag Restaurant",
         "description": "Popular restaurant in Gabala."
+      },
+      {
+        "name": "Lankaran Balig Restoran",
+        "description": "Popular restaurant in Lankaran."
+      },
+      {
+        "name": "Shahin Restaurant",
+        "description": "Popular restaurant in Lankaran."
+      },
+      {
+        "name": "Guba Restaurant",
+        "description": "Popular restaurant in Guba."
+      },
+      {
+        "name": "Khinalig Village Guesthouse",
+        "description": "Popular restaurant in Guba."
       }
     ],
     "tips": [
-      "Visit during December‑March (skiing), June‑September (hiking) for the best weather.",
+      "Visit during May‑October for the best weather.",
       "Transport: Car, bus",
       "Carry local currency (AZN) as some places may not accept cards.",
       "Respect local customs and dress modestly when visiting religious sites."
@@ -169,6 +217,6 @@
       "Scenic viewpoints outside the main tourist areas.",
       "Traditional workshops where you can see crafts being made."
     ],
-    "howToGetThere": "From Baku: 220 km via Car. The journey takes approximately 4 hours by road."
+    "howToGetThere": "From Baku: 170 km via Car. The journey takes approximately 3 hours by road."
   }
 }

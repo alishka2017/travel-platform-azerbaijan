@@ -21,8 +21,8 @@ export default function RestaurantDetailPage({ params }: { params: { id: string 
 
   const schema = generatePlaceSchema(restaurant);
   const breadcrumbSchema = generateBreadcrumbSchema([
-    { name: "Home", url: "https://azerbaijantravel.com" },
-    { name: "Restaurants", url: "https://azerbaijantravel.com/restaurants" },
+    { name: "Home", url: "https://smartholiday.az" },
+    { name: "Restaurants", url: "https://smartholiday.az/restaurants" },
     { name: restaurant.name }
   ]);
 

@@ -20,9 +20,9 @@ export default function AttractionContent({ params }: { params: { id: string } }
 
   const schema = generatePlaceSchema(place);
   const breadcrumbSchema = generateBreadcrumbSchema([
-    { name: "Home", url: "https://azerbaijantravel.com" },
-    { name: "Attractions", url: "https://azerbaijantravel.com/attractions" },
-    { name: place.city, url: `https://azerbaijantravel.com/cities/${place.citySlug}` },
+    { name: "Home", url: "https://smartholiday.az" },
+    { name: "Attractions", url: "https://smartholiday.az/attractions" },
+    { name: place.city, url: `https://smartholiday.az/cities/${place.citySlug}` },
     { name: place.name }
   ]);
 

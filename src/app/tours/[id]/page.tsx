@@ -21,7 +21,7 @@ export default function TourDetailPage({ params }: { params: { id: string } }) {
 
   const schema = generatePlaceSchema(tour);
   const breadcrumbSchema = generateBreadcrumbSchema([
-    { name: "Home", url: "https://azerbaijantravel.com" },
+    { name: "Home", url: "https://smartholiday.az" },
     { name: "Tours", url: "https://azerbaijantravel.com/tours" },
     { name: tour.name }
   ]);

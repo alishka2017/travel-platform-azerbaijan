@@ -22,6 +22,8 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: `${baseUrl}/favorites`, lastModified: now, changeFrequency: 'daily' as const, priority: 0.5 },
     { url: `${baseUrl}/contact`, lastModified: now, changeFrequency: 'yearly' as const, priority: 0.5 },
     { url: `${baseUrl}/about`, lastModified: now, changeFrequency: 'yearly' as const, priority: 0.5 },
+    { url: `${baseUrl}/blog`, lastModified: now, changeFrequency: 'weekly' as const, priority: 0.8 },
+    { url: `${baseUrl}/hidden-gems`, lastModified: now, changeFrequency: 'monthly' as const, priority: 0.7 },
   ]
 
   // Add city pages

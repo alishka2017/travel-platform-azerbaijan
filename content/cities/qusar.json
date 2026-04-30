@@ -1,30 +1,30 @@
 {
-  "id": "sheki",
-  "name": "Sheki",
-  "slug": "sheki",
-  "region": "Shaki‑Zaqatala",
-  "population": "65,000",
-  "description": "Sheki, nestled in the foothills of the Greater Caucasus Mountains, is one of Azerbaijan's most beautiful and historic cities. A UNESCO World Heritage Site, the stunning Sheki Khan Palace showcases exquisite stained glass work and Persian‑influenced architecture. The city is renowned for its traditional silk production, local crafts, and the famous Sheki halva. The charming Old Town with its historic caravanserais and artisan workshops offers a glimpse into Silk Road history.",
-  "heroImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d8/Sheki_Khan_Palace.jpg/1280px-Sheki_Khan_Palace.jpg",
-  "bestTime": "May‑September",
-  "distanceFromBaku": "300 km",
-  "transport": "Bus, car",
+  "id": "qusar",
+  "name": "Qusar",
+  "slug": "qusar",
+  "region": "Qusar District",
+  "population": "20,000",
+  "description": "Qusar serves as the gateway to Azerbaijan's premier mountain resort destination. This charming town provides access to the world‑class Shahdag Mountain Resort, offering exceptional skiing in winter and hiking in summer. The surrounding region features stunning natural landscapes, including the breathtaking Laza Waterfalls and traditional Lezgin villages that preserve centuries‑old mountain culture and hospitality.",
+  "heroImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6d/Tufandag_2019.jpg/1280px-Tufandag_2019.jpg",
+  "bestTime": "December‑March (skiing), June‑August (hiking)",
+  "distanceFromBaku": "180 km",
+  "transport": "Car, bus",
   "topAttractions": [
-    "Sheki Khan Palace",
-    "Upper Caravanserai",
-    "Sheki Fortress",
-    "Kish Albanian Church"
+    "Shahdag Mountain Resort",
+    "Laza Waterfalls",
+    "Quba‑Khinalig road",
+    "Gusar River Valley"
   ],
   "topRestaurants": [
-    "Sheki Saray Restaurant",
-    "Karavansaray Restaurant"
+    "Mountain View Restaurant",
+    "Shahdag Hotel & Spa dining"
   ],
   "topHotels": [
-    "Sheki Palace Hotel",
-    "Sheki Karavansaray Hotel"
+    "Shahdag Hotel & Spa",
+    "Gafur Valley Resort"
   ],
   "content": {
-    "intro": "Sheki, nestled in the foothills of the Greater Caucasus Mountains, is one of Azerbaijan's most beautiful and historic cities. A UNESCO World Heritage Site, the stunning Sheki Khan Palace showcases exquisite stained glass work and Persian‑influenced architecture. The city is renowned for its traditional silk production, local crafts, and the famous Sheki halva. The charming Old Town with its historic caravanserais and artisan workshops offers a glimpse into Silk Road history.",
+    "intro": "Qusar serves as the gateway to Azerbaijan's premier mountain resort destination. This charming town provides access to the world‑class Shahdag Mountain Resort, offering exceptional skiing in winter and hiking in summer. The surrounding region features stunning natural landscapes, including the breathtaking Laza Waterfalls and traditional Lezgin villages that preserve centuries‑old mountain culture and hospitality.",
     "attractions": [
       {
         "name": "Old City (Icherisheher)",
@@ -73,22 +73,6 @@
       {
         "name": "Gusar River Valley",
         "description": "One of the top attractions in Qusar."
-      },
-      {
-        "name": "Sheki Khan Palace",
-        "description": "One of the top attractions in Sheki."
-      },
-      {
-        "name": "Upper Caravanserai",
-        "description": "One of the top attractions in Sheki."
-      },
-      {
-        "name": "Sheki Fortress",
-        "description": "One of the top attractions in Sheki."
-      },
-      {
-        "name": "Kish Albanian Church",
-        "description": "One of the top attractions in Sheki."
       }
     ],
     "whereToEat": [
@@ -119,19 +103,11 @@
       {
         "name": "Shahdag Hotel & Spa dining",
         "description": "Popular restaurant in Qusar."
-      },
-      {
-        "name": "Sheki Saray Restaurant",
-        "description": "Popular restaurant in Sheki."
-      },
-      {
-        "name": "Karavansaray Restaurant",
-        "description": "Popular restaurant in Sheki."
       }
     ],
     "tips": [
-      "Visit during May‑September for the best weather.",
-      "Transport: Bus, car",
+      "Visit during December‑March (skiing), June‑August (hiking) for the best weather.",
+      "Transport: Car, bus",
       "Carry local currency (AZN) as some places may not accept cards.",
       "Respect local customs and dress modestly when visiting religious sites."
     ],
@@ -145,6 +121,6 @@
       "Scenic viewpoints outside the main tourist areas.",
       "Traditional workshops where you can see crafts being made."
     ],
-    "howToGetThere": "From Baku: 300 km via Bus. The journey takes approximately 6 hours by road."
+    "howToGetThere": "From Baku: 180 km via Car. The journey takes approximately 4 hours by road."
   }
 }

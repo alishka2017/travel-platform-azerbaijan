@@ -66,9 +66,18 @@ export default function ContactPage() {
                   </div>
                 </div>
 
-                {/* Map Placeholder */}
-                <div className="bg-gray-200 h-64 rounded-2xl flex items-center justify-center text-gray-500">
-                  Map Placeholder
+                {/* Google Maps Embed */}
+                <div className="h-64 rounded-2xl overflow-hidden shadow-lg">
+                  <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3039.060646144104!2d49.84281577644795!3d40.37702497143678!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40307d977c7d1b8b%3A0x8d0a8e5b3b0a0a0a!2sNizami%20Street%20100%2C%20Baku%2C%20Azerbaijan!5e0!3m2!1sen!2s!4v1746030400000!5m2!1sen!2s"
+                    width="100%"
+                    height="100%"
+                    style={{ border: 0 }}
+                    allowFullScreen
+                    loading="lazy"
+                    referrerPolicy="no-referrer-when-downgrade"
+                    title="Smartholiday.az Location"
+                  />
                 </div>
               </div>
 

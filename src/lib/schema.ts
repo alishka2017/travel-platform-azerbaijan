@@ -12,7 +12,7 @@ export function generatePlaceSchema(place: Place): object {
     "@type": schemaType,
     "name": place.name,
     "description": place.description,
-    "url": `https://azerbaijantravel.com/attractions/${place.id}`,
+    "url": `https://smartholiday.az/attractions/${place.id}`,
     "image": place.image,
     "address": {
       "@type": "PostalAddress",
@@ -52,7 +52,7 @@ export function generateCitySchema(city: City, places: Place[]): object {
     "@type": "City",
     "name": city.name,
     "description": city.description,
-    "url": `https://azerbaijantravel.com/cities/${city.slug}`,
+    "url": `https://smartholiday.az/cities/${city.slug}`,
     "image": city.heroImage,
     "containedInPlace": {
       "@type": "Country",
@@ -70,7 +70,7 @@ export function generateCitySchema(city: City, places: Place[]): object {
         "@type": "TouristAttraction",
         "name": p.name,
         "description": p.description,
-        "url": `https://azerbaijantravel.com/attractions/${p.id}`
+        "url": `https://smartholiday.az/attractions/${p.id}`
       }))
   };
 }
@@ -92,12 +92,12 @@ export function generateWebSiteSchema(): object {
   return {
     "@context": "https://schema.org",
     "@type": "WebSite",
-    "name": "Azerbaijan Travel Platform",
+    "name": "Smartholiday.az | Azerbaijan Travel Guide",
     "description": "Your complete travel guide to Azerbaijan. Discover cities, attractions, tours, restaurants, and hidden gems.",
-    "url": "https://azerbaijantravel.com",
+    "url": "https://smartholiday.az",
     "potentialAction": {
       "@type": "SearchAction",
-      "target": "https://azerbaijantravel.com/search?q={search_term_string}",
+      "target": "https://smartholiday.az/search?q={search_term_string}",
       "query-input": "required name=search_term_string"
     }
   };
