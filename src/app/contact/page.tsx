@@ -1,5 +1,38 @@
 import Header from '@/components/layout/Header';
 import Footer from '@/components/layout/Footer';
+import { Metadata } from 'next';
+
+export const metadata: Metadata = {
+  title: "Contact Us | Smartholiday.az - Azerbaijan Travel Guide",
+  description: "Have questions about your trip to Azerbaijan? Contact Smartholiday.az for travel advice, tours, and local insights.",
+  keywords: ["Contact", "Smartholiday.az", "Azerbaijan travel help", "Travel inquiry"],
+  metadataBase: new URL("https://smartholiday.az"),
+  alternates: {
+    canonical: "/contact",
+  },
+  openGraph: {
+    title: "Contact Us | Smartholiday.az",
+    description: "Get in touch with our team for travel advice and inquiries about Azerbaijan.",
+    url: "https://smartholiday.az/contact",
+    siteName: "Smartholiday.az",
+    locale: "en_US",
+    type: "website",
+    images: [
+      {
+        url: "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5e/Baku_modern_skyline.jpg/1280px-Baku_modern_skyline.jpg",
+        width: 1280,
+        height: 720,
+        alt: "Baku skyline",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Contact Smartholiday.az",
+    description: "Reach out to our team for travel assistance in Azerbaijan.",
+    images: ["https://upload.wikimedia.org/wikipedia/commons/thumb/5/5e/Baku_modern_skyline.jpg/1280px-Baku_modern_skyline.jpg"],
+  },
+};
 
 export default function ContactPage() {
   return (

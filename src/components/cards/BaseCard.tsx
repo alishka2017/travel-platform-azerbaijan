@@ -41,12 +41,16 @@ export const BaseCard: React.FC<BaseCardProps> = ({
     <div
       onClick={onClick}
       className={`
-        group relative bg-white rounded-xl shadow-md hover:shadow-xl 
+        group relative bg-white rounded-2xl shadow-sm hover:shadow-2xl 
         transition-all duration-300 overflow-hidden cursor-pointer
+        border border-gray-100 hover:border-primary/20 hover:-translate-y-1
         ${variant === 'compact' ? 'p-3' : ''}
         ${className}
       `}
     >
+      {/* TripAdvisor-style top gradient border on hover */}
+      <div className="absolute top-0 left-0 right-0 h-1 bg-gradient-to-r from-transparent via-primary to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
+      
       {children}
       
       {showHeartButton && (

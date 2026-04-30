@@ -1,0 +1,71 @@
+{
+  "id": "goygol",
+  "name": "Goygol",
+  "slug": "goygol",
+  "region": "Ganja-Dashkasan",
+  "population": "20,000",
+  "description": "Goygol is a charming city near the stunning Lake Goygol, one of Azerbaijan's most beautiful natural sites. The city is also known for its winemaking history and the famous Goygol Winery, established in 1860.",
+  "heroImage": "https://images.unsplash.com/photo-1501785888041-af3ef285b470?q=80&w=1280&auto=format&fit=crop",
+  "bestTime": "June-August",
+  "distanceFromBaku": "380 km",
+  "transport": "Train, bus, car",
+  "topAttractions": [
+    "Lake Goygol",
+    "Goygol Winery",
+    "Helenendorf (now Khanlar)",
+    "Mount Kapaz"
+  ],
+  "topRestaurants": [
+    "Goygol Winery Restaurant",
+    "Lake View Cafe",
+    "Local eateries"
+  ],
+  "topHotels": [
+    "Goygol Hotel",
+    "Ganja Hotels",
+    "Guesthouses near lake"
+  ],
+  "content": {
+    "intro": "Goygol is a postcard-perfect destination centered around a crystal-clear lake surrounded by lush mountains. The city's German colonial heritage adds a unique architectural flavor, and the local winery produces some of Azerbaijan's finest wines.",
+    "attractions": [
+      {
+        "name": "Lake Goygol",
+        "description": "A stunning alpine lake formed by an earthquake, with crystal-clear waters reflecting the surrounding mountains."
+      },
+      {
+        "name": "Goygol Winery",
+        "description": "One of the oldest wineries in the Caucasus, producing wines from local grape varieties since 1860."
+      },
+      {
+        "name": "Helenendorf",
+        "description": "The former German colony (now Khanlar) features well-preserved 19th-century architecture."
+      }
+    ],
+    "whereToEat": [
+      {
+        "name": "Goygol Winery Restaurant",
+        "description": "Wine pairing with traditional Azerbaijani dishes."
+      },
+      {
+        "name": "Lake View Cafe",
+        "description": "Casual dining with views of Lake Goygol."
+      }
+    ],
+    "tips": [
+      "Visit the winery for a tasting session.",
+      "Hike around Lake Goygol for the best views.",
+      "Try the local 'Goygol' wine variety."
+    ],
+    "touristMistakes": [
+      "Swimming in the lake (it's protected).",
+      "Missing the German heritage sites.",
+      "Ignoring the weather—mountain climate can change quickly."
+    ],
+    "hiddenGems": [
+      "The old cemetery with German tombstones.",
+      "Small distilleries producing local brandy.",
+      "The viewpoints on Mount Kapaz."
+    ],
+    "howToGetThere": "From Baku: 380 km. Fly to Ganja (1h) then drive 30min to Goygol."
+  }
+}

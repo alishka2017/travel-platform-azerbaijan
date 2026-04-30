@@ -55,8 +55,21 @@ export default async function CityPage({ params }: { params: { slug: string } })
   const webSiteSchema = generateWebSiteSchema();
 
   return (
-    <div className="min-h-screen bg-gray-50">
-      <Header />
+    <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(webSiteSchema) }}
+      />
+      <div className="min-h-screen bg-gray-50">
+        <Header />
       <main>
         <section className="relative h-[500px] bg-cover bg-center" style={{ backgroundImage: `url(${city.heroImage})` }}>
           <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/30 to-transparent"></div>

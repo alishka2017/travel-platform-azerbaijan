@@ -1,0 +1,71 @@
+{
+  "id": "zagatala",
+  "name": "Zagatala",
+  "slug": "zagatala",
+  "region": "Zagatala",
+  "population": "35,000",
+  "description": "Zagatala is a city in northwest Azerbaijan, known for its wildlife reserve, ancient trees, and diverse ethnic makeup. The Zagatala State Nature Reserve is home to endangered species like the Caucasian leopard and unique flora.",
+  "heroImage": "https://images.unsplash.com/photo-1448375240586-882707db888b?q=80&w=1280&auto=format&fit=crop",
+  "bestTime": "May-October",
+  "distanceFromBaku": "500 km",
+  "transport": "Bus, car",
+  "topAttractions": [
+    "Zagatala Reserve",
+    "Ancient Fortress",
+    "Tree of Paradise",
+    "Ethnographic Museum"
+  ],
+  "topRestaurants": [
+    "Zagatala Restaurant",
+    "Reserve Cafe",
+    "Local eateries"
+  ],
+  "topHotels": [
+    "Zagatala Hotel",
+    "Reserve Guesthouse",
+    "Local guesthouses"
+  ],
+  "content": {
+    "intro": "Zagatala is a gateway to the Caucasus wilderness, where dense forests and mountain ranges shelter rare wildlife. The city itself is a blend of Lezgin, Avar, and Azerbaijani cultures, offering a unique cultural experience.",
+    "attractions": [
+      {
+        "name": "Zagatala State Nature Reserve",
+        "description": "Established in 1935, this reserve protects 20,000 hectares of forest and alpine meadows, home to brown bears, wolves, and the rare Caucasian leopard."
+      },
+      {
+        "name": "Ancient Fortress",
+        "description": "A 19th-century Russian fortress offering panoramic views of the city and surrounding mountains."
+      },
+      {
+        "name": "Tree of Paradise",
+        "description": "A 2,000-year-old plane tree, one of the oldest in the Caucasus."
+      }
+    ],
+    "whereToEat": [
+      {
+        "name": "Zagatala Restaurant",
+        "description": "Traditional dishes with a Lezgin influence."
+      },
+      {
+        "name": "Reserve Cafe",
+        "description": "Simple meals near the reserve entrance."
+      }
+    ],
+    "tips": [
+      "Visit the reserve with a certified guide.",
+      "Respect the wildlife—do not feed animals.",
+      "Bring binoculars for birdwatching."
+    ],
+    "touristMistakes": [
+      "Attempting to enter the reserve without permission.",
+      "Ignoring the cultural diversity of the region.",
+      "Missing the ancient tree in the city center."
+    ],
+    "hiddenGems": [
+      "The nearby Balakan region for more nature.",
+      "Local craft workshops producing traditional items.",
+      "The quiet mountain villages."
+    ],
+    "howToGetThere": "From Baku: 500 km. Bus journey takes ~8-10 hours. Fly to Ganja then drive 4 hours."
+  }
+}

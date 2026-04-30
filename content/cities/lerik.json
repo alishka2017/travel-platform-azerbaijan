@@ -1,0 +1,71 @@
+{
+  "id": "lerik",
+  "name": "Lerik",
+  "slug": "lerik",
+  "region": "Lerik",
+  "population": "80,000",
+  "description": "Lerik is a high-altitude district in southern Azerbaijan, known for its extreme weather records (lowest temperature in Azerbaijan) and stunning mountain scenery. The region is home to the Lerik State Nature Reserve and ancient burial mounds.",
+  "heroImage": "https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?q=80&w=1280&auto=format&fit=crop",
+  "bestTime": "June-September",
+  "distanceFromBaku": "320 km",
+  "transport": "Bus, car",
+  "topAttractions": [
+    "Lerik State Nature Reserve",
+    "Mount Bazarduzu",
+    "Ancient Burial Mounds",
+    "Lerik Museum"
+  ],
+  "topRestaurants": [
+    "Lerik Restaurant",
+    "Mountain Cafe",
+    "Local tea houses"
+  ],
+  "topHotels": [
+    "Lerik Hotel",
+    "Mountain Guesthouses",
+    "Lankaran hotels (nearby)"
+  ],
+  "content": {
+    "intro": "Lerik is a land of extremes—high mountains, deep valleys, and the coldest temperatures recorded in Azerbaijan. It's a paradise for hikers and nature lovers, with ancient history hidden in its caves and burial sites.",
+    "attractions": [
+      {
+        "name": "Lerik State Nature Reserve",
+        "description": "Protects 8,000 hectares of mountain ecosystems, home to rare species like the Caucasian snowcock."
+      },
+      {
+        "name": "Mount Bazarduzu",
+        "description": "The highest peak in Azerbaijan (4,466m), accessible via challenging trekking routes."
+      },
+      {
+        "name": "Ancient Burial Mounds",
+        "description": "Bronze Age burial sites scattered across the region, offering insights into early Caucasian civilizations."
+      }
+    ],
+    "whereToEat": [
+      {
+        "name": "Lerik Restaurant",
+        "description": "Traditional mountain cuisine."
+      },
+      {
+        "name": "Mountain Cafe",
+        "description": "Simple meals with views of the peaks."
+      }
+    ],
+    "tips": [
+      "Acclimatize before hiking at high altitudes.",
+      "Bring warm clothing even in summer (nights are cold).",
+      "Hire a local guide for trekking routes."
+    ],
+    "touristMistakes": [
+      "Underestimating the altitude sickness risk.",
+      "Ignoring weather warnings.",
+      "Missing the ancient sites due to lack of signage."
+    ],
+    "hiddenGems": [
+      "The Lerik Valley's hidden lakes.",
+      "Local shepherd families offering homestays.",
+      "The museum's collection of regional artifacts."
+    ],
+    "howToGetThere": "From Baku: 320 km via the M4 highway. Buses available from Baku International Bus Terminal."
+  }
+}

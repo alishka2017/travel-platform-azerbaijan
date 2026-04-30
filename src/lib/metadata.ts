@@ -1,5 +1,6 @@
 import { Metadata } from "next";
 import { places, getCityBySlug } from "@/data/places";
+import { generatePlaceSchema, generateBreadcrumbSchema } from "@/lib/schema";
 
 export function generatePlaceMetadata(placeId: string): Metadata {
   const place = places.find((p) => p.id === placeId);

@@ -24,9 +24,19 @@ module.exports = {
           900: '#004433',
         },
         accent: {
-          DEFAULT: '#FF6B35',
-          light: '#FF8C5A',
-          dark: '#E55A2B',
+          DEFAULT: '#007A52',
+          light: '#008B60',
+          dark: '#006644',
+        },
+        background: {
+          DEFAULT: '#FFFFFF',
+          light: '#F9FAFB',
+          dark: '#F3F4F6',
+        },
+        text: {
+          DEFAULT: '#1a1a1a',
+          light: '#4B5563',
+          muted: '#6B7280',
         },
       },
       fontFamily: {

@@ -1,0 +1,71 @@
+{
+  "id": "khizi",
+  "name": "Khizi",
+  "slug": "khizi",
+  "region": "Khizi",
+  "population": "15,000",
+  "description": "Khizi is a rapidly developing district north of Baku, known for its massive wind farms that power much of the capital. The landscape is a mix of semi-desert and rolling hills, with ancient rock carvings and the famous 'Seven Beauties' waterfalls.",
+  "heroImage": "https://images.unsplash.com/photo-1469474932030-a20d84558266?q=80&w=1280&auto=format&fit=crop",
+  "bestTime": "April-May, September-October",
+  "distanceFromBaku": "70 km",
+  "transport": "Bus, taxi, car",
+  "topAttractions": [
+    "Khizi Wind Farms",
+    "Seven Beauties Waterfalls",
+    "Gaval Stone",
+    "Ancient Rock Carvings"
+  ],
+  "topRestaurants": [
+    "Khizi Grill",
+    "Wind Farm Cafe",
+    "Local tea houses"
+  ],
+  "topHotels": [
+    "Khizi Hotel",
+    "Baku hotels (day trip)",
+    "Guesthouses"
+  ],
+  "content": {
+    "intro": "Khizi is Azerbaijan's green energy hub, where hundreds of wind turbines spin against a backdrop of ancient history. The district offers a unique combination of modern infrastructure and prehistoric sites, making it a fascinating day trip from Baku.",
+    "attractions": [
+      {
+        "name": "Khizi Wind Farms",
+        "description": "One of the largest wind farms in the Caucasus, with over 50 turbines generating clean energy for Baku."
+      },
+      {
+        "name": "Seven Beauties Waterfalls",
+        "description": "A series of seven cascading waterfalls in a lush valley, named after the Persian poem 'Haft Paykar'."
+      },
+      {
+        "name": "Gaval Stone",
+        "description": "A unique archaeological site with ancient petroglyphs and a massive stone believed to have ritual significance."
+      }
+    ],
+    "whereToEat": [
+      {
+        "name": "Khizi Grill",
+        "description": "Specializes in grilled meats and local kebabs."
+      },
+      {
+        "name": "Wind Farm Cafe",
+        "description": "Simple cafe with views of the turbines."
+      }
+    ],
+    "tips": [
+      "Bring a camera for the wind farm landscapes.",
+      "Wear sturdy shoes for the waterfalls trail.",
+      "Visit in spring when the steppe is green."
+    ],
+    "touristMistakes": [
+      "Ignoring the wind—Khizi is breezy!",
+      "Forgetting to bring water for the hike.",
+      "Missing the small local museums in Khizi city."
+    ],
+    "hiddenGems": [
+      "The abandoned Soviet radar station on Mount Shahdag.",
+      "Local shepherd families offering homemade dairy products.",
+      "The quiet valleys between the turbines."
+    ],
+    "howToGetThere": "From Baku: 70 km via the M3 highway. Regular buses from Baku."
+  }
+}

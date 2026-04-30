@@ -1,0 +1,66 @@
+{
+  "id": "naftalan",
+  "name": "Naftalan",
+  "slug": "naftalan",
+  "region": "Ganja-Dashkasan",
+  "population": "30,000",
+  "description": "Naftalan is a unique resort city famous for its 'Naftalan' crude oil, used for therapeutic baths since the 16th century. Unlike typical oil, this naphthalene-rich oil is used externally to treat skin conditions, joint pain, and rheumatism. The city has numerous sanatoriums and a distinct Soviet-era resort architecture.",
+  "heroImage": "https://images.unsplash.com/photo-1505663919888-251d56347639?q=80&w=1280&auto=format&fit=crop",
+  "bestTime": "Year-round (indoor spas)",
+  "distanceFromBaku": "360 km",
+  "transport": "Train, bus, or private car from Ganja",
+  "topAttractions": [
+    "Naftalan Sanatoriums",
+    "Carpet Museum",
+    "Ganja Gate"
+  ],
+  "topRestaurants": [
+    "Goygun Restaurant",
+    "Safa Restaurant",
+    "Local diners near sanatoriums"
+  ],
+  "topHotels": [
+    "Chinar Hotel & Spa",
+    "Goygol Hotel",
+    "Naftalan Resort Hotel"
+  ],
+  "content": {
+    "intro": "Naftalan is not your typical tourist destination—it's a medical spa town where the primary attraction is a specific type of crude oil. Visitors come from all over the former Soviet Union to soak in naphthalene baths for healing purposes.",
+    "attractions": [
+      {
+        "name": "Naftalan Sanatoriums",
+        "description": "Historic bathhouses and modern spa resorts offering therapeutic oil treatments. The 'Goygun' and 'Chinar' sanatoriums are the most renowned."
+      },
+      {
+        "name": "Carpet Museum",
+        "description": "A small but rich collection of regional carpets and rugs, showcasing the weaving traditions of Ganja-Dashkasan."
+      }
+    ],
+    "whereToEat": [
+      {
+        "name": "Goygun Restaurant",
+        "description": "Located inside the Goygun sanatorium, serving hearty Azerbaijani meals."
+      },
+      {
+        "name": "Safa Restaurant",
+        "description": "Local favorite for plov and kebabs."
+      }
+    ],
+    "tips": [
+      "Book oil bath treatments in advance, especially during peak season.",
+      "Consult a doctor before undergoing crude oil therapy.",
+      "Bring swimwear and towels; provided ones may not fit well."
+    ],
+    "touristMistakes": [
+      "Expecting a luxury spa experience (it's more medical/functional).",
+      "Staying only one day (treatments require multiple sessions).",
+      "Ignoring the local climate—dry and continental."
+    ],
+    "hiddenGems": [
+      "The old Soviet-era sanatorium architecture.",
+      "Nearby Ganja city (just 30km away) for cultural contrast.",
+      "Local markets selling regional crafts."
+    ],
+    "howToGetThere": "From Baku: 360 km. Best approach is to fly/train to Ganja (1h flight) then take a 30min taxi to Naftalan."
+  }
+}

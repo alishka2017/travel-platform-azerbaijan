@@ -142,13 +142,13 @@ export default function SearchBar({ variant = 'hero', placeholder = 'City, attra
                   {getCategoryIcon(place.category)}
                 </div>
                 <div className="flex-1 min-w-0">
-                  <div className="font-medium text-gray-900 truncate">{place.name}</div>
+                  <div className="font-medium text-text truncate">{place.name}</div>
                   <div className="flex items-center gap-2 text-sm text-gray-500">
                     <span>{place.city}</span>
                     <span>•</span>
                     <span>{place.category}</span>
                     <span>•</span>
-                    <span className="flex items-center text-yellow-500">
+                    <span className="flex items-center text-primary">
                       ★ {place.rating}
                     </span>
                   </div>

@@ -5,7 +5,7 @@ export function generateLocalBusinessSchema(): object {
     "name": "Smartholiday.az | Smart Holiday Travel",
     "description": "Your complete travel guide to Azerbaijan. Discover cities, attractions, tours, restaurants, and hidden gems.",
     "url": "https://smartholiday.az",
-    "telephone": "+994702166666",
+    "telephone": "+994****6666",
     "email": "info@smartholiday.az",
     "address": {
       "@type": "PostalAddress",
@@ -144,4 +144,104 @@ export function generatePlaceSchema(place: {
   }
   
   return baseSchema;
+}
+
+export function generateTourSchema(tour: {
+  name: string;
+  description: string;
+  image?: string;
+  priceLevel?: string;
+  duration?: string;
+  rating?: number;
+  reviewCount?: number;
+  highlights?: string[];
+  includes?: string[];
+}): object {
+  return {
+    "@context": "https://schema.org",
+    "@type": "Tour",
+    "name": tour.name,
+    "description": tour.description,
+    "image": tour.image,
+    "offers": {
+      "@type": "Offer",
+      "price": tour.priceLevel || "Contact for price",
+      "priceCurrency": "AZN",
+      "availability": "https://schema.org/InStock"
+    },
+    "tourDifficulty": "Easy",
+    "tourLength": tour.duration || "Flexible",
+    "aggregateRating": tour.rating !== undefined && tour.reviewCount !== undefined ? {
+      "@type": "AggregateRating",
+      "ratingValue": tour.rating,
+      "reviewCount": tour.reviewCount
+    } : undefined,
+    "itinerary": tour.highlights ? tour.highlights.map((highlight, index) => ({
+      "@type": "TouristAttraction",
+      "name": highlight,
+      "position": index + 1
+    })) : undefined
+  };
+}
+
+export function generateRestaurantSchema(restaurant: {
+  name: string;
+  description: string;
+  image?: string;
+  address?: string;
+  telephone?: string;
+  priceRange?: string;
+  openingHours?: string;
+  rating?: number;
+  reviewCount?: number;
+  cuisine?: string[];
+}): object {
+  return {
+    "@context": "https://schema.org",
+    "@type": "Restaurant",
+    "name": restaurant.name,
+    "description": restaurant.description,
+    "image": restaurant.image,
+    "address": restaurant.address ? {
+      "@type": "PostalAddress",
+      "streetAddress": restaurant.address
+    } : undefined,
+    "telephone": restaurant.telephone,
+    "priceRange": restaurant.priceRange,
+    "openingHours": restaurant.openingHours,
+    "servesCuisine": restaurant.cuisine,
+    "aggregateRating": restaurant.rating !== undefined && restaurant.reviewCount !== undefined ? {
+      "@type": "AggregateRating",
+      "ratingValue": restaurant.rating,
+      "reviewCount": restaurant.reviewCount
+    } : undefined
+  };
+}
+
+export function generateItinerarySchema(itinerary: {
+  name: string;
+  description: string;
+  duration: string;
+  totalCost: string;
+  bestFor: string;
+  days: Array<{
+    day: number;
+    title: string;
+    summary: string;
+  }>;
+}): object {
+  return {
+    "@context": "https://schema.org",
+    "@type": "Itinerary",
+    "name": itinerary.name,
+    "description": itinerary.description,
+    "duration": itinerary.duration,
+    "totalCost": itinerary.totalCost,
+    "suitableFor": itinerary.bestFor,
+    "itineraryDay": itinerary.days.map(day => ({
+      "@type": "Schedule",
+      "name": `Day ${day.day}: ${day.title}`,
+      "description": day.summary
+    }))
+  };
 }

@@ -3,6 +3,39 @@ import Header from '@/components/layout/Header';
 import Footer from '@/components/layout/Footer';
 import { cities } from '@/data/places';
 import { HeartButton } from '@/components/HeartButton';
+import { Metadata } from 'next';
+
+export const metadata: Metadata = {
+  title: "Cities of Azerbaijan | Smartholiday.az Travel Guide",
+  description: "Explore all cities in Azerbaijan - from Baku to Sheki, Gabala to Lankaran. Discover the best places to visit, stay, and explore.",
+  keywords: ["Azerbaijan cities", "Baku", "Sheki", "Gabala", "Lankaran", "Ganja", "travel guide"],
+  metadataBase: new URL("https://smartholiday.az"),
+  alternates: {
+    canonical: "/cities",
+  },
+  openGraph: {
+    title: "Cities of Azerbaijan | Smartholiday.az",
+    description: "Discover the diverse cities of Azerbaijan, from the modern capital Baku to historic mountain towns and coastal resorts.",
+    url: "https://smartholiday.az/cities",
+    siteName: "Smartholiday.az",
+    locale: "en_US",
+    type: "website",
+    images: [
+      {
+        url: "https://images.unsplash.com/photo-1555441565-b8e84a2571ed?w=1280&q=80",
+        width: 1280,
+        height: 720,
+        alt: "Azerbaijan cities landscape",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Cities of Azerbaijan | Smartholiday.az",
+    description: "Explore all cities in Azerbaijan with our comprehensive travel guide.",
+    images: ["https://images.unsplash.com/photo-1555441565-b8e84a2571ed?w=1280&q=80"],
+  },
+};
 
 // Map city tags for display
 const cityTags: Record<string, { tag: string; tagColor: string; highlights: string[] }> = {

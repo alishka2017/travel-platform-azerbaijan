@@ -1,6 +1,8 @@
 import Header from '@/components/layout/Header';
 import Footer from '@/components/layout/Footer';
 import { notFound } from 'next/navigation';
+import { generateItinerarySchema, generateBreadcrumbSchema } from '@/lib/schema';
+import { Metadata } from 'next';
 
 interface ItineraryItem {
   time: string;
@@ -228,8 +230,35 @@ export default function ItineraryPage({ params }: { params: { slug: string } }) 
     notFound();
   }
 
+  const schema = generateItinerarySchema({
+    name: itinerary.title,
+    description: itinerary.description,
+    duration: itinerary.duration,
+    totalCost: itinerary.totalCost,
+    bestFor: itinerary.bestFor,
+    days: itinerary.days.map(day => ({
+      day: day.day,
+      title: day.title,
+      summary: day.summary
+    }))
+  });
+
+  const breadcrumbSchema = generateBreadcrumbSchema([
+    { name: "Home", url: "https://smartholiday.az" },
+    { name: "Itineraries", url: "https://smartholiday.az/itineraries" },
+    { name: itinerary.title, url: `https://smartholiday.az/itineraries/${params.slug}` }
+  ]);
+
   return (
     <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }}
+      />
       <div className="min-h-screen bg-gray-50">
         <Header />
 

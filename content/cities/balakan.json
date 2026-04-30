@@ -1,0 +1,71 @@
+{
+  "id": "balakan",
+  "name": "Balakan",
+  "slug": "balakan",
+  "region": "Balakan",
+  "population": "50,000",
+  "description": "Balakan is a lush, green district in northwest Azerbaijan, bordering Georgia. It's known for its tea plantations, tobacco fields, and the Balakan carpet weaving tradition. The region is also home to the Zagatala Reserve extension.",
+  "heroImage": "https://images.unsplash.com/photo-1501854140801-50d01698950b?q=80&w=1280&auto=format&fit=crop",
+  "bestTime": "June-September",
+  "distanceFromBaku": "520 km",
+  "transport": "Bus, car",
+  "topAttractions": [
+    "Balakan Carpet Museum",
+    "Zagatala Reserve (extension)",
+    "Tea Plantations",
+    "Tobacco Fields"
+  ],
+  "topRestaurants": [
+    "Balakan Restaurant",
+    "Tea House",
+    "Local cafes"
+  ],
+  "topHotels": [
+    "Balakan Hotel",
+    "Guesthouses",
+    "Zagatala hotels (nearby)"
+  ],
+  "content": {
+    "intro": "Balakan is a verdant district where tea leaves rustle in the breeze and hand-woven carpets tell stories of generations. Located on the Georgian border, it offers a unique blend of subtropical climate and traditional Azerbaijani rural life.",
+    "attractions": [
+      {
+        "name": "Balakan Carpet Museum",
+        "description": "A small museum showcasing the unique Balakan carpet style, known for its geometric patterns and rich colors."
+      },
+      {
+        "name": "Tea Plantations",
+        "description": "Visit the tea estates to see how local tea is processed and taste fresh brews."
+      },
+      {
+        "name": "Zagatala Reserve (Balakan Section)",
+        "description": "The western part of the reserve, accessible from Balakan, offers pristine forests and hiking trails."
+      }
+    ],
+    "whereToEat": [
+      {
+        "name": "Balakan Restaurant",
+        "description": "Serves local specialties like 'Balakan plov'."
+      },
+      {
+        "name": "Tea House",
+        "description": "Traditional tea tasting experience."
+      }
+    ],
+    "tips": [
+      "Visit tea plantations in summer for harvest season.",
+      "Buy authentic Balakan carpets directly from weavers.",
+      "Explore the border areas with caution (permits may be required)."
+    ],
+    "touristMistakes": [
+      "Missing the chance to buy fresh tea leaves.",
+      "Ignoring the cultural nuances of the border region.",
+      "Underestimating the travel distance from Baku."
+    ],
+    "hiddenGems": [
+      "The tobacco curing sheds.",
+      "Hidden waterfalls in the forest.",
+      "Local festivals celebrating harvest."
+    ],
+    "howToGetThere": "From Baku: 520 km. Bus journey takes ~9 hours. Fly to Ganja then drive 4.5 hours."
+  }
+}

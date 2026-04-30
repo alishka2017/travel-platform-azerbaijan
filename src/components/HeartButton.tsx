@@ -39,7 +39,7 @@ export const HeartButton: React.FC<HeartButtonProps> = ({ item, className = '' }
     >
       <svg
         className={`w-5 h-5 transition-colors duration-200 ${
-          isFav ? 'fill-red-500 text-red-500' : 'text-gray-400 hover:text-red-500'
+          isFav ? 'fill-primary text-primary' : 'text-gray-400 hover:text-primary'
         }`}
         fill={isFav ? 'currentColor' : 'none'}
         stroke="currentColor"
