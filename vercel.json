@@ -1,17 +1,4 @@
 {
-  "security": {
-    "checkpoint": {
-      "enabled": true,
-      "excludedPaths": [
-        "/cities/*",
-        "/visa",
-        "/visa/*",
-        "/itineraries/*",
-        "/hidden-gems",
-        "/hidden-gems/*"
-      ]
-    }
-  },
   "buildCommand": "npm run build",
   "outputDirectory": ".next",
   "framework": "nextjs",
