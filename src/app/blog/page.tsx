@@ -6,8 +6,8 @@ import { getBlogPosts } from '@/lib/content';
 import { Metadata } from 'next';
 
 export const metadata: Metadata = {
-  title: "Azerbaijan Travel Blog | Smartholiday.az",
-  description: "Expert travel tips, guides, and insights for exploring Azerbaijan.",
+  title: "Azerbaijan Travel Blog | Tips, Guides & Stories",
+  description: "Expert travel tips, guides, and stories to help you explore the Land of Fire",
 };
 
 export default function BlogPage() {
@@ -31,8 +31,20 @@ export default function BlogPage() {
             Azerbaijan Travel Blog
           </h1>
           <p className="text-gray-600">
-            Expert tips, guides, and insights for exploring Azerbaijan
+            Expert tips, guides, and stories to help you explore the Land of Fire
           </p>
+        </div>
+
+        {/* Category Filter */}
+        <div className="flex flex-wrap gap-2 mb-8">
+          {['All', 'Itineraries', 'Destinations', 'Travel Tips', 'Food & Drink', 'Adventure', 'City Guides'].map((cat) => (
+            <button
+              key={cat}
+              className="px-4 py-2 bg-white border border-gray-200 rounded-full text-sm text-gray-700 hover:border-[#00AA6C] hover:text-[#00AA6C] transition"
+            >
+              {cat}
+            </button>
+          ))}
         </div>
 
         {/* Blog Grid */}
@@ -66,6 +78,29 @@ export default function BlogPage() {
             </Link>
           ))}
         </div>
+
+        {/* Newsletter Section */}
+        <section className="mt-16 bg-[#00AA6C] rounded-xl p-8 text-center">
+          <h2 className="text-2xl font-bold text-white mb-2">
+            Get Travel Tips Directly to Your Inbox
+          </h2>
+          <p className="text-green-100 mb-6">
+            Subscribe to our newsletter for exclusive tips and offers
+          </p>
+          <form className="flex flex-col sm:flex-row gap-4 max-w-md mx-auto">
+            <input
+              type="email"
+              placeholder="Enter your email"
+              className="flex-1 px-4 py-3 rounded-lg text-gray-800 focus:outline-none focus:ring-2 focus:ring-white"
+            />
+            <button
+              type="submit"
+              className="bg-white text-[#00AA6C] px-6 py-3 rounded-lg font-medium hover:bg-gray-100 transition"
+            >
+              Subscribe
+            </button>
+          </form>
+        </section>
       </main>
 
       <Footer />

@@ -521,6 +521,457 @@ Must-try dishes:
 - **Qutab** - thin stuffed flatbread
 `
   }
+,
+  {
+    slug: "top-12-places-azerbaijan",
+    title: "The 12 Best Places to Visit in Azerbaijan",
+    author: "Local Travel Expert",
+    excerpt: "Azerbaijan offers everything from Caspian Sea beaches to dramatic mountain landscapes. Discover the must-see attractions and hidden gems.",
+    date: "February 19, 2025",
+    readTime: "13 min read",
+    category: "Destinations",
+    content: `Azerbaijan offers everything from Caspian Sea beaches to dramatic mountain landscapes. Discover the must-see attractions and hidden gems.
+
+## 1. Baku Old City (Icherisheher)
+
+The UNESCO World Heritage site is the heart of Baku. Wander through ancient streets and discover:
+
+- **Maiden Tower** - 12th century cylindrical tower
+- **Palace of the Shirvanshahs** - 15th century royal complex
+- **Multani Caravanserai** - ancient merchant inn
+
+## 2. Sheki
+
+Known as the "Pearl of the Caucasus," Sheki is famous for:
+
+- **Sheki Khan Palace** - stunning 18th century architecture
+- **Upper Caravanserai** - historic hotel still in use
+- **Local silk workshops** - traditional crafts
+
+## 3. Gabala
+
+Perfect for mountain lovers:
+
+- **Nohur Lake** - beautiful mountain reservoir
+- **Cable car** to mountain peaks
+- **Shahdag** and **Tufandag** ski resorts
+
+## 4. Gobustan National Park
+
+UNESCO World Heritage site featuring:
+
+- 6,000+ ancient rock carvings
+- Mud volcanoes
+- Prehistoric settlements
+
+## 5. Lahij Village
+
+Hidden gem in the Caucasus Mountains:
+
+- Ancient stone architecture
+- Traditional copper workshops
+- Stunning mountain views
+
+## 6. Quba Region
+
+Ethnic diversity and natural beauty:
+
+- **Khinalig** - highest village in Azerbaijan
+- **Quba Mosque** - historic landmark
+- Apple orchards and mountain valleys
+
+## 7. Lankaran
+
+Subtropical paradise on the Caspian:
+
+- Tea plantations
+- Hirkan National Park
+- Beautiful beaches
+
+## 8. Mingachevir
+
+Known for its reservoir and hydroelectric power:
+
+- Water sports and fishing
+- Ancient settlements
+- Modern city amenities
+
+## 9. Naftalan
+
+Unique medical tourism destination:
+
+- Crude oil baths treatment
+- Health resorts
+- World-famous therapy
+
+## 10. Shamakhi
+
+Historic city with winemaking tradition:
+
+- Juma Mosque - oldest in Caucasus
+- Local wineries
+- Mountain scenery
+
+## 11. Goygol Lake
+
+Beautiful alpine lake:
+
+- Crystal clear waters
+- Mountain reflections
+- Hiking trails
+
+## 12. Absheron Peninsula
+
+Historic sites near Baku:
+
+- Ateshgah Fire Temple
+- Yanar Dag (Burning Mountain)
+- Ancient oil fields
+
+Each destination offers unique experiences that showcase Azerbaijan's incredible diversity.
+`},
+  {
+    slug: "hidden-gems-baku",
+    title: "10 Hidden Gems in Baku Beyond the Old City",
+    author: "Local Travel Expert",
+    excerpt: "Beyond the UNESCO-listed Old City, Baku hides countless treasures. From local tea houses to contemporary art spaces, discover the real Baku.",
+    date: "March 10, 2025",
+    readTime: "8 min read",
+    category: "City Guides",
+    content: `Beyond the UNESCO-listed Old City, Baku hides countless treasures. Discover the real Baku with these hidden gems.
+
+## 1. Yashil Theatre
+
+Hidden in the city center, this open-air theater offers:
+
+- Soviet-era architecture
+- Quiet green spaces
+- Local performances
+
+## 2. Upland Park
+
+Escape the city noise:
+
+- Panoramic views of Baku
+- Quiet walking trails
+- Local favorite spot
+
+## 3. Bibi-Heybat Mosque
+
+Beautiful mosque with stunning views:
+
+- Ottoman-style architecture
+- Caspian Sea views
+- Peaceful atmosphere
+
+## 4. Baku Ferris Wheel
+
+Less crowded than tourist spots:
+
+- Great city views
+- Affordable tickets
+- Evening rides recommended
+
+## 5. National Carpet Museum
+
+Unique building shaped like a rolled carpet:
+
+- 10,000+ carpets
+- Live weaving demonstrations
+- Great gift shop
+
+## 6. Taza Bazaar
+
+Authentic local market:
+
+- Fresh produce
+- Traditional sweets
+- Bargaining expected
+
+## 7. Baku Boulevard at Sunset
+
+Romantic evening stroll:
+
+- Beautiful sea views
+- Street performers
+- Ice cream vendors
+
+## 8. Fountain Square at Night
+
+Vibrant nightlife area:
+
+- Live music
+- Great restaurants
+- Local atmosphere
+
+## 9. Martyrs' Lane
+
+Moving memorial with views:
+
+- WWII and Nagorno-Karabakh memorials
+- Stunning city panorama
+- Free entry
+
+## 10. Little Venice
+
+Charming canals in the old city:
+
+- Boat rides
+- Romantic atmosphere
+- Great for photos
+`},
+  {
+    slug: "azerbaijani-cuisine",
+    title: "Azerbaijani Cuisine: A Food Lover's Guide",
+    author: "Local Travel Expert",
+    excerpt: "From plov to dolma, discover the rich flavors of Azerbaijani cuisine. Where to eat, what to try, and culinary traditions.",
+    date: "January 15, 2025",
+    readTime: "9 min read",
+    category: "Food & Drink",
+    content: `Azerbaijani cuisine is a delightful blend of Eastern and Western flavors, influenced by centuries of trade and cultural exchange.
+
+## Must-Try Dishes
+
+### Plov
+
+The national dish of Azerbaijan:
+
+- Saffron rice with meat
+- Dried fruits and nuts
+- Crispy bottom layer (gazmag)
+
+### Dolma
+
+Stuffed vegetables:
+
+- Grape leaves (yarpag dolmasi)
+- Eggplant, peppers, tomatoes
+- Vegetarian and meat versions
+
+### Kebabs
+
+Grilled perfection:
+
+- Shashlik (skewered meat)
+- Lule kebab (minced meat)
+- Adana kebab
+
+### Qutab
+
+Thin stuffed flatbread:
+
+- Meat or pumpkin filling
+- Served with yogurt
+- Street food favorite
+
+### Dushbara
+
+Tiny dumplings:
+
+- Filled with minced meat
+- Served in broth
+- Comfort food classic
+
+## Traditional Drinks
+
+### Tea (Chay)
+
+- Served in armudu glasses
+- Often with jam
+- Social ritual
+
+### Sherbet
+
+- Fruit-based drinks
+- Refreshing in summer
+- Traditional welcome drink
+
+## Best Restaurants in Baku
+
+1. **Dolma Restaurant** - Traditional cuisine
+2. **Cay Bagi 145** - Tea and sweets
+3. **Malacannes 145** - Local specialties
+4. **Shirvanshah Museum Restaurant** - Fine dining
+5. **Fisin** - Modern Azerbaijani
+
+## Food Markets
+
+### Taza Bazaar
+
+- Fresh produce
+- Local specialties
+- Great for souvenirs
+
+### Yashil Bazaar
+
+- Fish and meat
+- Traditional dairy products
+- Authentic atmosphere
+
+## Culinary Tips
+
+1. Try local bread (nan) fresh from the oven
+2. Don't miss shekerbura pastries
+3. Ask for "Azerbaijani set" for variety
+4. Visit local tea houses for authentic experience
+5. Try regional specialties in each city
+`},
+  {
+    slug: "mountain-villages-azerbaijan",
+    title: "Azerbaijan's Mountain Villages: A Complete Guide",
+    author: "Local Travel Expert",
+    excerpt: "Explore the ancient villages of the Greater Caucasus Mountains, from Khinalig to Lahij. Discover traditional culture and stunning landscapes.",
+    date: "January 25, 2025",
+    readTime: "12 min read",
+    category: "Adventure",
+    content: `The Greater Caucasus Mountains hide some of Azerbaijan's most beautiful and culturally rich villages. Explore these ancient settlements.
+
+## Khinalig
+
+The highest village in Azerbaijan at 2,350 meters:
+
+- Ancient stone houses
+- Unique dialect
+- Stunning mountain views
+- Traditional shepherd culture
+
+## Lahij
+
+Famous for copper craftsmanship:
+
+- Cobblestone streets
+- Ancient mosque
+- Copper workshops
+- Traditional architecture
+
+## Guba Region
+
+Multi-ethnic mountain area:
+
+- **Quba** - administrative center
+- **Qriz** - German settlement
+- **Alyk** - ancient village
+
+## Getting There
+
+### By Car
+
+- Rent a 4x4 for mountain roads
+- Hire local driver for safety
+- Allow extra time for stops
+
+### By Tour
+
+- Many operators offer village tours
+- Guided hikes available
+- Cultural experiences included
+
+## What to See
+
+### Traditional Architecture
+
+- Stone houses built into mountains
+- Ancient mosques and churches
+- Traditional windmills
+
+### Local Crafts
+
+- Copper working in Lahij
+- Weaving in mountain villages
+- Wood carving
+
+### Nature
+
+- Alpine meadows
+- Mountain springs
+- Wildlife viewing
+
+## Tips for Visitors
+
+1. Respect local customs and dress modestly
+2. Ask permission before photographing people
+3. Try local food and stay in guesthouses
+4. Hire local guides for hiking
+5. Bring warm clothes even in summer
+`},
+  {
+    slug: "weekend-in-baku",
+    title: "Perfect Weekend in Baku: 48-Hour Itinerary",
+    author: "Local Travel Expert",
+    excerpt: "Short on time? Make the most of your 48 hours in Baku with this perfectly planned weekend itinerary.",
+    date: "February 5, 2025",
+    readTime: "10 min read",
+    category: "Itineraries",
+    content: `Even with just 48 hours, you can experience the best of Baku with this carefully planned weekend itinerary.
+
+## Friday Evening
+
+### Arrival & Check-in
+
+- Arrive at Heydar Aliyev Airport
+- Transfer to hotel in city center
+- Freshen up and rest
+
+### Evening Stroll
+
+- Walk along Baku Boulevard
+- Watch the Flame Towers light show
+- Dinner at a seaside restaurant
+
+## Saturday
+
+### Morning: Old City Exploration
+
+- Start early to beat the crowds
+- Visit Maiden Tower
+- Explore Shirvanshahs Palace
+- Shop for souvenirs
+
+### Lunch
+
+- Try local qutab at a traditional cafe
+- Experience Azerbaijani tea culture
+
+### Afternoon: Modern Baku
+
+- Visit Heydar Aliyev Center
+- Walk down Nizami Street
+- Stop for coffee and people-watching
+
+### Evening
+
+- Dinner at Dolma Restaurant
+- Experience Baku nightlife at Fountain Square
+- Optional: Jazz club or traditional music
+
+## Sunday
+
+### Morning: Markets & Culture
+
+- Visit Taza Bazaar
+- Try local sweets at Cay Bagi 145
+- Browse the Azerbaijan Carpet Museum
+
+### Afternoon: Relaxation
+
+- Lunch at a rooftop restaurant
+- Walk through Upland Park
+- Last-minute shopping
+
+### Evening
+
+- Transfer to airport
+- Reflect on an amazing weekend
+
+## Weekend Tips
+
+1. Book hotel near Old City for easy access
+2. Download Bolt app for affordable taxis
+3. Try to avoid Friday prayers at mosques
+4. Evening is best time for Flame Towers
+5. Sunday afternoon is quietest time
+`}
+
 ];
 
 export const getBlogPosts = () => blogPosts;
