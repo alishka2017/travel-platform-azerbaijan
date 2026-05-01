@@ -1,6 +1,6 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  // output: 'export', // Commented out for Vercel compatibility
+  output: 'export', // Enable static export for Netlify
   trailingSlash: true,
   images: {
     unoptimized: true,
