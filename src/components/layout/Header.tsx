@@ -1,47 +1,123 @@
-
 'use client';
 
 import Link from 'next/link';
-import { useState } from 'react';
+import { useState, useEffect, useRef } from 'react';
+import { searchContent } from '@/lib/content';
 
 export default function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const [searchQuery, setSearchQuery] = useState('');
+  const [searchResults, setSearchResults] = useState<{ cities: any[] }>({ cities: [] });
+  const [showResults, setShowResults] = useState(false);
+  const searchRef = useRef<HTMLDivElement>(null);
+
+  useEffect(() => {
+    function handleClickOutside(event: MouseEvent) {
+      if (searchRef.current && event.target instanceof Node && !searchRef.current.contains(event.target as Node)) {
+        setShowResults(false);
+      }
+    }
+    document.addEventListener('mousedown', handleClickOutside);
+    return () => document.removeEventListener('mousedown', handleClickOutside);
+  }, []);
+
+  useEffect(() => {
+    if (searchQuery.length > 1) {
+      const results = searchContent(searchQuery);
+      setSearchResults(results);
+      setShowResults(true);
+    } else {
+      setShowResults(false);
+    }
+  }, [searchQuery]);
 
   return (
-    <header className="navbar">
+    <header className="bg-white shadow-sm sticky top-0 z-50">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex justify-between items-center h-16">
+        <div className="flex justify-between items-center h-16 gap-4">
           {/* Logo */}
           <div className="flex-shrink-0 flex items-center">
-            <Link href="/" className="text-xl font-bold text-gray-900 flex items-center gap-2">
-              <span className="text-[#00AA6C]">◆</span> Smartholiday.az
+            <Link href="/" className="flex items-center gap-2">
+              <div className="w-10 h-10 bg-[#00AA6C] rounded-lg flex items-center justify-center">
+                <span className="text-white font-bold text-lg">S</span>
+              </div>
+              <span className="text-xl font-bold text-gray-900 hidden sm:block">Smartholiday.az</span>
             </Link>
           </div>
 
+          {/* Search Bar - Desktop */}
+          <div className="hidden md:block flex-1 max-w-xl" ref={searchRef}>
+            <div className="relative">
+              <input
+                type="text"
+                placeholder="Search destinations, tours..."
+                value={searchQuery}
+                onChange={(e) => setSearchQuery(e.target.value)}
+                className="w-full px-4 py-2 pl-10 border border-gray-300 rounded-full text-sm focus:outline-none focus:ring-2 focus:ring-[#00AA6C] focus:border-transparent"
+              />
+              <svg className="absolute left-3 top-2.5 h-5 w-5 text-gray-400" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
+              </svg>
+              {showResults && searchResults.cities.length > 0 && (
+                <div className="absolute top-full left-0 right-0 mt-2 bg-white border border-gray-200 rounded-lg shadow-lg max-h-80 overflow-y-auto z-50">
+                  {searchResults.cities.map((city: any) => (
+                    <Link
+                      key={city.id}
+                      href={`/cities/${city.slug}`}
+                      className="block px-4 py-3 hover:bg-gray-50 border-b border-gray-100 last:border-0"
+                      onClick={() => {
+                        setSearchQuery('');
+                        setShowResults(false);
+                      }}
+                    >
+                      <p className="font-medium text-gray-900">{city.name}</p>
+                      <p className="text-sm text-gray-500">{city.region}</p>
+                    </Link>
+                  ))}
+                </div>
+              )}
+            </div>
+          </div>
+
           {/* Desktop Navigation */}
-          <nav className="hidden md:flex space-x-8">
-            <Link href="/cities" className="text-gray-700 hover:text-[#00AA6C] font-medium transition">Cities</Link>
-            <Link href="/tours" className="text-gray-700 hover:text-[#00AA6C] font-medium transition">Tours</Link>
-            <Link href="/transfers" className="text-gray-700 hover:text-[#00AA6C] font-medium transition">Transfers</Link>
-            <Link href="/attractions" className="text-gray-700 hover:text-[#00AA6C] font-medium transition">Attractions</Link>
-            <Link href="/restaurants" className="text-gray-700 hover:text-[#00AA6C] font-medium transition">Restaurants</Link>
-            <Link href="/blog" className="text-gray-700 hover:text-[#00AA6C] font-medium transition">Blog</Link>
-            <Link href="/contact" className="text-gray-700 hover:text-[#00AA6C] font-medium transition">Contact</Link>
+          <nav className="hidden md:flex items-center space-x-6">
+            <Link href="/cities" className="text-gray-600 hover:text-[#00AA6C] font-medium text-sm transition">
+              Destinations
+            </Link>
+            <Link href="/tours" className="text-gray-600 hover:text-[#00AA6C] font-medium text-sm transition">
+              Things to Do
+            </Link>
+            <Link href="/restaurants" className="text-gray-600 hover:text-[#00AA6C] font-medium text-sm transition">
+              Restaurants
+            </Link>
+            <Link href="/blog" className="text-gray-600 hover:text-[#00AA6C] font-medium text-sm transition">
+              Travel Guide
+            </Link>
           </nav>
 
-          {/* CTA Button */}
-          <div className="hidden md:flex items-center space-x-4">
-            <a href="https://wa.me/994702166666" target="_blank" rel="noopener noreferrer" className="bg-[#00AA6C] text-white px-4 py-2 rounded-full font-medium hover:bg-[#007A52] transition flex items-center gap-2">
-              <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+          {/* CTA Buttons */}
+          <div className="hidden md:flex items-center space-x-3">
+            <Link
+              href="/contact"
+              className="text-[#00AA6C] font-medium text-sm hover:underline"
+            >
+              List Your Property
+            </Link>
+            <a
+              href="https://wa.me/994702166666"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="bg-[#00AA6C] text-white px-4 py-2 rounded-full font-medium text-sm hover:bg-[#007A52] transition"
+            >
               WhatsApp
             </a>
           </div>
 
           {/* Mobile menu button */}
           <div className="md:hidden">
-            <button 
-              onClick={() => setIsMenuOpen(!isMenuOpen)} 
-              className="text-gray-700 hover:text-[#00AA6C] focus:outline-none"
+            <button
+              onClick={() => setIsMenuOpen(!isMenuOpen)}
+              className="text-gray-600 hover:text-[#00AA6C] focus:outline-none"
             >
               <svg className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                 {isMenuOpen ? (
@@ -53,19 +129,68 @@ export default function Header() {
             </button>
           </div>
         </div>
+
+        {/* Mobile Search */}
+        <div className="md:hidden pb-3">
+          <div className="relative" ref={searchRef}>
+            <input
+              type="text"
+              placeholder="Search destinations, tours..."
+              value={searchQuery}
+              onChange={(e) => setSearchQuery(e.target.value)}
+              className="w-full px-4 py-2 pl-10 border border-gray-300 rounded-full text-sm focus:outline-none focus:ring-2 focus:ring-[#00AA6C]"
+            />
+            <svg className="absolute left-3 top-2.5 h-5 w-5 text-gray-400" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
+            </svg>
+            {showResults && searchResults.cities.length > 0 && (
+              <div className="absolute top-full left-0 right-0 mt-2 bg-white border border-gray-200 rounded-lg shadow-lg max-h-80 overflow-y-auto z-50">
+                {searchResults.cities.map((city: any) => (
+                  <Link
+                    key={city.id}
+                    href={`/cities/${city.slug}`}
+                    className="block px-4 py-3 hover:bg-gray-50 border-b border-gray-100 last:border-0"
+                    onClick={() => {
+                      setSearchQuery('');
+                      setShowResults(false);
+                    }}
+                  >
+                    <p className="font-medium text-gray-900">{city.name}</p>
+                    <p className="text-sm text-gray-500">{city.region}</p>
+                  </Link>
+                ))}
+              </div>
+            )}
+          </div>
+        </div>
       </div>
 
       {/* Mobile Menu */}
       {isMenuOpen && (
         <div className="md:hidden bg-white border-t border-gray-200">
-          <div className="px-2 pt-2 pb-3 space-y-1 sm:px-3">
-            <Link href="/cities" className="block px-3 py-2 text-gray-700 hover:bg-gray-100 rounded-md">Cities</Link>
-            <Link href="/tours" className="block px-3 py-2 text-gray-700 hover:bg-gray-100 rounded-md">Tours</Link>
-            <Link href="/transfers" className="block px-3 py-2 text-gray-700 hover:bg-gray-100 rounded-md">Transfers</Link>
-            <Link href="/attractions" className="block px-3 py-2 text-gray-700 hover:bg-gray-100 rounded-md">Attractions</Link>
-            <Link href="/restaurants" className="block px-3 py-2 text-gray-700 hover:bg-gray-100 rounded-md">Restaurants</Link>
-            <Link href="/blog" className="block px-3 py-2 text-gray-700 hover:bg-gray-100 rounded-md">Blog</Link>
-            <Link href="/contact" className="block px-3 py-2 text-gray-700 hover:bg-gray-100 rounded-md">Contact</Link>
+          <div className="px-4 py-3 space-y-2">
+            <Link href="/cities" className="block px-3 py-2 text-gray-700 hover:bg-gray-100 rounded-md">
+              Destinations
+            </Link>
+            <Link href="/tours" className="block px-3 py-2 text-gray-700 hover:bg-gray-100 rounded-md">
+              Things to Do
+            </Link>
+            <Link href="/restaurants" className="block px-3 py-2 text-gray-700 hover:bg-gray-100 rounded-md">
+              Restaurants
+            </Link>
+            <Link href="/blog" className="block px-3 py-2 text-gray-700 hover:bg-gray-100 rounded-md">
+              Travel Guide
+            </Link>
+            <div className="pt-2 border-t border-gray-100 mt-2">
+              <a
+                href="https://wa.me/994702166666"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="block px-3 py-2 bg-[#00AA6C] text-white rounded-md text-center"
+              >
+                WhatsApp
+              </a>
+            </div>
           </div>
         </div>
       )}
