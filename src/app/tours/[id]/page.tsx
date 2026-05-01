@@ -8,6 +8,12 @@ import { generatePlaceSchema, generateBreadcrumbSchema } from '@/lib/schema';
 import { Metadata } from 'next';
 import { HeartButton } from '@/components/HeartButton';
 
+export async function generateStaticParams() {
+  return places
+    .filter(p => p.category === 'Tours')
+    .map(p => ({ id: p.id }));
+}
+
 export function generateMetadata({ params }: { params: { id: string } }): Metadata {
   return generateTourMetadata(params.id);
 }
@@ -59,9 +65,6 @@ export default function TourDetailPage({ params }: { params: { id: string } }) {
                 src={tour.image}
                 alt={tour.name}
                 className="w-full h-full object-cover"
-                onError={(e) => {
-                  e.currentTarget.src = '/placeholder.jpg';
-                }}
               />
               <div className="absolute top-4 right-4 bg-white px-3 py-1 rounded-full text-sm font-medium text-[#00AA6C]">
                 {tour.priceLevel}

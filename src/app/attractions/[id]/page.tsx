@@ -5,9 +5,9 @@ import { generateAttractionMetadata } from '@/lib/metadata';
 import { Metadata } from 'next';
 
 export async function generateStaticParams() {
-  return places.map((place) => ({
-    id: place.id,
-  }));
+  return places
+    .filter(p => p.category !== 'Restaurants' && p.category !== 'Tours')
+    .map(p => ({ id: p.id }));
 }
 
 export function generateMetadata({ params }: { params: { id: string } }): Metadata {
