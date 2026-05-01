@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://smartholiday.az/sitemap.xml
+Sitemap: https://smartholidayaz.netlify.app/sitemap.xml
