@@ -6,11 +6,16 @@ import { useEffect, useState } from 'react';
 
 interface Settings {
   contacts: {
-    phoneMain: string;
-    phoneMainLabel: string;
-    phoneOffice1: string;
-    phoneOffice2: string;
+    phone: string;
+    whatsapp: string;
     email: string;
+    address: string;
+    workingHours: string;
+    social: {
+      instagram: string;
+      facebook: string;
+      telegram: string;
+    };
   };
 }
 
@@ -120,10 +125,8 @@ export default function Footer() {
             <h3 className="text-white font-semibold mb-4 text-sm">{currentText.contact}</h3>
             <ul className="space-y-2 text-sm">
               <li><Link href="/contact" className="hover:text-[#00AA6C] transition">{currentText.contact}</Link></li>
-              <li><a href={`https://wa.me/${settings?.contacts.phoneMain.replace(/\D/g, '')}`} className="hover:text-[#00AA6C] transition">WhatsApp</a></li>
-              <li className="text-gray-400">{settings?.contacts.phoneMain} {settings?.contacts.phoneMainLabel && `(${settings.contacts.phoneMainLabel})`}</li>
-              <li className="text-gray-400">{settings?.contacts.phoneOffice1}</li>
-              <li className="text-gray-400">{settings?.contacts.phoneOffice2}</li>
+              <li><a href={`https://wa.me/${settings?.contacts.whatsapp.replace(/\D/g, '')}`} className="hover:text-[#00AA6C] transition">WhatsApp</a></li>
+              <li className="text-gray-400">{settings?.contacts.phone}</li>
               <li className="text-gray-400">{settings?.contacts.email}</li>
             </ul>
           </div>

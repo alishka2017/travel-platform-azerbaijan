@@ -2,9 +2,7 @@
 
 import Link from 'next/link';
 import { HeartButton } from '@/components/HeartButton';
-import OptimizedImage from '@/components/OptimizedImage';
 import { useState } from 'react';
-import { useLanguage } from '@/context/LanguageContext';
 
 interface City {
   id: string;
@@ -29,15 +27,15 @@ interface HomeContentProps {
     'city-tours': Tour[];
     'day-trips': Tour[];
     'multi-day': Tour[];
-    'adventure': Tour[];
+    adventure: Tour[];
     'food-wine': Tour[];
   };
 }
 
 export default function HomeContent({ cities, tours }: HomeContentProps) {
   const [searchQuery, setSearchQuery] = useState('');
-  const { language } = useLanguage();
-  
+  const language = 'ru'; // Default to Russian
+
   // Get first 8 cities and tours
   const featuredCities = cities.slice(0, 8);
   const featuredTours = [
@@ -76,7 +74,7 @@ export default function HomeContent({ cities, tours }: HomeContentProps) {
     }
   };
 
-  const text = t[language];
+  const text = t[language] || t.ru;
 
   return (
     <div className="min-h-screen bg-gray-50">
@@ -137,7 +135,7 @@ export default function HomeContent({ cities, tours }: HomeContentProps) {
                 className="group"
               >
                 <div className="relative aspect-[4/3] rounded-lg overflow-hidden mb-2">
-                  <OptimizedImage
+                  <img
                     src={city.heroImage}
                     alt={city.name}
                     className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
@@ -193,7 +191,7 @@ export default function HomeContent({ cities, tours }: HomeContentProps) {
                     <Link href="/contact" className="text-[#00AA6C] font-medium text-sm hover:underline">
                       {text.getQuote}
                     </Link>
-                    <HeartButton item={tour} />
+                    {/* <HeartButton item={tour} /> */}
                   </div>
                 </div>
               </div>
