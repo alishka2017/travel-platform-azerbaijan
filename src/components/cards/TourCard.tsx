@@ -1,6 +1,7 @@
 "use client";
 
 import React from 'react';
+import Link from 'next/link';
 import { BaseCard, BaseCardData } from './BaseCard';
 import { ImageContainer } from './ImageContainer';
 
@@ -161,15 +162,11 @@ export const TourCard: React.FC<TourCardProps> = ({
           </div>
           
           <div className="flex items-center gap-2">
-            {tour.price && (
-              <div>
-                <span className="text-lg font-bold text-gray-800">${tour.price}</span>
-                <span className="text-xs text-gray-500">/person</span>
-              </div>
-            )}
-            <button className="px-3 py-1.5 bg-blue-600 text-white text-sm font-medium rounded-lg hover:bg-blue-700 transition-colors">
-              Book Now
-            </button>
+            <Link href="/contact">
+              <button className="px-3 py-1.5 bg-blue-600 text-white text-sm font-medium rounded-lg hover:bg-blue-700 transition-colors">
+                Get Quote
+              </button>
+            </Link>
           </div>
         </div>
       </div>

@@ -1,6 +1,4 @@
 import Link from 'next/link';
-import Header from '@/components/layout/Header';
-import Footer from '@/components/layout/Footer';
 
 const guideSections = [
   {
@@ -71,7 +69,7 @@ const practicalInfo = [
 export default function TravelGuidePage() {
   return (
     <div className="min-h-screen flex flex-col bg-gray-50">
-      <Header />
+      
       
       <main className="flex-1">
         {/* Hero */}
@@ -147,7 +145,7 @@ export default function TravelGuidePage() {
         </section>
       </main>
 
-      <Footer />
+      
     </div>
   );
 }

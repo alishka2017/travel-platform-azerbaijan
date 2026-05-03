@@ -1,4 +1,3 @@
-
 export interface Place {
   id: string;
   name: string;
@@ -1007,7 +1006,187 @@ export const places: Place[] = [
     priceLevel: null,
     lat: 41.4500,
     lon: 48.6000
-  }
+  },
+  {
+    id: "dolma-restaurant-baku",
+    name: "Dolma Restaurant",
+    city: "Baku",
+    citySlug: "baku",
+    category: "Restaurants",
+    rating: 4.7,
+    reviewsCount: 1200,
+    description: "Experience authentic Azerbaijani cuisine at Dolma Restaurant, where traditional recipes meet modern presentation. Famous for their dolma, plov, and kebabs.",
+    address: "28 May Street, Baku",
+    image: "https://images.unsplash.com/photo-1504674900247-0877df9cc836?q=80&w=800",
+    gallery: [],
+    openingHours: "10:00 - 23:00",
+    tips: ['Try the lamb dolma', 'Reserve table for dinner', 'Traditional music on weekends'],
+    tags: ['Azerbaijani', 'Traditional', 'Dolma', 'Kebabs'],
+    priceLevel: "$$",
+    lat: 40.3777,
+    lon: 49.8312
+  },
+
+  {
+    id: "malacannes-145",
+    name: "Malacannes 145",
+    city: "Baku",
+    citySlug: "baku",
+    category: "Restaurants",
+    rating: 4.6,
+    reviewsCount: 950,
+    description: "Charming restaurant in the Old City serving delicious Armenian and Azerbaijani dishes in a historic setting.",
+    address: "145 Kichik Gala, Icherisheher, Baku",
+    image: "https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?q=80&w=800",
+    gallery: [],
+    openingHours: "11:00 - 22:00",
+    tips: ['Try the kebabs', 'Outdoor seating available', 'Great views of the Old City'],
+    tags: ['Old City', 'Kebabs', 'Traditional'],
+    priceLevel: "$$",
+    lat: 40.377,
+    lon: 49.832
+  },
+
+  {
+    id: "sea-breeze-cafe-baku",
+    name: "Sea Breeze Cafe",
+    city: "Baku",
+    citySlug: "baku",
+    category: "Restaurants",
+    rating: 4.5,
+    reviewsCount: 800,
+    description: "Relaxing cafe on the Baku Boulevard with stunning Caspian Sea views. Perfect for coffee, light meals, and sunsets.",
+    address: "Baku Boulevard, Baku",
+    image: "https://images.unsplash.com/photo-1559339352-11d035aa65de?q=80&w=800",
+    gallery: [],
+    openingHours: "09:00 - 23:00",
+    tips: ['Come for sunset', 'Try the local tea', 'Great for people watching'],
+    tags: ['Cafe', 'Sea View', 'Coffee', 'Sunset'],
+    priceLevel: "$",
+    lat: 40.365,
+    lon: 49.85
+  },
+
+  {
+    id: "sheki-saray",
+    name: "Sheki Saray",
+    city: "Sheki",
+    citySlug: "sheki",
+    category: "Restaurants",
+    rating: 4.8,
+    reviewsCount: 600,
+    description: "Fine dining restaurant in Sheki serving traditional Sheki cuisine including the famous Sheki halva and piti.",
+    address: "Sheki Old City",
+    image: "https://images.unsplash.com/photo-1504674900247-0877df9cc836?q=80&w=800",
+    gallery: [],
+    openingHours: "12:00 - 21:00",
+    tips: ['Must try Sheki halva', 'Traditional piti dish', 'Beautiful historic setting'],
+    tags: ['Sheki', 'Traditional', 'Halva', 'Piti'],
+    priceLevel: "$$",
+    lat: 41.1919,
+    lon: 47.1706
+  },
+
+  {
+    id: "piti-house-sheki",
+    name: "Piti House",
+    city: "Sheki",
+    citySlug: "sheki",
+    category: "Restaurants",
+    rating: 4.7,
+    reviewsCount: 450,
+    description: "Specialty restaurant dedicated to the traditional Azerbaijani dish piti, prepared in clay pots for hours.",
+    address: "Sheki Old City",
+    image: "https://images.unsplash.com/photo-1529042410759-befb1204b468?q=80&w=800",
+    gallery: [],
+    openingHours: "11:00 - 20:00",
+    tips: ['Order piti in advance', 'Clay pot presentation', 'Authentic experience'],
+    tags: ['Sheki', 'Piti', 'Traditional', 'Clay Pot'],
+    priceLevel: "$$",
+    lat: 41.1925,
+    lon: 47.171
+  },
+
+  {
+    id: "mugam-club-ganja",
+    name: "Mugam Club",
+    city: "Ganja",
+    citySlug: "ganja",
+    category: "Restaurants",
+    rating: 4.6,
+    reviewsCount: 300,
+    description: "Restaurant and cultural center in Ganja serving traditional Azerbaijani dishes with live mugam music performances.",
+    address: "Nizami Street, Ganja",
+    image: "https://images.unsplash.com/photo-1514933651103-005eec06c04b?q=80&w=800",
+    gallery: [],
+    openingHours: "12:00 - 23:00",
+    tips: ['Live mugam music', 'Traditional kebabs', 'Cultural experience'],
+    tags: ['Ganja', 'Traditional', 'Mugam', 'Music'],
+    priceLevel: "$$",
+    lat: 40.6828,
+    lon: 46.3606
+  },
+
+  {
+    id: "ganja-restaurant",
+    name: "Ganja Restaurant",
+    city: "Ganja",
+    citySlug: "ganja",
+    category: "Restaurants",
+    rating: 4.5,
+    reviewsCount: 250,
+    description: "Local favorite restaurant in Ganja serving authentic Azerbaijani cuisine with a focus on fresh local ingredients.",
+    address: "Heydar Aliyev Avenue, Ganja",
+    image: "https://images.unsplash.com/photo-1555396273-367ea4eb4db5?q=80&w=800",
+    gallery: [],
+    openingHours: "10:00 - 22:00",
+    tips: ['Try the local lamb', 'Friendly service', 'Large portions'],
+    tags: ['Ganja', 'Local', 'Lamb', 'Fresh'],
+    priceLevel: "$",
+    lat: 40.68,
+    lon: 46.36
+  },
+
+  {
+    id: "gabala-restaurant",
+    name: "Gabala Restaurant",
+    city: "Gabala",
+    citySlug: "gabala",
+    category: "Restaurants",
+    rating: 4.6,
+    reviewsCount: 350,
+    description: "Mountain restaurant in Gabala serving hearty Caucasian cuisine with stunning mountain views.",
+    address: "Tufandag Mountain Resort, Gabala",
+    image: "https://images.unsplash.com/photo-1559339352-11d035aa65de?q=80&w=800",
+    gallery: [],
+    openingHours: "09:00 - 21:00",
+    tips: ['Mountain view seating', 'Try the trout', 'After skiing dinner'],
+    tags: ['Gabala', 'Mountain', 'Trout', 'Views'],
+    priceLevel: "$$",
+    lat: 41.0,
+    lon: 47.0
+  },
+
+  {
+    id: "caspian-fish-restaurant-lankaran",
+    name: "Caspian Fish Restaurant",
+    city: "Lankaran",
+    citySlug: "lankaran",
+    category: "Restaurants",
+    rating: 4.7,
+    reviewsCount: 200,
+    description: "Fresh seafood restaurant on the Caspian Sea coast, famous for its grilled fish and traditional fish dishes.",
+    address: "Lankaran Seaside, Lankaran",
+    image: "https://images.unsplash.com/photo-1519676867240-f03562e64548?q=80&w=800",
+    gallery: [],
+    openingHours: "11:00 - 22:00",
+    tips: ['Fresh fish daily', 'Grilled specialties', 'Sea view'],
+    tags: ['Lankaran', 'Seafood', 'Fish', 'Caspian'],
+    priceLevel: "$$",
+    lat: 38.75,
+    lon: 48.85
+  },
+
 ];
 
 export function getCityBySlug(slug: string): City | undefined {

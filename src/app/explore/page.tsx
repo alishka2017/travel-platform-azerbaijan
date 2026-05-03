@@ -1,7 +1,5 @@
 'use client';
 
-import Header from '@/components/layout/Header';
-import Footer from '@/components/layout/Footer';
 import dynamic from 'next/dynamic';
 import { useState, useMemo } from 'react';
 import { places } from '@/data/places';
@@ -59,7 +57,7 @@ export default function ExplorePage() {
 
   return (
     <div className="min-h-screen bg-gray-50">
-      <Header />
+      
       <main>
         {/* Hero Section */}
         <section className="relative h-[40vh] bg-cover bg-center" style={{ backgroundImage: 'url(https://images.unsplash.com/photo-1555441565-b8e84a2571ed?w=1920&q=80)' }}>
@@ -161,7 +159,7 @@ export default function ExplorePage() {
           </section>
         </div>
       </main>
-      <Footer />
+      
     </div>
   );
 }

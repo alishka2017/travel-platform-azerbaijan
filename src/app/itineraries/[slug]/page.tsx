@@ -1,5 +1,3 @@
-import Header from '@/components/layout/Header';
-import Footer from '@/components/layout/Footer';
 import { notFound } from 'next/navigation';
 import { generateItinerarySchema, generateBreadcrumbSchema } from '@/lib/schema';
 import { Metadata } from 'next';
@@ -260,7 +258,7 @@ export default function ItineraryPage({ params }: { params: { slug: string } }) 
         dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }}
       />
       <div className="min-h-screen bg-gray-50">
-        <Header />
+        
 
         <main className="pt-24 pb-16">
           <div className="max-w-6xl mx-auto px-4">
@@ -374,7 +372,7 @@ export default function ItineraryPage({ params }: { params: { slug: string } }) 
           </div>
         </main>
 
-        <Footer />
+        
       </div>
     </>
   );

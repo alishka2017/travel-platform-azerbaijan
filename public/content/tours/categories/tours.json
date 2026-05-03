@@ -1,0 +1,147 @@
+{
+  "categories": {
+    "city-tours": [
+      {
+        "id": "baku-city-tour",
+        "name": "Baku City Tour",
+        "slug": "baku-city-tour",
+        "duration": "8 hours",
+        "price": "25 AZN",
+        "category": "City Tours",
+        "program": [
+          "09:00 - Hotel pickup",
+          "09:30 - Old City (Icherisheher)",
+          "11:00 - Maiden Tower",
+          "12:00 - Lunch break",
+          "13:00 - Flame Towers",
+          "14:00 - Heydar Aliyev Center",
+          "15:30 - Baku Boulevard",
+          "17:00 - Hotel drop-off"
+        ],
+        "includes": ["Professional guide", "Transportation", "Entrance fees", "Hotel pickup/drop-off"],
+        "description": "Experience the perfect introduction to Baku with our comprehensive full-day city tour.",
+        "image": "https://images.unsplash.com/photo-1574505338056-7718c71c2c35?w=800"
+      },
+      {
+        "id": "night-baku-tour",
+        "name": "Night Baku Tour",
+        "slug": "night-baku-tour",
+        "duration": "4 hours",
+        "price": "30 AZN",
+        "category": "City Tours",
+        "program": [
+          "18:00 - Hotel pickup",
+          "18:30 - Baku Boulevard sunset",
+          "20:00 - Dinner at Fountain Square",
+          "21:30 - Flame Towers night view",
+          "22:00 - Hotel drop-off"
+        ],
+        "includes": ["Professional guide", "Transportation", "Dinner"],
+        "description": "Discover Baku's magical nightlife and illuminated landmarks.",
+        "image": "https://images.unsplash.com/photo-1514565131-fce0801e5785?w=800"
+      }
+    ],
+    "day-trips": [
+      {
+        "id": "gobustan-mud-volcanoes",
+        "name": "Gobustan & Mud Volcanoes Day Trip",
+        "slug": "gobustan-mud-volcanoes",
+        "duration": "10 hours",
+        "price": "40 AZN",
+        "category": "Day Trips",
+        "program": [
+          "08:00 - Hotel pickup",
+          "09:30 - Gobustan National Park",
+          "12:00 - Rock carvings museum",
+          "13:00 - Lunch",
+          "14:00 - Mud Volcanoes",
+          "16:00 - Ateshgah Fire Temple",
+          "18:00 - Hotel drop-off"
+        ],
+        "includes": ["Professional guide", "Transportation", "Entrance fees", "Lunch"],
+        "description": "Journey to one of Azerbaijan's most extraordinary UNESCO World Heritage sites.",
+        "image": "https://images.unsplash.com/photo-1469854523086-cc02fe5d8800?w=800"
+      },
+      {
+        "id": "sheki-day-trip",
+        "name": "Sheki Day Trip from Baku",
+        "slug": "sheki-day-trip",
+        "duration": "12 hours",
+        "price": "60 AZN",
+        "category": "Day Trips",
+        "program": [
+          "06:00 - Hotel pickup",
+          "09:00 - Sheki arrival",
+          "09:30 - Sheki Khan Palace",
+          "11:30 - Upper Caravanserai",
+          "13:00 - Lunch with local cuisine",
+          "14:30 - Local crafts workshop",
+          "16:00 - Departure to Baku",
+          "19:00 - Hotel drop-off"
+        ],
+        "includes": ["Professional guide", "Transportation", "Entrance fees", "Lunch"],
+        "description": "Discover the crown jewel of Azerbaijan's north in this immersive day trip.",
+        "image": "https://images.unsplash.com/photo-1519677100203-a0e668c92439?w=800"
+      }
+    ],
+    "multi-day": [
+      {
+        "id": "sheki-historical-2-days",
+        "name": "Sheki Historical Tour (2 Days)",
+        "slug": "sheki-historical-2-days",
+        "duration": "2 days / 1 night",
+        "price": "120 AZN",
+        "category": "Multi-day",
+        "program": [
+          "Day 1: Sheki arrival, Khan Palace, Caravanserai, dinner",
+          "Day 2: Local workshops, Kish Church, return to Baku"
+        ],
+        "includes": ["Professional guide", "Transportation", "Accommodation", "Meals", "Entrance fees"],
+        "description": "Immersive two-day journey to Sheki's historic treasures.",
+        "image": "https://images.unsplash.com/photo-1519677100203-a0e668c92439?w=800"
+      }
+    ],
+    "adventure": [
+      {
+        "id": "gabala-mountain-adventure",
+        "name": "Gabala Mountain Adventure",
+        "slug": "gabala-mountain-adventure",
+        "duration": "8-9 hours",
+        "price": "50 AZN",
+        "category": "Adventure",
+        "program": [
+          "08:00 - Hotel pickup",
+          "11:00 - Gabala arrival",
+          "11:30 - Cable car to Tufandag",
+          "13:00 - Hiking",
+          "14:00 - Lunch",
+          "15:00 - Nohur Lake",
+          "17:00 - Return",
+          "20:00 - Hotel drop-off"
+        ],
+        "includes": ["Professional guide", "Transportation", "Cable car ticket", "Lunch"],
+        "description": "Escape to Azerbaijan's premier mountain resort destination.",
+        "image": "https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?w=800"
+      }
+    ],
+    "food-wine": [
+      {
+        "id": "food-culture-tour",
+        "name": "Food & Culture Tour Baku",
+        "slug": "food-culture-tour",
+        "duration": "5 hours",
+        "price": "35 AZN",
+        "category": "Food & Wine",
+        "program": [
+          "10:00 - Taza Bazaar",
+          "11:30 - Tea house visit",
+          "13:00 - Cooking class",
+          "15:00 - Old City walk"
+        ],
+        "includes": ["Professional guide", "Tasting", "Cooking class"],
+        "description": "Embark on a culinary journey through Baku's vibrant food scene.",
+        "image": "https://images.unsplash.com/photo-1504674900247-0877df9cc836?w=800"
+      }
+    ]
+  }
+}

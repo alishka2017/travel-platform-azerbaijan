@@ -1,60 +1,14 @@
-
 'use client';
 
+import Link from 'next/link';
 import Header from '@/components/layout/Header';
 import Footer from '@/components/layout/Footer';
 import WhatsAppFloat from '@/components/WhatsAppFloat';
-import Link from 'next/link';
-
-const transferClasses = [
-  {
-    id: 'economy',
-    name: 'Economy',
-    description: 'Standard sedans for budget-friendly travel.',
-    capacity: '1-3 passengers',
-    price: 'Starting from 15 AZN',
-    image: 'https://images.unsplash.com/photo-1549317661-bd32c8ce0db2?q=80&w=800&auto=format&fit=crop',
-    features: ['Air Conditioning', 'Standard Luggage', 'Professional Driver']
-  },
-  {
-    id: 'comfort',
-    name: 'Comfort',
-    description: 'Premium sedans for a more relaxed journey.',
-    capacity: '1-3 passengers',
-    price: 'Starting from 25 AZN',
-    image: 'https://images.unsplash.com/photo-1555215695-3004980ad54e?q=80&w=800&auto=format&fit=crop',
-    features: ['Leather Seats', 'Extra Legroom', 'Wi-Fi', 'Bottled Water']
-  },
-  {
-    id: 'business',
-    name: 'Business',
-    description: 'Luxury vehicles for corporate or special occasions.',
-    capacity: '1-3 passengers',
-    price: 'Starting from 40 AZN',
-    image: 'https://images.unsplash.com/photo-1563720223185-11003d516935?q=80&w=800&auto=format&fit=crop',
-    features: ['Luxury Sedan', 'Meeting Ready', 'Privacy Partition', 'Champagne Service']
-  },
-  {
-    id: 'vip',
-    name: 'VIP',
-    description: 'Executive class with maximum comfort and service.',
-    capacity: '1-3 passengers',
-    price: 'Starting from 60 AZN',
-    image: 'https://images.unsplash.com/photo-1551836022-d5d88e9218df?q=80&w=800&auto=format&fit=crop',
-    features: ['Mercedes S-Class', 'Chauffeur', 'Airport Meet & Greet', 'All Amenities']
-  },
-  {
-    id: 'group',
-    name: 'Group Transport',
-    description: 'Minivans and buses for families and large groups.',
-    capacity: 'Up to 20 passengers',
-    price: 'Starting from 50 AZN',
-    image: 'https://images.unsplash.com/photo-1568667256549-094345857637?q=80&w=800&auto=format&fit=crop',
-    features: ['Minivan/Bus', 'Luggage Space', 'Group Friendly', 'Custom Itineraries']
-  }
-];
+import { getTransfers } from '@/lib/content';
 
 export default function TransfersPage() {
+  const transferClasses = getTransfers();
+
   return (
     <div className="min-h-screen bg-gray-50">
       <Header />
@@ -77,12 +31,12 @@ export default function TransfersPage() {
                 <div className="p-6">
                   <div className="flex justify-between items-center mb-2">
                     <h3 className="text-xl font-bold text-gray-800">{cls.name}</h3>
-                    <span className="text-[#00AA6C] font-bold">{cls.price}</span>
+                    <span className="text-[#00AA6C] font-bold">{cls.priceFrom}</span>
                   </div>
                   <p className="text-gray-600 text-sm mb-4">{cls.description}</p>
                   <p className="text-gray-500 text-xs mb-4">Capacity: {cls.capacity}</p>
                   <ul className="mb-6 space-y-1">
-                    {cls.features.map((feature) => (
+                    {cls.includes.map((feature) => (
                       <li key={feature} className="text-sm text-gray-600 flex items-center">
                         <span className="w-2 h-2 bg-[#00AA6C] rounded-full mr-2"></span>
                         {feature}
@@ -101,7 +55,7 @@ export default function TransfersPage() {
           </div>
         </div>
       </section>
-
+      
       <Footer />
       <WhatsAppFloat />
     </div>

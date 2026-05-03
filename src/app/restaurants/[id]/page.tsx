@@ -1,5 +1,3 @@
-import Header from '@/components/layout/Header';
-import Footer from '@/components/layout/Footer';
 import Link from 'next/link';
 import { places } from '@/data/places';
 import { notFound } from 'next/navigation';
@@ -43,7 +41,7 @@ export default function RestaurantDetailPage({ params }: { params: { id: string 
         dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }}
       />
       <div className="min-h-screen bg-gray-50">
-        <Header />
+        
 
         <div className="max-w-6xl mx-auto px-4 py-8">
           {/* Breadcrumb */}
@@ -162,7 +160,7 @@ export default function RestaurantDetailPage({ params }: { params: { id: string 
         </div>
       </div>
       </div>
-      <Footer />
+      
     </>
   );
 }

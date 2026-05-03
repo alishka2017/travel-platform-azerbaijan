@@ -1,14 +1,13 @@
-
 import React from 'react';
-import Header from '@/components/layout/Header';
-import Footer from '@/components/layout/Footer';
 import Link from 'next/link';
 import dynamic from 'next/dynamic';
 import { notFound } from 'next/navigation';
 import { getCityBySlug, getPlacesByCity, cities } from '@/data/places';
+import { expertGuides } from '@/data/expertGuides';
 import { generateCityMetadata } from '@/lib/metadata';
 import { generateCitySchema, generateBreadcrumbSchema, generateWebSiteSchema } from '@/lib/schema';
 import { Metadata } from 'next';
+// import { useLanguage } from '@/context/LanguageContext'; // Removed for Server Component compatibility
 
 const InteractiveMap = dynamic(() => import('@/components/InteractiveMap'), {
   ssr: false,
@@ -34,8 +33,9 @@ const cityCoordinates: Record<string, { lat: number; lon: number }> = {
   qusar: { lat: 41.4345, lon: 48.5161 },
 };
 
-export default async function CityPage({ params }: { params: { slug: string } }) {
+export default function CityPage({ params }: { params: { slug: string } }) {
   const city = getCityBySlug(params.slug);
+  const language = 'ru'; // Default to Russian as requested by user for content
   
   // Debug: Check if city exists
   if (!city) {
@@ -76,7 +76,7 @@ export default async function CityPage({ params }: { params: { slug: string } })
       />
       
       <div className="min-h-screen bg-gray-50">
-        <Header />
+        
         
         <main>
           {/* Hero Section */}
@@ -249,24 +249,54 @@ export default async function CityPage({ params }: { params: { slug: string } })
 
             {/* Hidden Gems Section */}
             <section className="mb-12">
-              <h2 className="text-2xl font-bold text-gray-800 mb-6">Hidden Gems in {city.name}</h2>
+              <h2 className="text-2xl font-bold text-gray-800 mb-6">
+                {language === 'ru' ? (expertGuides[city.slug as keyof typeof expertGuides]?.sections?.hiddenGems as any)?.titleRu : (expertGuides[city.slug as keyof typeof expertGuides]?.sections?.hiddenGems as any)?.title}
+                {' '} in {city.name}
+              </h2>
               <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-                {[
-                  { title: "Local Tea Houses", desc: "Experience traditional tea culture", icon: "🫖" },
-                  { title: "Village Markets", desc: "Authentic local atmosphere", icon: "🏪" },
-                  { title: "Scenic Viewpoints", desc: "Best photo spots", icon: "📸" },
-                ].map((item, index) => (
+                {(expertGuides[city.slug as keyof typeof expertGuides]?.sections?.hiddenGems as any)?.items?.map((item: any, index: number) => {
+                  const displayName = language === 'ru' ? (item.nameRu || item.name) : (item.nameEn || item.name);
+                  const displayDesc = language === 'ru' ? (item.descriptionRu || item.description) : (item.descriptionEn || item.description);
+                  const displayLoc = language === 'ru' ? (item.locationRu || item.location) : (item.locationEn || item.location);
+                  const displayTip = item.tip ? (language === 'ru' ? (item.tipRu || item.tip) : (item.tipEn || item.tip)) : null;
+                  
+                  return (
                   <div key={index} className="bg-white p-5 rounded-lg shadow-sm border-l-4 border-[#00AA6C]">
-                    <div className="text-2xl mb-2">{item.icon}</div>
-                    <h3 className="font-semibold text-gray-800 mb-1">{item.title}</h3>
-                    <p className="text-sm text-gray-600">{item.desc}</p>
+                    <div className="text-2xl mb-2">📍</div>
+                    <h3 className="font-semibold text-gray-800 mb-1">
+                      {displayName}
+                    </h3>
+                    <p className="text-sm text-gray-600 mb-2">
+                      {displayDesc}
+                    </p>
+                    <p className="text-xs text-gray-500"><strong>Address:</strong> {displayLoc}</p>
+                    {displayTip && <p className="text-xs text-blue-600 mt-1">💡 {displayTip}</p>}
                   </div>
-                ))}
+                )}) || (
+                  // Fallback if no data found
+                  <>
+                    <div className="bg-white p-5 rounded-lg shadow-sm border-l-4 border-[#00AA6C]">
+                      <div className="text-2xl mb-2">🫖</div>
+                      <h3 className="font-semibold text-gray-800 mb-1">Local Tea Houses</h3>
+                      <p className="text-sm text-gray-600">Experience traditional tea culture</p>
+                    </div>
+                    <div className="bg-white p-5 rounded-lg shadow-sm border-l-4 border-[#00AA6C]">
+                      <div className="text-2xl mb-2">🏪</div>
+                      <h3 className="font-semibold text-gray-800 mb-1">Village Markets</h3>
+                      <p className="text-sm text-gray-600">Authentic local atmosphere</p>
+                    </div>
+                    <div className="bg-white p-5 rounded-lg shadow-sm border-l-4 border-[#00AA6C]">
+                      <div className="text-2xl mb-2">📸</div>
+                      <h3 className="font-semibold text-gray-800 mb-1">Scenic Viewpoints</h3>
+                      <p className="text-sm text-gray-600">Best photo spots</p>
+                    </div>
+                  </>
+                )}
               </div>
             </section>
           </div>
         </main>
-        <Footer />
+        
       </div>
     </>
   );

@@ -1,0 +1,304 @@
+{
+  "cities": [
+    {
+      "id": "baku",
+      "name": "Baku",
+      "slug": "baku",
+      "country": "Azerbaijan",
+      "region": "Absheron Peninsula",
+      "population": "2.3 million",
+      "description": "Baku, the vibrant capital of Azerbaijan, sits on the edge of the Caspian Sea. This stunning city masterfully blends ancient history with futuristic architecture.",
+      "heroImage": "https://images.unsplash.com/photo-1574505338056-7718c71c2c35?q=80&w=1280&auto=format&fit=crop",
+      "bestTime": "April-June, September-October",
+      "distanceFromBaku": "0 km",
+      "transport": "Metro, bus, taxi, BakuCard",
+      "topAttractions": [
+        "Old City (Icherisheher)",
+        "Flame Towers",
+        "Heydar Aliyev Center",
+        "Baku Boulevard"
+      ],
+      "topRestaurants": [
+        "Cay Bagi 145",
+        "Dolma Restaurant",
+        "Malacannes 145"
+      ],
+      "topHotels": [
+        "Four Seasons Baku",
+        "JW Marriott Absheron Baku",
+        "Fairmont Baku"
+      ],
+      "hiddenGems": [
+        "Yanar Dag",
+        "Ateshgah Fire Temple",
+        "Baku Ferris Wheel"
+      ],
+      "mistakesToAvoid": [
+        "Don't exchange money at the airport",
+        "Avoid rush hour metro"
+      ]
+    },
+    {
+      "id": "ganja",
+      "name": "Ganja",
+      "slug": "ganja",
+      "country": "Azerbaijan",
+      "region": "Ganja-Dashkasan",
+      "population": "330,000",
+      "description": "Ganja, Azerbaijan's second-largest city, is affectionately known as the 'City of Poems' for its literary heritage.",
+      "heroImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/28/Ganja_2016.jpg/1280px-Ganja_2016.jpg",
+      "bestTime": "May-September",
+      "distanceFromBaku": "360 km",
+      "transport": "Train, bus, car",
+      "topAttractions": [
+        "Nizami Mausoleum",
+        "Juma Mosque",
+        "Nizami Park",
+        "Heydar Aliyev Avenue"
+      ],
+      "topRestaurants": [
+        "Mugam Club",
+        "Ganja Restaurant"
+      ],
+      "topHotels": [
+        "Ganja Hotel",
+        "Park Chalet Ganja"
+      ],
+      "hiddenGems": [
+        "Goygol Lake",
+        "Ganja Fortress"
+      ],
+      "mistakesToAvoid": [
+        "Don't miss Nizami Mausoleum"
+      ]
+    },
+    {
+      "id": "sheki",
+      "name": "Sheki",
+      "slug": "sheki",
+      "country": "Azerbaijan",
+      "region": "Shaki-Zaqatala",
+      "population": "65,000",
+      "description": "Sheki, nestled in the foothills of the Greater Caucasus Mountains, is one of Azerbaijan's most beautiful and historic cities.",
+      "heroImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d8/Sheki_Khan_Palace.jpg/1280px-Sheki_Khan_Palace.jpg",
+      "bestTime": "May-September",
+      "distanceFromBaku": "300 km",
+      "transport": "Bus, car",
+      "topAttractions": [
+        "Sheki Khan Palace",
+        "Upper Caravanserai",
+        "Sheki Fortress",
+        "Kish Albanian Church"
+      ],
+      "topRestaurants": [
+        "Sheki Saray",
+        "Khan's Garden"
+      ],
+      "topHotels": [
+        "Sheki Saray Hotel",
+        "Issam Hotel"
+      ],
+      "hiddenGems": [
+        "Sheki Glass Factory",
+        "Local silk workshops"
+      ],
+      "mistakesToAvoid": [
+        "Don't miss the stained glass windows"
+      ]
+    },
+    {
+      "id": "absheron",
+      "name": "Absheron",
+      "slug": "absheron",
+      "country": "Azerbaijan",
+      "region": "Absheron Peninsula",
+      "population": "200,000",
+      "description": "Absheron Peninsula is home to ancient fire temples, oil fields, and unique natural landmarks. The region offers fascinating excursions from Baku.",
+      "heroImage": "https://images.unsplash.com/photo-1524231757912-21f4fe3a7200?q=80&w=1280",
+      "bestTime": "April-October",
+      "distanceFromBaku": "30 km",
+      "transport": "Bus, taxi",
+      "topAttractions": [
+        "Ateshgah Fire Temple",
+        "Yanar Dag",
+        "Gobustan National Park",
+        "Mud Volcanoes"
+      ],
+      "topRestaurants": [
+        "Absheron Restaurant",
+        "Local tea houses"
+      ],
+      "topHotels": [
+        "Absheron Hotel",
+        "Gobustan Resort"
+      ],
+      "hiddenGems": [
+        "Ateshgah village",
+        "Oil fields tour"
+      ],
+      "mistakesToAvoid": [
+        "Don't visit in winter",
+        "Wear comfortable shoes"
+      ]
+    },
+    {
+      "id": "naftalan",
+      "name": "Naftalan",
+      "slug": "naftalan",
+      "country": "Azerbaijan",
+      "region": "Ganja-Dashkasan",
+      "population": "10,000",
+      "description": "Naftalan is world-famous for its unique crude oil baths. This medical tourism destination offers treatments for skin and joint conditions.",
+      "heroImage": "https://images.unsplash.com/photo-1544367567-0f2fcb009e0b?q=80&w=1280",
+      "bestTime": "Year-round",
+      "distanceFromBaku": "380 km",
+      "transport": "Train, car",
+      "topAttractions": [
+        "Naftalan Oil Baths",
+        "Health resorts",
+        "Treatment centers"
+      ],
+      "topRestaurants": [
+        "Resort restaurants"
+      ],
+      "topHotels": [
+        "Naftalan Resort Hotel",
+        "Chinar Hotel"
+      ],
+      "hiddenGems": [
+        "Local treatment methods"
+      ],
+      "mistakesToAvoid": [
+        "Don't book without doctor consultation"
+      ]
+    },
+    {
+      "id": "shamakhi",
+      "name": "Shamakhi",
+      "slug": "shamakhi",
+      "country": "Azerbaijan",
+      "region": "Shamakhi",
+      "population": "30,000",
+      "description": "Shamakhi is one of the oldest cities in Azerbaijan, known for its historic mosques, wineries, and mountain scenery.",
+      "heroImage": "https://images.unsplash.com/photo-1524231757912-21f4fe3a7200?q=80&w=1280",
+      "bestTime": "May-October",
+      "distanceFromBaku": "120 km",
+      "transport": "Bus, car",
+      "topAttractions": [
+        "Juma Mosque",
+        "Shamakhi Astrophysical Observatory",
+        "Local wineries"
+      ],
+      "topRestaurants": [
+        "Shamakhi Restaurant",
+        "Wine cellars"
+      ],
+      "topHotels": [
+        "Shamakhi Hotel",
+        "Country clubs"
+      ],
+      "hiddenGems": [
+        "Mountain villages",
+        "Ancient observatory"
+      ],
+      "mistakesToAvoid": [
+        "Don't miss sunset at the mosque"
+      ]
+    },
+    {
+      "id": "ismayilli",
+      "name": "Ismayilli",
+      "slug": "ismayilli",
+      "country": "Azerbaijan",
+      "region": "Ismayilli",
+      "population": "15,000",
+      "description": "Ismayilli region is known for its beautiful mountain landscapes, wineries, and traditional villages.",
+      "heroImage": "https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?q=80&w=1280",
+      "bestTime": "May-September",
+      "distanceFromBaku": "200 km",
+      "transport": "Bus, car",
+      "topAttractions": [
+        "Ismayilli Mountains",
+        "Local wineries",
+        "Traditional villages"
+      ],
+      "topRestaurants": [
+        "Local cafes",
+        "Wine cellars"
+      ],
+      "topHotels": [
+        "Mountain resorts",
+        "Guest houses"
+      ],
+      "hiddenGems": [
+        "Hiking trails",
+        "Local crafts"
+      ],
+      "mistakesToAvoid": [
+        "Bring warm clothes for mountains"
+      ]
+    },
+    {
+      "id": "khizi",
+      "name": "Khizi",
+      "slug": "khizi",
+      "country": "Azerbaijan",
+      "region": "Khizi",
+      "population": "5,000",
+      "description": "Khizi is famous for its Candy Cane Mountains - colorful striped rock formations that have become an Instagram sensation.",
+      "heroImage": "https://images.unsplash.com/photo-1506905925346-21bda4d32df4?q=80&w=1280",
+      "bestTime": "April-October",
+      "distanceFromBaku": "120 km",
+      "transport": "Car",
+      "topAttractions": [
+        "Candy Cane Mountains",
+        "Photography spots",
+        "Hiking trails"
+      ],
+      "topRestaurants": [
+        "Local cafes"
+      ],
+      "topHotels": [
+        "Guest houses"
+      ],
+      "hiddenGems": [
+        "Hidden valleys",
+        "Sunset viewpoints"
+      ],
+      "mistakesToAvoid": [
+        "Don't come at noon - too hot"
+      ]
+    },
+    {
+      "id": "goygol",
+      "name": "Goygol",
+      "slug": "goygol",
+      "country": "Azerbaijan",
+      "region": "Ganja-Dashkasan",
+      "population": "2,000",
+      "description": "Goygol Lake is one of the most beautiful lakes in Azerbaijan, surrounded by mountains and forests.",
+      "heroImage": "https://images.unsplash.com/photo-1506905925346-21bda4d32df4?q=80&w=1280",
+      "bestTime": "May-September",
+      "distanceFromBaku": "400 km",
+      "transport": "Car, bus",
+      "topAttractions": [
+        "Goygol Lake",
+        "Mountain views",
+        "Hiking"
+      ],
+      "topRestaurants": [
+        "Local cafes"
+      ],
+      "topHotels": [
+        "Guest houses"
+      ],
+      "hiddenGems": [
+        "Forest trails",
+        "Wildlife"
+      ],
+      "mistakesToAvoid": [
+        "Bring insect repellent"
+      ]
+    }
+  ]
+}

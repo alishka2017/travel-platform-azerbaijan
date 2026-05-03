@@ -5,6 +5,9 @@ const nextConfig = {
   images: {
     unoptimized: true,
   },
+  experimental: {
+    serverExternalPackages: ['fs', 'path'],
+  },
 };
 
 module.exports = nextConfig;

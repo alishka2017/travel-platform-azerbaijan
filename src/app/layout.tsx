@@ -1,19 +1,20 @@
 import type { Metadata } from 'next';
 import { Inter } from 'next/font/google';
 import './globals.css';
+import { LanguageProvider } from '@/context/LanguageContext';
 
 const inter = Inter({ subsets: ['latin'] });
 
 export const metadata: Metadata = {
-  title: 'Smartholiday.az | Smart Holiday Travel - Azerbaijan Guide',
-  description: 'Your complete guide to Azerbaijan. Discover hotels, experiences, restaurants, and tours.',
-  keywords: 'Azerbaijan, Baku, travel, tours, hotels, restaurants, things to do',
+  title: 'Smartholiday.az | Smart Holiday Travel - Azerbaijan Guide | Путешествия в Азербайджан',
+  description: 'Your complete guide to Azerbaijan. Discover hotels, experiences, restaurants, and tours. | Ваше полное руководство по Азербайджану. Откройте отели, впечатления, рестораны и туры.',
+  keywords: 'Azerbaijan, Baku, travel, tours, hotels, restaurants, things to do, Азербайджан, Баку, туры, отели, рестораны, достопримечательности',
   authors: [{ name: 'Smartholiday.az' }],
   creator: 'Smartholiday.az',
   publisher: 'Smartholiday.az',
   openGraph: {
-    title: 'Smartholiday.az | Azerbaijan Travel Guide',
-    description: 'Plan your perfect trip to Azerbaijan with local experts',
+    title: 'Smartholiday.az | Azerbaijan Travel Guide | Путешествия в Азербайджан',
+    description: 'Plan your perfect trip to Azerbaijan with local experts | Спланируйте идеальную поездку в Азербайджан с местными экспертами',
     url: 'https://smartholidayaz.netlify.app',
     siteName: 'Smartholiday.az',
     images: [
@@ -23,12 +24,18 @@ export const metadata: Metadata = {
         height: 630,
       },
     ],
-    locale: 'en_AZ',
+    locale: 'en_US',
     type: 'website',
   },
   robots: {
     index: true,
     follow: true,
+  },
+  alternates: {
+    languages: {
+      'en': 'https://smartholidayaz.netlify.app',
+      'ru': 'https://smartholidayaz.netlify.app/ru', // Note: This requires /ru route handling, but we can just link to home with lang param if needed
+    },
   },
 };
 
@@ -73,7 +80,9 @@ export default function RootLayout({
         />
       </head>
       <body className={inter.className}>
-        {children}
+        <LanguageProvider>
+          {children}
+        </LanguageProvider>
       </body>
     </html>
   );

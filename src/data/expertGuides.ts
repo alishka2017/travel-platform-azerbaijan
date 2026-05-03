@@ -31,31 +31,48 @@ export const expertGuides = {
       },
       
       hiddenGems: {
-        title: "Скрытые жемчужины Баку",
+        title: "Hidden Gems of Baku",
+        titleRu: "Скрытые жемчужины Баку",
         items: [
           {
-            name: "Ворота Зороастрийского храма",
-            description: "Маленькие врата в старом городе, ведущие к древнему огненному храму. Местные знают, туристы проходят мимо.",
-            location: "Старый город, ул. Зергяля",
-            tip: "Лучшее время — раннее утро, когда нет туристов"
+            name: "Gate of the Zoroastrian Temple",
+            nameRu: "Ворота Зороастрийского храма",
+            description: "A small gate in the old city leading to an ancient fire temple. Locals know it, tourists pass by.",
+            descriptionRu: "Маленькие врата в старом городе, ведущие к древнему огненному храму. Местные знают, туристы проходят мимо.",
+            location: "Old City, Zergyala Street",
+            locationRu: "Старый город, ул. Зергяля",
+            tip: "Best time is early morning when there are no tourists",
+            tipRu: "Лучшее время — раннее утро, когда нет туристов"
           },
           {
-            name: "Дом-музей Мирзы Ахундова",
-            description: "Уникальный музей в частном доме, рассказывающий о жизни азербайджанской интеллигенции XIX века.",
-            location: "Ул. Истиглалият, 31",
-            tip: "Нужно записываться заранее через WhatsApp"
+            name: "Mirza Akhundov House Museum",
+            nameRu: "Дом-музей Мирзы Ахундова",
+            description: "A unique museum in a private house telling the story of 19th century Azerbaijani intellectuals.",
+            descriptionRu: "Уникальный музей в частном доме, рассказывающий о жизни азербайджанской интеллигенции XIX века.",
+            location: "Istiglaliyat Street, 31",
+            locationRu: "Ул. Истиглалият, 31",
+            tip: "You need to book in advance via WhatsApp",
+            tipRu: "Нужно записываться заранее через WhatsApp"
           },
           {
-            name: "Крыша здания SOCAR",
-            description: "Панорамный вид на Баку с крыши одного из главных офисов страны (с разрешения охраны).",
-            location: "Пр. Нефтяников",
-            tip: "Попробуйте договориться с охраной утром"
+            name: "SOCAR Building Roof",
+            nameRu: "Крыша здания SOCAR",
+            description: "Panoramic view of Baku from the roof of one of the country's main offices (with security permission).",
+            descriptionRu: "Панорамный вид на Баку с крыши одного из главных офисов страны (с разрешения охраны).",
+            location: "Neftchilar Avenue",
+            locationRu: "Пр. Нефтяников",
+            tip: "Try to negotiate with security in the morning",
+            tipRu: "Попробуйте договориться с охраной утром"
           },
           {
-            name: "Чайная на Красновольском шоссе",
-            description: "Аутентичная чайная, где пьют чай местные жители, а не туристы.",
-            location: "Красновольское шоссе, 32",
-            tip: "Закажите чай с барбарисом и пахлавой"
+            name: "Tea House on Krasnovolskoye Highway",
+            nameRu: "Чайная на Красновольском шоссе",
+            description: "An authentic tea house where locals drink tea, not tourists.",
+            descriptionRu: "Аутентичная чайная, где пьют чай местные жители, а не туристы.",
+            location: "Krasnovolskoye Highway, 32",
+            locationRu: "Красновольское шоссе, 32",
+            tip: "Order tea with barberry and pakhlava",
+            tipRu: "Закажите чай с барбарисом и пахлавой"
           }
         ]
       },

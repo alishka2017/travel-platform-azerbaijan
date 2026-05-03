@@ -1,5 +1,3 @@
-import Header from '@/components/layout/Header';
-import Footer from '@/components/layout/Footer';
 import Link from 'next/link';
 import { getFavorites } from '@/lib/favorites-utils';
 
@@ -8,7 +6,7 @@ export default function FavoritesPage() {
 
   return (
     <div className="min-h-screen bg-gray-50">
-      <Header />
+      
       
       <main className="container mx-auto px-4 py-12">
         {/* Page Header */}
@@ -68,7 +66,7 @@ export default function FavoritesPage() {
         )}
       </main>
 
-      <Footer />
+      
     </div>
   );
 }

@@ -1,11 +1,9 @@
-import Header from '@/components/layout/Header';
-import Footer from '@/components/layout/Footer';
 
 export default function VisaPage() {
   return (
     <>
       <div className="min-h-screen bg-gray-50">
-        <Header />
+        
 
         <main className="pt-24 pb-16">
           <div className="max-w-6xl mx-auto px-4">
@@ -125,7 +123,7 @@ export default function VisaPage() {
           </div>
         </main>
 
-        <Footer />
+        
       </div>
     </>
   );

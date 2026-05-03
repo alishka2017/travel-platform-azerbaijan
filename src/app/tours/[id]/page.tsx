@@ -1,5 +1,3 @@
-import Header from '@/components/layout/Header';
-import Footer from '@/components/layout/Footer';
 import Link from 'next/link';
 import { places } from '@/data/places';
 import { notFound } from 'next/navigation';
@@ -43,7 +41,7 @@ export default function TourDetailPage({ params }: { params: { id: string } }) {
         dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }}
       />
       <div className="min-h-screen bg-gray-50">
-        <Header />
+        
 
         <div className="max-w-6xl mx-auto px-4 py-8">
           {/* Breadcrumb */}
@@ -140,29 +138,29 @@ export default function TourDetailPage({ params }: { params: { id: string } }) {
           {/* Right Column - Booking Card */}
           <div className="lg:col-span-1">
             <div className="sticky top-4 bg-white p-6 rounded-xl shadow-lg">
-              <div className="text-2xl font-bold text-[#00AA6C] mb-4">
-                {tour.priceLevel}
-                <span className="text-sm font-normal text-gray-500"> / person</span>
-              </div>
-
+              
               <div className="flex items-center gap-2 mb-4 text-sm text-gray-600">
                 <span>📅 {tour.openingHours}</span>
               </div>
 
-              <button className="w-full bg-[#00AA6C] text-white py-3 rounded-lg font-semibold hover:bg-[#008855] transition mb-3">
-                Book Now
-              </button>
+              <Link href="/contact" className="block w-full">
+                <button className="w-full bg-[#00AA6C] text-white py-3 rounded-lg font-semibold hover:bg-[#008855] transition mb-3">
+                  Get Quote
+                </button>
+              </Link>
 
-              <button className="w-full border border-[#00AA6C] text-[#00AA6C] py-3 rounded-lg font-semibold hover:bg-[#00AA6C] hover:text-white transition">
-                Send Inquiry
-              </button>
+              <Link href="/contact" className="block w-full">
+                <button className="w-full border border-[#00AA6C] text-[#00AA6C] py-3 rounded-lg font-semibold hover:bg-[#00AA6C] hover:text-white transition">
+                  Send Inquiry
+                </button>
+              </Link>
 
               <div className="mt-6 pt-6 border-t border-gray-200">
                 <h4 className="font-semibold text-gray-800 mb-3">Contact Tour Operator</h4>
                 <p className="text-sm text-gray-600 mb-2">Response time: Usually within 24 hours</p>
                 <div className="flex items-center gap-2 text-sm text-gray-500">
                   <span>📞</span>
-                  <span>+994 50 123 45 67</span>
+                  <span>+994 70 216 66 66</span>
                 </div>
               </div>
             </div>
@@ -170,7 +168,7 @@ export default function TourDetailPage({ params }: { params: { id: string } }) {
         </div>
       </div>
       </div>
-      <Footer />
+      
     </>
   );
 }

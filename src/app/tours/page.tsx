@@ -1,128 +1,101 @@
-import Header from '@/components/layout/Header';
-import Footer from '@/components/layout/Footer';
 import Link from 'next/link';
-import { places } from '@/data/places';
+import Header from '@/components/layout/Header';
+import WhatsAppFloat from '@/components/WhatsAppFloat';
+import Footer from '@/components/layout/Footer';
+import { getToursSync } from '@/lib/content';
 import { HeartButton } from '@/components/HeartButton';
+import { Metadata } from 'next';
+
+export const metadata: Metadata = {
+  title: "Что делать в Азербайджане | Smartholiday.az",
+  description: "Откройте для себя лучшие туры и мероприятия в Азербайджане. От городских экскурсий до приключений в горах.",
+};
 
 export default function ToursPage() {
-  const tours = places.filter(p => p.category === 'Tours');
+  const tours = getToursSync();
+  
+  // Flatten all tours for the main listing
+  const allTours = [
+    ...tours['city-tours'],
+    ...tours['day-trips'],
+    ...tours['multi-day'],
+    ...tours['adventure'],
+    ...tours['food-wine']
+  ];
 
   return (
-    <>
-      <div className="min-h-screen bg-gray-50">
-        <Header />
-        <div className="container mx-auto px-4 py-12">
-          {/* Header Section */}
-          <div className="text-center mb-16">
-            <h1 className="text-4xl md:text-5xl font-bold text-gray-800 mb-4">
-              Tours & Experiences in Azerbaijan
-            </h1>
-            <p className="text-xl text-gray-600 max-w-2xl mx-auto">
-              Handpicked tours led by expert local guides. Discover the best of Azerbaijan with curated itineraries.
-            </p>
-          </div>
+    <div className="min-h-screen bg-gray-50">
+      <Header />
+      
+      <main className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
+        {/* Breadcrumb */}
+        <nav className="flex mb-6 text-sm text-gray-500">
+          <Link href="/" className="hover:text-[#00AA6C]">Главная</Link>
+          <span className="mx-2">/</span>
+          <span className="text-gray-800">Что делать</span>
+        </nav>
 
-          {/* Filter Bar */}
-          <div className="flex flex-wrap justify-center gap-4 mb-12">
-            {['All', 'City Tours', 'Day Trips', 'Multi-day', 'Food', 'Adventure', 'Nature'].map((filter) => (
-              <button 
-                key={filter}
-                className="px-6 py-2 rounded-full border border-gray-300 hover:border-[#00AA6C] hover:text-[#00AA6C] transition"
-              >
-                {filter}
-              </button>
-            ))}
-          </div>
+        {/* Header */}
+        <div className="mb-8">
+          <h1 className="text-3xl md:text-4xl font-bold text-gray-800 mb-2">
+            Что делать в Азербайджане
+          </h1>
+          <p className="text-gray-600">
+            Откройте для себя кураторские туры и мероприятия для каждого путешественника
+          </p>
+        </div>
 
-          {/* Tours Grid */}
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-            {tours.map((tour) => (
-              <Link 
-                href={`/tours/${tour.id}`} 
-                key={tour.id}
-                className="group bg-white rounded-xl overflow-hidden shadow-lg hover:shadow-xl transition transform hover:-translate-y-1 relative"
-              >
-                <HeartButton 
-                  item={{
-                    id: tour.id,
-                    name: tour.name,
-                    type: 'tour',
-                    category: tour.category,
-                    image: tour.image,
-                    rating: tour.rating,
-                  }}
-                  className="absolute top-4 right-4 z-10"
+        {/* Category Filter */}
+        <div className="flex flex-wrap gap-2 mb-8">
+          {Object.keys(tours).map((category) => (
+            <Link
+              key={category}
+              href={`/tours?category=${category}`}
+              className="px-4 py-2 bg-white border border-gray-200 rounded-full text-sm text-gray-700 hover:border-[#00AA6C] hover:text-[#00AA6C] transition"
+            >
+              {category.replace('-', ' ').replace(/\w/g, l => l.toUpperCase())}
+            </Link>
+          ))}
+        </div>
+
+        {/* Tours Grid */}
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+          {allTours.map((tour) => (
+            <Link
+              key={tour.id}
+              href={`/tours/${tour.slug}`}
+              className="group bg-white rounded-xl shadow-sm hover:shadow-lg transition-all duration-300 overflow-hidden border border-gray-100"
+            >
+              <div className="relative aspect-[4/3] overflow-hidden">
+                <img
+                  src={tour.image}
+                  alt={tour.name}
+                  className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
                 />
-                <div className="relative h-56">
-                  <img 
-                    src={tour.image} 
-                    alt={tour.name}
-                    className="w-full h-full object-cover group-hover:scale-105 transition duration-500"
-                  />
-                  <div className="absolute top-4 left-4 bg-black/60 text-white px-3 py-1 rounded text-sm font-medium">
-                    {tour.tags[0]}
-                  </div>
-                  <div className="absolute bottom-4 right-4 bg-[#00AA6C] text-white px-3 py-1 rounded-full text-sm font-bold shadow-lg">
-                    {tour.priceLevel}
-                  </div>
+                <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent"></div>
+                <div className="absolute top-3 left-3">
+                  <span className="bg-[#00AA6C] text-white text-xs px-2 py-1 rounded-full">
+                    {tour.category}
+                  </span>
                 </div>
-                <div className="p-6">
-                  <div className="flex items-center gap-2 mb-2 text-sm text-gray-500">
-                    <span>{tour.tags.join(' • ')}</span>
-                    <span>•</span>
-                    <span>{tour.openingHours}</span>
-                  </div>
-                  <h3 className="font-bold text-xl text-gray-800 mb-2 group-hover:text-[#00AA6C] transition">
-                    {tour.name}
-                  </h3>
-                  <p className="text-gray-600 text-sm mb-4 line-clamp-2">
-                    {tour.description}
-                  </p>
-                  
-                  <div className="flex items-center justify-between pt-4 border-t border-gray-100">
-                    <div className="flex items-center gap-1">
-                      <div className="flex text-yellow-400">
-                        {'★'.repeat(Math.floor(tour.rating))}
-                      </div>
-                      <span className="text-sm text-gray-600 ml-1">{tour.rating}</span>
-                      <span className="text-sm text-gray-400">({tour.reviewsCount})</span>
-                    </div>
-                    <button className="bg-[#00AA6C] text-white px-4 py-2 rounded-lg text-sm font-medium hover:bg-[#008855] transition">
-                      View Details
-                    </button>
-                  </div>
-                </div>
-              </Link>
-            ))}
-          </div>
-
-          {/* Why Book Section */}
-          <section className="mt-20 py-12 bg-white rounded-2xl shadow-sm">
-            <div className="max-w-4xl mx-auto px-4 text-center">
-              <h2 className="text-2xl font-bold text-gray-800 mb-8">Why Book With Us?</h2>
-              <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
-                <div>
-                  <div className="text-3xl mb-2">👥</div>
-                  <h3 className="font-medium">Local Guides</h3>
-                </div>
-                <div>
-                  <div className="text-3xl mb-2">💰</div>
-                  <h3 className="font-medium">Best Price</h3>
-                </div>
-                <div>
-                  <div className="text-3xl mb-2">🎒</div>
-                  <h3 className="font-medium">Small Groups</h3>
-                </div>
-                <div>
-                  <div className="text-3xl mb-2">🔄</div>
-                  <h3 className="font-medium">Flexible Cancel</h3>
+                <div className="absolute bottom-0 left-0 right-0 p-4">
+                  <h3 className="text-white font-semibold">{tour.name}</h3>
+                  <p className="text-white/80 text-sm">{tour.duration}</p>
                 </div>
               </div>
-            </div>
-          </section>
+              <div className="p-4">
+                <div className="flex items-center justify-between">
+                  <Link href="/contact" className="text-[#00AA6C] font-medium text-sm hover:underline">
+                    Get Quote →
+                  </Link>
+                </div>
+              </div>
+            </Link>
+          ))}
         </div>
-        <Footer />
-      </div>
-    </>
+      </main>
+
+      <Footer />
+    </div>
   );
 }

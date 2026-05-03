@@ -1,11 +1,9 @@
-import Header from '@/components/layout/Header';
-import Footer from '@/components/layout/Footer';
 import Link from 'next/link';
 
 export default function RentalPage() {
   return (
     <div className="min-h-screen bg-gray-50">
-      <Header />
+      
       
       <div className="max-w-6xl mx-auto px-4 py-8">
         {/* Page Header */}
@@ -201,7 +199,7 @@ export default function RentalPage() {
         </div>
       </div>
 
-      <Footer />
+      
     </div>
   );
 }

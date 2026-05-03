@@ -1,7 +1,5 @@
 'use client';
 
-import Header from '@/components/layout/Header';
-import Footer from '@/components/layout/Footer';
 import Link from 'next/link';
 import { HeartButton } from '@/components/HeartButton';
 
@@ -151,7 +149,7 @@ const cities = ['Baku', 'Gabala', 'Sheki', 'Ganja', 'Lankaran'];
 export default function AttractionsPage() {
   return (
     <div className="min-h-screen flex flex-col bg-gray-50">
-      <Header />
+      
       
       <main className="flex-1">
         {/* Page Header */}
@@ -280,7 +278,7 @@ export default function AttractionsPage() {
         </section>
       </main>
 
-      <Footer />
+      
     </div>
   );
 }

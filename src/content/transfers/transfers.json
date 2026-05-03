@@ -1,0 +1,73 @@
+{
+  "classes": [
+    {
+      "id": "economy",
+      "name": "Economy",
+      "description": "Standard sedan for budget-conscious travelers",
+      "capacity": "1-3 passengers",
+      "priceFrom": "15 AZN",
+      "image": "https://images.unsplash.com/photo-1549317661-bd32c8ce0db2?w=800",
+      "includes": ["Air conditioning", "Professional driver", "Meet & greet"],
+      "routes": [
+        {"from": "Baku Airport", "to": "City Center", "price": "15 AZN"},
+        {"from": "Baku", "to": "Sheki", "price": "80 AZN"},
+        {"from": "Baku", "to": "Gabala", "price": "100 AZN"}
+      ]
+    },
+    {
+      "id": "comfort",
+      "name": "Comfort",
+      "description": "Premium sedan for comfortable travel",
+      "capacity": "1-3 passengers",
+      "priceFrom": "25 AZN",
+      "image": "https://images.unsplash.com/photo-1555215695-3004980ad54e?w=800",
+      "includes": ["Air conditioning", "Professional driver", "Meet & greet", "Water", "Phone charger"],
+      "routes": [
+        {"from": "Baku Airport", "to": "City Center", "price": "25 AZN"},
+        {"from": "Baku", "to": "Sheki", "price": "120 AZN"},
+        {"from": "Baku", "to": "Gabala", "price": "150 AZN"}
+      ]
+    },
+    {
+      "id": "business",
+      "name": "Business",
+      "description": "Business class sedan for executives",
+      "capacity": "1-3 passengers",
+      "priceFrom": "40 AZN",
+      "image": "https://images.unsplash.com/photo-1549317661-bd32c8ce0db2?w=800",
+      "includes": ["Air conditioning", "Professional driver", "Meet & greet", "Water", "WiFi", "Newspaper"],
+      "routes": [
+        {"from": "Baku Airport", "to": "City Center", "price": "40 AZN"},
+        {"from": "Baku", "to": "Sheki", "price": "180 AZN"},
+        {"from": "Baku", "to": "Gabala", "price": "220 AZN"}
+      ]
+    },
+    {
+      "id": "vip",
+      "name": "VIP",
+      "description": "Representative class for VIP guests",
+      "capacity": "1-3 passengers",
+      "priceFrom": "60 AZN",
+      "image": "https://images.unsplash.com/photo-1544620347-c4fd4a3d5957?w=800",
+      "includes": ["Luxury vehicle", "English-speaking driver", "Champagne", "WiFi", "Personal assistant"],
+      "routes": [
+        {"from": "Baku Airport", "to": "City Center", "price": "60 AZN"},
+        {"from": "Baku", "to": "Sheki", "price": "250 AZN"},
+        {"from": "Baku", "to": "Gabala", "price": "300 AZN"}
+      ]
+    },
+    {
+      "id": "group",
+      "name": "Group Transport",
+      "description": "Minivan or bus for groups",
+      "capacity": "Up to 20 passengers",
+      "priceFrom": "50 AZN",
+      "image": "https://images.unsplash.com/photo-1544620347-c4fd4a3d5957?w=800",
+      "includes": ["Air conditioning", "Professional driver", "Luggage space"],
+      "routes": [
+        {"from": "Baku Airport", "to": "Hotel", "price": "50 AZN"},
+        {"from": "Baku", "to": "Gobustan", "price": "80 AZN"}
+      ]
+    }
+  ]
+}

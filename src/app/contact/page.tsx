@@ -1,5 +1,3 @@
-import Header from '@/components/layout/Header';
-import Footer from '@/components/layout/Footer';
 import { Metadata } from 'next';
 
 export const metadata: Metadata = {
@@ -38,7 +36,7 @@ export default function ContactPage() {
   return (
     <>
       <div className="min-h-screen bg-gray-50">
-        <Header />
+        
 
         <main className="pt-24 pb-16">
           <div className="max-w-6xl mx-auto px-4">
@@ -154,7 +152,7 @@ export default function ContactPage() {
           </div>
         </main>
 
-        <Footer />
+        
       </div>
     </>
   );

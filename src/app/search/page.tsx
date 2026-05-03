@@ -1,7 +1,5 @@
 'use client';
 
-import Header from '@/components/layout/Header';
-import Footer from '@/components/layout/Footer';
 import Link from 'next/link';
 import { searchPlaces, places } from '@/data/places';
 import { useState, useEffect, Suspense } from 'react';
@@ -137,11 +135,11 @@ function SearchContent() {
 export default function SearchPage() {
   return (
     <div className="min-h-screen bg-gray-50">
-      <Header />
+      
       <Suspense fallback={<div className="max-w-6xl mx-auto px-4 py-8">Loading...</div>}>
         <SearchContent />
       </Suspense>
-      <Footer />
+      
     </div>
   );
 }

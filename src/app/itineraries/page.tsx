@@ -1,6 +1,4 @@
 import Link from 'next/link';
-import Header from '@/components/layout/Header';
-import Footer from '@/components/layout/Footer';
 
 const itineraries = [
   {
@@ -199,7 +197,7 @@ const itineraries = [
 export default function ItinerariesPage() {
   return (
     <div className="min-h-screen flex flex-col bg-gray-50">
-      <Header />
+      
       
       <main className="flex-1">
         {/* Hero */}
@@ -283,7 +281,7 @@ export default function ItinerariesPage() {
         </section>
       </main>
 
-      <Footer />
+      
     </div>
   );
 }
