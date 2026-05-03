@@ -1,34 +1,64 @@
 // Types for content
 export interface City {
   id: string;
-  name: string;
   slug: string;
-  country: string;
-  region: string;
+  image: string;
+  heroImage?: string; // Optional for backwards compatibility
   population: string;
-  description: string;
-  heroImage: string;
   bestTime: string;
   distanceFromBaku: string;
   transport: string;
-  topAttractions: string[];
-  topRestaurants: string[];
-  topHotels: string[];
-  hiddenGems: string[];
-  mistakesToAvoid: string[];
+  name: {
+    en: string;
+    ru: string;
+  };
+  description: {
+    en: string;
+    ru: string;
+  };
+  about: {
+    en: string;
+    ru: string;
+  };
+  region?: string;
 }
 
 export interface Tour {
   id: string;
-  name: string;
   slug: string;
-  duration: string;
-  price: string;
   category: string;
-  program: string[];
-  includes: string[];
-  description: string;
   image: string;
+  duration: string;
+  priceFrom: string;
+  name: {
+    en: string;
+    ru: string;
+  };
+  description: {
+    en: string;
+    ru: string;
+  };
+}
+
+export interface Restaurant {
+  id: string;
+  slug: string;
+  city: string;
+  image: string;
+  rating: number;
+  category: string;
+  name: {
+    en: string;
+    ru: string;
+  };
+  description: {
+    en: string;
+    ru: string;
+  };
+  address: {
+    en: string;
+    ru: string;
+  };
 }
 
 export interface Settings {
@@ -49,4 +79,17 @@ export interface Settings {
     tagline: string;
     description: string;
   };
+}
+
+// JSON wrapper types
+export interface ToursJson {
+  tours: Tour[];
+}
+
+export interface CitiesJson {
+  cities: City[];
+}
+
+export interface RestaurantsJson {
+  restaurants: Restaurant[];
 }

@@ -2,7 +2,7 @@ import Link from 'next/link';
 import Header from '@/components/layout/Header';
 import Footer from '@/components/layout/Footer';
 import WhatsAppFloat from '@/components/WhatsAppFloat';
-import { getBlogPostBySlug, getBlogPosts } from '@/lib/content';
+import { getBlogPostBySlug, getBlogPosts } from '@/lib/client-content';
 import { notFound } from 'next/navigation';
 import { Metadata } from 'next';
 

@@ -1,20 +1,31 @@
+'use client';
+
 import Link from 'next/link';
 import Header from '@/components/layout/Header';
-import WhatsAppFloat from '@/components/WhatsAppFloat';
 import Footer from '@/components/layout/Footer';
-import { getCitiesSync } from '@/lib/content';
+import { getCitiesSync } from '@/lib/content-new';
 import { HeartButton } from '@/components/HeartButton';
-import { Metadata } from 'next';
-
-export const metadata: Metadata = {
-  title: "Destinations in Azerbaijan | Smartholiday.az",
-  description: "Explore all destinations in Azerbaijan - from Baku to Sheki, Gabala to Lankaran. Discover the best places to visit, stay, and explore.",
-};
-
-// Get cities for static generation
-const cities = getCitiesSync();
+import { useLanguage } from '@/context/LanguageContext';
 
 export default function CitiesPage() {
+  const cities = getCitiesSync();
+  const { language } = useLanguage();
+
+  const t = {
+    en: {
+      title: "Destinations in Azerbaijan",
+      subtitle: "Discover the best places to visit, from ancient cities to mountain resorts",
+      breadcrumb: "Destinations"
+    },
+    ru: {
+      title: "Направления в Азербайджане",
+      subtitle: "Откройте для себя лучшие места для посещения, от древних городов до горных курортов",
+      breadcrumb: "Направления"
+    }
+  };
+
+  const text = t[language as 'en' | 'ru'] || t.ru;
+
   return (
     <div className="min-h-screen bg-gray-50">
       <Header />
@@ -22,18 +33,18 @@ export default function CitiesPage() {
       <main className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
         {/* Breadcrumb */}
         <nav className="flex mb-6 text-sm text-gray-500">
-          <Link href="/" className="hover:text-[#00AA6C]">Home</Link>
+          <Link href="/" className="hover:text-[#00AA6C]">Главная</Link>
           <span className="mx-2">/</span>
-          <span className="text-gray-800">Destinations</span>
+          <span className="text-gray-800">{text.breadcrumb}</span>
         </nav>
 
         {/* Header */}
         <div className="mb-8">
           <h1 className="text-3xl md:text-4xl font-bold text-gray-800 mb-2">
-            Destinations in Azerbaijan
+            {text.title}
           </h1>
           <p className="text-gray-600">
-            Discover the best places to visit, from ancient cities to mountain resorts
+            {text.subtitle}
           </p>
         </div>
 
@@ -47,8 +58,8 @@ export default function CitiesPage() {
             >
               <div className="relative aspect-[4/3] overflow-hidden">
                 <img
-                  src={city.heroImage}
-                  alt={city.name}
+                  src={city.image}
+                  alt={language === 'ru' ? city.name.ru : city.name.en}
                   className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent"></div>
@@ -56,14 +67,16 @@ export default function CitiesPage() {
                   <HeartButton 
                     item={{
                       id: city.id,
-                      name: city.name,
-                      image: city.heroImage,
+                      name: language === 'ru' ? city.name.ru : city.name.en,
+                      image: city.image,
                       type: 'city' as const
                     }} 
                   />
                 </div>
                 <div className="absolute bottom-0 left-0 right-0 p-4">
-                  <h3 className="text-white font-semibold text-lg">{city.name}</h3>
+                  <h3 className="text-white font-semibold text-lg">
+                    {language === 'ru' ? city.name.ru : city.name.en}
+                  </h3>
                   <p className="text-white/80 text-sm">{city.region}</p>
                 </div>
               </div>

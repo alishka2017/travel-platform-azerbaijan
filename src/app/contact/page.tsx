@@ -1,51 +1,59 @@
-import { Metadata } from 'next';
+'use client';
 
-export const metadata: Metadata = {
-  title: "Contact Us | Smartholiday.az - Azerbaijan Travel Guide",
-  description: "Have questions about your trip to Azerbaijan? Contact Smartholiday.az for travel advice, tours, and local insights.",
-  keywords: ["Contact", "Smartholiday.az", "Azerbaijan travel help", "Travel inquiry"],
-  metadataBase: new URL("https://smartholiday.az"),
-  alternates: {
-    canonical: "/contact",
-  },
-  openGraph: {
-    title: "Contact Us | Smartholiday.az",
-    description: "Get in touch with our team for travel advice and inquiries about Azerbaijan.",
-    url: "https://smartholiday.az/contact",
-    siteName: "Smartholiday.az",
-    locale: "en_US",
-    type: "website",
-    images: [
-      {
-        url: "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5e/Baku_modern_skyline.jpg/1280px-Baku_modern_skyline.jpg",
-        width: 1280,
-        height: 720,
-        alt: "Baku skyline",
-      },
-    ],
-  },
-  twitter: {
-    card: "summary_large_image",
-    title: "Contact Smartholiday.az",
-    description: "Reach out to our team for travel assistance in Azerbaijan.",
-    images: ["https://upload.wikimedia.org/wikipedia/commons/thumb/5/5e/Baku_modern_skyline.jpg/1280px-Baku_modern_skyline.jpg"],
-  },
-};
+import { useLanguage } from '@/context/LanguageContext';
 
 export default function ContactPage() {
+  const { language } = useLanguage();
+  
+  const t = {
+    en: {
+      title: "Contact Us",
+      description: "Have questions about your trip to Azerbaijan? We're here to help!",
+      getInTouch: "Get in Touch",
+      phone: "Phone",
+      email: "Email",
+      address: "Address",
+      sendMessage: "Send us a Message",
+      nameLabel: "Name",
+      namePlaceholder: "Your Name",
+      emailLabel: "Email",
+      emailPlaceholder: "your@email.com",
+      messageLabel: "Message",
+      messagePlaceholder: "How can we help you?",
+      sendButton: "Send Message"
+    },
+    ru: {
+      title: "Свяжитесь с нами",
+      description: "Есть вопросы о вашей поездке в Азербайджан? Мы здесь, чтобы помочь!",
+      getInTouch: "Связаться с нами",
+      phone: "Телефон",
+      email: "Email",
+      address: "Адрес",
+      sendMessage: "Отправить сообщение",
+      nameLabel: "Имя",
+      namePlaceholder: "Ваше имя",
+      emailLabel: "Email",
+      emailPlaceholder: "your@email.com",
+      messageLabel: "Сообщение",
+      messagePlaceholder: "Чем мы можем помочь?",
+      sendButton: "Отправить сообщение"
+    }
+  };
+  
+  const text = t[language];
+  
   return (
     <>
       <div className="min-h-screen bg-gray-50">
         
-
         <main className="pt-24 pb-16">
           <div className="max-w-6xl mx-auto px-4">
             <div className="text-center mb-12">
               <h1 className="text-4xl font-display font-bold text-gray-900 mb-4">
-                Contact Us
+                {text.title}
               </h1>
               <p className="text-gray-600 text-lg max-w-2xl mx-auto">
-                Have questions about your trip to Azerbaijan? We're here to help!
+                {text.description}
               </p>
             </div>
 
@@ -55,7 +63,7 @@ export default function ContactPage() {
                 <div className="bg-white p-6 rounded-2xl shadow-sm">
                   <h2 className="text-xl font-semibold mb-4 flex items-center gap-2">
                     <span className="w-2 h-2 bg-primary rounded-full"></span>
-                    Get in Touch
+                    {text.getInTouch}
                   </h2>
                   <div className="space-y-4">
                     <div className="flex items-center gap-4">
@@ -65,7 +73,7 @@ export default function ContactPage() {
                         </svg>
                       </div>
                       <div>
-                        <p className="text-sm text-gray-500">Phone</p>
+                        <p className="text-sm text-gray-500">{text.phone}</p>
                         <p className="font-medium">+994 70 216 66 66 (WhatsApp)</p>
                         <p className="font-medium">+994 12 493 62 42</p>
                         <p className="font-medium">+994 12 493 62 52</p>
@@ -78,7 +86,7 @@ export default function ContactPage() {
                         </svg>
                       </div>
                       <div>
-                        <p className="text-sm text-gray-500">Email</p>
+                        <p className="text-sm text-gray-500">{text.email}</p>
                         <p className="font-medium">info@smartholiday.az</p>
                       </div>
                     </div>
@@ -90,7 +98,7 @@ export default function ContactPage() {
                         </svg>
                       </div>
                       <div>
-                        <p className="text-sm text-gray-500">Address</p>
+                        <p className="text-sm text-gray-500">{text.address}</p>
                         <p className="font-medium">Nizami str. 100, Baku, Azerbaijan AZ1026</p>
                       </div>
                     </div>
@@ -114,44 +122,43 @@ export default function ContactPage() {
 
               {/* Contact Form */}
               <div className="bg-white p-8 rounded-2xl shadow-sm">
-                <h2 className="text-xl font-semibold mb-6">Send us a Message</h2>
+                <h2 className="text-xl font-semibold mb-6">{text.sendMessage}</h2>
                 <form className="space-y-6">
                   <div>
-                    <label className="block text-sm font-medium text-gray-700 mb-2">Name</label>
+                    <label className="block text-sm font-medium text-gray-700 mb-2">{text.nameLabel}</label>
                     <input
                       type="text"
                       className="w-full px-4 py-3 border border-gray-300 rounded-xl focus:ring-2 focus:ring-primary focus:border-transparent outline-none transition-all"
-                      placeholder="Your Name"
+                      placeholder={text.namePlaceholder}
                     />
                   </div>
                   <div>
-                    <label className="block text-sm font-medium text-gray-700 mb-2">Email</label>
+                    <label className="block text-sm font-medium text-gray-700 mb-2">{text.emailLabel}</label>
                     <input
                       type="email"
                       className="w-full px-4 py-3 border border-gray-300 rounded-xl focus:ring-2 focus:ring-primary focus:border-transparent outline-none transition-all"
-                      placeholder="your@email.com"
+                      placeholder={text.emailPlaceholder}
                     />
                   </div>
                   <div>
-                    <label className="block text-sm font-medium text-gray-700 mb-2">Message</label>
+                    <label className="block text-sm font-medium text-gray-700 mb-2">{text.messageLabel}</label>
                     <textarea
                       rows={4}
                       className="w-full px-4 py-3 border border-gray-300 rounded-xl focus:ring-2 focus:ring-primary focus:border-transparent outline-none transition-all resize-none"
-                      placeholder="How can we help you?"
+                      placeholder={text.messagePlaceholder}
                     ></textarea>
                   </div>
                   <button
                     type="submit"
                     className="w-full bg-primary text-white py-3 rounded-xl font-semibold hover:bg-primary-dark transition-colors"
                   >
-                    Send Message
+                    {text.sendButton}
                   </button>
                 </form>
               </div>
             </div>
           </div>
         </main>
-
         
       </div>
     </>

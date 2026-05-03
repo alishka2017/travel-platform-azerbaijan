@@ -202,44 +202,58 @@ export default function CityPage({ params }: { params: { slug: string } }) {
 
             {/* Tips Section */}
             <section className="mb-12">
-              <h2 className="text-2xl font-bold text-gray-800 mb-6">Travel Tips for {city.name}</h2>
+              <h2 className="text-2xl font-bold text-gray-800 mb-6">
+                {language === 'ru' ? `Советы для ${city.name}` : `Travel Tips for ${city.name}`}
+              </h2>
               <div className="bg-gradient-to-r from-[#00AA6C] to-[#00885C] text-white p-6 rounded-xl">
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                   <div>
                     <h3 className="font-semibold mb-3 flex items-center gap-2">
-                      <span>💡</span> Pro Tips
+                      <span>💡</span> {language === 'ru' ? 'Профессиональные советы' : 'Pro Tips'}
                     </h3>
                     <ul className="space-y-2 text-sm text-white/90">
                       <li className="flex items-start gap-2">
                         <span className="text-white">•</span>
-                        <span>Best time to visit is {city.bestTime}</span>
+                        <span>
+                          {language === 'ru' ? 'Лучшее время для посещения:' : 'Best time to visit is'} {city.bestTime}
+                        </span>
                       </li>
                       <li className="flex items-start gap-2">
                         <span className="text-white">•</span>
-                        <span>From Baku: {city.distanceFromBaku} ({city.transport})</span>
+                        <span>
+                          {language === 'ru' ? `Из Баку: ${city.distanceFromBaku} (${city.transport})` : `From Baku: ${city.distanceFromBaku} (${city.transport})`}
+                        </span>
                       </li>
                       <li className="flex items-start gap-2">
                         <span className="text-white">•</span>
-                        <span>Local language: Azerbaijani (Russian widely spoken)</span>
+                        <span>
+                          {language === 'ru' ? 'Местный язык: азербайджанский (русский широко используется)' : 'Local language: Azerbaijani (Russian widely spoken)'}
+                        </span>
                       </li>
                     </ul>
                   </div>
                   <div>
                     <h3 className="font-semibold mb-3 flex items-center gap-2">
-                      <span>📍</span> Getting Around
+                      <span>📍</span> {language === 'ru' ? 'Как передвигаться' : 'Getting Around'}
                     </h3>
                     <ul className="space-y-2 text-sm text-white/90">
                       <li className="flex items-start gap-2">
                         <span className="text-white">•</span>
-                        <span>Local buses and minibuses available</span>
+                        <span>
+                          {language === 'ru' ? 'Местные автобусы и маршрутки доступны' : 'Local buses and minibuses available'}
+                        </span>
                       </li>
                       <li className="flex items-start gap-2">
                         <span className="text-white">•</span>
-                        <span>Taxis are affordable (negotiate price)</span>
+                        <span>
+                          {language === 'ru' ? 'Такси доступно (договоритесь о цене)' : 'Taxis are affordable (negotiate price)'}
+                        </span>
                       </li>
                       <li className="flex items-start gap-2">
                         <span className="text-white">•</span>
-                        <span>Renting a car gives flexibility</span>
+                        <span>
+                          {language === 'ru' ? 'Аренда автомобиля дает гибкость' : 'Renting a car gives flexibility'}
+                        </span>
                       </li>
                     </ul>
                   </div>
@@ -250,8 +264,9 @@ export default function CityPage({ params }: { params: { slug: string } }) {
             {/* Hidden Gems Section */}
             <section className="mb-12">
               <h2 className="text-2xl font-bold text-gray-800 mb-6">
-                {language === 'ru' ? (expertGuides[city.slug as keyof typeof expertGuides]?.sections?.hiddenGems as any)?.titleRu : (expertGuides[city.slug as keyof typeof expertGuides]?.sections?.hiddenGems as any)?.title}
-                {' '} in {city.name}
+                {language === 'ru' 
+                  ? (expertGuides[city.slug as keyof typeof expertGuides]?.sections?.hiddenGems as any)?.titleRu 
+                  : `${(expertGuides[city.slug as keyof typeof expertGuides]?.sections?.hiddenGems as any)?.title} in ${city.name}`}
               </h2>
               <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
                 {(expertGuides[city.slug as keyof typeof expertGuides]?.sections?.hiddenGems as any)?.items?.map((item: any, index: number) => {

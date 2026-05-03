@@ -1,0 +1,100 @@
+{
+  "tours": [
+    {
+      "id": "baku-city-tour",
+      "slug": "baku-city-tour",
+      "category": "city-tours",
+      "image": "/content/images/tours/baku-city-tour/main.jpg",
+      "duration": "8 hours",
+      "priceFrom": "от 50 AZN",
+      "name": {
+        "en": "Baku City Tour",
+        "ru": "Городской тур по Баку"
+      },
+      "description": {
+        "en": "Explore the historic Old City, visit the iconic Flame Towers, and discover modern Baku.",
+        "ru": "Исследуйте исторический Старый город, посетите iconic Flame Towers и откройте для себя современный Баку."
+      }
+    },
+    {
+      "id": "night-baku-tour",
+      "slug": "night-baku-tour",
+      "category": "city-tours",
+      "image": "/content/images/tours/night-baku-tour/main.jpg",
+      "duration": "4 hours",
+      "priceFrom": "от 40 AZN",
+      "name": {
+        "en": "Night Baku Tour",
+        "ru": "Ночной тур по Баку"
+      },
+      "description": {
+        "en": "Experience the magic of Baku at night with illuminated landmarks and vibrant atmosphere.",
+        "ru": "Ощутите магию Баку ночью с освещенными достопримечательностями и яркой атмосферой."
+      }
+    },
+    {
+      "id": "gobustan-mud-volcanoes",
+      "slug": "gobustan-mud-volcanoes",
+      "category": "day-trips",
+      "image": "/content/images/tours/gobustan-mud-volcanoes/main.jpg",
+      "duration": "10 hours",
+      "priceFrom": "от 60 AZN",
+      "name": {
+        "en": "Gobustan & Mud Volcanoes Day Trip",
+        "ru": "Экскурсия в Гобустан и грязевые вулканы"
+      },
+      "description": {
+        "en": "Visit ancient rock carvings and unique mud volcanoes in Gobustan National Park.",
+        "ru": "Посетите древние петроглифы и уникальные грязевые вулканы в национальном парке Гобустан."
+      }
+    },
+    {
+      "id": "sheki-day-trip",
+      "slug": "sheki-day-trip",
+      "category": "day-trips",
+      "image": "/content/images/tours/sheki-day-trip/main.jpg",
+      "duration": "12 hours",
+      "priceFrom": "от 80 AZN",
+      "name": {
+        "en": "Sheki Day Trip from Baku",
+        "ru": "Однодневная поездка в Шеки из Баку"
+      },
+      "description": {
+        "en": "Discover the historic city of Sheki with its famous Khan's Palace and silk production.",
+        "ru": "Откройте для себя исторический город Шеки с его знаменитым Дворцом хана и производством шелка."
+      }
+    },
+    {
+      "id": "sheki-historical-tour",
+      "slug": "sheki-historical-tour",
+      "category": "multi-day",
+      "image": "/content/images/tours/sheki-historical-tour/main.jpg",
+      "duration": "2 days / 1 night",
+      "priceFrom": "от 150 AZN",
+      "name": {
+        "en": "Sheki Historical Tour (2 Days)",
+        "ru": "Исторический тур в Шеки (2 дня)"
+      },
+      "description": {
+        "en": "Immerse yourself in the history of Sheki with overnight stay and guided tours.",
+        "ru": "Погрузитесь в историю Шеки с ночевкой и экскурсиями с гидом."
+      }
+    },
+    {
+      "id": "gabala-mountain-adventure",
+      "slug": "gabala-mountain-adventure",
+      "category": "adventure",
+      "image": "/content/images/tours/gabala-mountain-adventure/main.jpg",
+      "duration": "8-9 hours",
+      "priceFrom": "от 70 AZN",
+      "name": {
+        "en": "Gabala Mountain Adventure",
+        "ru": "Горное приключение в Габале"
+      },
+      "description": {
+        "en": "Explore the Caucasus Mountains with hiking, skiing, and stunning views.",
+        "ru": "Исследуйте Кавказские горы с пешими прогулками, катанием на лыжах и потрясающими видами."
+      }
+    }
+  ]
+}

@@ -1,0 +1,104 @@
+{
+  "restaurants": [
+    {
+      "id": "cay-bagi-145",
+      "slug": "cay-bagi-145",
+      "city": "baku",
+      "image": "/content/images/restaurants/cay-bagi-145/main.jpg",
+      "rating": 4.8,
+      "category": "local",
+      "name": {
+        "en": "Cay Bagi 145",
+        "ru": "Чай Баги 145"
+      },
+      "description": {
+        "en": "Traditional Azerbaijani tea house with authentic atmosphere.",
+        "ru": "Традиционный азербайджанский чайный дом с аутентичной атмосферой."
+      },
+      "address": {
+        "en": "145 Neftchilar Ave, Baku",
+        "ru": "пр. Нефтяников 145, Баку"
+      }
+    },
+    {
+      "id": "malacannes-145",
+      "slug": "malacannes-145",
+      "city": "baku",
+      "image": "/content/images/restaurants/malacannes-145/main.jpg",
+      "rating": 4.9,
+      "category": "local",
+      "name": {
+        "en": "Malacannes 145",
+        "ru": "Малаханес 145"
+      },
+      "description": {
+        "en": "Famous for traditional kebabs and Azerbaijani cuisine.",
+        "ru": "Знаменит традиционными шашлыками и азербайджанской кухней."
+      },
+      "address": {
+        "en": "145 Neftchilar Ave, Baku",
+        "ru": "пр. Нефтяников 145, Баку"
+      }
+    },
+    {
+      "id": "dolma-restaurant",
+      "slug": "dolma-restaurant",
+      "city": "baku",
+      "image": "/content/images/restaurants/dolma-restaurant/main.jpg",
+      "rating": 4.7,
+      "category": "local",
+      "name": {
+        "en": "Dolma Restaurant",
+        "ru": "Ресторан Долма"
+      },
+      "description": {
+        "en": "Specializing in traditional dolma and Azerbaijani dishes.",
+        "ru": "Специализируется на традиционной долме и азербайджанских блюдах."
+      },
+      "address": {
+        "en": "28 May Street, Baku",
+        "ru": "ул. 28 Мая, Баку"
+      }
+    },
+    {
+      "id": "firuze-restaurant",
+      "slug": "firuze-restaurant",
+      "city": "baku",
+      "image": "/content/images/restaurants/firuze-restaurant/main.jpg",
+      "rating": 4.5,
+      "category": "local",
+      "name": {
+        "en": "Firuze Restaurant",
+        "ru": "Ресторан Фирузе"
+      },
+      "description": {
+        "en": "Elegant restaurant with traditional Azerbaijani and international cuisine.",
+        "ru": "Элегантный ресторан с традиционной азербайджанской и международной кухней."
+      },
+      "address": {
+        "en": "15 Khagani Street, Baku",
+        "ru": "ул. Хагани 15, Баку"
+      }
+    },
+    {
+      "id": "passage-145",
+      "slug": "passage-145",
+      "city": "baku",
+      "image": "/content/images/restaurants/passage-145/main.jpg",
+      "rating": 4.8,
+      "category": "local",
+      "name": {
+        "en": "Passage 145",
+        "ru": "Пассаж 145"
+      },
+      "description": {
+        "en": "Historic restaurant in the city center with authentic atmosphere.",
+        "ru": "Исторический ресторан в центре города с аутентичной атмосферой."
+      },
+      "address": {
+        "en": "145 Neftchilar Ave, Baku",
+        "ru": "пр. Нефтяников 145, Баку"
+      }
+    }
+  ]
+}

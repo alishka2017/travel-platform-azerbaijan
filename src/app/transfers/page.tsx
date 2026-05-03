@@ -2,7 +2,7 @@ import Link from 'next/link';
 import Header from '@/components/layout/Header';
 import Footer from '@/components/layout/Footer';
 import WhatsAppFloat from '@/components/WhatsAppFloat';
-import { getTransfers } from '@/lib/content';
+import { getTransfers } from '@/lib/client-content';
 
 export default function TransfersPage() {
   const transferClasses = getTransfers();

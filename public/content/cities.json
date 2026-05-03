@@ -1,0 +1,119 @@
+{
+  "cities": [
+    {
+      "id": "baku",
+      "slug": "baku",
+      "image": "/content/images/cities/baku/hero.jpg",
+      "heroImage": "/content/images/cities/baku/hero.jpg",
+      "region": "Absheron Peninsula",
+      "population": "2.3 million",
+      "bestTime": "April-June, September-October",
+      "distanceFromBaku": "0 km",
+      "transport": "Metro, bus, taxi, BakuCard",
+      "name": {
+        "en": "Baku",
+        "ru": "Баку"
+      },
+      "description": {
+        "en": "Baku, the vibrant capital of Azerbaijan, sits on the edge of the Caspian Sea.",
+        "ru": "Баку, живая столица Азербайджана, расположена на берегу Каспийского моря."
+      },
+      "about": {
+        "en": "Baku, the vibrant capital of Azerbaijan, sits on the edge of the Caspian Sea. This stunning city masterfully blends ancient history with futuristic architecture.",
+        "ru": "Баку, живая столица Азербайджана, расположена на берегу Каспийского моря. Этот потрясающий город искусно сочетает древнюю историю с футуристической архитектурой."
+      }
+    },
+    {
+      "id": "sheki",
+      "slug": "sheki",
+      "image": "/content/images/cities/sheki/hero.jpg",
+      "heroImage": "/content/images/cities/sheki/hero.jpg",
+      "region": "Shaki-Zaqatala",
+      "population": "65,000",
+      "bestTime": "May-September",
+      "distanceFromBaku": "300 km",
+      "transport": "Bus, taxi",
+      "name": {
+        "en": "Sheki",
+        "ru": "Шеки"
+      },
+      "description": {
+        "en": "Sheki is a historic city known for its stunning Khan's Palace and silk production.",
+        "ru": "Шеки — исторический город, известный своим потрясающим Дворцом хана и производством шелка."
+      },
+      "about": {
+        "en": "Sheki is a historic city in northern Azerbaijan, famous for its stunning Khan's Palace and traditional silk production.",
+        "ru": "Шеки — исторический город в северном Азербайджане, известный своим потрясающим Дворцом хана и традиционным производством шелка."
+      }
+    },
+    {
+      "id": "gabala",
+      "slug": "gabala",
+      "image": "/content/images/cities/gabala/hero.jpg",
+      "heroImage": "/content/images/cities/gabala/hero.jpg",
+      "region": "Gabala",
+      "population": "100,000",
+      "bestTime": "June-August (skiing in winter)",
+      "distanceFromBaku": "220 km",
+      "transport": "Bus, taxi",
+      "name": {
+        "en": "Gabala",
+        "ru": "Габала"
+      },
+      "description": {
+        "en": "Gabala is a mountain resort town known for skiing and outdoor activities.",
+        "ru": "Габала — горный курортный город, известный катанием на лыжах и активным отдыхом на природе."
+      },
+      "about": {
+        "en": "Gabala is a mountain resort town in northern Azerbaijan, famous for its ski resorts and outdoor activities.",
+        "ru": "Габала — горный курортный город в северном Азербайджане, известный своими горнолыжными курортами и активным отдыхом на природе."
+      }
+    },
+    {
+      "id": "ganja",
+      "slug": "ganja",
+      "image": "/content/images/cities/ganja/hero.jpg",
+      "heroImage": "/content/images/cities/ganja/hero.jpg",
+      "region": "Ganja-Dashkasan",
+      "population": "330,000",
+      "bestTime": "April-October",
+      "distanceFromBaku": "360 km",
+      "transport": "Bus, train, taxi",
+      "name": {
+        "en": "Ganja",
+        "ru": "Гянджа"
+      },
+      "description": {
+        "en": "Ganja is Azerbaijan's second-largest city with rich history and culture.",
+        "ru": "Гянджа — второй по величине город Азербайджана с богатой историей и культурой."
+      },
+      "about": {
+        "en": "Ganja is the second-largest city in Azerbaijan, known for its historical monuments and cultural heritage.",
+        "ru": "Гянджа — второй по величине город Азербайджана, известный своими историческими памятниками и культурным наследием."
+      }
+    },
+    {
+      "id": "lankaran",
+      "slug": "lankaran",
+      "image": "/content/images/cities/lankaran/hero.jpg",
+      "heroImage": "/content/images/cities/lankaran/hero.jpg",
+      "region": "Lankaran",
+      "population": "85,000",
+      "bestTime": "May-September",
+      "distanceFromBaku": "320 km",
+      "transport": "Bus, taxi",
+      "name": {
+        "en": "Lankaran",
+        "ru": "Ленкорань"
+      },
+      "description": {
+        "en": "Lankaran is a coastal city known for its beaches and natural beauty.",
+        "ru": "Ленкорань — приморский город, известный своими пляжами и природной красотой."
+      },
+      "about": {
+        "en": "Lankaran is a coastal city in southern Azerbaijan, famous for its beaches and the Lankaran Nature Reserve.",
+        "ru": "Ленкорань — приморский город в южном Азербайджане, известный своими пляжами и Ленкоранским природным заповедником."
+      }
+    }
+  ]
+}
