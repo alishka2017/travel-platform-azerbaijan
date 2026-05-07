@@ -1,9 +1,11 @@
 // Client-side content functions (no fs dependency)
 import blogDataRaw from './blog.json';
+import transfersDataRaw from '../content/transfers/transfers.json';
 
 const blogData = blogDataRaw as { posts: any[] };
+const transfersData = transfersDataRaw as { classes: any[] };
 
-export const getTransfers = () => [] as { id: string, name: string, image: string, priceFrom: string, description: string, capacity: string, includes: string[] }[];
+export const getTransfers = () => transfersData.classes as { id: string, name: string, image: string, description: string, capacity: string, includes: string[] }[];
 
 export const getBlogPosts = () => blogData.posts;
 

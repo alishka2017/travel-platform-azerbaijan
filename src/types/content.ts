@@ -29,7 +29,6 @@ export interface Tour {
   category: string;
   image: string;
   duration: string;
-  priceFrom: string;
   name: {
     en: string;
     ru: string;

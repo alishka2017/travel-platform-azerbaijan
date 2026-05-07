@@ -192,6 +192,18 @@ export default function AttractionContent({ params }: { params: { id: string } }
                 <p className="mt-3 text-sm text-gray-600">{place.address}</p>
               </div>
 
+              {/* Contact / Quote */}
+              <div className="bg-white p-6 rounded-lg shadow-sm mb-6">
+                <h2 className="text-lg font-bold text-gray-800 mb-3">Need a Guide?</h2>
+                <p className="text-sm text-gray-600 mb-4">Contact us for guided tours and detailed information.</p>
+                <Link 
+                  href="/contact" 
+                  className="block w-full text-center bg-[#00AA6C] text-white py-3 rounded-lg font-medium hover:bg-[#007A52] transition"
+                >
+                  Get Quote
+                </Link>
+              </div>
+
               {/* Related Places */}
               {relatedPlaces.length > 0 && (
                 <div className="bg-white p-6 rounded-lg shadow-sm">

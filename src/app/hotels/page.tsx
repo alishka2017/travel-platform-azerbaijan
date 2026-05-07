@@ -182,9 +182,6 @@ export default function HotelsPage() {
                      <div className="w-full h-full bg-gradient-to-br from-blue-100 to-blue-200 flex items-center justify-center">
                         <span className="text-4xl">🏨</span>
                      </div>
-                     <div className="absolute top-3 left-3 bg-white px-2 py-1 rounded-md text-sm font-medium text-[#00AA6C]">
-                       {hotel.price}
-                     </div>
                   </div>
                   <div className="p-4">
                     <div className="flex justify-between items-start">
@@ -205,6 +202,9 @@ export default function HotelsPage() {
                         </span>
                       ))}
                     </div>
+                    <Link href="/contact" className="block w-full mt-4 text-center bg-[#00AA6C] text-white py-2 rounded-lg font-medium hover:bg-[#008855] transition text-sm">
+                      Get Quote
+                    </Link>
                   </div>
                 </Link>
               ))}

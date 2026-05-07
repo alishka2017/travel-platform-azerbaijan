@@ -309,6 +309,26 @@ export default function CityPage({ params }: { params: { slug: string } }) {
                 )}
               </div>
             </section>
+
+            {/* CTA Section */}
+            <section className="mb-12 text-center">
+              <div className="bg-white p-8 rounded-xl shadow-sm border border-gray-100">
+                <h2 className="text-2xl font-bold text-gray-800 mb-4">
+                  {language === 'ru' ? 'Планируете поездку в ' + city.name + '?' : 'Planning a trip to ' + city.name + '?'}
+                </h2>
+                <p className="text-gray-600 mb-6">
+                  {language === 'ru' 
+                    ? 'Свяжитесь с нами для получения персонализированных рекомендаций и цен.' 
+                    : 'Contact us for personalized recommendations and quotes.'}
+                </p>
+                <Link 
+                  href="/contact" 
+                  className="inline-block bg-[#00AA6C] text-white px-8 py-3 rounded-full font-medium hover:bg-[#007A52] transition"
+                >
+                  {language === 'ru' ? 'Получить цену' : 'Get Quote'}
+                </Link>
+              </div>
+            </section>
           </div>
         </main>
         

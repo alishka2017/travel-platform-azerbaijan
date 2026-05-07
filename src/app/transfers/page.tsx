@@ -29,7 +29,9 @@ export default function TransfersPage() {
                 <div className="p-6">
                   <div className="flex justify-between items-center mb-2">
                     <h3 className="text-xl font-bold text-gray-800">{cls.name}</h3>
-                    <span className="text-[#00AA6C] font-bold">{cls.priceFrom}</span>
+                    <Link href="/contact" className="text-[#00AA6C] font-medium text-sm hover:underline">
+                      Get Quote →
+                    </Link>
                   </div>
                   <p className="text-gray-600 text-sm mb-4">{cls.description}</p>
                   <p className="text-gray-500 text-xs mb-4">Capacity: {cls.capacity}</p>
@@ -45,7 +47,7 @@ export default function TransfersPage() {
                     href={`/contact?subject=Transfer Booking - ${cls.name}`}
                     className="block w-full text-center bg-[#00AA6C] text-white py-3 rounded-lg font-medium hover:bg-[#007A52] transition"
                   >
-                    Book Now
+                    Get Quote
                   </Link>
                 </div>
               </div>

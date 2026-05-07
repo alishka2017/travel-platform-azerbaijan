@@ -127,18 +127,16 @@ export default function RestaurantDetailPage({ params }: { params: { id: string 
           {/* Right Column - Booking Card */}
           <div className="lg:col-span-1">
             <div className="sticky top-4 bg-white p-6 rounded-xl shadow-lg">
-              <div className="text-2xl font-bold text-[#00AA6C] mb-4">
-                {restaurant.priceLevel}
-                <span className="text-sm font-normal text-gray-500"> average</span>
-              </div>
-
               <div className="flex items-center gap-2 mb-4 text-sm text-gray-600">
                 <span>🍽️ {restaurant.tags.join(', ')}</span>
               </div>
 
-              <button className="w-full bg-[#00AA6C] text-white py-3 rounded-lg font-semibold hover:bg-[#008855] transition mb-3">
-                Make Reservation
-              </button>
+              <Link 
+                href="/contact" 
+                className="block w-full bg-[#00AA6C] text-white py-3 rounded-lg font-semibold hover:bg-[#008855] transition mb-3 text-center"
+              >
+                Get Quote
+              </Link>
 
               <button className="w-full border border-[#00AA6C] text-[#00AA6C] py-3 rounded-lg font-semibold hover:bg-[#00AA6C] hover:text-white transition">
                 Get Directions
