@@ -5,23 +5,71 @@ import { HeartButton } from '@/components/HeartButton';
 import { useState } from 'react';
 import { useLanguage } from '@/context/LanguageContext';
 import type { City, Tour } from '@/types/content';
-import type { GroupedTours } from '@/lib/content-new';
+
+// Типы для данных Sanity
+interface SanityTour {
+  _id: string;
+  title: { en: string; ru: string };
+  slug: { current: string };
+  imageUrl: string;
+  duration: string;
+  description: { en: string; ru: string };
+  category: any;
+  featured: boolean;
+}
+
+interface SanityCity {
+  _id: string;
+  title: { en: string; ru: string };
+  slug: { current: string };
+  imageUrl: string;
+  description: { en: string; ru: string };
+  shortDescription: { en: string; ru: string };
+}
 
 interface HomeContentProps {
-  cities: City[];
-  tours: GroupedTours;
+  cities: SanityCity[];
+  tours: SanityTour[];
 }
 
 export default function HomeContent({ cities, tours }: HomeContentProps) {
   const [searchQuery, setSearchQuery] = useState('');
   const { language } = useLanguage(); // Use language from context
 
+  // Convert Sanity data to expected format
+  const mappedCities: City[] = cities.map(c => ({
+    id: c._id,
+    slug: c.slug.current,
+    image: c.imageUrl,
+    name: c.title,
+    description: c.description,
+    // Placeholder for other fields required by City type
+    population: '',
+    bestTime: '',
+    distanceFromBaku: '',
+    transport: '',
+    about: { en: '', ru: '' },
+  }));
+
+  // Group tours by category (simplified for demo)
+  const groupedTours: Record<string, SanityTour[]> = {};
+  tours.forEach(tour => {
+    const cat = tour.category?._ref || 'default';
+    if (!groupedTours[cat]) groupedTours[cat] = [];
+    groupedTours[cat].push(tour);
+  });
+
   // Get first 8 cities and tours
-  const featuredCities = cities.slice(0, 8);
-  const featuredTours = [
-    ...tours['city-tours'],
-    ...tours['day-trips']
-  ].slice(0, 8);
+  const featuredCities = mappedCities.slice(0, 8);
+  const featuredTours = tours.slice(0, 8).map(t => ({
+    id: t._id,
+    slug: t.slug.current,
+    image: t.imageUrl,
+    name: t.title,
+    duration: t.duration,
+    category: t.category?._ref || 'Tour', // Placeholder for category name
+    description: t.description, // Add description
+  }));
 
   const t = {
     en: {
