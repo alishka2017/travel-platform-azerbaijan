@@ -125,7 +125,7 @@ export default function Footer() {
             <h3 className="text-white font-semibold mb-4 text-sm">{currentText.contact}</h3>
             <ul className="space-y-2 text-sm">
               <li><Link href="/contact" className="hover:text-[#00AA6C] transition">{currentText.contact}</Link></li>
-              <li><a href={`https://wa.me/${settings?.contacts.whatsapp.replace(/\D/g, '')}`} className="hover:text-[#00AA6C] transition">WhatsApp</a></li>
+              <li><a href={`https://wa.me/${(settings?.contacts.whatsapp || '994702166666').replace(/\D/g, '')}`} className="hover:text-[#00AA6C] transition">WhatsApp</a></li>
               <li className="text-gray-400">{settings?.contacts.phone}</li>
               <li className="text-gray-400">{settings?.contacts.email}</li>
             </ul>

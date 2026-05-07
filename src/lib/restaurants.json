@@ -99,6 +99,106 @@
         "en": "145 Neftchilar Ave, Baku",
         "ru": "пр. Нефтяников 145, Баку"
       }
+    },
+    {
+      "id": "gunaydin-baku",
+      "slug": "gunaydin-baku",
+      "city": "baku",
+      "image": "https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?w=800&q=80",
+      "rating": 4.6,
+      "category": "fine-dining",
+      "name": {
+        "en": "Gunaydin Baku",
+        "ru": "Гунайдын Баку"
+      },
+      "description": {
+        "en": "Premium steakhouse with international and Azerbaijani specialties.",
+        "ru": "Премиальный стейкхаус с международными и азербайджанскими специалитетами."
+      },
+      "address": {
+        "en": "28 May Street, Baku",
+        "ru": "ул. 28 Мая, Баку"
+      }
+    },
+    {
+      "id": "shirvanshah-cafe",
+      "slug": "shirvanshah-cafe",
+      "city": "baku",
+      "image": "https://images.unsplash.com/photo-1555396273-367ea4eb4db5?w=800&q=80",
+      "rating": 4.4,
+      "category": "local",
+      "name": {
+        "en": "Shirvanshah Museum Cafe",
+        "ru": "Кафе Музея Ширваншахов"
+      },
+      "description": {
+        "en": "Cozy cafe located in the heart of the Old City.",
+        "ru": "Уютное кафе в сердце Старого города."
+      },
+      "address": {
+        "en": "Icherisheher, Baku",
+        "ru": "Ичерихер, Баку"
+      }
+    },
+    {
+      "id": "sheki-saray",
+      "slug": "sheki-saray",
+      "city": "sheki",
+      "image": "https://images.unsplash.com/photo-1528605248644-14dd04022da1?w=800&q=80",
+      "rating": 4.8,
+      "category": "local",
+      "name": {
+        "en": "Sheki Saray Restaurant",
+        "ru": "Ресторан Шеки Сарай"
+      },
+      "description": {
+        "en": "Traditional Sheki cuisine in a historic setting.",
+        "ru": "Традиционная шекская кухня в исторической обстановке."
+      },
+      "address": {
+        "en": "Sheki Old City",
+        "ru": "Старый город Шеки"
+      }
+    },
+    {
+      "id": "gabala-restaurant",
+      "slug": "gabala-restaurant",
+      "city": "gabala",
+      "image": "https://images.unsplash.com/photo-1414235077428-338989a2e8c0?w=800&q=80",
+      "rating": 4.5,
+      "category": "local",
+      "name": {
+        "en": "Gabala Restaurant",
+        "ru": "Ресторан Габала"
+      },
+      "description": {
+        "en": "Enjoy local dishes with a view of the mountains.",
+        "ru": "Наслаждайтесь местными блюдами с видом на горы."
+      },
+      "address": {
+        "en": "Gabala City Center",
+        "ru": "Центр города Габала"
+      }
+    },
+    {
+      "id": "nergiz-baku",
+      "slug": "nergiz-baku",
+      "city": "baku",
+      "image": "https://images.unsplash.com/photo-1466978913421-dad2ebd01d17?w=800&q=80",
+      "rating": 4.3,
+      "category": "cafe",
+      "name": {
+        "en": "Nergiz Cafe",
+        "ru": "Кафе Нергиз"
+      },
+      "description": {
+        "en": "Casual dining and coffee in a relaxed atmosphere.",
+        "ru": "Повседневная кухня и кофе в расслабленной атмосфере."
+      },
+      "address": {
+        "en": "Nizami Street, Baku",
+        "ru": "ул. Низами, Баку"
+      }
     }
   ]
 }

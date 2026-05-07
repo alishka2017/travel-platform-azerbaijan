@@ -1,16 +1,172 @@
 {
   "posts": [
     {
-      "slug": "first-post",
-      "title": "Первый пост о Азербайджане",
-      "excerpt": "Краткое описание первого поста о путешествиях в Азербайджан.",
-      "content": "<p>Добро пожаловать в Азербайджан! Эта страна удивляет своим разнообразием: от древних храмов до современных небоскребов.</p><p>В этом посте мы расскажем о главных достопримечательностях Баку и окрестностей.</p>",
-      "date": "2023-01-01",
-      "image": "/images/blog/first-post.jpg",
-      "category": "Guide",
-      "readTime": "5 min",
+      "slug": "10-reasons-visit-azerbaijan-2025",
+      "category": "Travel Tips",
+      "readTime": "8 min",
+      "date": "2025-01-15",
+      "image": "https://images.unsplash.com/photo-1571155824547-a49f7481fffb?w=800&q=80",
+      "title": {
+        "ru": "10 причин посетить Азербайджан в 2025",
+        "en": "10 Reasons to Visit Azerbaijan in 2025"
+      },
+      "excerpt": {
+        "ru": "Откройте для себя удивительную страну огня с богатой историей, уникальной кухней и гостеприимными людьми. Узнайте, почему 2025 год — идеальное время для поездки.",
+        "en": "Discover the amazing Land of Fire with rich history, unique cuisine, and hospitable people. Learn why 2025 is the perfect time to visit."
+      },
+      "content": {
+        "ru": "<p>Азербайджан — это страна, где древняя история пересекается с современной архитектурой, а восточные традиции соседствуют с европейским стилем жизни.</p><p>В 2025 году страна продолжает удивлять туристов новыми проектами и событиями.</p><ul><li>Баку — динамичная столица на Каспийском море</li><li>Уникальная кухня, которая покорит ваше сердце</li><li>Древние храмы и UNESCO-объекты</li><li>Горные курорты и живописные ландшафты</li><li>Гостеприимство и безопасность</li></ul>",
+        "en": "<p>Azerbaijan is a country where ancient history meets modern architecture, and Eastern traditions coexist with European lifestyle.</p><p>In 2025, the country continues to surprise tourists with new projects and events.</p><ul><li>Baku — dynamic capital on the Caspian Sea</li><li>Unique cuisine that will win your heart</li><li>Ancient temples and UNESCO sites</li><li>Mountain resorts and scenic landscapes</li><li>Hospitality and safety</li></ul>"
+      },
       "author": "Smartholiday Team",
-      "tags": ["Baku", "Travel", "Guide"]
+      "tags": ["Travel Tips", "2025", "Azerbaijan"]
+    },
+    {
+      "slug": "baku-3-days-itinerary",
+      "category": "Itineraries",
+      "readTime": "10 min",
+      "date": "2025-01-20",
+      "image": "https://images.unsplash.com/photo-1527838832700-5059252407fa?w=800&q=80",
+      "title": {
+        "ru": "Баку за 3 дня: маршрут с нуля",
+        "en": "Baku in 3 Days: Complete Itinerary"
+      },
+      "excerpt": {
+        "ru": "Идеальный маршрут по столице Азербайджана для тех, кто хочет увидеть главное за короткое время.",
+        "en": "Perfect route through the capital of Azerbaijan for those who want to see the highlights in a short time."
+      },
+      "content": {
+        "ru": "<p><strong>День 1:</strong> Старый город (Ичери-шехер), Девичья башня, Дворец Ширваншахов, Прогулка по Бульвару</p><p><strong>День 2:</strong> Пламенные башни, Центр Гейдара Алиева, Фонтанная площадь, Низами стрит</p><p><strong>День 3:</strong> Янардаг, Атешгях, Ковровый музей, Вечерний Баку</p><p>Советы по транспорту, где поесть и что купить на память.</p>",
+        "en": "<p><strong>Day 1:</strong> Old City (Icheri Sheher), Maiden Tower, Palace of Shirvanshahs, Boulevard walk</p><p><strong>Day 2:</strong> Flame Towers, Heydar Aliyev Center, Fountain Square, Nizami Street</p><p><strong>Day 3:</strong> Yanar Dag, Ateshgah, Carpet Museum, Evening Baku</p><p>Transport tips, where to eat and what to buy as souvenirs.</p>"
+      },
+      "author": "Smartholiday Team",
+      "tags": ["Itineraries", "Baku", "3 Days"]
+    },
+    {
+      "slug": "best-time-visit-azerbaijan",
+      "category": "Travel Tips",
+      "readTime": "6 min",
+      "date": "2025-02-01",
+      "image": "https://images.unsplash.com/photo-1501555088652-021faa106b9b?w=800&q=80",
+      "title": {
+        "ru": "Лучшее время для поездки в Азербайджан",
+        "en": "Best Time to Visit Azerbaijan"
+      },
+      "excerpt": {
+        "ru": "Когда лучше ехать: весна, лето, осень или зима? Разбираем плюсы и минусы каждого сезона.",
+        "en": "When is the best time to go: spring, summer, autumn or winter? Let's analyze the pros and cons of each season."
+      },
+      "content": {
+        "ru": "<p><strong>Весна (март-май):</strong> идеально для городских туров, цветущая природа, Новруз</p><p><strong>Лето (июнь-август):</strong> жарко, но море теплое, идеально для пляжного отдыха</p><p><strong>Осень (сентябрь-ноябрь):</strong> лучшее время для туров по стране, комфортная температура</p><p><strong>Зима (декабрь-февраль):</strong> снег в горах, зимние курорты, меньше туристов</p>",
+        "en": "<p><strong>Spring (March-May):</strong> perfect for city tours, blooming nature, Nowruz</p><p><strong>Summer (June-August):</strong> hot but warm sea, perfect for beach holidays</p><p><strong>Autumn (September-November):</strong> best time for tours around the country, comfortable temperature</p><p><strong>Winter (December-February):</strong> snow in the mountains, winter resorts, fewer tourists</p>"
+      },
+      "author": "Smartholiday Team",
+      "tags": ["Travel Tips", "Seasons", "Weather"]
+    },
+    {
+      "slug": "azerbaijani-cuisine-must-try",
+      "category": "Food & Drink",
+      "readTime": "7 min",
+      "date": "2025-02-10",
+      "image": "https://images.unsplash.com/photo-1504674900247-0877df9cc836?w=800&q=80",
+      "title": {
+        "ru": "Азербайджанская кухня: что обязательно попробовать",
+        "en": "Azerbaijani Cuisine: Must-Try Dishes"
+      },
+      "excerpt": {
+        "ru": "Гид по национальной кухне Азербайджана: от плова до долмы и кебабов.",
+        "en": "Guide to Azerbaijani national cuisine: from plov to dolma and kebabs."
+      },
+      "content": {
+        "ru": "<p>Азербайджанская кухня — это сочетание восточных традиций и кавказского колорита.</p><p>Обязательно попробуйте:</p><ul><li><strong>Плов</strong> — национальное блюдо с рисом и мясом</li><li><strong>Долма</strong> — листья винограда с начинкой</li><li><strong>Лулы-кебаб</strong> — мясные шашлыки на шампуре</li><li><strong>Пити</strong> — суп в глиняном горшочке</li><li><strong>Пахлава</strong> — сладкое тесто с орехами</li></ul>",
+        "en": "<p>Azerbaijani cuisine is a combination of Eastern traditions and Caucasian flavor.</p><p>Must try:</p><ul><li><strong>Plov</strong> — national dish with rice and meat</li><li><strong>Dolma</strong> — grape leaves with filling</li><li><strong>Lula-kebab</strong> — meat kebabs on skewers</li><li><strong>Piti</strong> — soup in a clay pot</li><li><strong>Baklava</strong> — sweet pastry with nuts</li></ul>"
+      },
+      "author": "Smartholiday Team",
+      "tags": ["Food", "Cuisine", "Dishes"]
+    },
+    {
+      "slug": "sheki-complete-guide",
+      "category": "Destinations",
+      "readTime": "9 min",
+      "date": "2025-02-15",
+      "image": "https://images.unsplash.com/photo-1587974928442-77dc3e1dba79?w=800&q=80",
+      "title": {
+        "ru": "Шеки — жемчужина севера: полный гид",
+        "en": "Sheki — Jewel of the North: Complete Guide"
+      },
+      "excerpt": {
+        "ru": "Древний город на Великом Шелковом пути с уникальной архитектурой и традициями.",
+        "en": "Ancient city on the Great Silk Road with unique architecture and traditions."
+      },
+      "content": {
+        "ru": "<p>Шеки — один из самых старых городов Азербайджана, расположенный у подножия Кавказских гор.</p><p>Что посмотреть:</p><ul><li>Дворец Шекинских ханов (UNESCO)</li><li>Караван-сарай</li><li>Исторический центр</li><li>Музей народного творчества</li></ul><p>Как добраться из Баку: 4-5 часов на машине или автобусе.</p>",
+        "en": "<p>Sheki is one of the oldest cities in Azerbaijan, located at the foot of the Caucasus Mountains.</p><p>What to see:</p><ul><li>Sheki Khan Palace (UNESCO)</li><li>Caravanserai</li><li>Historical center</li><li>Museum of Folk Arts</li></ul><p>How to get from Baku: 4-5 hours by car or bus.</p>"
+      },
+      "author": "Smartholiday Team",
+      "tags": ["Sheki", "Destinations", "UNESCO"]
+    },
+    {
+      "slug": "visa-azerbaijan-2025",
+      "category": "Travel Tips",
+      "readTime": "5 min",
+      "date": "2025-02-20",
+      "image": "https://images.unsplash.com/photo-1554224155-6726b3ff858f?w=800&q=80",
+      "title": {
+        "ru": "Виза в Азербайджан: пошаговая инструкция 2025",
+        "en": "Azerbaijan Visa: Step-by-Step Guide 2025"
+      },
+      "excerpt": {
+        "ru": "Как получить электронную визу (e-visa) в Азербайджан за 3 рабочих дня.",
+        "en": "How to get an e-visa to Azerbaijan in 3 business days."
+      },
+      "content": {
+        "ru": "<p>Граждане большинства стран могут получить электронную визу (e-visa) онлайн.</p><p>Пошаговая инструкция:</p><ol><li>Зайдите на сайт evisa.gov.az</li><li>Заполните анкету</li><li>Загрузите фото и скан паспорта</li><li>Оплатите сбор (20-30 USD)</li><li>Получите визу на email</li></ol><p>Сроки: 3 рабочих дня, действует 30 дней.</p>",
+        "en": "<p>Citizens of most countries can get an e-visa online.</p><p>Step-by-step instructions:</p><ol><li>Go to evisa.gov.az</li><li>Fill out the form</li><li>Upload photo and passport scan</li><li>Pay the fee (20-30 USD)</li><li>Get visa on email</li></ol><p>Processing: 3 business days, valid for 30 days.</p>"
+      },
+      "author": "Smartholiday Team",
+      "tags": ["Visa", "Travel Tips", "E-Visa"]
+    },
+    {
+      "slug": "gobustan-mud-volcanoes",
+      "category": "Adventure",
+      "readTime": "8 min",
+      "date": "2025-02-25",
+      "image": "https://images.unsplash.com/photo-1509316975850-ff9c5deb0cd9?w=800&q=80",
+      "title": {
+        "ru": "Гобустан и грязевые вулканы: что взять с собой",
+        "en": "Gobustan and Mud Volcanoes: What to Bring"
+      },
+      "excerpt": {
+        "ru": "Экскурсия в древний Гобустан с петроглифами и уникальными грязевыми вулканами.",
+        "en": "Tour to ancient Gobustan with petroglyphs and unique mud volcanoes."
+      },
+      "content": {
+        "ru": "<p>Гобустан — это национальный парк с древними петроглифами возрастом до 40 000 лет.</p><p>Что взять с собой:</p><ul><li>Удобную обувь (будете много ходить)</li><li>Солнцезащитный крем</li><li>Воду и перекус</li><li>Камеру для фото</li><li>Одежда в несколько слоев (ветер в горах)</li></ul>",
+        "en": "<p>Gobustan is a national park with ancient petroglyphs up to 40,000 years old.</p><p>What to bring:</p><ul><li>Comfortable shoes (lots of walking)</li><li>Sunscreen</li><li>Water and snacks</li><li>Camera</li><li>Layers of clothing (windy in mountains)</li></ul>"
+      },
+      "author": "Smartholiday Team",
+      "tags": ["Adventure", "Gobustan", "Nature"]
+    },
+    {
+      "slug": "transfers-transport-azerbaijan",
+      "category": "Travel Tips",
+      "readTime": "7 min",
+      "date": "2025-03-01",
+      "image": "https://images.unsplash.com/photo-1549317661-bd32c8ce0db2?w=800&q=80",
+      "title": {
+        "ru": "Трансферы и транспорт в Азербайджане",
+        "en": "Transfers and Transport in Azerbaijan"
+      },
+      "excerpt": {
+        "ru": "Как передвигаться по стране: такси, автобусы, поезда и частные трансферы.",
+        "en": "How to get around the country: taxis, buses, trains and private transfers."
+      },
+      "content": {
+        "ru": "<p>Транспорт в Азербайджане доступный и удобный.</p><p>Основные варианты:</p><ul><li>Такси (Bolt, Yandex.Go) — недорого и удобно</li><li>Метро в Баку — 3 линии, дешево</li><li>Автобусы — между городами</li><li>Частные трансферы — комфортно и безопасно</li><li>Авиа — внутренние рейсы</li></ul><p>Советы: договоритесь о цене заранее, используйте приложения.</p>",
+        "en": "<p>Transport in Azerbaijan is affordable and convenient.</p><p>Main options:</p><ul><li>Taxis (Bolt, Yandex.Go) — cheap and convenient</li><li>Metro in Baku — 3 lines, cheap</li><li>Buses — between cities</li><li>Private transfers — comfortable and safe</li><li>Air — domestic flights</li></ul><p>Tips: agree on price in advance, use apps.</p>"
+      },
+      "author": "Smartholiday Team",
+      "tags": ["Transport", "Transfers", "Travel Tips"]
     }
   ]
 }

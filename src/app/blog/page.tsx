@@ -5,15 +5,29 @@ import Header from '@/components/layout/Header';
 import Footer from '@/components/layout/Footer';
 import WhatsAppFloat from '@/components/WhatsAppFloat';
 import { useLanguage } from '@/context/LanguageContext';
+import { useEffect, useState } from 'react';
 
-// Mock blog posts (in real app, load from JSON)
-const mockPosts = [
-  { slug: 'first-post', title: 'First Post', readTime: '5 min', category: 'Guide', excerpt: 'Intro', image: '/', date: '2023-01-01' }
-];
+interface BlogPost {
+  slug: string;
+  category: string;
+  readTime: string;
+  date: string;
+  image: string;
+  title: { ru: string; en: string };
+  excerpt: { ru: string; en: string };
+  content: { ru: string; en: string };
+}
 
 export default function BlogPage() {
   const { language } = useLanguage();
-  const posts = mockPosts; // getBlogPosts() would be used in real app
+  const [posts, setPosts] = useState<BlogPost[]>([]);
+  
+  useEffect(() => {
+    fetch('/content/blog.json')
+      .then((res) => res.json())
+      .then((data) => setPosts(data))
+      .catch((err) => console.error('Failed to load blog posts', err));
+  }, []);
   
   const t = {
     en: {
@@ -86,6 +100,13 @@ export default function BlogPage() {
               href={`/blog/${post.slug}`}
               className="group bg-white rounded-xl shadow-sm hover:shadow-lg transition-all duration-300 overflow-hidden border border-gray-100"
             >
+              <div className="aspect-video bg-gray-200 overflow-hidden">
+                <img 
+                  src={post.image} 
+                  alt={post.title[language]}
+                  className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
+                />
+              </div>
               <div className="p-6">
                 <div className="flex items-center gap-3 mb-3">
                   <span className="text-xs font-medium text-[#00AA6C] bg-green-50 px-2 py-1 rounded">
@@ -94,10 +115,10 @@ export default function BlogPage() {
                   <span className="text-xs text-gray-500">{post.readTime}</span>
                 </div>
                 <h3 className="text-lg font-semibold text-gray-800 mb-2 group-hover:text-[#00AA6C] transition">
-                  {post.title}
+                  {post.title[language]}
                 </h3>
                 <p className="text-gray-600 text-sm mb-4 line-clamp-3">
-                  {post.excerpt}
+                  {post.excerpt[language]}
                 </p>
                 <div className="flex items-center justify-between">
                   <span className="text-xs text-gray-500">{post.date}</span>
