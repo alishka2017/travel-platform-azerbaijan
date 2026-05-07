@@ -1,18 +1,11 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  // Убираем output: 'export', так как используем ISR и статическую генерацию
-  // output: 'export', 
-  
+  // Для Netlify используем стандартную сборку Next.js (без export)
   trailingSlash: true,
   
   images: {
-    unoptimized: true, // Отключаем оптимизацию изображений Next.js (используем Sanity Image URL)
-    domains: ['cdn.sanity.io'], // Разрешаем домен для картинок Sanity
-  },
-  
-  // Настройки для Netlify (если требуется)
-  experimental: {
-    // Включаем статическую генерацию для страниц
+    unoptimized: true,
+    domains: ['cdn.sanity.io'],
   },
 };
 
