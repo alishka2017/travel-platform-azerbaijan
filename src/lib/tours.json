@@ -4,90 +4,90 @@
       "id": "baku-city-tour",
       "slug": "baku-city-tour",
       "category": "city-tours",
-      "image": "/content/images/tours/baku-city-tour/main.jpg",
+      "image": "https://images.unsplash.com/photo-1574505338056-7718c71c2c35?q=80&w=1280&auto=format&fit=crop",
       "duration": "8 hours",
       "name": {
         "en": "Baku City Tour",
-        "ru": "\u0413\u043e\u0440\u043e\u0434\u0441\u043a\u043e\u0439 \u0442\u0443\u0440 \u043f\u043e \u0411\u0430\u043a\u0443"
+        "ru": "Городской тур по Баку"
       },
       "description": {
         "en": "Explore the historic Old City, visit the iconic Flame Towers, and discover modern Baku.",
-        "ru": "\u0418\u0441\u0441\u043b\u0435\u0434\u0443\u0439\u0442\u0435 \u0438\u0441\u0442\u043e\u0440\u0438\u0447\u0435\u0441\u043a\u0438\u0439 \u0421\u0442\u0430\u0440\u044b\u0439 \u0433\u043e\u0440\u043e\u0434, \u043f\u043e\u0441\u0435\u0442\u0438\u0442\u0435 iconic Flame Towers \u0438 \u043e\u0442\u043a\u0440\u043e\u0439\u0442\u0435 \u0434\u043b\u044f \u0441\u0435\u0431\u044f \u0441\u043e\u0432\u0440\u0435\u043c\u0435\u043d\u043d\u044b\u0439 \u0411\u0430\u043a\u0443."
+        "ru": "Исследуйте исторический Старый город, посетите iconic Flame Towers и откройте для себя современный Баку."
       }
     },
     {
       "id": "night-baku-tour",
       "slug": "night-baku-tour",
       "category": "city-tours",
-      "image": "/content/images/tours/night-baku-tour/main.jpg",
+      "image": "https://images.unsplash.com/photo-1514565131-fce0801e5785?q=80&w=1280&auto=format&fit=crop",
       "duration": "4 hours",
       "name": {
         "en": "Night Baku Tour",
-        "ru": "\u041d\u043e\u0447\u043d\u043e\u0439 \u0442\u0443\u0440 \u043f\u043e \u0411\u0430\u043a\u0443"
+        "ru": "Ночной тур по Баку"
       },
       "description": {
         "en": "Experience the magic of Baku at night with illuminated landmarks and vibrant atmosphere.",
-        "ru": "\u041e\u0449\u0443\u0442\u0438\u0442\u0435 \u043c\u0430\u0433\u0438\u044e \u0411\u0430\u043a\u0443 \u043d\u043e\u0447\u044c\u044e \u0441 \u043e\u0441\u0432\u0435\u0449\u0435\u043d\u043d\u044b\u043c\u0438 \u0434\u043e\u0441\u0442\u043e\u043f\u0440\u0438\u043c\u0435\u0447\u0430\u0442\u0435\u043b\u044c\u043d\u043e\u0441\u0442\u044f\u043c\u0438 \u0438 \u044f\u0440\u043a\u043e\u0439 \u0430\u0442\u043c\u043e\u0441\u0444\u0435\u0440\u043e\u0439."
+        "ru": "Ощутите магию Баку ночью с освещенными достопримечательностями и яркой атмосферой."
       }
     },
     {
       "id": "gobustan-mud-volcanoes",
       "slug": "gobustan-mud-volcanoes",
       "category": "day-trips",
-      "image": "/content/images/tours/gobustan-mud-volcanoes/main.jpg",
+      "image": "https://images.unsplash.com/photo-1542401886-65d6c61db217?q=80&w=1280&auto=format&fit=crop",
       "duration": "10 hours",
       "name": {
         "en": "Gobustan & Mud Volcanoes Day Trip",
-        "ru": "\u042d\u043a\u0441\u043a\u0443\u0440\u0441\u0438\u044f \u0432 \u0413\u043e\u0431\u0443\u0441\u0442\u0430\u043d \u0438 \u0433\u0440\u044f\u0437\u0435\u0432\u044b\u0435 \u0432\u0443\u043b\u043a\u0430\u043d\u044b"
+        "ru": "Экскурсия в Гобустан и грязевые вулканы"
       },
       "description": {
         "en": "Visit ancient rock carvings and unique mud volcanoes in Gobustan National Park.",
-        "ru": "\u041f\u043e\u0441\u0435\u0442\u0438\u0442\u0435 \u0434\u0440\u0435\u0432\u043d\u0438\u0435 \u043f\u0435\u0442\u0440\u043e\u0433\u043b\u0438\u0444\u044b \u0438 \u0443\u043d\u0438\u043a\u0430\u043b\u044c\u043d\u044b\u0435 \u0433\u0440\u044f\u0437\u0435\u0432\u044b\u0435 \u0432\u0443\u043b\u043a\u0430\u043d\u044b \u0432 \u043d\u0430\u0446\u0438\u043e\u043d\u0430\u043b\u044c\u043d\u043e\u043c \u043f\u0430\u0440\u043a\u0435 \u0413\u043e\u0431\u0443\u0441\u0442\u0430\u043d."
+        "ru": "Посетите древние петроглифы и уникальные грязевые вулканы в национальном парке Гобустан."
       }
     },
     {
       "id": "sheki-day-trip",
       "slug": "sheki-day-trip",
       "category": "day-trips",
-      "image": "/content/images/tours/sheki-day-trip/main.jpg",
+      "image": "https://images.unsplash.com/photo-1581337204873-ef36aa181cae?q=80&w=1280&auto=format&fit=crop",
       "duration": "12 hours",
       "name": {
         "en": "Sheki Day Trip from Baku",
-        "ru": "\u041e\u0434\u043d\u043e\u0434\u043d\u0435\u0432\u043d\u0430\u044f \u043f\u043e\u0435\u0437\u0434\u043a\u0430 \u0432 \u0428\u0435\u043a\u0438 \u0438\u0437 \u0411\u0430\u043a\u0443"
+        "ru": "Однодневная поездка в Шеки из Баку"
       },
       "description": {
         "en": "Discover the historic city of Sheki with its famous Khan's Palace and silk production.",
-        "ru": "\u041e\u0442\u043a\u0440\u043e\u0439\u0442\u0435 \u0434\u043b\u044f \u0441\u0435\u0431\u044f \u0438\u0441\u0442\u043e\u0440\u0438\u0447\u0435\u0441\u043a\u0438\u0439 \u0433\u043e\u0440\u043e\u0434 \u0428\u0435\u043a\u0438 \u0441 \u0435\u0433\u043e \u0437\u043d\u0430\u043c\u0435\u043d\u0438\u0442\u044b\u043c \u0414\u0432\u043e\u0440\u0446\u043e\u043c \u0445\u0430\u043d\u0430 \u0438 \u043f\u0440\u043e\u0438\u0437\u0432\u043e\u0434\u0441\u0442\u0432\u043e\u043c \u0448\u0435\u043b\u043a\u0430."
+        "ru": "Откройте для себя исторический город Шеки с его знаменитым Дворцом хана и производством шелка."
       }
     },
     {
       "id": "sheki-historical-tour",
       "slug": "sheki-historical-tour",
       "category": "multi-day",
-      "image": "/content/images/tours/sheki-historical-tour/main.jpg",
+      "image": "https://images.unsplash.com/photo-1587974928442-77dc3e247c4a?q=80&w=1280&auto=format&fit=crop",
       "duration": "2 days / 1 night",
       "name": {
         "en": "Sheki Historical Tour (2 Days)",
-        "ru": "\u0418\u0441\u0442\u043e\u0440\u0438\u0447\u0435\u0441\u043a\u0438\u0439 \u0442\u0443\u0440 \u0432 \u0428\u0435\u043a\u0438 (2 \u0434\u043d\u044f)"
+        "ru": "Исторический тур в Шеки (2 дня)"
       },
       "description": {
         "en": "Immerse yourself in the history of Sheki with overnight stay and guided tours.",
-        "ru": "\u041f\u043e\u0433\u0440\u0443\u0437\u0438\u0442\u0435\u0441\u044c \u0432 \u0438\u0441\u0442\u043e\u0440\u0438\u044e \u0428\u0435\u043a\u0438 \u0441 \u043d\u043e\u0447\u0435\u0432\u043a\u043e\u0439 \u0438 \u044d\u043a\u0441\u043a\u0443\u0440\u0441\u0438\u044f\u043c\u0438 \u0441 \u0433\u0438\u0434\u043e\u043c."
+        "ru": "Погрузитесь в историю Шеки с ночевкой и экскурсиями с гидом."
       }
     },
     {
       "id": "gabala-mountain-adventure",
       "slug": "gabala-mountain-adventure",
       "category": "adventure",
-      "image": "/content/images/tours/gabala-mountain-adventure/main.jpg",
+      "image": "https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?q=80&w=1280&auto=format&fit=crop",
       "duration": "8-9 hours",
       "name": {
         "en": "Gabala Mountain Adventure",
-        "ru": "\u0413\u043e\u0440\u043d\u043e\u0435 \u043f\u0440\u0438\u043a\u043b\u044e\u0447\u0435\u043d\u0438\u0435 \u0432 \u0413\u0430\u0431\u0430\u043b\u0435"
+        "ru": "Горное приключение в Габале"
       },
       "description": {
         "en": "Explore the Caucasus Mountains with hiking, skiing, and stunning views.",
-        "ru": "\u0418\u0441\u0441\u043b\u0435\u0434\u0443\u0439\u0442\u0435 \u041a\u0430\u0432\u043a\u0430\u0437\u0441\u043a\u0438\u0435 \u0433\u043e\u0440\u044b \u0441 \u043f\u0435\u0448\u0438\u043c\u0438 \u043f\u0440\u043e\u0433\u0443\u043b\u043a\u0430\u043c\u0438, \u043a\u0430\u0442\u0430\u043d\u0438\u0435\u043c \u043d\u0430 \u043b\u044b\u0436\u0430\u0445 \u0438 \u043f\u043e\u0442\u0440\u044f\u0441\u0430\u044e\u0449\u0438\u043c\u0438 \u0432\u0438\u0434\u0430\u043c\u0438."
+        "ru": "Исследуйте Кавказские горы с пешими прогулками, катанием на лыжах и потрясающими видами."
       }
     }
   ]

@@ -4,7 +4,7 @@
       "id": "cay-bagi-145",
       "slug": "cay-bagi-145",
       "city": "baku",
-      "image": "/content/images/restaurants/cay-bagi-145/main.jpg",
+      "image": "https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?q=80&w=1280&auto=format&fit=crop",
       "rating": 4.8,
       "category": "local",
       "name": {
@@ -24,7 +24,7 @@
       "id": "malacannes-145",
       "slug": "malacannes-145",
       "city": "baku",
-      "image": "/content/images/restaurants/malacannes-145/main.jpg",
+      "image": "https://images.unsplash.com/photo-1555396273-367ea4eb4db5?q=80&w=1280&auto=format&fit=crop",
       "rating": 4.9,
       "category": "local",
       "name": {
@@ -44,7 +44,7 @@
       "id": "dolma-restaurant",
       "slug": "dolma-restaurant",
       "city": "baku",
-      "image": "/content/images/restaurants/dolma-restaurant/main.jpg",
+      "image": "https://images.unsplash.com/photo-1550966871-3ed3cdb5ed0c?q=80&w=1280&auto=format&fit=crop",
       "rating": 4.7,
       "category": "local",
       "name": {
@@ -64,7 +64,7 @@
       "id": "firuze-restaurant",
       "slug": "firuze-restaurant",
       "city": "baku",
-      "image": "/content/images/restaurants/firuze-restaurant/main.jpg",
+      "image": "https://images.unsplash.com/photo-1514933651103-005eec06c04b?q=80&w=1280&auto=format&fit=crop",
       "rating": 4.5,
       "category": "local",
       "name": {
@@ -84,7 +84,7 @@
       "id": "passage-145",
       "slug": "passage-145",
       "city": "baku",
-      "image": "/content/images/restaurants/passage-145/main.jpg",
+      "image": "https://images.unsplash.com/photo-1414235077428-338989a2e8c0?q=80&w=1280&auto=format&fit=crop",
       "rating": 4.8,
       "category": "local",
       "name": {
@@ -104,7 +104,7 @@
       "id": "gunaydin-baku",
       "slug": "gunaydin-baku",
       "city": "baku",
-      "image": "https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?w=800&q=80",
+      "image": "https://images.unsplash.com/photo-1559339352-11d035aa65de?q=80&w=1280&auto=format&fit=crop",
       "rating": 4.6,
       "category": "fine-dining",
       "name": {
@@ -124,7 +124,7 @@
       "id": "shirvanshah-cafe",
       "slug": "shirvanshah-cafe",
       "city": "baku",
-      "image": "https://images.unsplash.com/photo-1555396273-367ea4eb4db5?w=800&q=80",
+      "image": "https://images.unsplash.com/photo-1555244162-803834f70033?q=80&w=1280&auto=format&fit=crop",
       "rating": 4.4,
       "category": "local",
       "name": {
@@ -144,7 +144,7 @@
       "id": "sheki-saray",
       "slug": "sheki-saray",
       "city": "sheki",
-      "image": "https://images.unsplash.com/photo-1528605248644-14dd04022da1?w=800&q=80",
+      "image": "https://images.unsplash.com/photo-1512152272829-e313966f575f?q=80&w=1280&auto=format&fit=crop",
       "rating": 4.8,
       "category": "local",
       "name": {
@@ -164,7 +164,7 @@
       "id": "gabala-restaurant",
       "slug": "gabala-restaurant",
       "city": "gabala",
-      "image": "https://images.unsplash.com/photo-1414235077428-338989a2e8c0?w=800&q=80",
+      "image": "https://images.unsplash.com/photo-1550547660-d9450f859349?q=80&w=1280&auto=format&fit=crop",
       "rating": 4.5,
       "category": "local",
       "name": {
@@ -184,7 +184,7 @@
       "id": "nergiz-baku",
       "slug": "nergiz-baku",
       "city": "baku",
-      "image": "https://images.unsplash.com/photo-1466978913421-dad2ebd01d17?w=800&q=80",
+      "image": "https://images.unsplash.com/photo-1528605248644-14dd04022da1?q=80&w=1280&auto=format&fit=crop",
       "rating": 4.3,
       "category": "cafe",
       "name": {

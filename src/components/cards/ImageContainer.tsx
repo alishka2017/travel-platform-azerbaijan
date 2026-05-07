@@ -44,12 +44,18 @@ export const ImageContainer: React.FC<ImageContainerProps> = ({
     return solids[overlayPosition] || solids.bottom;
   };
 
+  // Fallback image if src is missing or invalid
+  const fallbackSrc = 'data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxMjgwIiBoZWlnaHQ9IjcyMCIgdmlld0JveD0iMCAwIDEyODAgNzIwIiBmaWxsPSIjZjJ...'; // Simple gray placeholder
+
   return (
     <div className={`relative overflow-hidden ${height} ${className}`}>
       <img
-        src={src}
-        alt={alt}
+        src={src || fallbackSrc}
+        alt={alt || 'Image'}
         className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+        onError={(e) => {
+          e.currentTarget.src = fallbackSrc;
+        }}
       />
       {overlay !== 'none' && (
         <div className={`absolute inset-0 ${getOverlayClass()}`} />
