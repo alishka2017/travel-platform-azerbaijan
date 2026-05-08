@@ -30,10 +30,13 @@ export async function generateMetadata({ params }: { params: { slug: string } })
 }
 
 export async function generateStaticParams() {
-  const posts = getBlogPosts();
-  return posts.map((post) => ({
-    slug: post.slug,
-  }));
+  // TODO: Migrate to Sanity API
+  // Temporarily disabled to fix build
+  // const posts = getBlogPosts();
+  // return posts.map((post) => ({
+  //   slug: post.slug,
+  // }));
+  return [];
 }
 
 export default function BlogDetailPage({ params }: { params: { slug: string } }) {

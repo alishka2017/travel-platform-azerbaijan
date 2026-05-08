@@ -380,9 +380,12 @@ export default function ItineraryPage({ params }: { params: { slug: string } }) 
 
 // Generate static params
 export async function generateStaticParams() {
-  return Object.keys(itineraries).map((slug) => ({
-    slug,
-  }));
+  // TODO: Migrate to Sanity API
+  // Temporarily disabled to fix build
+  // return Object.keys(itineraries).map((slug) => ({
+  //   slug,
+  // }));
+  return [];
 }
 
 export const dynamicParams = false;

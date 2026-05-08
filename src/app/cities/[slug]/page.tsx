@@ -15,7 +15,10 @@ const InteractiveMap = dynamic(() => import('@/components/InteractiveMap'), {
 });
 
 export async function generateStaticParams() {
-  return cities.map((city) => ({ slug: city.slug }));
+  // TODO: Migrate to Sanity API
+  // Temporarily disabled to fix build
+  // return cities.map((city) => ({ slug: city.slug }));
+  return [];
 }
 
 export function generateMetadata({ params }: { params: { slug: string } }): Metadata {

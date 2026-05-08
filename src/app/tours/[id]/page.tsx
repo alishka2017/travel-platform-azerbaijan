@@ -7,9 +7,12 @@ import { Metadata } from 'next';
 import { HeartButton } from '@/components/HeartButton';
 
 export async function generateStaticParams() {
-  return places
-    .filter(p => p.category === 'Tours')
-    .map(p => ({ id: p.id }));
+  // TODO: Migrate to Sanity API
+  // Temporarily disabled to fix build
+  // return places
+  //   .filter(p => p.category === 'Tours')
+  //   .map(p => ({ id: p.id }));
+  return [];
 }
 
 export function generateMetadata({ params }: { params: { id: string } }): Metadata {
