@@ -32,9 +32,7 @@ jobs:
           SANITY_DATASET: ${{ secrets.SANITY_DATASET }}
 
       - name: Deploy to Netlify
-        # TODO: Replace with secrets.NETLIFY_SITE_ID after updating GitHub secret
-        # Using local state.json ID for testing: 42ea6c58-bb48-4cf7-9f36-1e923fc38243
-        run: npx netlify deploy --prod --site 42ea6c58-bb48-4cf7-9f36-1e923fc38243 --dir .next
+        run: npx netlify deploy --prod --site ${{ secrets.NETLIFY_SITE_ID }} --dir .next
         env:
           NETLIFY_AUTH_TOKEN: ${{ secrets.NETLIFY_AUTH_TOKEN }}
           NETLIFY_SITE_ID: ${{ secrets.NETLIFY_SITE_ID }}
